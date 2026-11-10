@@ -1,0 +1,16 @@
+{
+  "name": "be-bum-penalty-3d",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BA/BUM two-device Supabase penalty game; static GitHub Pages site",
+  "scripts": {
+    "test": "node tests/run.cjs",
+    "test:live": "node tests/run.cjs --live"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

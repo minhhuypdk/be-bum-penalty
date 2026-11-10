@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const base = process.env.GAME_URL || 'http://127.0.0.1:4173/';
 (async () => {
-  const browser = await chromium.launch({ executablePath: '/usr/bin/chromium', headless: true, args: ['--no-sandbox', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+  const browser = await chromium.launch({ executablePath:require('./browser.cjs').executablePath, headless: true, args: ['--no-sandbox', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
@@ -28,9 +28,15 @@ const base = process.env.GAME_URL || 'http://127.0.0.1:4173/';
     await page.waitForTimeout(80);
   }
   await page.evaluate(() => window.dispatchEvent(new CustomEvent('penalty:state', { detail: { turn: 0, stage: 'choose' } })));
-  await page.screenshot({ path: 'tests/graphics-mobile.png', fullPage: true });
+  await page.screenshot({ path: (process.env.ARTIFACT_DIR||'tests')+'/graphics-mobile.png', fullPage: true });
   assert.equal(await page.locator('.goal canvas').count(), 1);
+  const canLose = await page.evaluate(() => {const gl=document.querySelector('.goal canvas').getContext('webgl2');const extension=gl.getExtension('WEBGL_lose_context');if(!extension)return false;window.restoreGraphics=()=>extension.restoreContext();extension.loseContext();return true;});
+  assert(canLose,'Context-loss test extension available');
+  await page.waitForSelector('.goal[data-graphics=lost]');
+  assert.equal(await page.locator('.goal .keeper').isVisible(),true);
+  await page.waitForTimeout(200);await page.evaluate(()=>window.restoreGraphics());
+  await page.waitForSelector('.goal[data-graphics=ready]');
   assert.deepEqual(errors, []);
-  console.log('PASS: four articulated characters, both roles, five directions, mobile WebGL; no page errors. Supabase writes blocked.');
+  console.log('PASS: four articulated characters, both roles, five directions, mobile WebGL, context loss/restoration; no page errors. Supabase writes blocked.');
   await browser.close();
 })().catch(e => { console.error(e); process.exit(1); });

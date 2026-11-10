@@ -14,6 +14,12 @@ try {
   renderer.domElement.setAttribute('aria-label', 'Sân 3D: cầu thủ và thủ môn BA, BUM');
   host.append(renderer.domElement);
   host.classList.add('ready-3d');
+  renderer.domElement.addEventListener('webglcontextlost', event => {
+    event.preventDefault(); host.classList.remove('ready-3d'); host.dataset.graphics='lost'; renderer.domElement.style.display='none';
+  });
+  renderer.domElement.addEventListener('webglcontextrestored', () => {
+    host.classList.add('ready-3d'); host.dataset.graphics='ready'; renderer.domElement.style.display='block';
+  });
 } catch (error) {
   console.warn('Sân 3D chưa khả dụng; giữ sân hiện tại.', error);
 }
@@ -27,7 +33,7 @@ if (renderer) {
   scene.add(new THREE.HemisphereLight(0xe2f5ff, 0x4d7953, 2.4));
   const sun = new THREE.DirectionalLight(0xffefd4, 3.2);
   sun.position.set(-4, 8, 5); sun.castShadow = true;
-  sun.shadow.mapSize.set(1024, 1024);
+  const shadowSize=innerWidth<=600?512:1024;sun.shadow.mapSize.set(shadowSize,shadowSize);
   Object.assign(sun.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9 });
   sun.shadow.normalBias = .03; scene.add(sun);
   const rim = new THREE.DirectionalLight(0xb7dfff, .9);rim.position.set(5,3,-4);scene.add(rim);
@@ -65,9 +71,11 @@ if (renderer) {
   }); resize.observe(host);
   const targets = [[-2.15, 2.15], [0, 2.2], [2.15, 2.15], [-2.15, .45], [2.15, .45]];
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let lastFrame=0;
   renderer.setAnimationLoop(() => {
-    if (document.hidden || !host.clientHeight) return;
+    if (document.hidden || !host.clientHeight || renderer.getContext().isContextLost()) return;
     const now = performance.now() / 1000;
+    if(now-lastFrame<1/30)return;lastFrame=now;
     const shooting = (state?.turn || 0) % 2 === 0 ? 'ba' : 'bum';
     const elapsed = now - start;
     const active = state?.stage === 'result';

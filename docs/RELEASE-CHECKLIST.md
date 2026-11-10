@@ -58,7 +58,7 @@ will build from `main`; verify the build commit, HTML and JS asset responses,
 WebGL rendering and multiplayer on the public URL.
 
 To restore the old site without rewriting history, change Settings → Pages →
-Deploy from a branch to `backup/pre-3d-b9e188f`, folder `/ (root)`, and save.
+Deploy from a branch to `backup/2d-compatible`, folder `/ (root)`, and save.
 Wait for Pages to finish and verify the URL. Alternatively revert the release
 merge through a new PR and deploy `main` again. Database grants do not repair
 the URL constructor bug in the old HTML.
@@ -84,3 +84,11 @@ quality target. Continue authored character refinement after this gate passes.
 - Version acceptance is monotonic, preventing late fetch responses from rolling
   score or turn backwards. Sudden death waits for an equal number of attempts.
 - Physical iPhone Safari and GPU testing remain for the owner after deployment.
+
+## Verified public deployment
+
+PR #1 merged as `c3567aff87ce54adfa251895cecc2247c4d4b705`. Pages build
+reports `built` for that commit. The public URL passed two independent sessions
+with polling disabled and both Realtime channels joined. Recovery is additionally
+verified at `backup/2d-compatible` (`068baf5`), keeping the 2D pitch and required
+connection/rule fixes. The exact original branch is still preserved separately.
