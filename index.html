@@ -1,1 +1,265 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Bé Bum Penalty</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#092c2b;color:white;font-family:system-ui;text-align:center}
+header{background:#123b48;padding:12px}
+h2{margin:5px}
+button{border:0;border-radius:12px;padding:12px 16px;margin:5px;background:#ffe15a;color:#173a38;font-weight:800}
+#field{display:block;width:min(100vw,540px);height:55vh;min-height:300px;max-height:520px;margin:auto;touch-action:none;border:3px solid white;border-radius:12px;background:#218c51}
+#msg{min-height:55px;padding:12px;font-weight:700;font-size:17px}
+#shop{display:none;position:fixed;inset:0;background:#0d3335;overflow:auto;padding:15px;z-index:2}
+.item{background:#1a5051;border-radius:14px;padding:10px;margin:8px}
+#gift{display:none;position:fixed;inset:0;background:#000c;z-index:3;align-items:center;justify-content:center}
+#gift>div{background:#164c51;border:3px solid gold;border-radius:20px;padding:25px;width:90%}
+</style>
+</head>
+<body>
+<header>
+<h2>⚽ BÉ BUM PENALTY</h2>
+<div id="score"></div>
+<div id="money"></div>
+</header>
+
+<canvas id="field"></canvas>
+<div id="msg"></div>
+<button onclick="openShop()">🛍️ Cửa hàng</button>
+<button onclick="newMatch()">🔄 Trận mới</button>
+
+<div id="shop">
+<h2>🛍️ CỬA HÀNG BÉ BUM</h2>
+<p id="balance"></p>
+<div id="items"></div>
+<button onclick="shop.style.display='none'">Đóng</button>
+</div>
+
+<div id="gift">
+<div>
+<h1>🎁 QUÀ BẤT NGỜ</h1>
+<p id="prize"></p>
+<button onclick="gift.style.display='none';newMatch()">Nhận quà & chơi tiếp</button>
+</div>
+</div>
+
+<script>
+const c=document.getElementById('field');
+const x=c.getContext('2d');
+const score=document.getElementById('score');
+const money=document.getElementById('money');
+const msg=document.getElementById('msg');
+const shop=document.getElementById('shop');
+const gift=document.getElementById('gift');
+const key='bebum_penalty_v1';
+
+let save;
+try {
+ save=JSON.parse(localStorage.getItem(key))||{};
+} catch(e){save={}}
+save.coins=Number(save.coins??100);
+save.owned=Array.isArray(save.owned)?save.owned:[];
+save.wins=Array.isArray(save.wins)?save.wins:[0,0];
+
+const products=[
+['👕','Áo sao vàng',80],
+['🩳','Quần xanh',60],
+['🧤','Găng tay vàng',120],
+['🧢','Nón vô địch',100],
+['👟','Giày tia chớp',180],
+['⚽','Bóng cầu vồng',200],
+['🕶️','Kính ngầu',90],
+['👑','Vương miện',250],
+['🔥','Bóng lửa',300],
+['🥅','Găng siêu nhân',220],
+['🎽','Áo đội tuyển',160],
+['🥾','Giày vàng',280]
+];
+
+function persist(){
+ try{localStorage.setItem(key,JSON.stringify(save))}catch(e){}
+ money.textContent='🪙 '+save.coins+' Xu Bum | Thắng: Ba '+save.wins[0]+' · Bum '+save.wins[1];
+}
+
+let shots=[0,0],goals=[0,0],phase='kick';
+let ball=null,aim=null,drag=null,locked=false;
+let matchId=0;
+
+function player(){
+ return shots[0]===shots[1]?0:1;
+}
+function owner(){
+ return player()===0?'BA':'BUM';
+}
+function resize(){
+ c.width=c.clientWidth*devicePixelRatio;
+ c.height=c.clientHeight*devicePixelRatio;
+ draw();
+}
+window.addEventListener('resize',resize);
+
+function update(){
+ score.textContent='👨 BA '+goals[0]+' : '+goals[1]+' 👦 BUM | Lượt '+(shots[0]+shots[1]+1);
+ msg.textContent=phase==='kick'
+ ?owner()+' SÚT: Vuốt bóng lên khung thành'
+ :(player()===0?'BUM':'BA')+' BẮT: Chạm vị trí muốn bay người';
+ persist();
+ draw();
+}
+function newMatch(){
+ matchId++;
+ shots=[0,0];goals=[0,0];
+ phase='kick';ball=null;aim=null;drag=null;locked=false;
+ update();
+}
+function line(a,b,d,e){
+ x.beginPath();x.moveTo(a,b);x.lineTo(d,e);x.stroke();
+}
+function draw(){
+ const w=c.width,h=c.height;
+ x.clearRect(0,0,w,h);
+ x.fillStyle='#7ac5f8';x.fillRect(0,0,w,h*.34);
+ x.fillStyle='#259a55';x.fillRect(0,h*.34,w,h);
+ for(let i=0;i<5;i++){
+  x.fillStyle=i%2?'#278c50':'#32a65a';
+  x.fillRect(0,h*(.35+i*.13),w,h*.13);
+ }
+ x.fillStyle='#fff';
+ x.fillRect(w*.16,h*.25,w*.68,h*.32);
+ x.fillStyle='#14482e';
+ x.fillRect(w*.18,h*.27,w*.64,h*.28);
+ x.strokeStyle='#ddd';
+ x.lineWidth=2*devicePixelRatio;
+ for(let i=1;i<7;i++)
+  line(w*(.18+i*.64/7),h*.27,w*(.18+i*.64/7),h*.55);
+ for(let i=1;i<4;i++)
+  line(w*.18,h*(.27+i*.28/4),w*.82,h*(.27+i*.28/4));
+ x.textAlign='center';
+ x.font=w*.11+'px system-ui';
+ x.fillText('🧤',w*(aim===null?.5:aim),h*.5);
+ x.font=w*.13+'px system-ui';
+ x.fillText('⚽',w*(ball===null?.5:ball),h*(phase==='kick'?.82:.42));
+ x.fillStyle='white';
+ x.font=w*.045+'px system-ui';
+ x.fillText(phase==='kick'?'VUỐT ĐỂ SÚT':'CHẠM ĐỂ BẮT',w*.5,h*.94);
+ if(drag){
+  x.strokeStyle='yellow';
+  x.lineWidth=5*devicePixelRatio;
+  line(drag[0],drag[1],drag[2],drag[3]);
+ }
+}
+function pos(e){
+ const r=c.getBoundingClientRect();
+ return [(e.clientX-r.left)*c.width/r.width,(e.clientY-r.top)*c.height/r.height];
+}
+c.addEventListener('pointerdown',e=>{
+ if(locked)return;
+ const p=pos(e);
+ if(phase==='kick'){
+  drag=[c.width*.5,c.height*.82,p[0],p[1]];
+  c.setPointerCapture(e.pointerId);
+ }else if(phase==='save'){
+  aim=Math.max(.2,Math.min(.8,p[0]/c.width));
+  resolve();
+ }
+ draw();
+});
+c.addEventListener('pointermove',e=>{
+ if(drag){
+  let p=pos(e);
+  drag[2]=p[0];drag[3]=p[1];
+  draw();
+ }
+});
+c.addEventListener('pointerup',e=>{
+ if(!drag)return;
+ let p=pos(e);
+ let dx=(p[0]-drag[0])/c.width;
+ let dy=(drag[1]-p[1])/c.height;
+ drag=null;
+ if(dy<.06){
+  msg.textContent='Vuốt bóng lên phía khung thành nhé!';
+  draw();return;
+ }
+ ball=Math.max(.2,Math.min(.8,.5+dx*1.5));
+ aim=null;phase='save';update();
+});
+function resolve(){
+ if(locked)return;
+ locked=true;
+ const miss=Math.random()<.12;
+ const saved=!miss&&Math.abs(ball-aim)<.14;
+ const goal=!miss&&!saved;
+ const p=player();
+ shots[p]++;
+ if(goal)goals[p]++;
+ phase='result';
+ msg.textContent=miss?'😅 SÚT RA NGOÀI!'
+ :saved?'🧤 CỨU THUA XUẤT SẮC!':'⚽ VÀOOOO!';
+ draw();
+ const id=matchId;
+ setTimeout(()=>{
+  if(id!==matchId)return;
+  if(done()){finish();return}
+  phase='kick';ball=null;aim=null;locked=false;update();
+ },1300);
+}
+function done(){
+ let a=shots[0],b=shots[1],ga=goals[0],gb=goals[1];
+ if(a<=5&&b<=5){
+  if(ga>gb+(5-b)||gb>ga+(5-a))return true;
+  if(a===5&&b===5&&ga!==gb)return true;
+  return false;
+ }
+ return a===b&&ga!==gb;
+}
+function finish(){
+ const winner=goals[0]>goals[1]?0:1;
+ save.wins[winner]++;
+ const bonus=80+Math.floor(Math.random()*71);
+ save.coins+=bonus;
+ let extra='';
+ if(Math.random()<.35){
+  const i=Math.floor(Math.random()*products.length);
+  if(!save.owned.includes(i)){
+   save.owned.push(i);
+   extra=' + '+products[i][1];
+  }
+ }
+ persist();
+ document.getElementById('prize').textContent=
+ (winner===0?'👨 BA':'👦 BUM')+
+ ' CHIẾN THẮNG! 🏆 Nhận '+bonus+' Xu Bum'+extra;
+ gift.style.display='flex';
+}
+function openShop(){
+ shop.style.display='block';
+ renderShop();
+}
+function renderShop(){
+ document.getElementById('balance').textContent='Bạn có '+save.coins+' Xu Bum';
+ document.getElementById('items').innerHTML=products.map((p,i)=>
+ '<div class="item">'+p[0]+' <b>'+p[1]+'</b> · '+p[2]+
+ ' Xu <button onclick="buy('+i+')">'+
+ (save.owned.includes(i)?'Đã sở hữu':'Mua')+
+ '</button></div>'
+ ).join('');
+}
+function buy(i){
+ if(save.owned.includes(i))return;
+ if(save.coins<products[i][2]){
+  alert('Chưa đủ Xu Bum!');return;
+ }
+ save.coins-=products[i][2];
+ save.owned.push(i);
+ persist();renderShop();
+}
+resize();
+newMatch();
+</script>
+</body>
+</html>
+
