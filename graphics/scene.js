@@ -1,5 +1,6 @@
 import * as THREE from '../vendor/three.module.js';
 import { createCharacter, poseCharacter } from './characters.js';
+import { createStadium } from './stadium.js';
 
 const host = document.querySelector('.goal');
 let renderer;
@@ -20,14 +21,16 @@ if (renderer) {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x99d9f5);
   scene.fog = new THREE.Fog(0x99d9f5, 18, 45);
-  const camera = new THREE.PerspectiveCamera(42, 1, .1, 60);
-  camera.position.set(5.1, 3.6, 9.5); camera.lookAt(0, 1, 0);
+  const camera = new THREE.PerspectiveCamera(38, 1, .1, 60);
+  camera.position.set(4.4, 2.9, 8.3); camera.lookAt(0, 1.05, -.2);
+  const stadium = createStadium(scene);
   scene.add(new THREE.HemisphereLight(0xe2f5ff, 0x4d7953, 2.4));
   const sun = new THREE.DirectionalLight(0xffefd4, 3.2);
   sun.position.set(-4, 8, 5); sun.castShadow = true;
   sun.shadow.mapSize.set(1024, 1024);
   Object.assign(sun.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9 });
   sun.shadow.normalBias = .03; scene.add(sun);
+  const rim = new THREE.DirectionalLight(0xb7dfff, .9);rim.position.set(5,3,-4);scene.add(rim);
   function box(size, position, color) {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(...size), new THREE.MeshStandardMaterial({ color, roughness: .8 }));
     mesh.position.set(...position); mesh.receiveShadow = true; mesh.castShadow = true; scene.add(mesh); return mesh;
@@ -68,13 +71,19 @@ if (renderer) {
     const shooting = (state?.turn || 0) % 2 === 0 ? 'ba' : 'bum';
     const elapsed = now - start;
     const active = state?.stage === 'result';
-    const t = active ? (reducedMotion ? 1 : THREE.MathUtils.clamp((elapsed - .2) / .85, 0, 1)) : 0;
+    const kickProgress = active ? THREE.MathUtils.clamp(elapsed / 1.25, 0, 1) : 0;
+    const t = active ? (reducedMotion ? 1 : THREE.MathUtils.clamp((elapsed - .45) / .85, 0, 1)) : 0;
     for (const [id, character] of Object.entries(characters)) {
       const isKeeper = character.userData.preset.keeper;
       character.visible = id === `${shooting}-player` || id === `${shooting === 'ba' ? 'bum' : 'ba'}-keeper`;
-      character.position.set(isKeeper ? 0 : -.7, 0, isKeeper ? -2.05 : 2.2);
+      const approach = active ? THREE.MathUtils.clamp(elapsed / .4, 0, 1) : 0;
+      character.position.set(isKeeper ? 0 : -.6 + .755 * approach, 0, isKeeper ? -2.05 : 2.4 - .2 * approach);
       character.rotation.set(0, isKeeper ? 0 : Math.PI, 0);
-      poseCharacter(character, reducedMotion ? 0 : now, active ? (isKeeper ? 'save' : 'kick') : 'idle', t);
+      const goal = state?.shot !== state?.dive;
+      const celebrate = active && elapsed > 1.55 && (isKeeper ? !goal : goal);
+      const finished = state?.stage === 'finished' && character.userData.preset.person === state.winner;
+      poseCharacter(character, reducedMotion ? 0 : now, celebrate || finished ? 'celebrate' : active ? (isKeeper ? 'save' : 'kick') : 'idle', isKeeper ? t : kickProgress);
+      if(!isKeeper && (celebrate || finished))character.rotation.y = Math.PI - THREE.MathUtils.clamp((elapsed-1.55)/.6,0,1)*Math.PI*.85;
       if (isKeeper && active) {
         const target = targets[state.dive] || targets[1];
         character.position.x = target[0] * t * .85;
@@ -84,8 +93,10 @@ if (renderer) {
     }
     const target = targets[state?.shot] || targets[1];
     const saved = state?.shot === state?.dive;
-    ball.position.set(target[0] * t, .18 + (target[1] - .18) * t + Math.sin(t * Math.PI) * .5, 2 - (saved ? 3.8 : 5) * t);
+    ball.position.set(target[0] * t, .18 + (target[1] - .18) * t + Math.sin(t * Math.PI) * .5, 1.65 - (saved ? 3.45 : 4.65) * t);
+    if(active && elapsed > 1.6) for(const c of Object.values(characters)) if(c.visible && !reducedMotion && (c.userData.preset.keeper ? saved : !saved)) c.position.y += Math.abs(Math.sin((elapsed-1.6)*6))*.12;
     ball.rotation.x = t * 12; ball.rotation.z = t * 5;
+    stadium.update(reducedMotion ? 0 : now);
     renderer.render(scene, camera);
   });
   host.dataset.graphics = 'ready';
