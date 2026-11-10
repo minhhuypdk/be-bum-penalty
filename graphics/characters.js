@@ -57,6 +57,16 @@ function curveMesh(points, radius, color, parent, taper=true) {
   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setIndex(indices);g.computeVertexNormals();
   const mesh=new THREE.Mesh(g,mat(color,.52));mesh.castShadow=true;parent.add(mesh);return mesh;
 }
+let fabricBump;
+function cloth(color){
+ const key=`cloth:${color}`;if(materialCache.has(key))return materialCache.get(key);
+ if(!fabricBump){const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;const ctx=canvas.getContext('2d');
+  ctx.fillStyle='#808080';ctx.fillRect(0,0,64,64);
+  for(let i=0;i<64;i+=4){ctx.fillStyle='#969696';ctx.fillRect(i,0,1,64);ctx.fillStyle='#686868';ctx.fillRect(0,i,64,1);}
+  fabricBump=new THREE.CanvasTexture(canvas);fabricBump.wrapS=fabricBump.wrapT=THREE.RepeatWrapping;fabricBump.repeat.set(5,6);
+ }
+ const surface=new THREE.MeshPhysicalMaterial({color,roughness:.88,bumpMap:fabricBump,bumpScale:.006,sheen:.35,sheenRoughness:.8,sheenColor:0xfff4e2});materialCache.set(key,surface);return surface;
+}
 const labels=new Map();
 function labelTexture(person, back=false) {
   const key=`${person}:${back}`;if(labels.has(key))return labels.get(key);
@@ -92,7 +102,8 @@ export function createCharacter(id) {
   const root=new THREE.Group();root.name=id;
   const skin=child?0xf4bc91:0xe3a579, hair=child?0x32271f:0x332821;
   function mesh(parent,geometry,color,position=[0,0,0],scale=[1,1,1],roughness=.6) {
-    const m=new THREE.Mesh(geometry,mat(color,roughness));m.position.set(...position);m.scale.set(...scale);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;
+    const surface=color===preset.shirt||color===0x193653?cloth(color):mat(color,roughness);
+    const m=new THREE.Mesh(geometry,surface);m.position.set(...position);m.scale.set(...scale);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;
   }
   const oval=(p,c,pos,scale,r)=>mesh(p,sphere,c,pos,scale,r);
   const shirt=mesh(root,contour([[.73,.01,.01],[.75,.25,.19],[.88,.29,.205],[1.08,.315,.21],[1.27,.36,.19],[1.36,.32,.17],[1.42,.17,.14],[1.44,.10,.10]]),preset.shirt);

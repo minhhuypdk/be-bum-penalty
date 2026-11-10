@@ -2,7 +2,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const base=process.env.GAME_URL||'http://127.0.0.1:4180/';
 (async()=>{
- const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const browser=await chromium.launch({executablePath:require('./browser.cjs').executablePath,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  try {
   const page=await browser.newPage({viewport:{width:430,height:900},reducedMotion:'reduce'}), errors=[];
   page.on('pageerror',e=>errors.push(e.message));
@@ -21,7 +21,7 @@ const base=process.env.GAME_URL||'http://127.0.0.1:4180/';
   assert.equal(contracts.length,4);assert(contracts.every(c=>c.finite&&c.triangles>10000&&c.openEye>.9&&c.leg<-.5&&c.arm<-1));
   for(const id of ['ba-player','bum-player','ba-keeper','bum-keeper']){
    await page.selectOption('#character',id);await page.waitForTimeout(100);
-   await page.screenshot({path:`tests/${id}-v2.png`});
+   await page.screenshot({path:`${process.env.ARTIFACT_DIR||'tests'}/${id}-v2.png`});
   }
   for(const pose of ['kick','save','celebrate']){await page.selectOption('#pose',pose);await page.waitForTimeout(100);}
   assert.deepEqual(errors,[]);console.log('PASS: four continuous-surface characters, finite geometry, articulation, reduced motion, mobile review screenshots.',JSON.stringify(contracts));

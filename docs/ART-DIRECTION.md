@@ -4,6 +4,7 @@ Implemented four variants with authored, smooth contour topology for cheeks,
 jaw, cranium, tailored shirt, shorts and boots. BA has swept hair and a mustache;
 BUM has softer proportions, tousled hair and a smaller silhouette. Both have
 irises, pupils, catchlights, blink motion, eyebrows, nose, smile and ears.
+Woven bump detail and cloth sheen add material separation.
 Named/numbered jerseys, piping, collars, laces, gloves with fingers and wrist
 bands distinguish the four kits. Elbows and knees extend the original limb rig.
 The original model source is retained as `graphics/characters-v1.js`.
