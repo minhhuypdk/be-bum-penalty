@@ -7,7 +7,7 @@ Old version: `b9e188fd1a51dcec499ca3f0f8c0bb067fb1ba9f`.
 Remote recovery branch: `backup/pre-3d-b9e188f`.
 Original 3D commit retained: `b968f6590724bc4846a3b113a1ce05c2670ae5b0`.
 
-## Blocking issue found before release
+## Issues found and repaired before release
 
 With the current Supabase SDK, the original top-level `const URL` shadows the
 browser URL constructor. Rename it to `SUPABASE_URL` before creating the client.
@@ -16,7 +16,7 @@ This fix does not change the endpoint or the game protocol.
 After that fix, a live request to the game's table fails with HTTP 401,
 Postgres code `42501`, and a hint to grant SELECT to `anon`.
 The game uses the publishable key without login, so its database role is `anon`.
-No multiplayer success can be claimed until this is repaired and live tests pass.
+The owner granted SELECT/INSERT/UPDATE to anon. Live tests now pass.
 
 Project owner: in Supabase SQL Editor for `zzphvbedtxbhajkpavqp`, run:
 
@@ -45,8 +45,8 @@ WHERE schemaname = 'public' AND tablename = 'bebum_penalty_rooms';
   Realtime connectivity.
 - `node tests/multiplayer.cjs`: live integration against a unique `graphics-test-*`
   room. Requires policies permitting that test room. Never accesses room `ba-bum`.
-  Cleanup attempts DELETE only for the room it created; DELETE may be denied by
-  existing privileges. If so, the owner can remove that named test row in Dashboard.
+  Live tests retain their own test row and release owned roles; no DELETE privilege
+  is needed. Existing family data is never changed.
 - `GAME_URL=https://minhhuypdk.github.io/be-bum-penalty/ node tests/multiplayer.cjs`
   repeats the integration against the deployed assets after release.
 
@@ -68,12 +68,19 @@ other; check goal/save, alternating roles, synchronized scores and next turn.
 The procedural character foundation is a test asset, not the final cinematic
 quality target. Continue authored character refinement after this gate passes.
 
-## Results for this release attempt
+## Verified results before deployment
 
 - Graphics smoke test: PASS in Chromium/SwiftShader at 390×844.
 - Two-session regression with mock REST and real Supabase SDK: PASS for
   alternating roles, goal/save, score synchronization, winner, one-time reward
   after reload, restart and leaving. No page errors.
-- Live Supabase: BLOCKED by table privileges (HTTP 401, code 42501). No test
-  room was created because the initial SELECT failed.
-- Pages deployment and PR merge: NOT performed; current site remains on main.
+- Live Supabase: PASS with two independent sessions; both channels joined.
+- Strict Realtime-only test with 2500ms polling disabled: PASS through six turns,
+  winner, reward after reload, restart and leaving. No page errors.
+- Rules: PASS for sudden-death fairness, rejecting stale room versions, rejecting
+  invalid and duplicate choices, and checking session ownership.
+- Test rooms retained: `graphics-test-1794323311365` (first run) and
+  `graphics-test-1794323490108` (strict Realtime run). No pre-existing data deleted.
+- Version acceptance is monotonic, preventing late fetch responses from rolling
+  score or turn backwards. Sudden death waits for an equal number of attempts.
+- Physical iPhone Safari and GPU testing remain for the owner after deployment.

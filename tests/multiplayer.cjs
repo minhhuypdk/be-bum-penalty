@@ -1,10 +1,11 @@
-// Live integration test: only a unique test room is created and deleted.
+// Live integration test: creates a unique test room; retains it and releases owned roles.
 const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const { execFileSync } = require('node:child_process');
 const base = process.env.GAME_URL || 'http://127.0.0.1:4173/';
 const testRoom = `graphics-test-${Date.now()}`;
+const realtimeOnly = process.env.REQUIRE_REALTIME === '1';
 const errors = [];
 const mock = process.env.MOCK_SUPABASE === '1';
 let stored = null, created = false;
@@ -15,6 +16,7 @@ let browser, pages = [];
     proxy: process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PROXY, bypass: '127.0.0.1,localhost' } : undefined });
   for (let i = 0; i < 2; i++) {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    if(realtimeOnly) await context.addInitScript(() => { const original = window.setInterval; window.setInterval = (fn, delay, ...args) => delay === 2500 ? 0 : original(fn, delay, ...args); });
     const page = await context.newPage(); pages.push(page);
     page.on('pageerror', e => errors.push(e.message));
     await page.route('**/supabase.min.js', r => r.fulfill({ contentType: 'text/javascript', body: fs.readFileSync('/tmp/bebum-supabase.min.js', 'utf8') + (mock ? `;const originalCreateClient=window.supabase.createClient;window.supabase.createClient=(...args)=>{const c=originalCreateClient(...args);c.channel=()=>{const channel={state:'mock',on:()=>channel,subscribe:()=>channel};return channel;};return c;};` : '') }));
@@ -55,6 +57,7 @@ let browser, pages = [];
     await page.waitForFunction(() => typeof room !== 'undefined' && !!room, null, { timeout: 25000 });
   }
   const [ba, bum] = pages;
+  if(realtimeOnly) for(const p of pages) await p.waitForFunction(() => channel?.state === 'joined');
   await ba.getByRole('button', { name: '👨 BA', exact: true }).click();
   await bum.getByRole('button', { name: '👦 BUM', exact: true }).click();
   for (const p of pages) {
@@ -83,9 +86,9 @@ let browser, pages = [];
   await ba.waitForFunction(() => !room.state.players.bum);
   const realtime = await Promise.all(pages.map(p => p.evaluate(() => channel?.state)));
   assert.deepEqual(errors, []);
-  console.log(JSON.stringify({ result: 'PASS', base, testRoom, transport: mock ? 'mock REST with real Supabase SDK' : 'live Supabase', checks: ['two independent sessions', 'roles alternate', 'goal/save', 'scores synchronized', 'match winner', 'reward once after reload', 'restart', 'leave'], realtime, errors }));
+  console.log(JSON.stringify({ result: 'PASS', base, testRoom, transport: mock ? 'mock REST with real Supabase SDK' : 'live Supabase', realtimeOnly, checks: ['two independent sessions', 'roles alternate', 'goal/save', 'scores synchronized', 'match winner', 'reward once after reload', 'restart', 'leave'], realtime, errors }));
 })().catch(async e => { console.error(e, errors); if(pages[0]) console.error(await pages[0].locator('#status').textContent()); process.exitCode = 1; }).finally(async () => {
-  if (pages[0] && created) {
+  if (pages[0] && created && mock) {
     try {
       const result = await pages[0].evaluate(async id => {
         const { error, data } = await client.from('bebum_penalty_rooms').delete().eq('room_id', id).select('room_id');
@@ -94,5 +97,9 @@ let browser, pages = [];
       console.log('Test room cleanup:', JSON.stringify(result));
     } catch (e) { console.error('Cleanup failed:', e.message); }
   }
+  if(created && !mock) for(const p of pages) {
+    try { await p.evaluate(async () => { const r=role; if(!r)return; role=null; await mutate(s=>{if(s.players[r]===token){s.players[r]=null;return true}return false}); }); } catch {}
+  }
+  if(created && !mock) console.log('Retained test row (no deletion):', testRoom);
   await browser?.close();
 });
