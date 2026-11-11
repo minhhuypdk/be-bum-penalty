@@ -44,11 +44,12 @@ function setupRecord(id,model,asset=null){
  centered.position.set(-center.x,-box.min.y-pivot,-center.z);centered.add(model);rig.position.y=pivot;rig.add(centered);turntable.add(rig);rig.visible=false;
  return{id,model,asset,rig,centered,height:size.y,width:size.x,depth:size.z,pivot};
 }
-function getRecord(id){if(state.version==='snow'&&candidates.has(state.lod))return candidates.get(state.lod);if(state.version==='local'&&overrides.has(id))return overrides.get(id);if(!records.has(id))records.set(id,setupRecord(id,createCharacter(id,{detail:'showcase'})));return records.get(id)}
+const candidateKey=(version=state.version,lod=state.lod)=>version+':'+lod;
+function getRecord(id){if(['snow','bum07'].includes(state.version)&&candidates.has(candidateKey()))return candidates.get(candidateKey());if(state.version==='local'&&overrides.has(id))return overrides.get(id);if(!records.has(id))records.set(id,setupRecord(id,createCharacter(id,{detail:'showcase'})));return records.get(id)}
 function headTarget(record,out){
  if(record.model.userData.head)return record.model.userData.head.getWorldPosition(out).add(new THREE.Vector3(0,record.height*.018,0));
  let head=null;record.model.traverse(p=>{if(!head&&/(^head$|^def.head$|mixamorighead|bip.*head)/i.test(p.name))head=p});
- return head?head.getWorldPosition(out):record.rig.localToWorld(out.set(0,record.height*.32,0));
+ return head?head.getWorldPosition(out).add(new THREE.Vector3(0,state.version==='bum07'?record.height*.10:0,0)):record.rig.localToWorld(out.set(0,record.height*.32,0));
 }
 function getTarget(){
  active.rig.updateWorldMatrix(true,true);
@@ -73,40 +74,43 @@ function refreshMotionOptions(){
  for(const option of $('pose').options){option.disabled=!!active.asset&&!active.asset.available.includes(option.value);option.textContent=(option.index+1).toString().padStart(2,'0')+' · '+CLIPS[option.value].name+(option.disabled?' (chưa có clip)':'')}
  if(active.asset&&!active.asset.available.includes(state.action)){state.action=active.asset.available[0]||'idle';$('pose').value=state.action}
 }
-function selectCharacter(id){
- if(!presets[id])return;cancelBenchmark('Đã đổi nhân vật; hãy đo lại.');if(active)active.rig.visible=false;
+function selectCharacter(id,{fromVersion=false}={}){
+ if(!presets[id])return;if(!fromVersion)++assetLoadGeneration;cancelBenchmark('Đã đổi nhân vật; hãy đo lại.');if(active)active.rig.visible=false;
+ if(state.version==='bum07'&&id!=='bum-player'){state.version='baseline';$('review-version').value='baseline';$('asset-lod').disabled=true;$('comparison-status').textContent='Bản C chỉ dành cho BUM tiền đạo số 07; đang xem bản A.';}
  if(state.version==='local'&&!overrides.has(id)){state.version='baseline';$('review-version').value='baseline';$('comparison-status').textContent='Nhân vật này chưa có GLB cục bộ; đang xem bản A.';}
  state.character=id;state.time=0;active=getRecord(id);active.rig.visible=true;ball.visible=false;
- $('character').value=id;const p=state.version==='snow'?{person:'SNOW',number:'CC-BY',role:'ASSET NỀN · CHƯA PHẢI BA/BUM'}:presets[id];$('character-name').innerHTML=p.person+' <span>/ '+p.number+'</span>';$('role-label').textContent=p.role;
+ $('character').value=id;const p=state.version==='bum07'?{person:'BUM',number:'07 · C',role:'NGHIÊN CỨU TẠO HÌNH · CHƯA DUYỆT'}:state.version==='snow'?{person:'SNOW',number:'CC-BY',role:'ASSET NỀN · CHƯA PHẢI BA/BUM'}:presets[id];$('character-name').innerHTML=p.person+' <span>/ '+p.number+'</span>';$('role-label').textContent=p.role;
  for(const button of document.querySelectorAll('[data-character]')){const selected=button.dataset.character===id;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected))}
- refreshMotionOptions();if(active.asset)active.asset.play(state.action);frame(state.focus);needsRender=true;
+ refreshMotionOptions();if(active.asset){active.asset.play(state.action);if(state.paused)active.asset.seek(0);}frame(state.focus);needsRender=true;
 }
 async function setVersion(version,lod=state.lod){
- if(!['baseline','snow','local'].includes(version)||!['portrait','mobile'].includes(lod))throw new Error('Lựa chọn asset không hợp lệ.');
+ if(!['baseline','snow','bum07','local'].includes(version)||!['portrait','mobile'].includes(lod))throw new Error('Lựa chọn asset không hợp lệ.');
  if(version==='local'&&!overrides.has(state.character))throw new Error('Chưa mở GLB cho nhân vật này.');
  const generation=++assetLoadGeneration;
- if(version==='snow'&&!candidates.has(lod)){
-  $('comparison-status').textContent='Đang tải asset Snow '+lod+'…';
+ const key=candidateKey(version,lod);
+ if(['snow','bum07'].includes(version)&&!candidates.has(key)){
+  $('comparison-status').textContent='Đang tải '+(version==='bum07'?'BUM 07 mới':'Snow')+' '+lod+'…';
   try{
-   const url=new URL('./models/snow/snow-review-'+lod+'.glb',import.meta.url),response=await fetch(url);
+   const file=version==='bum07'?'bum07/bum07-study-':'snow/snow-review-';
+   const url=new URL('./models/'+file+lod+'.glb',import.meta.url),response=await fetch(url);
    if(!response.ok)throw new Error('Tải asset lỗi HTTP '+response.status);
-   const blob=await response.blob(),asset=await loadLocalGLB(new File([blob],'snow-review-'+lod+'.glb'),2.2);
+   const blob=await response.blob(),asset=await loadLocalGLB(new File([blob],version+'-'+lod+'.glb'),2.2);
    // A stale request must never replace a later choice or leak GPU resources.
    if(generation!==assetLoadGeneration){asset.dispose();return;}
-   candidates.set(lod,setupRecord('snow',asset.object,asset));
+   candidates.set(key,setupRecord(version,asset.object,asset));
   }catch(error){if(generation===assetLoadGeneration){$('review-version').value=state.version;$('asset-lod').value=state.lod;$('comparison-status').textContent=error.message;}throw error;}
  }
  if(generation!==assetLoadGeneration)return;
- const time=state.time;state.version=version;state.lod=lod;
- $('review-version').value=version;$('asset-lod').value=lod;$('asset-lod').disabled=version!=='snow';
- selectCharacter(state.character);
- if(version==='snow')for(const [other,record]of candidates)if(other!==lod){turntable.remove(record.rig);record.asset.dispose();candidates.delete(other);}
- state.time=time;if(active.asset)active.asset.mixer.setTime(time);
- $('comparison-status').textContent=version==='snow'?'B: Snow Rig © Blender Foundation | studio.blender.org. Chỉ là asset nền; chưa có BA/BUM, áo đấu, găng hoặc clip thể thao.':version==='local'?'GLB cục bộ · chưa kiểm chứng quyền sử dụng.':'A: giữ nguyên bản tạo hình đang duyệt.';
+ const time=state.time;state.version=version;state.lod=lod;if(version==='bum07')state.character='bum-player';
+ $('review-version').value=version;$('asset-lod').value=lod;$('asset-lod').disabled=!['snow','bum07'].includes(version);
+ selectCharacter(state.character,{fromVersion:true});
+ if(['snow','bum07'].includes(version))for(const [other,record]of candidates)if(other!==key){turntable.remove(record.rig);record.asset.dispose();candidates.delete(other);}
+ state.time=time;if(active.asset)active.asset.seek(time);
+ $('comparison-status').textContent=version==='bum07'?'C: BUM 07 — mesh Blender mới, không dùng mesh Snow. Nghiên cứu kỹ thuật; chưa phải chất lượng điện ảnh hoặc rig/chuyển động hoàn chỉnh.':version==='snow'?'B: Snow Rig © Blender Foundation | studio.blender.org. Chỉ là asset nền; chưa có BA/BUM, áo đấu, găng hoặc clip thể thao.':version==='local'?'GLB cục bộ · chưa kiểm chứng quyền sử dụng.':'A: giữ nguyên bản tạo hình đang duyệt.';
  return reportBase();
 }
 function setAction(action){if(!CLIPS[action])return;if(active.asset&&!active.asset.available.includes(action)){toast('Mô hình này chưa có clip '+CLIPS[action].name);return}
- cancelBenchmark('Đã đổi chuyển động; hãy đo lại.');state.action=action;state.time=0;$('pose').value=action;active.asset?.play(action);needsRender=true;
+ cancelBenchmark('Đã đổi chuyển động; hãy đo lại.');state.action=action;state.time=0;$('pose').value=action;active.asset?.play(action);if(state.paused)active.asset?.seek(0);needsRender=true;
 }
 function setPaused(paused){state.paused=paused;$('pause').textContent=paused?'▶':'Ⅱ';$('pause').setAttribute('aria-pressed',String(paused));$('pause').setAttribute('aria-label',paused?'Phát chuyển động':'Tạm dừng chuyển động');needsRender=true;}
 function setQuality(quality){
@@ -116,7 +120,7 @@ function setQuality(quality){
 }
 function resize(){const width=host.clientWidth,height=host.clientHeight;if(!width||!height)return;renderer.setSize(width,height);camera.aspect=width/height;camera.updateProjectionMatrix();needsRender=true;}
 function gpuInfo(){const gl=renderer.getContext(),extension=gl.getExtension('WEBGL_debug_renderer_info');return extension?gl.getParameter(extension.UNMASKED_RENDERER_WEBGL):'Không có thông tin GPU công khai'}
-function reportBase(){renderer.render(scene,camera);const size=renderer.getDrawingBufferSize(new THREE.Vector2());return{character:state.character,action:state.action,source:state.version==='snow'?'Snow Rig — Blender Foundation CC-BY 4.0':active.asset?'local GLB':'BA/BUM authored procedural model',version:state.version,lod:state.version==='snow'?state.lod:null,quality:state.quality,focus:state.focus,paused:state.paused,viewport:{width:host.clientWidth,height:host.clientHeight},renderPixels:{width:size.x,height:size.y},devicePixelRatio,pixelRatio:renderer.getPixelRatio(),shadowMap:key.shadow.mapSize.x,userAgent:navigator.userAgent,gpu:gpuInfo(),triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,measuredOnPhysicalIPhone:/iPhone/.test(navigator.userAgent)&&!/(Headless|Playwright)/i.test(navigator.userAgent)?'user agent only; hardware not independently verified':false};}
+function reportBase(){renderer.render(scene,camera);const size=renderer.getDrawingBufferSize(new THREE.Vector2());return{character:state.character,action:state.action,source:state.version==='bum07'?'Original BUM07 Blender art study — not approved final':state.version==='snow'?'Snow Rig — Blender Foundation CC-BY 4.0':active.asset?'local GLB':'BA/BUM authored procedural model',version:state.version,lod:['snow','bum07'].includes(state.version)?state.lod:null,quality:state.quality,focus:state.focus,paused:state.paused,viewport:{width:host.clientWidth,height:host.clientHeight},renderPixels:{width:size.x,height:size.y},devicePixelRatio,pixelRatio:renderer.getPixelRatio(),shadowMap:key.shadow.mapSize.x,userAgent:navigator.userAgent,gpu:gpuInfo(),triangles:renderer.info.render.triangles,drawCalls:renderer.info.render.calls,measuredOnPhysicalIPhone:/iPhone/.test(navigator.userAgent)&&!/(Headless|Playwright)/i.test(navigator.userAgent)?'user agent only; hardware not independently verified':false};}
 function measure(seconds=8){
  if(benchmark)return Promise.reject(new Error('Đang có phép đo.'));if(document.hidden)return Promise.reject(new Error('Hãy mở tab để đo FPS.'));
  return new Promise((resolve,reject)=>{benchmark={start:performance.now(),warmup:1000,duration:seconds*1000,frames:[],last:0,resolve,reject,config:reportBase()};$('benchmark-status').textContent='Đang làm nóng rồi đo '+seconds+' giây…';needsRender=true;});
@@ -129,7 +133,7 @@ function tickBenchmark(now){
  const report={...b.config,measuredAt:new Date().toISOString(),durationSeconds:Number((ms/1000).toFixed(3)),renderedFrames:b.frames.length,averageFps:Number((b.frames.length*1000/ms).toFixed(2)),medianFrameMs:Number(percentile(.5).toFixed(2)),p95FrameMs:Number(percentile(.95).toFixed(2)),note:'FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone.'};
  benchmark=null;lastReport=report;$('performance-report').textContent=JSON.stringify(report,null,2);$('benchmark-status').textContent='Đã đo xong · '+report.averageFps+' FPS';b.resolve(report);
 }
-async function capture(download=true){renderer.render(scene,camera);let output=renderer.domElement;if(state.version==='snow'){const canvas=document.createElement('canvas');canvas.width=output.width;canvas.height=output.height;const context=canvas.getContext('2d');context.drawImage(output,0,0);const font=Math.max(10,Math.round(canvas.width/95));context.font=font+'px sans-serif';context.fillStyle='#ffffff';context.shadowColor='#000';context.shadowBlur=3;context.fillText('Snow Rig © Blender Foundation | studio.blender.org · CC-BY 4.0 · modified review',12,canvas.height-12);output=canvas;}const blob=await new Promise(resolve=>output.toBlob(resolve,'image/png'));if(!blob)throw new Error('Chưa xuất được render.');if(download){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`be-bum-${state.character}-${state.action}-${state.focus}.png`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);toast('Đã xuất ảnh render 3D.')}return blob;}
+async function capture(download=true){renderer.render(scene,camera);let output=renderer.domElement;if(['snow','bum07'].includes(state.version)){const canvas=document.createElement('canvas');canvas.width=output.width;canvas.height=output.height;const context=canvas.getContext('2d');context.drawImage(output,0,0);const font=Math.max(10,Math.round(canvas.width/95));context.font=font+'px sans-serif';context.fillStyle='#ffffff';context.shadowColor='#000';context.shadowBlur=3;context.fillText(state.version==='snow'?'Snow Rig © Blender Foundation | studio.blender.org · CC-BY 4.0 · modified review':'C · BUM 07 · ORIGINAL BLENDER STUDY · NOT APPROVED FINAL ART',12,canvas.height-12);output=canvas;}const blob=await new Promise(resolve=>output.toBlob(resolve,'image/png'));if(!blob)throw new Error('Chưa xuất được render.');if(download){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`be-bum-${state.character}-${state.action}-${state.focus}.png`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);toast('Đã xuất ảnh render 3D.')}return blob;}
 function animate(now){
  if(!previous)previous=now;const dt=Math.min(.25,(now-previous)/1000);previous=now;
  if(document.hidden||renderer.getContext().isContextLost()||!active)return;
@@ -137,7 +141,7 @@ function animate(now){
  if(active.asset){if(!state.paused)active.asset.mixer.update(dt);ball.visible=false;}else animateShowcase(active.model,active.rig,state.action,state.time,active.pivot,ball);
  if(state.autoRotate&&!state.paused){turntable.rotation.y+=dt*.23;needsRender=true;}
  updateFollowing();controls.update();
- const duration=CLIPS[state.action].duration;$('timeline').value=String(Math.floor((state.time%duration)/duration*1000));
+ const duration=active.asset?.clips[state.action]?.getClip().duration||CLIPS[state.action].duration;$('timeline').value=String(Math.floor((state.time%duration)/duration*1000));
  if(!state.paused||needsRender||benchmark){renderer.render(scene,camera);draws++;frameTimes.push(now);if(frameTimes.length>240)frameTimes.shift();tickBenchmark(now);needsRender=false;}
  if(now-lastFps>1000){const recent=frameTimes.filter(t=>t>=now-1000);$('live-fps').textContent=state.paused&&!benchmark?'TẠM DỪNG':recent.length+' FPS';lastFps=now;}
 }
@@ -149,7 +153,7 @@ async function importGLB(file){
 }
 function resetGLB(){const record=overrides.get(state.character);if(!record)return;turntable.remove(record.rig);record.asset.dispose();overrides.delete(state.character);state.version='baseline';$('review-version').value='baseline';selectCharacter(state.character);$('asset-status').textContent='Đã trở lại tạo hình BA/BUM.';}
 function bind(){
- $('review-version').onchange=e=>setVersion(e.target.value).catch(e=>{$('review-version').value=state.version;toast(e.message)});$('asset-lod').onchange=e=>setVersion('snow',e.target.value).catch(e=>toast(e.message));
+ $('review-version').onchange=e=>setVersion(e.target.value).catch(e=>{$('review-version').value=state.version;toast(e.message)});$('asset-lod').onchange=e=>setVersion(state.version,e.target.value).catch(e=>toast(e.message));
  $('character').onchange=e=>selectCharacter(e.target.value);for(const button of document.querySelectorAll('[data-character]'))button.onclick=()=>selectCharacter(button.dataset.character);
  $('pose').onchange=e=>setAction(e.target.value);$('pause').onclick=()=>setPaused(!state.paused);
  $('full-body').onclick=()=>frame('body');$('face').onclick=()=>frame('face');
@@ -157,7 +161,7 @@ function bind(){
  $('zoom-in').onclick=()=>zoom(.84);$('zoom-out').onclick=()=>zoom(1.19);
  $('rotate').onclick=()=>{state.autoRotate=!state.autoRotate;$('rotate').setAttribute('aria-pressed',String(state.autoRotate));$('rotate').textContent=state.autoRotate?'↻ Dừng xoay':'↻ Xoay 360°';needsRender=true;};
  $('quality').onchange=e=>setQuality(e.target.value);
- $('timeline').oninput=e=>{setPaused(true);state.time=Number(e.target.value)/1000*CLIPS[state.action].duration;if(active.asset)active.asset.mixer.setTime(state.time);needsRender=true;};
+ $('timeline').oninput=e=>{setPaused(true);state.time=Number(e.target.value)/1000*(active.asset?.clips[state.action]?.getClip().duration||CLIPS[state.action].duration);if(active.asset)active.asset.seek(state.time);needsRender=true;};
  $('capture').onclick=()=>capture().catch(e=>toast(e.message));
  $('performance').onclick=()=>{$('performance-dialog').showModal();$('performance-report').textContent='';measure().catch(e=>$('benchmark-status').textContent=e.message)};
  $('copy-performance').onclick=async()=>{if(!lastReport)return;try{await navigator.clipboard.writeText(JSON.stringify(lastReport,null,2));toast('Đã sao chép số đo FPS.')}catch{toast('Hãy chọn và sao chép nội dung báo cáo.')}};
@@ -182,5 +186,5 @@ try{
   getView(){return{angle:turntable.rotation.y,camera:camera.position.toArray(),target:controls.target.toArray(),version:state.version,lod:state.lod};},
   getModelSummary(){return{height:active.height,source:active.asset?'glb':'procedural',available:active.asset?active.asset.available:Object.keys(CLIPS),position:active.rig.position.toArray(),rotation:active.rig.rotation.toArray().slice(0,3),geometryFinite:(()=>{let finite=true;active.model.traverse(p=>{if(p.isMesh)for(const v of p.geometry.attributes.position.array)if(!Number.isFinite(v))finite=false;});return finite;})()};}
  };
- const params=new URLSearchParams(location.search);if(params.get('version')==='snow')setVersion('snow',params.get('lod')==='mobile'?'mobile':'portrait').catch(e=>toast(e.message));
+ const params=new URLSearchParams(location.search);if(['snow','bum07'].includes(params.get('version')))setVersion(params.get('version'),params.get('lod')==='mobile'?'mobile':'portrait').catch(e=>toast(e.message));
 }catch(error){$('loading').hidden=true;$('unavailable').hidden=false;$('unavailable').textContent='Không khởi tạo được phòng trưng bày: '+error.message;document.body.dataset.error=error.message;console.error(error);}

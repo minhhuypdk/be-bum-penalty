@@ -29,6 +29,7 @@ export async function loadLocalGLB(file,height=2.2){
  object.scale.multiplyScalar(height/size.y);
  return {object,mixer,clips,available:Object.keys(clips),name:file.name,
   play(action){if(current===clips[action])return;current?.fadeOut(.18);current=clips[action]||null;if(current)current.reset().setLoop(THREE.LoopRepeat,Infinity).fadeIn(.18).play();},
+  seek(time){mixer.stopAllAction();if(current)current.reset().stopFading().setEffectiveWeight(1).play();mixer.setTime(time);},
   dispose(){mixer.stopAllAction();mixer.uncacheRoot(object);object.traverse(p=>{if(p.isMesh){p.geometry.dispose();for(const m of Array.isArray(p.material)?p.material:[p.material]){for(const value of Object.values(m))if(value?.isTexture)value.dispose();m.dispose();}}});}
  };
 }

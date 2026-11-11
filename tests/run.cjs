@@ -23,7 +23,7 @@ server.listen(0,'127.0.0.1',async()=>{
  try{
   if(!fs.existsSync(sdk))execFileSync('curl',['-fLsS','--max-time','45','https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js','-o',sdk],{stdio:'inherit'});
   const env={GAME_URL:`http://127.0.0.1:${server.address().port}/`,ARTIFACT_DIR:artifacts,SUPABASE_SDK:sdk};
-  for(const test of ['auth-isolation.cjs','diagnostics.cjs','rules.cjs','graphics.cjs','characters.cjs','showcase.cjs','showcase-asset.cjs','audio.cjs'])await run(test,env);
+  for(const test of ['auth-isolation.cjs','diagnostics.cjs','rules.cjs','graphics.cjs','characters.cjs','showcase.cjs','showcase-asset.cjs','bum07.cjs','audio.cjs'])await run(test,env);
   await run('multiplayer.cjs',{...env,MOCK_SUPABASE:live?'0':'1',REQUIRE_REALTIME:live?'1':'0',CONCURRENT_ACTIONS:'1'});
   if(live)await run('session-lifecycle.cjs',env);
   console.log(`ALL CHECKS PASSED (${live?'live Supabase; isolated test row retained':'mock REST; no Supabase writes'}). Artifacts: ${artifacts}`);
