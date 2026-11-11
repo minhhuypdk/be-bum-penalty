@@ -1,0 +1,36 @@
+[
+  {
+    "lod": "portrait",
+    "bytes": 6443416,
+    "geometryRatio": 1,
+    "status": "original scripted Blender art study; not final child-film character",
+    "motions": [
+      "Idle",
+      "Run",
+      "Kick",
+      "Celebrate"
+    ],
+    "limits": [
+      "FK animation studies, no contact/IK/corrective polish",
+      "Facial morph/eyelid rig incomplete",
+      "Surface fields and sculpted shell are computational, not a professional hand-sculpt"
+    ]
+  },
+  {
+    "lod": "mobile",
+    "bytes": 4322496,
+    "geometryRatio": 0.55,
+    "status": "original scripted Blender art study; not final child-film character",
+    "motions": [
+      "Idle",
+      "Run",
+      "Kick",
+      "Celebrate"
+    ],
+    "limits": [
+      "FK animation studies, no contact/IK/corrective polish",
+      "Facial morph/eyelid rig incomplete",
+      "Surface fields and sculpted shell are computational, not a professional hand-sculpt"
+    ]
+  }
+]
