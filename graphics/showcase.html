@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101c2c"><meta name="description" content="Phòng trưng bày nhân vật 3D BA và BUM: xem toàn thân, cận mặt và năm chuyển động."><title>BÉ BUM · Character Showcase</title><link rel="stylesheet" href="./showcase.css"></head>
+<body>
+<div class="app">
+ <header class="masthead"><a class="brand" href="https://minhhuypdk.github.io/be-bum-penalty/" target="_blank" rel="noopener"><span class="brand-mark">B</span><span>BÉ BUM <small>PENALTY 3D</small></span></a><span class="edition">CHARACTER ATELIER <i>04 nhân vật</i></span><button id="capture" class="quiet">↓ <span>Chụp render</span></button></header>
+ <aside class="sidebar">
+  <div class="intro"><span class="eyebrow">GẶP GỠ ĐỘI NHÀ</span><h1>Nhỏ mà<br><em>đầy bản lĩnh.</em></h1><p>Bốn tạo hình. Một tinh thần đồng đội.<br>Khám phá từng góc nhìn và chuyển động.</p></div>
+  <label class="sr-only" for="character">Nhân vật</label><select id="character" class="sr-only"><option value="ba-player">BA · Cầu thủ sút phạt</option><option value="ba-keeper">BA · Thủ môn</option><option value="bum-player">BUM · Cầu thủ sút phạt</option><option value="bum-keeper">BUM · Thủ môn</option></select>
+  <div class="roster" role="group" aria-label="Chọn nhân vật">
+   <button class="person selected" data-character="ba-player" aria-pressed="true"><span class="portrait" data-portrait="ba-player">10</span><span><b>BA</b><small>Cầu thủ sút phạt</small></span><span class="number">01</span></button>
+   <button class="person" data-character="ba-keeper" aria-pressed="false"><span class="portrait" data-portrait="ba-keeper">10</span><span><b>BA</b><small>Thủ môn</small></span><span class="number">02</span></button>
+   <button class="person" data-character="bum-player" aria-pressed="false"><span class="portrait" data-portrait="bum-player">07</span><span><b>BUM</b><small>Cầu thủ sút phạt</small></span><span class="number">03</span></button>
+   <button class="person" data-character="bum-keeper" aria-pressed="false"><span class="portrait" data-portrait="bum-keeper">07</span><span><b>BUM</b><small>Thủ môn</small></span><span class="number">04</span></button>
+  </div>
+  <div class="side-note"><span class="dot"></span> Bản tạo hình đang duyệt <p>Chưa phải chất lượng điện ảnh cuối cùng.</p></div>
+ </aside>
+ <main class="stage-wrap">
+  <div class="stage-heading"><div><span id="role-label" class="eyebrow">CẦU THỦ SÚT PHẠT</span><h2 id="character-name">BA <span>/ 10</span></h2></div><span id="live-fps" class="fps" title="FPS dựng hình trên thiết bị hiện tại">— FPS</span></div>
+  <div id="stage" aria-label="Khung nhìn nhân vật 3D"><div id="loading" role="status"><span class="spinner"></span><p>Đang bật ánh đèn sân khấu…</p></div><div id="unavailable" hidden>Thiết bị chưa khởi tạo được WebGL 2. Hãy thử mở trong Safari phiên bản mới.</div></div>
+  <div class="view-tools" role="group" aria-label="Điều khiển khung nhìn"><button id="full-body" class="active" aria-pressed="true">Toàn thân</button><button id="face" aria-pressed="false">Cận khuôn mặt</button><span class="divider"></span><button id="zoom-in" aria-label="Phóng to">＋</button><button id="zoom-out" aria-label="Thu nhỏ">−</button><button id="rotate" aria-pressed="false">↻ Xoay 360°</button></div>
+  <p class="gesture-hint">Kéo để xoay · Hai ngón để phóng to</p>
+  <section class="motion-dock" aria-label="Chuyển động và chất lượng">
+   <div class="motion-main"><label for="pose">CHUYỂN ĐỘNG</label><div class="motion-row"><select id="pose"><option value="idle">01 · Đứng</option><option value="run">02 · Chạy</option><option value="kick">03 · Sút bóng</option><option value="save">04 · Bay người bắt bóng</option><option value="celebrate">05 · Ăn mừng</option></select><button id="pause" aria-label="Tạm dừng chuyển động" aria-pressed="false">Ⅱ</button></div><input id="timeline" type="range" min="0" max="1000" value="0" aria-label="Tiến trình chuyển động"></div>
+   <div class="quality-control"><label for="quality">CHẤT LƯỢNG</label><select id="quality"><option value="cinema">Điện ảnh</option><option value="high">Cao</option></select></div>
+   <button id="performance" class="measure">Đo FPS <span>↗</span></button>
+  </section>
+ </main>
+ <footer><span>BA & BUM · CHƠI CÙNG NHAU, LỚN CÙNG NHAU.</span><button id="asset-open">Duyệt asset GLB</button></footer>
+</div>
+<dialog id="performance-dialog"><div class="dialog-header"><h2>FPS trên thiết bị này</h2><button data-close="performance-dialog" aria-label="Đóng báo cáo">×</button></div><p>Đo 8 giây sau khi làm nóng. Giữ nguyên nhân vật và thiết lập trong lúc đo. Không tự hạ chất lượng hình ảnh.</p><p id="benchmark-status" role="status"></p><pre id="performance-report"></pre><button id="copy-performance">Sao chép báo cáo</button></dialog>
+<dialog id="asset-dialog"><div class="dialog-header"><h2>Duyệt mô hình GLB</h2><button data-close="asset-dialog" aria-label="Đóng duyệt mô hình">×</button></div><p>Mở GLB có texture nhúng để xem trên nhân vật đang chọn. File chỉ được đọc trên thiết bị này, không tải lên máy chủ.</p><label class="file-button">Chọn GLB <input id="asset-file" type="file" accept=".glb,model/gltf-binary"></label><p id="asset-status" role="status"></p><p class="fine">Tên clip hỗ trợ: Idle, Run, Kick, Dive/Save, Celebrate/Victory. Clip còn thiếu sẽ được đánh dấu; không thay bằng hoạt ảnh giả.</p><button id="asset-reset">Về tạo hình BA/BUM</button></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="./showcase.js"></script>
+</body></html>

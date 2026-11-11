@@ -1,0 +1,550 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "id": "ba-player",
+      "action": "idle",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0874802777449324,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-player",
+      "action": "run",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0874802777449324,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-player",
+      "action": "kick",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0874802777449324,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-player",
+      "action": "save",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0874802777449324,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-player",
+      "action": "celebrate",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0874802777449324,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-keeper",
+      "action": "idle",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0839999964237212,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-keeper",
+      "action": "run",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0839999964237212,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-keeper",
+      "action": "kick",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0839999964237212,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-keeper",
+      "action": "save",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0839999964237212,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "ba-keeper",
+      "action": "celebrate",
+      "summary": {
+        "height": 2.1679999928474425,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          1.0839999964237212,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-player",
+      "action": "idle",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-player",
+      "action": "run",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-player",
+      "action": "kick",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-player",
+      "action": "save",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-player",
+      "action": "celebrate",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-keeper",
+      "action": "idle",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-keeper",
+      "action": "run",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-keeper",
+      "action": "kick",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-keeper",
+      "action": "save",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    },
+    {
+      "id": "bum-keeper",
+      "action": "celebrate",
+      "summary": {
+        "height": 1.9025749716854097,
+        "source": "procedural",
+        "available": [
+          "idle",
+          "run",
+          "kick",
+          "save",
+          "celebrate"
+        ],
+        "position": [
+          0,
+          0.9512874858427048,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "geometryFinite": true
+      }
+    }
+  ],
+  "metrics": {
+    "character": "bum-keeper",
+    "action": "idle",
+    "source": "BA/BUM authored procedural model",
+    "quality": "cinema",
+    "focus": "body",
+    "paused": true,
+    "viewport": {
+      "width": 1012,
+      "height": 666
+    },
+    "renderPixels": {
+      "width": 1012,
+      "height": 666
+    },
+    "devicePixelRatio": 1,
+    "pixelRatio": 1,
+    "shadowMap": 2048,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "triangles": 83208,
+    "drawCalls": 34,
+    "measuredOnPhysicalIPhone": false
+  },
+  "noSupabaseRequests": true
+}

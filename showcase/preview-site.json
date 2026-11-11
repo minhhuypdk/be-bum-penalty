@@ -1,0 +1,9 @@
+{
+  "project_id": "appgprj_6af3d07f899c819199a4af1ce54673c8",
+  "expected_origin": "https://be-bum-character-showcase.jovialmesa21.chatgpt.site",
+  "source_repository": "minhhuypdk/be-bum-penalty",
+  "source_branch": "graphics/cinematic-pass",
+  "entrypoint": "graphics/showcase.html",
+  "audience": "owner-private",
+  "status": "registered-not-yet-deployed"
+}

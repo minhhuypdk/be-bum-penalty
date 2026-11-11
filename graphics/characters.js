@@ -7,6 +7,7 @@ export const CHARACTER_PRESETS = Object.freeze({
   'bum-keeper': { person:'bum', keeper:true, shirt:0x8256ca, accent:0xfce5a1 },
 });
 const sphere = new THREE.SphereGeometry(1, 16, 12);
+const portraitSphere = new THREE.SphereGeometry(1, 40, 28);
 const materialCache = new Map();
 function mat(color, roughness=.6) {
   const key=`${color}:${roughness}`;
@@ -43,15 +44,16 @@ function contour(rings, segments=48) {
   return geometry;
 }
 function curveMesh(points, radius, color, parent, taper=true) {
+  const segments=parent.userData.highDetail?40:20,sides=parent.userData.highDetail?16:8,stride=sides+1;
   const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));
-  const frames=curve.computeFrenetFrames(20,false),positions=[],indices=[];
-  for(let i=0;i<=20;i++) {
-    const c=curve.getPointAt(i/20),r=radius*(taper ? .02+.98*Math.pow(Math.sin(Math.PI*i/20),.45) : 1);
-    for(let j=0;j<=8;j++) {
-      const a=j/8*Math.PI*2;
+  const frames=curve.computeFrenetFrames(segments,false),positions=[],indices=[];
+  for(let i=0;i<=segments;i++) {
+    const c=curve.getPointAt(i/segments),r=radius*(taper ? .02+.98*Math.pow(Math.sin(Math.PI*i/segments),.45) : 1);
+    for(let j=0;j<=sides;j++) {
+      const a=j/sides*Math.PI*2;
       const p=c.clone().addScaledVector(frames.normals[i],Math.cos(a)*r).addScaledVector(frames.binormals[i],Math.sin(a)*r);
       positions.push(p.x,p.y,p.z);
-      if(i&&j){const k=i*9+j;indices.push(k,k-1,k-9,k-9,k-1,k-10);}
+      if(i&&j){const k=i*stride+j;indices.push(k,k-1,k-stride,k-stride,k-1,k-stride-1);}
     }
   }
   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setIndex(indices);g.computeVertexNormals();
@@ -104,7 +106,8 @@ function mergeRigidParts(group) {
     const mesh=new THREE.Mesh(g,material);mesh.castShadow=true;mesh.receiveShadow=true;group.add(mesh);
   }
 }
-export function createCharacter(id) {
+export function createCharacter(id,{detail='game'}={}) {
+  const highDetail=detail==='showcase';
   const preset=CHARACTER_PRESETS[id];if(!preset)throw new Error(`Unknown character: ${id}`);
   const child=preset.person==='bum';
   const root=new THREE.Group();root.name=id;
@@ -114,7 +117,7 @@ export function createCharacter(id) {
     if(color===skin){surface.specularIntensity=.4;surface.clearcoat=.02;}
     const m=new THREE.Mesh(geometry,surface);m.position.set(...position);m.scale.set(...scale);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;
   }
-  const oval=(p,c,pos,scale,r)=>mesh(p,sphere,c,pos,scale,r);
+  const oval=(p,c,pos,scale,r)=>mesh(p,p.userData.highDetail?portraitSphere:sphere,c,pos,scale,r);
   const shirt=mesh(root,contour([[.73,.01,.01],[.75,.25,.19],[.88,.29,.205],[1.08,.315,.21],[1.27,.36,.19],[1.36,.32,.17],[1.42,.17,.14],[1.44,.10,.10]]),preset.shirt);
   // Woven panel seams follow the shirt rather than floating block decorations.
   for(const side of [-1,1]) curveMesh([[side*.25,.82,.14],[side*.285,1.02,.16],[side*.31,1.22,.14],[side*.19,1.39,.12]],.012,preset.accent,root,false);
@@ -127,9 +130,9 @@ export function createCharacter(id) {
   }
   oval(root,preset.accent,[-.19,1.28,.17],[.04,.05,.024],.4);
   for(const side of [-1,1]) mesh(root,contour([[.59,.09,.14],[.62,.15,.18],[.75,.16,.19],[.8,.14,.18]]),0x193653,[side*.155,0,0]);
-  const head=new THREE.Group();head.position.set(0,1.79,0);root.add(head);
+  const head=new THREE.Group();head.userData.highDetail=highDetail;head.position.set(0,1.79,0);root.add(head);
   const faceRings=[[-.36,.015,.02,.015],[-.33,.14,.14,.02],[-.25,.25,.21,.02],[-.14,.315,.25,.015],[0,.33,.28],[.16,.315,.265],[.29,.245,.22],[.36,.13,.12],[.38,.008,.008]];
-  const faceSegments=48,face=contour(faceRings,faceSegments),positions=face.attributes.position;
+  const faceSegments=highDetail?96:48,face=contour(faceRings,faceSegments),positions=face.attributes.position;
   for(let i=0;i<positions.count;i++){const x=positions.getX(i),y=positions.getY(i),z=positions.getZ(i);
     const cheek=Math.exp(-Math.pow((Math.abs(x)-.18)/.12,2)-Math.pow((y+.105)/.105,2));
     positions.setZ(i,z+.032*cheek*Math.pow(Math.max(0,z/.28),2));
@@ -142,19 +145,19 @@ export function createCharacter(id) {
     oval(head,skin,[side*.325,-.025,-.015],[.075,.11,.07]);
     oval(head,0xce886d,[side*.36,-.025,.035],[.028,.062,.024]);
     cheekTint(head,side,child);
-    const eye=new THREE.Group();eye.position.set(side*.124,.045,.258);head.add(eye);eyes.push(eye);
+    const eye=new THREE.Group();eye.userData.highDetail=highDetail;eye.position.set(side*.124,.045,.258);head.add(eye);eyes.push(eye);
     oval(eye,0xd69776,[0,0,-.005],[.103,.116,.035]);
     oval(eye,0xfff9ed,[0,.002,.014],[.09,.103,.033],.24);
     oval(eye,child?0x654b2e:0x41584f,[0,0,.044],[.051,.069,.018],.2);
     oval(eye,0x172329,[0,-.005,.058],[.028,.046,.012],.18);
     oval(eye,0xffffff,[-.019,.03,.069],[.015,.021,.006],.1);
     oval(eye,0xffffff,[.018,-.025,.068],[.006,.008,.004],.1);
-    const brow=new THREE.Group();brow.position.set(side*.13,.17,.26);head.add(brow);brows.push(brow);
+    const brow=new THREE.Group();brow.userData.highDetail=highDetail;brow.position.set(side*.13,.17,.26);head.add(brow);brows.push(brow);
     curveMesh([[side*.07,-.01,-.022],[0,.018,.012],[-side*.07,-.01,.009]],.016,hair,brow);
   }
   oval(head,skin,[0,-.025,.285],[.065,.09,.075]);
   oval(head,0xd88f6d,[0,-.063,.325],[.047,.029,.027]);
-  const mouth=new THREE.Group();mouth.position.set(0,-.185,.269);head.add(mouth);
+  const mouth=new THREE.Group();mouth.userData.highDetail=highDetail;mouth.position.set(0,-.185,.269);head.add(mouth);
   curveMesh([[-.105,.015,-.017],[-.065,-.019,.001],[0,-.032,.011],[.065,-.019,.001],[.105,.015,-.017]],.014,0x9b4b44,mouth,false);
   oval(mouth,0x813f3c,[0,0,0],[.081,.034,.014]);
   oval(mouth,0xfff8e6,[0,.015,.011],[.067,.013,.006]);
@@ -187,7 +190,7 @@ export function createCharacter(id) {
     joints[side<0?'leftArm':'rightArm']=arm;joints[side<0?'leftLeg':'rightLeg']=leg;
   }
   if(child)root.scale.setScalar(.87);
-  root.userData={preset,joints,head,eyes,brows,mouth,elbows,knees,shirt,neck};mergeRigidParts(root);
+  root.userData={preset,joints,head,eyes,brows,mouth,elbows,knees,shirt,neck,detail};mergeRigidParts(root);
   // Small facial features overlap intentionally; diffuse form lighting avoids
   // shadow-map acne on skin while the head still casts onto the kit and pitch.
   head.traverse(part=>{if(part.isMesh)part.receiveShadow=false;});return root;
