@@ -11,7 +11,7 @@ const files=['graphics/showcase.html','graphics/showcase.css','graphics/showcase
 for(const name of ['snow-review-portrait.glb','snow-review-mobile.glb','manifest.json','build-report.json','glb-audit.json','CREDITS.md'])files.push('graphics/models/snow/'+name);
 for(const id of ['ba-player','ba-keeper','bum-player','bum-keeper'])files.push(`graphics/showcase-assets/${id}.png`);
 for(const file of files){const target=path.join(destination,'dist',file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,file),target);}
-const html=fs.readFileSync(path.join(root,'graphics/showcase.html'),'utf8').replace('href="./showcase.css"','href="./graphics/showcase.css"').replace('src="./showcase.js"','src="./graphics/showcase.js"');
+const html=fs.readFileSync(path.join(root,'graphics/showcase.html'),'utf8').replace('href="./showcase.css"','href="./graphics/showcase.css"').replace('src="./showcase.js"','src="./graphics/showcase.js"').replace('href="./models/snow/CREDITS.md"','href="./graphics/models/snow/CREDITS.md"');
 fs.writeFileSync(path.join(destination,'dist/index.html'),html);
 const reports=['showcase/fps-report.json','showcase/FPS-REPORT.md'];
 for(const report of reports)if(fs.existsSync(path.join(root,report))){const target=path.join(destination,'dist/reports',path.basename(report));fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,report),target);}

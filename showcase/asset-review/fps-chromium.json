@@ -1,0 +1,85 @@
+{
+  "measuredHardware": "Codex Linux browser rendering, not a physical iPhone",
+  "sourceFilesSha256": {
+    "graphics/showcase.js": "5e89a79176dc975c7e28e2685c0229e2fa72a4f8411f37d992b5db5d0de0fefc",
+    "graphics/showcase-gltf.js": "0177b3ff40e2effc2875ad915e533a13b932097406b20f626ef3a1162a9be7db",
+    "graphics/showcase-motion.js": "0113d8308c409ae2e65d18e1c8db582f29a721859d2236f6972e33236cc6ab06",
+    "graphics/characters.js": "0e4611b4cbdd4701f0ce03df59c48d50b23ad23c1b9ce4f9c60b706a17c47080",
+    "graphics/models/snow/snow-review-portrait.glb": "a0980692efc66e0c3c84c1120de9a458141049cbdacf870a4f9754af27f45c64",
+    "graphics/models/snow/snow-review-mobile.glb": "1eea7f3e269beba7479bd5d378ad72b6f1c3997c971dac24d6c1fe5c8a863e8d"
+  },
+  "results": [
+    {
+      "profile": "desktop-software",
+      "engine": "chromium",
+      "character": "ba-player",
+      "action": "idle",
+      "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+      "version": "snow",
+      "lod": "portrait",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 1012,
+        "height": 666
+      },
+      "renderPixels": {
+        "width": 1012,
+        "height": 666
+      },
+      "devicePixelRatio": 1,
+      "pixelRatio": 1,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 425528,
+      "drawCalls": 24,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T03:44:00.567Z",
+      "durationSeconds": 8.283,
+      "renderedFrames": 3,
+      "averageFps": 0.36,
+      "medianFrameMs": 2766.6,
+      "p95FrameMs": 2783.1,
+      "note": "FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "portrait-retina-emulation",
+      "engine": "chromium",
+      "character": "bum-keeper",
+      "action": "idle",
+      "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+      "version": "snow",
+      "lod": "mobile",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 390,
+        "height": 440
+      },
+      "renderPixels": {
+        "width": 1170,
+        "height": 1320
+      },
+      "devicePixelRatio": 3,
+      "pixelRatio": 3,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 107509,
+      "drawCalls": 24,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T03:44:34.367Z",
+      "durationSeconds": 9.566,
+      "renderedFrames": 6,
+      "averageFps": 0.63,
+      "medianFrameMs": 2333.2,
+      "p95FrameMs": 2466.5,
+      "note": "FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone.",
+      "errors": []
+    }
+  ]
+}
