@@ -1,4 +1,5 @@
 const fs=require('node:fs'),path=require('node:path');
+const {execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..'),destination=path.resolve(process.argv[2]||'/workspace/sites/be-bum-character-showcase');
 const identity=JSON.parse(fs.readFileSync(path.join(root,'showcase/preview-site.json'),'utf8'));
 if(destination===root||destination.startsWith(root+path.sep))throw new Error('Use a separate deployment artifact directory, never the game checkout.');
@@ -15,5 +16,5 @@ const reports=['showcase/fps-report.json','showcase/FPS-REPORT.md'];
 for(const report of reports)if(fs.existsSync(path.join(root,report))){const target=path.join(destination,'dist/reports',path.basename(report));fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,report),target);}
 const renders=path.join(root,'showcase/renders');
 if(fs.existsSync(renders))for(const name of fs.readdirSync(renders))if(name.endsWith('.png')){const target=path.join(destination,'dist/renders',name);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(renders,name),target);}
-fs.writeFileSync(path.join(destination,'SOURCE-PROVENANCE.json'),JSON.stringify({github:identity.source_repository,branch:identity.source_branch,files,excludes:['game index.html','Supabase SDK/config','rooms','wallets','sessions','credentials','third-party purchased assets']},null,2)+'\n');
+fs.writeFileSync(path.join(destination,'SOURCE-PROVENANCE.json'),JSON.stringify({github:identity.source_repository,branch:identity.source_branch,source_commit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),files,excludes:['game index.html','Supabase SDK/config','rooms','wallets','sessions','credentials','third-party purchased assets']},null,2)+'\n');
 console.log(JSON.stringify({destination,project_id:identity.project_id,files:files.length,noSupabase:true}));
