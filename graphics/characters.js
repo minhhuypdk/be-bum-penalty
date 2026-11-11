@@ -67,6 +67,14 @@ function cloth(color){
  }
  const surface=new THREE.MeshPhysicalMaterial({color,roughness:.88,bumpMap:fabricBump,bumpScale:.006,sheen:.35,sheenRoughness:.8,sheenColor:0xfff4e2});materialCache.set(key,surface);return surface;
 }
+let blushMaterial;
+function cheekTint(parent,side,child){
+ if(!blushMaterial){const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;const ctx=canvas.getContext('2d');
+  const gradient=ctx.createRadialGradient(32,32,0,32,32,32);gradient.addColorStop(0,'rgba(226,117,109,.32)');gradient.addColorStop(.45,'rgba(226,117,109,.15)');gradient.addColorStop(1,'rgba(226,117,109,0)');ctx.fillStyle=gradient;ctx.fillRect(0,0,64,64);
+  const map=new THREE.CanvasTexture(canvas);map.colorSpace=THREE.SRGBColorSpace;blushMaterial=new THREE.MeshStandardMaterial({map,transparent:true,depthWrite:false,roughness:.9});
+ }
+ const tint=new THREE.Mesh(new THREE.PlaneGeometry(.115,.062),blushMaterial);tint.position.set(side*(child?.215:.203),-.105,child?.247:.235);tint.rotation.y=side*.52;parent.add(tint);
+}
 const labels=new Map();
 function labelTexture(person, back=false) {
   const key=`${person}:${back}`;if(labels.has(key))return labels.get(key);
@@ -102,7 +110,8 @@ export function createCharacter(id) {
   const root=new THREE.Group();root.name=id;
   const skin=child?0xf4bc91:0xe3a579, hair=child?0x32271f:0x332821;
   function mesh(parent,geometry,color,position=[0,0,0],scale=[1,1,1],roughness=.6) {
-    const surface=color===preset.shirt||color===0x193653?cloth(color):mat(color,roughness);
+    const surface=color===preset.shirt||color===0x193653?cloth(color):mat(color,color===skin?.78:roughness);
+    if(color===skin){surface.specularIntensity=.4;surface.clearcoat=.02;}
     const m=new THREE.Mesh(geometry,surface);m.position.set(...position);m.scale.set(...scale);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;
   }
   const oval=(p,c,pos,scale,r)=>mesh(p,sphere,c,pos,scale,r);
@@ -120,14 +129,19 @@ export function createCharacter(id) {
   for(const side of [-1,1]) mesh(root,contour([[.59,.09,.14],[.62,.15,.18],[.75,.16,.19],[.8,.14,.18]]),0x193653,[side*.155,0,0]);
   const head=new THREE.Group();head.position.set(0,1.79,0);root.add(head);
   const faceRings=[[-.36,.015,.02,.015],[-.33,.14,.14,.02],[-.25,.25,.21,.02],[-.14,.315,.25,.015],[0,.33,.28],[.16,.315,.265],[.29,.245,.22],[.36,.13,.12],[.38,.008,.008]];
-  mesh(head,contour(faceRings),skin,[0,0,0],child?[1.06,1,1.05]:[1,1,1],.72);
-  const eyes=[];
+  const faceSegments=48,face=contour(faceRings,faceSegments),positions=face.attributes.position;
+  for(let i=0;i<positions.count;i++){const x=positions.getX(i),y=positions.getY(i),z=positions.getZ(i);
+    const cheek=Math.exp(-Math.pow((Math.abs(x)-.18)/.12,2)-Math.pow((y+.105)/.105,2));
+    positions.setZ(i,z+.032*cheek*Math.pow(Math.max(0,z/.28),2));
+  }
+  face.computeVertexNormals();const normals=face.attributes.normal;
+  for(let i=0;i<positions.count/(faceSegments+1);i++){const a=i*(faceSegments+1),b=a+faceSegments,n=new THREE.Vector3().fromBufferAttribute(normals,a).add(new THREE.Vector3().fromBufferAttribute(normals,b)).normalize();normals.setXYZ(a,n.x,n.y,n.z);normals.setXYZ(b,n.x,n.y,n.z);}
+  mesh(head,face,skin,[0,0,0],child?[1.06,1,1.05]:[1,1,1],.78);
+  const eyes=[],brows=[];
   for(const side of [-1,1]) {
     oval(head,skin,[side*.325,-.025,-.015],[.075,.11,.07]);
     oval(head,0xce886d,[side*.36,-.025,.035],[.028,.062,.024]);
-    // Cheek volumes blend into the jaw; soft blush is a subtle, translucent layer.
-    oval(head,skin,[side*.205,-.11,.207],[.10,.075,.043]);
-    const blush=oval(head,0xeb927b,[side*.215,-.105,.25],[.049,.025,.006]);blush.material=mat(0xeb927b,.9);
+    cheekTint(head,side,child);
     const eye=new THREE.Group();eye.position.set(side*.124,.045,.258);head.add(eye);eyes.push(eye);
     oval(eye,0xd69776,[0,0,-.005],[.103,.116,.035]);
     oval(eye,0xfff9ed,[0,.002,.014],[.09,.103,.033],.24);
@@ -135,13 +149,15 @@ export function createCharacter(id) {
     oval(eye,0x172329,[0,-.005,.058],[.028,.046,.012],.18);
     oval(eye,0xffffff,[-.019,.03,.069],[.015,.021,.006],.1);
     oval(eye,0xffffff,[.018,-.025,.068],[.006,.008,.004],.1);
-    curveMesh([[side*.20,.16,.238],[side*.13,.188,.272],[side*.06,.16,.269]],.018,hair,head);
+    const brow=new THREE.Group();brow.position.set(side*.13,.17,.26);head.add(brow);brows.push(brow);
+    curveMesh([[side*.07,-.01,-.022],[0,.018,.012],[-side*.07,-.01,.009]],.016,hair,brow);
   }
   oval(head,skin,[0,-.025,.285],[.065,.09,.075]);
   oval(head,0xd88f6d,[0,-.063,.325],[.047,.029,.027]);
-  curveMesh([[-.105,-.17,.252],[-.065,-.204,.27],[0,-.217,.28],[.065,-.204,.27],[.105,-.17,.252]],.018,0x9b4b44,head,false);
-  oval(head,0x813f3c,[0,-.185,.269],[.081,.034,.014]);
-  oval(head,0xfff8e6,[0,-.17,.28],[.067,.013,.006]);
+  const mouth=new THREE.Group();mouth.position.set(0,-.185,.269);head.add(mouth);
+  curveMesh([[-.105,.015,-.017],[-.065,-.019,.001],[0,-.032,.011],[.065,-.019,.001],[.105,.015,-.017]],.014,0x9b4b44,mouth,false);
+  oval(mouth,0x813f3c,[0,0,0],[.081,.034,.014]);
+  oval(mouth,0xfff8e6,[0,.015,.011],[.067,.013,.006]);
   if(!child) for(const side of [-1,1]) curveMesh([[side*.018,-.11,.324],[side*.065,-.10,.31],[side*.105,-.12,.285]],.014,0x64402b,head);
   // Sculpted cap plus swept locks. BUM has a softer, tousled silhouette.
   mesh(head,contour([[.13,.26,.25,-.035],[.21,.326,.28,-.035],[.32,.29,.255,-.03],[.41,.19,.18,-.035],[.445,.005,.005,-.04]]),hair);
@@ -171,14 +187,20 @@ export function createCharacter(id) {
     joints[side<0?'leftArm':'rightArm']=arm;joints[side<0?'leftLeg':'rightLeg']=leg;
   }
   if(child)root.scale.setScalar(.87);
-  root.userData={preset,joints,head,eyes,elbows,knees,shirt,neck};mergeRigidParts(root);return root;
+  root.userData={preset,joints,head,eyes,brows,mouth,elbows,knees,shirt,neck};mergeRigidParts(root);
+  // Small facial features overlap intentionally; diffuse form lighting avoids
+  // shadow-map acne on skin while the head still casts onto the kit and pitch.
+  head.traverse(part=>{if(part.isMesh)part.receiveShadow=false;});return root;
 }
 export function poseCharacter(root,time,action='idle',progress=0) {
-  const {joints,head,preset,eyes,elbows,knees}=root.userData;
+  const {joints,head,preset,eyes,brows,mouth,elbows,knees}=root.userData;
   const p=THREE.MathUtils.clamp(progress,0,1), pulse=Math.sin(Math.PI*p);
   head.rotation.set(Math.sin(time*.9)*.015,Math.sin(time*.6)*.035,Math.sin(time*1.3)*.018);
   const blink=Math.pow(Math.max(0,Math.cos(time*1.7+2)),40);
-  for(const eye of eyes)eye.scale.y=1-blink*.94;
+  const focused=action==='kick'||action==='save',happy=action==='celebrate';
+  for(const eye of eyes)eye.scale.y=(1-blink*.94)*(focused?.9:1);
+  for(let i=0;i<brows.length;i++){brows[i].rotation.z=focused?(i===0?-.1:.1):0;brows[i].position.y=.17+(happy?.022:0);}
+  mouth.scale.set(happy?1.08:1,focused?.65:happy?1.2:1,1);
   joints.leftArm.rotation.set(Math.sin(time*1.8)*.045,0,-.13-(preset.keeper?.25:0));
   joints.rightArm.rotation.set(-Math.sin(time*1.8)*.045,0,.13+(preset.keeper?.25:0));
   joints.leftLeg.rotation.x=0;joints.rightLeg.rotation.x=0;

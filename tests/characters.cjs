@@ -13,16 +13,19 @@ const base=process.env.GAME_URL||'http://127.0.0.1:4180/';
     const c=createCharacter(id);let finite=true,triangles=0;
     c.traverse(o=>{if(o.isMesh){for(const value of o.geometry.attributes.position.array)if(!Number.isFinite(value))finite=false;triangles+=(o.geometry.index?.count||o.geometry.attributes.position.count)/3;}});
     poseCharacter(c,0,'idle',0);const openEye=c.userData.eyes[0].scale.y;
-    poseCharacter(c,1,'kick',.5);const leg=c.userData.joints.rightLeg.rotation.x;
+    poseCharacter(c,1,'kick',.5);const leg=c.userData.joints.rightLeg.rotation.x;const focusedMouth=c.userData.mouth.scale.y;
     poseCharacter(c,1,'save',.5);const arm=c.userData.joints.leftArm.rotation.z;
-    return{id,finite,triangles,openEye,leg,arm};
+    poseCharacter(c,1,'celebrate',.5);const happyMouth=c.userData.mouth.scale.y;
+    return{id,finite,triangles,openEye,leg,arm,focusedMouth,happyMouth};
    });
   },base);
-  assert.equal(contracts.length,4);assert(contracts.every(c=>c.finite&&c.triangles>10000&&c.openEye>.9&&c.leg<-.5&&c.arm<-1));
+  assert.equal(contracts.length,4);assert(contracts.every(c=>c.finite&&c.triangles>10000&&c.openEye>.9&&c.leg<-.5&&c.arm<-1&&c.happyMouth>c.focusedMouth));
   for(const id of ['ba-player','bum-player','ba-keeper','bum-keeper']){
    await page.selectOption('#character',id);await page.waitForTimeout(100);
    await page.screenshot({path:`${process.env.ARTIFACT_DIR||'tests'}/${id}-v2.png`});
   }
+  await page.selectOption('#view','0.65');
+  for(const person of ['ba','bum']){await page.selectOption('#character',person+'-player');await page.waitForTimeout(100);await page.screenshot({path:`${process.env.ARTIFACT_DIR||'tests'}/${person}-profile-v3.png`});}
   for(const pose of ['kick','save','celebrate']){await page.selectOption('#pose',pose);await page.waitForTimeout(100);}
   assert.deepEqual(errors,[]);console.log('PASS: four continuous-surface characters, finite geometry, articulation, reduced motion, mobile review screenshots.',JSON.stringify(contracts));
  }finally{await browser.close();}
