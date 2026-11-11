@@ -1,13 +1,6 @@
 name: BUM07 Phase2 face hair artist review
 on:
-  push:
-    branches: [graphics/cinematic-pass]
-    paths:
-      - .github/workflows/bum07-facehair-review.yml
-      - scripts/assets/prepare-bum07-facehair.py
-      - tests/facehair-ci.cjs
-      - tests/facehair-source.py
-      - tests/stage-facehair-review.py
+  # Historical P2 reproduction only. Automatic mesh generation is paused.
   workflow_dispatch:
 permissions:
   contents: read

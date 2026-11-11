@@ -1,0 +1,81 @@
+{
+  "phase": "2 face/hair only",
+  "artApproval": false,
+  "score9Verified": false,
+  "professionalHandSculpt": false,
+  "originalCSourceSha256": "89f5e9e42adc6b41160958cf9353d526b60191be1b739abf737663862d82b1d1",
+  "workbenchSha256": "30338d105c61eb206b688d31d74f9a7ccd947607f7ad67a5aff89833a8cb2f4c",
+  "bodyFingerprints": {
+    "back 0": "becb444db3da66c4f1f167ee27e156202d6a71c8ec2c43aac0f8c47f7691d080",
+    "back 7": "c32c97e114a4f85e6ef44efb79aea55dd2a597f64de42a23e97741c51ba8a3f8",
+    "back 7.001": "ba8052578d2f553fc6ceeb1098112fabac7c85115480d1ecffa706911be9b8eb",
+    "BUM continuous body and five-finger hands": "b93f04922592605895829cef36355d32d31e541c25e4e0e57a70e07dd9a4b7e2",
+    "flat lace L": "31756d201c3339428a311fc6750107edc9f56dd420d971f5b7136f81863eae58",
+    "flat lace L.001": "524f402048a9c4cb7f4ca691b49d1081e80919355c02673138fc05a7315c76ed",
+    "flat lace L.002": "408e61c5255fb60ede8d3a23a7a95c5d65fbf09a2dc6dad549754c462b58fef4",
+    "flat lace L.003": "73ac24d7c82dd011825c4ef60cf8e700eef235009cf8d2752523fe2ecc72cac2",
+    "flat lace R": "b31ab03783feed6de5cd99c12ca67ffe49f10e90bf9c80c258cafcd3213fcb8d",
+    "flat lace R.001": "306363a45097073512eafc663119b792ba92c06d052a30b37d29ac71e8397099",
+    "flat lace R.002": "30a307df702f4f432f4c0d3deaedf117bb282613fe15419c6fca48131ba2e320",
+    "flat lace R.003": "f2e9b5173ccd4c53f8afd6c62b2d6d46a9d392478df1638d9d4d0527572dfdfa",
+    "football boot upper L": "687fed0698cedf406eb31f73fa9175923a4289f4677a21a6431b49dc8f98d39f",
+    "football boot upper R": "67d8713e8328b4973a795e19df356a865337cc252ad8f8fc35d90851b21015ac",
+    "football sole L": "49c89c99b4578b8824e4ad0697ee8dfdb3ba749c27edef6f2e23936767cc10c7",
+    "football sole R": "777fbe8c883301b7543d295614a61eca1699e527dd7e632f769df50fb0b02c76",
+    "front 0": "08bee22402105ec96b45fb734349679ee52e913d7f1f9525df608d4cf86fbc8d",
+    "front 7": "171ff2a66ac38614b2d4f34297b0652c0466ea8df55ec0e470998adb12a5e727",
+    "front 7.001": "e8e9712adf5dc7801932c370f3f17eb9215a12fe4aa4e22dbaa10b96b96187f8",
+    "jersey sleeve L": "832b46be11d32217d41f149730a0cb54eaf05083efb8755b2e79b497e49842cf",
+    "jersey sleeve R": "3386777ff58699aac4dd441abd8dc27fe9989e3d998dfada6c2bd95be495516c",
+    "knitted V collar shoulder yoke": "6b9268aefd2d5e020bac4e0bc7daf529accfe956a34f3693113c0b6abd2d03b5",
+    "navy sleeve rib L": "0efea160b40cc5eddaeb4e347da18a8c44c9364b2d4d98ca51dd1d2ac5d19d7d",
+    "navy sleeve rib R": "d3ab9c28850d99fc010e6296bf9603fab37a2c32051fe08d413e57621f53347f",
+    "own sun badge": "eac6e3cde6da6022ba3309c9d71eddded5384c2140cfadc82fb1cfc7c0f29e2b",
+    "rounded stud L": "51c56dff975c6ad5672af2eb7aa62c081b4c3a01bb96bc16505f4e0833399bcb",
+    "rounded stud L.001": "2f310f38e155298b3c830fe8ad89976356d0b48f187a066f5f96e9689a6fcbe3",
+    "rounded stud L.002": "2d70643394eab22967f21c5738f05cbfed334aaf53e5f57388655828dd835690",
+    "rounded stud L.003": "6109af8c840501bb6f4e03661e663f182ae1098ed7a7e1653da75cc6b5ade540",
+    "rounded stud L.004": "3d8d43e81632a4e66cc604a0a94126d5f617df8403a7d25cb430df5bdb3c55d8",
+    "rounded stud L.005": "b455ae78684349d05d3edd6f696fe030ebe66f07443e52cd99ee87fe92325619",
+    "rounded stud R": "cc606dc3f8eca12cedbb382bd5d2404947bf29a7031113e978d91abc6154de05",
+    "rounded stud R.001": "8c60890edd54d1bb56c21340a99e027842d623484d24efba4f92a2141b998055",
+    "rounded stud R.002": "8d9575ea5879336ed2e5438220d3e5ff63075634db4ad0f835d4c0f864ddb6d7",
+    "rounded stud R.003": "59ed4c5d1713b8cda9d5dd6dd76a5f9be5f5cd1beeee338e91977d31daf37894",
+    "rounded stud R.004": "d0b01287bc4e1aab33a39dfd9e48d0b3701c9d97b61fe0297383e0f9a67889a1",
+    "rounded stud R.005": "a4d63d26bf24fa7f0b4627ea5c903a1fc7ec358c6a89a79aba951a505866e18d",
+    "shorts L": "032f97e5ec20311cbdade2e303095c57c8369f8f31053c52cc16108da3216f5b",
+    "shorts R": "ffa2744aa167225b32cca9562993a684674e56468ec3b2729e7b3c2543bea92f",
+    "sock gold band L": "e6f0ac5f8e45d2e945750dac05e9b0e330989cabdadba89ba022562bb8f97eaf",
+    "sock gold band R": "b69242eab09f64636676bca7498e69c5c95c790dcb4bd2c5a322367d845ff42f",
+    "sock L": "51eafd68e9450a8ad7484838c3e1fb6f0d1ad288067d8c66ccc6278db750d741",
+    "sock R": "d828302a1971aebe25a5e21a6a354979e98d1364799610e550ea4de608664b96",
+    "yellow jersey tailored shell": "955b4493a7c038d1d57be85133ff935ae88fd333ccb790f275b9ab7954263e26"
+  },
+  "rigAndActionsUnchanged": true,
+  "packedCImages": {
+    "approval-front.png": "4a2986cee7cd408b1b5db197c4f8eb4d77f13a91c7826bcc392cc809aebe0819",
+    "approval-45.png": "64685326de56111a4a4744d9760f2ac0981d6a9e400deb2aa1b662d317f7be5a",
+    "approval-profile.png": "ec4cec174f0553448d6b12ac1cfaf78ec36fdf46500942f37ff06bf359582c22",
+    "approval-back.png": "7d937386e29d617d54292935de1c504df38867e1aaf535b92fb83404efddce28",
+    "approval-face.png": "8062fa8075de48efaea981e238094d5603598b673aaa84b5cc96da6dec673c55",
+    "approval-kick.png": "2d64a28e22fd3e606acfd001a62619a3e801b407b852acaa24b50421d02f806c"
+  },
+  "hairGuides": 10,
+  "exports": [
+    {
+      "lod": "portrait",
+      "bytes": 7361140,
+      "sha256": "6121dbdd994b030318291c24a813d007960d767c54e1d101f54ff28099ee5a3c"
+    },
+    {
+      "lod": "mobile",
+      "bytes": 5075868,
+      "sha256": "88267f09c451b6e50b3e4ad6523977d8bd51255b5c21280ba50059d880e1d16e"
+    }
+  ],
+  "limits": [
+    "Lid/lip seam topology and expression need artist cleanup",
+    "Hair sculpt blockout needs manual silhouette/roots/retopology",
+    "No body/outfit/animation production or physical iPhone approval"
+  ]
+}

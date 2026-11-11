@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "independentReadBack": true,
+  "outsideScopeMeshesUnchanged": 44,
+  "rigAndActionCurvesUnchanged": true,
+  "CHeadReferenceUnchanged": true,
+  "actualHeadGeometryChanged": true,
+  "bodyLocked": true,
+  "hairOpenBoundaryEdges": 0,
+  "hairGuides": 10,
+  "packedReferenceImages": 6,
+  "artApproval": false,
+  "professionalHandSculpt": false
+}
