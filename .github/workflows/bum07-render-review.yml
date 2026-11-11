@@ -1,0 +1,43 @@
+name: BUM07 frozen render review
+on:
+  push:
+    branches: [graphics/cinematic-pass]
+    paths:
+      - .github/workflows/bum07-render-review.yml
+      - tests/bum07-render-pack.cjs
+      - graphics/showcase.js
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: bum07-render-review-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install locked project dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci --ignore-scripts --no-audit --no-fund; else npm install --ignore-scripts --no-audit --no-fund; fi
+          npx playwright install --with-deps chromium
+      - name: Export six frozen GLB views
+        run: |
+          python3 -m http.server 4180 --bind 127.0.0.1 >/tmp/bum07-http.log 2>&1 &
+          render_server_pid=$!
+          trap 'kill "$render_server_pid" 2>/dev/null || true' EXIT
+          node tests/bum07-render-pack.cjs
+      - name: Save review images and provenance
+        uses: actions/upload-artifact@v4
+        with:
+          name: bum07-C-six-renders
+          path: |
+            showcase/bum07-review/approval-*.png
+            showcase/bum07-review/approval-render-manifest.json
+            showcase/bum07-review/index.html
+          if-no-files-found: error
+          retention-days: 30

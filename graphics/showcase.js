@@ -182,6 +182,7 @@ try{
  for(const el of document.querySelectorAll('[data-portrait]')){const img=new Image();img.alt='';img.src=new URL('./showcase-assets/'+el.dataset.portrait+'.png',import.meta.url);img.onload=()=>el.replaceChildren(img);img.onerror=()=>{};}
  window.showcase={state,selectCharacter,setVersion,setAction,setPaused,setQuality,frame,measure,capture,importGLB,resetGLB,
   setAngle(angle){turntable.rotation.y=angle;needsRender=true;},
+  setReviewAngle(angle){if(!Number.isFinite(angle))throw new Error('Góc máy không hợp lệ.');cancelBenchmark('Đã đổi góc máy; hãy đo lại.');turntable.rotation.y=angle;getTarget();const distance=camera.position.distanceTo(controls.target);controls.target.copy(target);camera.position.copy(target).add(new THREE.Vector3(0,0,distance));controls.update();needsRender=true;},
   getMetrics:reportBase,
   getView(){return{angle:turntable.rotation.y,camera:camera.position.toArray(),target:controls.target.toArray(),version:state.version,lod:state.lod};},
   getModelSummary(){return{height:active.height,source:active.asset?'glb':'procedural',available:active.asset?active.asset.available:Object.keys(CLIPS),position:active.rig.position.toArray(),rotation:active.rig.rotation.toArray().slice(0,3),geometryFinite:(()=>{let finite=true;active.model.traverse(p=>{if(p.isMesh)for(const v of p.geometry.attributes.position.array)if(!Number.isFinite(v))finite=false;});return finite;})()};}
