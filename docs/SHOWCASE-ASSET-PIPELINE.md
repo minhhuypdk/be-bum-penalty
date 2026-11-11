@@ -75,3 +75,7 @@ Production asset registration and licensing records must be committed before
 enabling automatic hosted GLB loading. The current local-file route is working
 and tested with an embedded GLB animation fixture; that test triangle is not
 included in the preview or presented as character art.
+
+## Integrated free source (verified, not a final-art claim)
+
+[Snow v3 / Blender Studio](https://studio.blender.org/characters/snow/v3/) was downloaded and converted into two actual self-contained GLBs. Source licensing, SHA-256, modifications and attribution ship alongside the files in `graphics/models/snow/`. The exact rebuild script uses Blender `--disable-autoexec`. [Conversion and art gate](GRAPHICS-OVERHAUL-ASSET-REVIEW.md) distinguish the source model, review skeleton and minimal Idle clip from the missing BA/BUM sculpts, sports outfits and final animations. Neither generic asset quality nor a successful renderer test establishes 9/10 art quality.

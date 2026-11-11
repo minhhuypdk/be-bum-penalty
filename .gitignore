@@ -4,3 +4,5 @@ artifacts/
 showcase/first-desktop.png
 
 showcase/webkit-renders/
+
+__pycache__/

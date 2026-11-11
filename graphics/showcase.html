@@ -13,7 +13,7 @@
    <button class="person" data-character="bum-player" aria-pressed="false"><span class="portrait" data-portrait="bum-player">07</span><span><b>BUM</b><small>Cầu thủ sút phạt</small></span><span class="number">03</span></button>
    <button class="person" data-character="bum-keeper" aria-pressed="false"><span class="portrait" data-portrait="bum-keeper">07</span><span><b>BUM</b><small>Thủ môn</small></span><span class="number">04</span></button>
   </div>
-  <div class="side-note"><span class="dot"></span> Bản tạo hình đang duyệt <p>Chưa phải chất lượng điện ảnh cuối cùng.</p></div>
+  <div class="asset-comparison"><label for="review-version">SO SÁNH TẠO HÌNH</label><select id="review-version"><option value="baseline">A · BA/BUM hiện tại</option><option value="snow">B · Snow — asset nền CC-BY</option><option value="local" disabled>GLB trên thiết bị</option></select><label for="asset-lod">CHI TIẾT MÔ HÌNH</label><select id="asset-lod" disabled><option value="portrait">Chân dung · texture 2K</option><option value="mobile">Mobile · texture 1K</option></select><p id="comparison-status" role="status">A: giữ nguyên bản tạo hình đang duyệt.</p><a href="./models/snow/CREDITS.md" target="_blank" rel="noopener">Nguồn, giấy phép và giới hạn ↗</a></div><div class="side-note"><span class="dot"></span> Bản tạo hình đang duyệt <p>Chưa phải chất lượng điện ảnh cuối cùng.</p></div>
  </aside>
  <main class="stage-wrap">
   <div class="stage-heading"><div><span id="role-label" class="eyebrow">CẦU THỦ SÚT PHẠT</span><h2 id="character-name">BA <span>/ 10</span></h2></div><span id="live-fps" class="fps" title="FPS dựng hình trên thiết bị hiện tại">— FPS</span></div>
@@ -22,7 +22,7 @@
   <p class="gesture-hint">Kéo để xoay · Hai ngón để phóng to</p>
   <section class="motion-dock" aria-label="Chuyển động và chất lượng">
    <div class="motion-main"><label for="pose">CHUYỂN ĐỘNG</label><div class="motion-row"><select id="pose"><option value="idle">01 · Đứng</option><option value="run">02 · Chạy</option><option value="kick">03 · Sút bóng</option><option value="save">04 · Bay người bắt bóng</option><option value="celebrate">05 · Ăn mừng</option></select><button id="pause" aria-label="Tạm dừng chuyển động" aria-pressed="false">Ⅱ</button></div><input id="timeline" type="range" min="0" max="1000" value="0" aria-label="Tiến trình chuyển động"></div>
-   <div class="quality-control"><label for="quality">CHẤT LƯỢNG</label><select id="quality"><option value="cinema">Điện ảnh</option><option value="high">Cao</option></select></div>
+   <div class="quality-control"><label for="quality">CHẤT LƯỢNG</label><select id="quality"><option value="cinema">Rất cao</option><option value="high">Cao</option></select></div>
    <button id="performance" class="measure">Đo FPS <span>↗</span></button>
   </section>
  </main>

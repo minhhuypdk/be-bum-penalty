@@ -53,3 +53,7 @@ These are detailed procedural art candidates, not final approved character asset
 See `SHOWCASE-ASSET-PIPELINE.md` for legitimate professional asset sources,
 contract requirements and the working GLB integration path. Final acceptance
 still needs the reference, art review and physical iPhone performance checks.
+
+## Free asset A/B review (next Graphics Overhaul)
+
+The next isolated module preserves the four existing models as A and adds B: a **licensed Snow art-base candidate**, not finished BA/BUM. See [the real conversion, budgets, tests and remaining art gate](GRAPHICS-OVERHAUL-ASSET-REVIEW.md). Open the existing private preview with `?version=snow&lod=portrait` to inspect the professional source mesh, or choose A/B in the sidebar. No game or Supabase changes are part of this module. PR #2 remains draft and unmerged.
