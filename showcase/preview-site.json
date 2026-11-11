@@ -5,5 +5,11 @@
   "source_branch": "graphics/cinematic-pass",
   "entrypoint": "graphics/showcase.html",
   "audience": "owner-private",
-  "status": "registered-not-yet-deployed"
+  "status": "deployed",
+  "live_url": "https://be-bum-character-showcase.jovialmesa21.chatgpt.site",
+  "version_number": 1,
+  "version_id": "appgprj_6af3d07f899c819199a4af1ce54673c8~appgver_ab0818efc0188191b9ead1df9652fb63",
+  "deployment_id": "appgdep_6af3da1fc86c81918a0209f2aae94ef7",
+  "github_source_commit": "a4e5d7b70e61f163e17b958ba379b3437acd81a9",
+  "hosting_source_commit": "9647bd1b03025e277db08133ec89bf7615e8805b"
 }

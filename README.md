@@ -62,3 +62,17 @@ rời vai khi lỗi mạng, thử lại, tải lại, chuyển phiên và chặn
 phòng kiểm thử riêng; không đổi quyền, RLS, schema hoặc dữ liệu gia đình.
 
 PR #2 giữ ở dạng draft và chỉ merge sau khi chủ dự án đồng ý.
+
+## Character Showcase riêng — PR #2 chưa merge
+
+https://be-bum-character-showcase.jovialmesa21.chatgpt.site
+
+Bản xem trước riêng cho tài khoản sở hữu, phiên bản 1. Đăng nhập ChatGPT của
+chủ dự án để mở trên iPhone. Phòng trưng bày có bốn nhân vật, xoay/zoom/cận mặt,
+năm chuyển động, PNG export, đo FPS và duyệt GLB cục bộ. Không kết nối Supabase.
+
+Xem [báo cáo FPS](showcase/FPS-REPORT.md), [ảnh render](showcase/renders),
+[quy trình asset hợp pháp](docs/SHOWCASE-ASSET-PIPELINE.md) và
+[hồ sơ xuất bản](showcase/DEPLOYMENT.md). Số đo Linux phần mềm không phải FPS
+iPhone; chất lượng so với ảnh mẫu vẫn cần đối chiếu vì ảnh không có trong
+ngữ cảnh hiện tại. Main/game công khai và dữ liệu Supabase giữ nguyên.
