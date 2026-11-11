@@ -2,3 +2,5 @@ node_modules/
 artifacts/
 
 showcase/first-desktop.png
+
+showcase/webkit-renders/

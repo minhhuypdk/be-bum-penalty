@@ -1,0 +1,79 @@
+{
+  "measuredHardware": "Codex Linux browser rendering, not a physical iPhone",
+  "results": [
+    {
+      "profile": "desktop-software",
+      "engine": "chromium",
+      "character": "ba-player",
+      "action": "run",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 1012,
+        "height": 666
+      },
+      "renderPixels": {
+        "width": 1012,
+        "height": 666
+      },
+      "devicePixelRatio": 1,
+      "pixelRatio": 1,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:47:59.591Z",
+      "durationSeconds": 9.8,
+      "renderedFrames": 8,
+      "averageFps": 0.82,
+      "medianFrameMs": 1199.9,
+      "p95FrameMs": 2383.3,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "portrait-retina-emulation",
+      "engine": "chromium",
+      "character": "bum-keeper",
+      "action": "save",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 390,
+        "height": 440
+      },
+      "renderPixels": {
+        "width": 1170,
+        "height": 1320
+      },
+      "devicePixelRatio": 3,
+      "pixelRatio": 3,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:48:18.262Z",
+      "durationSeconds": 9.283,
+      "renderedFrames": 7,
+      "averageFps": 0.75,
+      "medianFrameMs": 1283.3,
+      "p95FrameMs": 2349.9,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    }
+  ],
+  "sourceFilesSha256": {
+    "graphics/showcase.js": "5beb850aa3691451fb83e446d1cb049c4b509393944cdbc438e8a5daae966e03",
+    "graphics/showcase-motion.js": "0113d8308c409ae2e65d18e1c8db582f29a721859d2236f6972e33236cc6ab06",
+    "graphics/characters.js": "0e4611b4cbdd4701f0ce03df59c48d50b23ad23c1b9ce4f9c60b706a17c47080"
+  },
+  "runtime_note": "Linux Debian 13, Chromium using SwiftShader software rasterization; no physical iPhone or hardware GPU."
+}
