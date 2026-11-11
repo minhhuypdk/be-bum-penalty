@@ -51,3 +51,19 @@ Open `graphics/showcase.html?version=snow&lod=portrait`, choose A/B, compare fac
 Missing: distinct BA adult and BUM child sculpts against the supplied visual reference; appropriate eye/eyelid proportions and expressive facial morphs; football kits and keeper gloves; sport footwear; fingers/feet and corrective deformation validated under all five sports actions; natural kick/dive/celebration animation; physical Safari iPhone measurements. No source matching all those approved requirements has been found ready-made and free.
 
 The practical free route is to author those modifications in Blender from this redistributable base, retaining original credit and marking all changes. Snow is an inspection base, not an acceptance shortcut. Do not merge PR #2 or replace the public game's characters before art approval and multiplayer regression checks.
+
+## Verified private publication
+
+Native Sites publication **succeeded**, saved version **2**. Same owner-private project and URL; no new project or audience change:
+
+https://be-bum-character-showcase.jovialmesa21.chatgpt.site/?version=snow&lod=portrait
+
+- Published GitHub code/evidence: `9827450091ec7080d5f3ff1f8edace1310060bee`.
+- Exact pushed hosting source: `6d6eb028facc96e4c668d100fafdac1d772a0c85`.
+- Hosting saved version and deployment IDs: `showcase/preview-site.json`.
+- Root HTML asset/credit links and every allowlisted file were checked against the repository bytes before publication. The packaged mirror contains only the viewer, vendor files, licensed GLBs, credits and render evidence.
+- Version 1 remains saved; `rollback_version` in the same JSON preserves its source/version/deployment identifiers. Rollback can redeploy that saved owner-private version without touching GitHub main or Supabase.
+- The native successful publication verifies hosting. Browser QA and captures were performed on the identical application source in the GitHub workspace. No extra authenticated production-browser check or physical iPhone test is claimed.
+- Remote main remains `c3567aff87ce54adfa251895cecc2247c4d4b705`; public game HTML SHA-256 remains `6477b3465f5ef71ea7ca2632da3856ff3bf282918e69069b775dc57100acf587`.
+
+Three next art priorities: author distinct BA/BUM face/body sculpts from the free licensed source; create football/keeper outfits and corrective sports animation; add compressed-texture delivery and validate on physical Safari iPhones. These remain incomplete and are not hidden behind the source model's professional provenance.
