@@ -1,0 +1,8 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bé Bum · Chẩn đoán kết nối</title>
+<style>body{max-width:760px;margin:auto;padding:20px;background:#102b46;color:#eef7ff;font:16px/1.6 system-ui}h1{font-size:23px}button,a{font:inherit;color:#102b46;background:#ffe19a;border:0;border-radius:10px;padding:10px 15px;text-decoration:none;display:inline-block;margin:5px 5px 5px 0}button:disabled{opacity:.5}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#061c30;border-radius:12px;font-size:12px}small{color:#c5d8e8}</style></head><body>
+<h1>BÉ BUM · Chẩn đoán Supabase</h1>
+<p>Chỉ đọc cấu hình và kiểm tra API. Trang này không chọn vai, không ghi/xóa phòng, không đăng xuất và không đổi quyền database.</p>
+<p><small>Báo cáo gồm URL dự án, dấu vân tay publishable key, vai trò khai báo trong JWT nếu có và mã lỗi API. Không chứa access token, refresh token hoặc dữ liệu người chơi.</small></p>
+<button id="run">Kiểm tra lại</button><button id="copy" disabled>Sao chép báo cáo</button><a href="./">Về game</a>
+<p id="status" role="status">Đang kiểm tra…</p><pre id="report" aria-label="Báo cáo chẩn đoán"></pre>
+<script type="module" src="./diagnostics/connection.js"></script></body></html>
