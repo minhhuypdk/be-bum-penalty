@@ -32,3 +32,22 @@ Chưa hoàn thiện: anatomy mắt/mí/miệng, tóc vẫn dạng vỏ/mũ, tỷ
 4. Animation cleanup cho chạy/penalty/nhảy/ăn mừng; render và nghiệm thu trước khi làm ba nhân vật còn lại.
 
 Hồ sơ chi tiết: graphics/models/bum07/PRODUCTION-BRIEF.md. Nguồn đã push: d7dd7e4 (asset + Blender source), 52dcdb0 (A/B/C + adapter + tests). Main giữ c3567aff87ce54adfa251895cecc2247c4d4b705. Bản Showcase đang triển khai vẫn là version 2; chưa tuyên bố đã cập nhật C lên link đó.
+
+## Kết quả xuất ảnh đã xác nhận
+
+Workflow run 42977152181 kết thúc completed/success trên commit 55c028b7c8791108ed747253119884583306bc7a. Các bước export và upload artifact đều success.
+
+Artifact: bum07-C-six-renders, ID 13835319174, 1,472,480 bytes, digest sha256:412abfcc6608021d816c1186811cb650a822ca8b5890d3f28045481fabf050c8. Lưu trên GitHub Actions 30 ngày (hết hạn 11/12/2026); đã tải bản ZIP qua connector để bàn giao.
+
+Link tải đã xuất hiện trong log upload-artifact:
+https://github.com/minhhuypdk/be-bum-penalty/actions/runs/42977152181/artifacts/13835319174
+
+ZIP chứa sáu PNG approval-front/45/profile/back/face/kick, approval-render-manifest.json và index.html tổng hợp. CI xác nhận đủ góc, source/asset hashes giữ nguyên, ảnh Kick khác Idle, không page errors và zero Supabase requests. Chất lượng mỹ thuật vẫn chưa đạt/nghiệm thu, không dùng success CI làm điểm 9/10.
+
+Showcase live vẫn version 2 A/B Snow. Không triển khai C/gallery lên Site trong lúc môi trường Codex unavailable. Không đưa link live cũ làm bằng chứng đã xuất bản C.
+
+## Tiếp tục khi môi trường có lại
+
+Giữ nguyên checkout/worktree và các PNG/manifest/gallery cục bộ chưa commit. Không reset hard, clean hoặc tạo lại dự án. Nhánh remote đã tiến từ 52dcdb0 qua các commit CI/docs trong lúc executor offline: cần bảo toàn thay đổi local/untracked trước fetch/pull và giải quyết khác biệt test script, không ghi đè nguồn.
+
+Khôi phục môi trường hiện có, nhận artifact ZIP, giữ ảnh mốc; kiểm tra lại mock regression tới exit status cuối và chuẩn bị đúng allowlist/gallery. Khi triển khai Site, đọc lại audience hiện hành, giữ project ID và version 2 để rollback; không merge PR #2, không sửa main/game GitHub Pages hoặc Supabase. Chưa có FPS iPhone thật hoặc clip Jump.
