@@ -1,0 +1,22 @@
+[
+  {
+    "lod": "portrait",
+    "subdivision": 2,
+    "maxTexture": 2048,
+    "texturePolicy": "Face, hair and iris albedo up to selected maximum; cloth/body albedo <=1K; normals <=half selected maximum; scalar roughness <=quarter selected maximum",
+    "bytes": 19414844,
+    "weightedJoints": 277,
+    "baseMeshVertices": 215512,
+    "note": "Frozen evaluated source bind pose; clean weighted skeleton; only authored Idle head-turn clip; no original CloudRig controls or sports clips."
+  },
+  {
+    "lod": "mobile",
+    "subdivision": 1,
+    "maxTexture": 1024,
+    "texturePolicy": "Face, hair and iris albedo up to selected maximum; cloth/body albedo <=1K; normals <=half selected maximum; scalar roughness <=quarter selected maximum",
+    "bytes": 5580928,
+    "weightedJoints": 277,
+    "baseMeshVertices": 54799,
+    "note": "Frozen evaluated source bind pose; clean weighted skeleton; only authored Idle head-turn clip; no original CloudRig controls or sports clips."
+  }
+]
