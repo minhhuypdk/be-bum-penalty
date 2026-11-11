@@ -14,7 +14,7 @@ const fixtureToken='eyJhbGciOiJIUzI1NiJ9.'+Buffer.from(JSON.stringify({role:'aut
     const stored=req.headers().authorization==='Bearer '+fixtureToken;
     return route.fulfill({status:stored?403:200,contentType:'application/json',body:JSON.stringify(stored?{code:'42501',message:'permission denied for table bebum_penalty_rooms',details:fixtureToken,hint:'Grant SELECT to authenticated'}:[{room_id:'ba-bum',state:{players:{ba:'DO_NOT_PRINT_PLAYER'}}}])});
    });
-   await page.goto('http://127.0.0.1:4182/diagnostics.html');
+   await page.goto(new URL('diagnostics.html',process.env.GAME_URL||'http://127.0.0.1:4182/').href);
    await page.waitForSelector('#copy:not([disabled])');
    const text=await page.locator('#report').textContent(),report=JSON.parse(text);
    assert.equal(report.projectRef,'zzphvbedtxbhajkpavqp');

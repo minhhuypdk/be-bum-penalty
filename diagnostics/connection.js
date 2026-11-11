@@ -28,9 +28,9 @@ async function run(){
   const project=parsed.hostname.split('.')[0],storageKey=`sb-${project}-auth-token`;
   let token=null,storageReadable=true;
   try{const stored=JSON.parse(localStorage.getItem(storageKey)||'null');token=typeof stored?.access_token==='string'?stored.access_token:null}catch{storageReadable=false}
-  const report={checkedAt:new Date().toISOString(),pageOrigin:location.origin,pagePath:location.pathname,projectURL:url,projectRef:project,indexSha256:await digest(html),keyType:'publishable',keySuffix:key.slice(-6),keySha256:await digest(key),storageReadable,hasStoredAccessToken:!!token,requests:[],note:'JWT role chỉ là claim khai báo. Vai PostgreSQL/RLS cần đối chiếu SQL audit; kết quả anon thành công không chứng minh mọi role có quyền.'};
+  const report={checkedAt:new Date().toISOString(),pageOrigin:location.origin,pagePath:location.pathname,projectURL:url,projectRef:project,indexSha256:await digest(html),gameUsesIsolatedAuth:html.includes('persistSession:false'),keyType:'publishable',keySuffix:key.slice(-6),keySha256:await digest(key),storageReadable,hasStoredAccessToken:!!token,requests:[],note:'JWT role chỉ là claim khai báo. Vai PostgreSQL/RLS cần đối chiếu SQL audit; kết quả anon thành công không chứng minh mọi role có quyền.'};
   report.requests.push(await request(url,key,key,'Control: publishable key, không dùng phiên lưu sẵn'));
-  if(token)report.requests.push(await request(url,key,token,'Phiên lưu sẵn, không làm mới token'));
+  if(token)report.requests.push(await request(url,key,token,'Đối chứng token lưu sẵn, không phải request game khi isolatedAuth=true'));
   output.textContent=JSON.stringify(report,null,2);copy.disabled=false;
   const errors=report.requests.some(r=>r.networkError||r.httpStatus>=400);
   status.textContent=errors?'Đã ghi nhận lỗi. Hãy sao chép báo cáo để đối chiếu.':'Các request kiểm tra hiện thành công. Nếu game vẫn lỗi, hãy gửi báo cáo này.';

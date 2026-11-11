@@ -72,3 +72,21 @@ the separate family room `ba-bum`. No extra DELETE grant is required.
    skin/hair/cloth, run-up, foot contact and dive/ground recovery before art approval.
 3. Profile and tune the development stadium/character scene on iPhone Safari,
    verify sound/voice unlock, then release the next graphics PR after checks pass.
+
+## Follow-up, 2026-11-11
+
+Owner confirmed anon can read ba-bum using SET LOCAL ROLE anon. Public HTML
+remains byte-identical to main c3567af; URL/key match PR #2. Fresh browser and
+API requests succeed. No GRANT, RLS, schema or public deployment changes made.
+
+Session lifecycle defects were reproduced on isolated production-code tests,
+then fixed in PR #2: only save a confirmed role, retain ownership on failed
+release, explicitly recover same-device sessions, rotate ownership and reject
+old-session actions without resetting match data. The game also isolates its
+account-free Auth client without signing out or deleting an existing login.
+See SESSION-LIFECYCLE.md and CONNECTION-INVESTIGATION.md.
+
+Full live test suite passed after these changes, including simultaneous actions
+and strict Realtime-only sessions. PR #2 must not be merged without the owner's
+explicit agreement. Physical iPhone/Safari and final cinematic art approval remain
+open. Public game stays on the previously verified baseline.

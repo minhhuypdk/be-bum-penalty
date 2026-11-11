@@ -48,3 +48,17 @@ không truy cập Supabase. [Hướng mỹ thuật](docs/ART-DIRECTION.md) và
 Chất lượng hoạt hình điện ảnh cao cấp vẫn là mục tiêu đang hoàn thiện; mô hình
 thủ tục hiện tại chưa được coi là tài sản cuối cùng. Safari/GPU và giọng hô tiếng
 Việt trên iPhone thật vẫn cần kiểm tra trực tiếp.
+
+## Kiểm thử và tiếp tục phiên (PR #2, chưa phát hành)
+
+Bản phát triển chỉ lưu vai sau khi máy chủ xác nhận. Nếu rời vai thất bại do
+mất mạng, máy vẫn giữ phiên để có thể thử lại. Phiên mới trên cùng thiết bị có
+thể dùng nút “Tiếp tục BA/BUM trên máy này” khi còn dấu phiên hợp lệ; trận và tỷ
+số được giữ nguyên, phiên cũ không còn điều khiển vai đó. Không tự thu hồi vai
+của thiết bị khác. Phiên cũ trước bản mới hoặc mất localStorage không tự phục hồi.
+
+`npm run test:live` hiện bao gồm cả tranh vai đồng thời, từ chối vai đã chiếm,
+rời vai khi lỗi mạng, thử lại, tải lại, chuyển phiên và chặn phiên cũ. Chỉ dùng
+phòng kiểm thử riêng; không đổi quyền, RLS, schema hoặc dữ liệu gia đình.
+
+PR #2 giữ ở dạng draft và chỉ merge sau khi chủ dự án đồng ý.
