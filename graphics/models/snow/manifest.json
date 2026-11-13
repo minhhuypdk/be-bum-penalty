@@ -1,0 +1,32 @@
+{
+  "name": "Snow v3 review conversion",
+  "author": "Blender Foundation",
+  "attribution": "Snow Rig © Blender Foundation | studio.blender.org",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_page": "https://studio.blender.org/characters/snow/v3/",
+  "source_download": "https://studio.blender.org/download-source/files/ca/cab3fc59bce48d1b8090109016ac16f0/cab3fc59bce48d1b8090109016ac16f0.zip",
+  "source_zip_sha256": "c2d535baa485134bb5a3f6fe9e281645b60f7f5f7a41a1300de5296ae5cd1ca8",
+  "changes": [
+    "Frozen evaluated bind pose; removed original Blender control rig and drivers",
+    "Converted baked original textures to embedded glTF PBR",
+    "Weighted-joint review skeleton; original rig controls/face corrections not preserved",
+    "Two manually selectable geometry/texture levels",
+    "New minimal Idle head-turn clip; no sports animations",
+    "Correct render UV selected; UDIM tiles split into glTF-compatible materials",
+    "Anatomical main-joint hierarchy rebuilt; held standing arm pose and slight head-turn Idle",
+    "Face/hair/iris albedo up to 2K, clothing/body up to 1K; scalar maps and normals sized independently",
+    "Only one candidate LOD retained in GPU memory at a time"
+  ],
+  "approval": {
+    "is_final_ba_bum": false,
+    "cinematic_quality_verified": false,
+    "sports_animation_ready": false
+  },
+  "rejected_alternatives": [
+    {
+      "name": "Grab3D teen/toddler",
+      "reason": "AI-assisted generation and automatic walk/run-only rig; no face/finger rig; age/identity and quality not approved. Not downloaded or redistributed."
+    }
+  ]
+}

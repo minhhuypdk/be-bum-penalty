@@ -1,0 +1,15 @@
+{
+  "result": "EVIDENCE_PACKAGE_PASS_ART_GATE_FAIL",
+  "geometryDataChecks": "PASS_WITH_LIMITATIONS",
+  "visualArtGate": "FAIL_ART_TARGET",
+  "facialRigGate": "FAIL_VISIBLE_IRIS_SCLERA_THROUGH_FULL_BLINK",
+  "browserLoadRender": {
+    "chromium": "PASS",
+    "webkit": "PASS"
+  },
+  "physicalIPhone": false,
+  "sourceP2Unchanged": true,
+  "artApproved": false,
+  "nextPhaseAuthorized": false,
+  "noSupabaseRequestsInBrowserTests": true
+}

@@ -1,0 +1,29 @@
+const{chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+(async()=>{const out='showcase/bum07-review';fs.mkdirSync(out,{recursive:true});
+const files=['graphics/models/bum07/bum07-source.blend','graphics/models/bum07/bum07-study-portrait.glb','graphics/models/bum07/bum07-study-mobile.glb','graphics/showcase.js','graphics/showcase-gltf.js'];
+const source=Object.fromEntries(files.map(f=>[f,hash(f)]));
+const browser=await chromium.launch({...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{}),headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{const p=await browser.newPage({viewport:{width:1500,height:1100},deviceScaleFactor:1}),errors=[],requests=[];
+p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>requests.push(r.url()));
+await p.goto('http://127.0.0.1:4180/graphics/showcase.html');await p.waitForSelector('body[data-ready=true]',{timeout:60000});
+await p.evaluate(async()=>{showcase.setPaused(true);await showcase.setVersion('bum07','portrait');});
+const shots=[{id:'front',label:'Chính diện',angle:0,focus:'body',action:'idle',time:0},{id:'45',label:'Góc 45°',angle:45,focus:'body',action:'idle',time:0},{id:'profile',label:'Nghiêng 90°',angle:90,focus:'body',action:'idle',time:0},{id:'back',label:'Sau lưng 180°',angle:180,focus:'body',action:'idle',time:0},{id:'face',label:'Cận mặt',angle:0,focus:'face',action:'idle',time:0},{id:'kick',label:'Pose sút bóng · góc 45°',angle:45,focus:'body',action:'kick',time:.62}];
+for(const shot of shots){
+await p.evaluate(s=>showcase.setAction(s.action),shot);await p.locator('#timeline').fill(String(Math.round(shot.time*1000)));
+await p.evaluate(s=>{showcase.frame(s.focus);showcase.setReviewAngle(s.angle*Math.PI/180);},shot);await p.waitForTimeout(120);
+const view=await p.evaluate(()=>showcase.getView());assert(Math.abs(view.angle-shot.angle*Math.PI/180)<1e-8);
+assert(Math.abs(view.camera[0]-view.target[0])<1e-5);assert(Math.abs(view.camera[1]-view.target[1])<1e-5);
+const data=await p.evaluate(async()=>{const blob=await showcase.capture(false);return new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result.split(',')[1]);f.readAsDataURL(blob);});});
+shot.file='approval-'+shot.id+'.png';fs.writeFileSync(path.join(out,shot.file),Buffer.from(data,'base64'));shot.sha256=hash(path.join(out,shot.file));shot.view=view;
+shot.runtime=await p.evaluate(()=>({...showcase.getMetrics(),animationTime:showcase.state.time}));
+}
+assert.notEqual(shots[0].sha256,shots[5].sha256);assert.deepEqual(errors,[]);assert(!requests.some(u=>u.includes('supabase')));
+for(const[f,h]of Object.entries(source))assert.equal(hash(f),h,'asset/source changed while exporting');
+const report={capturedAt:new Date().toISOString(),sourceCommit:process.env.GITHUB_SHA||null,result:'PASS',assetFrozen:true,artApproval:false,quality9Verified:false,physicalIPhone:false,renderer:'Chromium/SwiftShader Linux; actual Three.js GLB canvas',renderSettings:{viewport:{width:1500,height:1100},dpr:1,lod:'portrait',camera:'Perspective 35 degrees, no inherited yaw/pitch'},sourceSha256:source,shots,noSupabaseRequests:true,errors,limitations:['Art study, not final production character','FK Kick; foot/ball contact not validated','No Jump clip, complete facial/IK/corrective rig or physical iPhone measurements']};
+fs.writeFileSync(path.join(out,'approval-render-manifest.json'),JSON.stringify(report,null,2)+'\n');
+const cards=shots.map(s=>'<figure><a href="'+s.file+'"><img src="'+s.file+'" alt="'+s.label+'"></a><figcaption><b>'+s.label+'</b><p>'+s.angle+'° · '+s.action+' · '+Math.round(s.time*100)+'% clip</p></figcaption></figure>').join('');
+const html='<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BUM 07 · Bộ ảnh mốc C</title><style>body{margin:0;background:#101d2e;color:#e7edf5;font:16px/1.6 system-ui}main{max-width:1300px;margin:auto;padding:30px 20px}a{color:#f1c45e}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}figure{margin:0;background:#182b41;border-radius:10px;overflow:hidden}img{width:100%;display:block}figcaption{padding:14px}h1{color:#f1c45e}p{max-width:900px}aside{border-left:3px solid #f1c45e;padding:8px 15px;margin:20px 0}@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.grid{grid-template-columns:1fr}}</style><main><h1>BUM tiền đạo 07 · Bộ ảnh mốc bản C</h1><aside>Nghiên cứu tạo hình — chưa nghiệm thu mỹ thuật, chưa xác nhận 9/10. Mô hình được giữ nguyên khi xuất sáu ảnh thật từ GLB. Không dùng ảnh concept AI.</aside><section class="grid">'+cards+'</section><h2>Đã kiểm chứng kỹ thuật</h2><p>Mesh Blender và GLB độc lập, A/B/C, skin FK, hai LOD và bốn clip nghiên cứu. Góc máy và thời điểm clip có trong <a href="approval-render-manifest.json">manifest</a>. Không gửi request Supabase.</p><h2>Chưa hoàn thiện</h2><p>Mắt/mí và miệng chưa tự nhiên; tóc còn dạng vỏ. Pose sút lộ áo kéo gãy/thủng ở sườn. Bàn tay, cổ tay và giày cần sửa. Clip FK chưa có cleanup chân trụ/tiếp xúc bóng. Chưa có Jump hoặc đo FPS iPhone thật.</p><h2>Cần artist Blender làm thủ công</h2><p>Sculpt mặt và cụm tóc có chiều sâu; retopo mí/môi/khớp; garment/PBR; facial rig, IK/corrective và cleanup animation. PR #2 giữ draft, chưa merge; A/B, game công khai và Supabase không đổi.</p></main></html>';
+fs.writeFileSync(path.join(out,'index.html'),html);
+console.log('PASS: six real GLB renders, exact angles, frozen asset hashes, zero Supabase requests.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

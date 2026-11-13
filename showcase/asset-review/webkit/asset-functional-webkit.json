@@ -1,0 +1,65 @@
+{
+  "engine": "webkit",
+  "result": "PASS",
+  "portrait": {
+    "character": "ba-player",
+    "action": "idle",
+    "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+    "version": "snow",
+    "lod": "portrait",
+    "quality": "cinema",
+    "focus": "body",
+    "paused": true,
+    "viewport": {
+      "width": 1012,
+      "height": 657
+    },
+    "renderPixels": {
+      "width": 1012,
+      "height": 657
+    },
+    "devicePixelRatio": 1,
+    "pixelRatio": 1,
+    "shadowMap": 2048,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+    "gpu": "Apple GPU",
+    "triangles": 425528,
+    "drawCalls": 24,
+    "measuredOnPhysicalIPhone": false
+  },
+  "mobile": {
+    "character": "ba-player",
+    "action": "idle",
+    "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+    "version": "snow",
+    "lod": "mobile",
+    "quality": "cinema",
+    "focus": "body",
+    "paused": true,
+    "viewport": {
+      "width": 1012,
+      "height": 657
+    },
+    "renderPixels": {
+      "width": 1012,
+      "height": 657
+    },
+    "devicePixelRatio": 1,
+    "pixelRatio": 1,
+    "shadowMap": 2048,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+    "gpu": "Apple GPU",
+    "triangles": 107509,
+    "drawCalls": 24,
+    "measuredOnPhysicalIPhone": false
+  },
+  "noSupabaseRequests": true,
+  "realSkinClipVerified": true,
+  "preservedBaselineFour": true,
+  "raceAndFailureVerified": true,
+  "limitations": [
+    "Snow art-base candidate, not BA/BUM",
+    "Only minimal Idle head turn; no sports clips",
+    "Not physical iPhone performance evidence"
+  ]
+}

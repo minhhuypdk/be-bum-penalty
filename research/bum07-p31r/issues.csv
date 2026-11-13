@@ -1,0 +1,9 @@
+ID,Priority,Area,Issue,Status,Evidence
+R-01,P0,Blink full closure,Any exposed globe or triangle penetrating ocular envelope at full closure must fail automatically,AUTO_GATE,GATES.json
+R-02,P0,Self contact,Visible orbital folds and nonadjacent head triangle overlap candidates remain; surface repair gate FAIL,OPEN,assets/source-audit.json
+R-03,P1,Mouth,Head lip and oral insert contacts are not production certified; seams and corner form need visual approval,OPEN,assets/source-audit.json
+R-04,P1,Hair,Continuous lobed mass may still look like a cap; hairline silhouette await owner review,OPEN,comparison/neutral.png
+R-05,P1,Face art,Lid volume cheek mouth and expression are procedural research and not accepted art,OPEN,comparison/smile-0.png
+R-06,P2,UV,Finite parameter UV not certified for overlap distortion or final texture bake,OPEN,assets/glb-audit.json
+R-07,P2,Runtime,Corrective Blink knot adapter is isolated review only and not in public gameplay,OPEN,README.md
+R-08,P2,Device,No physical iPhone Safari FPS or thermal profiling,OPEN,BUDGET.json

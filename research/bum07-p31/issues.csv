@@ -1,0 +1,10 @@
+ID,Priority,Area,Observed,Status,Evidence
+P31-01,P0,Facial deformation,Blink 100 percent exposes iris and sclera through eyelid,OPEN,renders/webkit/p31-blink-1.png
+P31-02,P0,Eyelid integration,Annular lids remain patch-like with visible transition and upper sclera leak,OPEN,renders/webkit/p31-close.png
+P31-03,P0,Hair design,Roots attach better but cap foundation and uniform leaves still look manufactured,OPEN,renders/webkit/p31-profile.png
+P31-04,P1,Face form,Nose cheek and lip transitions lack childlike expressive art direction,OPEN,renders/webkit/p31-close.png
+P31-05,P1,Topology,Closed independent components are not welded facial deformation topology,OPEN,assets/source-audit.json
+P31-06,P1,UV,Finite parameter UVs are not production certified for seams overlap or baking,OPEN,assets/glb-audit.json
+P31-07,P2,Performance,225446 total triangles and 71 primitives require profiling before runtime adoption,OPEN,assets/glb-audit.json
+P31-08,P2,Device,No physical iPhone Safari performance result,OPEN,renders/webkit/browser-report.json
+P31-09,DEFERRED,Body and clips,Existing C cloth distortion and sports contact cleanup remain outside face hair scope,DEFERRED,renders/webkit/p31-motion-kick.png

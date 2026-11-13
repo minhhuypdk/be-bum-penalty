@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "documents_complete": true,
+  "source_model_version": "P2_UNAPPROVED",
+  "source_workbench_sha256": "30338d105c61eb206b688d31d74f9a7ccd947607f7ad67a5aff89833a8cb2f4c",
+  "source_file_unchanged": true,
+  "geometry_created": false,
+  "generator_invoked": false,
+  "master_proposal_numeric_consistency": true,
+  "master_proposal_approved": false,
+  "art_approved": false,
+  "quality_9_verified": false,
+  "all_art_checklist_statuses": "OPEN",
+  "pdf_header_valid": true,
+  "physical_iPhone_tested": false,
+  "changes_to_game_or_supabase": false
+}

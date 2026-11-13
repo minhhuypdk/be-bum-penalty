@@ -1,0 +1,1 @@
+Exact P2 baseline copied from artifact 13838836950. Not an approved model. Do not edit or regenerate. Workbench SHA256 30338d105c61eb206b688d31d74f9a7ccd947607f7ad67a5aff89833a8cb2f4c. Current art direction is proposed in ../design-spec.json; archived P2 metadata is reference only.

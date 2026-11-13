@@ -1,0 +1,147 @@
+{
+  "measuredHardware": "Linux software rendering; no physical iPhone tested",
+  "sourceFilesSha256": {
+    "graphics/showcase.js": "5beb850aa3691451fb83e446d1cb049c4b509393944cdbc438e8a5daae966e03",
+    "graphics/showcase-motion.js": "0113d8308c409ae2e65d18e1c8db582f29a721859d2236f6972e33236cc6ab06",
+    "graphics/characters.js": "0e4611b4cbdd4701f0ce03df59c48d50b23ad23c1b9ce4f9c60b706a17c47080"
+  },
+  "results": [
+    {
+      "profile": "desktop-software",
+      "engine": "chromium",
+      "character": "ba-player",
+      "action": "run",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 1012,
+        "height": 666
+      },
+      "renderPixels": {
+        "width": 1012,
+        "height": 666
+      },
+      "devicePixelRatio": 1,
+      "pixelRatio": 1,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:47:59.591Z",
+      "durationSeconds": 9.8,
+      "renderedFrames": 8,
+      "averageFps": 0.82,
+      "medianFrameMs": 1199.9,
+      "p95FrameMs": 2383.3,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "portrait-retina-emulation",
+      "engine": "chromium",
+      "character": "bum-keeper",
+      "action": "save",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 390,
+        "height": 440
+      },
+      "renderPixels": {
+        "width": 1170,
+        "height": 1320
+      },
+      "devicePixelRatio": 3,
+      "pixelRatio": 3,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:48:18.262Z",
+      "durationSeconds": 9.283,
+      "renderedFrames": 7,
+      "averageFps": 0.75,
+      "medianFrameMs": 1283.3,
+      "p95FrameMs": 2349.9,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "desktop-software",
+      "engine": "webkit",
+      "character": "ba-player",
+      "action": "run",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 1012,
+        "height": 657
+      },
+      "renderPixels": {
+        "width": 1012,
+        "height": 657
+      },
+      "devicePixelRatio": 1,
+      "pixelRatio": 1,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "gpu": "Apple GPU",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:48:32.859Z",
+      "durationSeconds": 8.053,
+      "renderedFrames": 38,
+      "averageFps": 4.72,
+      "medianFrameMs": 207,
+      "p95FrameMs": 243,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "portrait-retina-emulation",
+      "engine": "webkit",
+      "character": "bum-keeper",
+      "action": "save",
+      "source": "BA/BUM authored procedural model",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 390,
+        "height": 440
+      },
+      "renderPixels": {
+        "width": 1170,
+        "height": 1320
+      },
+      "devicePixelRatio": 3,
+      "pixelRatio": 3,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "gpu": "Apple GPU",
+      "triangles": 103146,
+      "drawCalls": 50,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T02:48:45.530Z",
+      "durationSeconds": 8.461,
+      "renderedFrames": 21,
+      "averageFps": 2.48,
+      "medianFrameMs": 386,
+      "p95FrameMs": 493,
+      "note": "FPS th\u1ef1c \u0111o tr\u00ean m\u00f4i tr\u01b0\u1eddng ghi \u1edf userAgent/GPU. Kh\u00f4ng d\u00f9ng s\u1ed1 desktop/emulator l\u00e0m cam k\u1ebft FPS Safari iPhone.",
+      "errors": []
+    }
+  ],
+  "warning": "WebKit GPU string Apple GPU is masked. These numbers do not predict hardware Safari iPhone FPS."
+}

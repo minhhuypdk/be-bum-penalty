@@ -1,0 +1,24 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bé Bum · Xưởng nhân vật</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#12263d;color:#fff3d8;font:16px system-ui}header{position:absolute;top:0;left:0;right:0;padding:20px;z-index:1;background:linear-gradient(#12263d,transparent)}h1{font-size:21px;margin:0 0 5px}p{color:#b7c9d3;font-size:13px;margin:0}nav{position:absolute;bottom:0;padding:20px;display:flex;flex-wrap:wrap;gap:10px;width:100%;justify-content:center}select,button{padding:12px;background:#ffe0a0;color:#18314a;border:0;border-radius:12px;font:inherit}canvas{display:block}</style>
+<header><h1>BÉ BUM · Xưởng nhân vật 3D</h1><p>Bản duyệt tạo hình · kéo để xoay nhân vật</p></header>
+<nav><select id="character" aria-label="Nhân vật"><option value="ba-player">BA · Cầu thủ</option><option value="bum-player">BUM · Cầu thủ</option><option value="ba-keeper">BA · Thủ môn</option><option value="bum-keeper">BUM · Thủ môn</option></select><select id="pose" aria-label="Chuyển động"><option value="idle">Đứng chờ</option><option value="kick">Sút bóng</option><option value="save">Bắt bóng</option><option value="celebrate">Ăn mừng</option></select><select id="view" aria-label="Góc nhìn"><option value="0">Chính diện</option><option value="0.65">Góc ba phần tư</option><option value="1.57">Góc nghiêng</option><option value="3.14">Mặt sau</option></select><button id="rotate">Tự xoay: bật</button></nav>
+<script type="module">
+import * as THREE from '../vendor/three.module.js';
+import {createCharacter,poseCharacter} from './characters.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.75));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.25;document.body.prepend(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x12263d);scene.fog=new THREE.Fog(0x12263d,8,22);
+const camera=new THREE.PerspectiveCamera(32,innerWidth/innerHeight,.1,30);camera.position.set(0,1.6,5.7);camera.lookAt(0,1.13,0);
+scene.add(new THREE.HemisphereLight(0xc7eaff,0x61514b,2.2));
+const key=new THREE.DirectionalLight(0xffe4bf,4);key.position.set(-3,5,4);key.castShadow=true;key.shadow.mapSize.set(1024,1024);key.shadow.normalBias=.02;key.shadow.bias=-.0001;Object.assign(key.shadow.camera,{near:.1,far:15,left:-2.5,right:2.5,top:3.2,bottom:-1.2});scene.add(key);
+const rim=new THREE.DirectionalLight(0x91ccff,3);rim.position.set(3,3,-3);scene.add(rim);
+const ground=new THREE.Mesh(new THREE.CylinderGeometry(1.25,1.35,.1,80),new THREE.MeshStandardMaterial({color:0x29445b,roughness:.65}));ground.position.y=-.07;ground.receiveShadow=true;scene.add(ground);
+const actors=Object.fromEntries(['ba-player','bum-player','ba-keeper','bum-keeper'].map(id=>{const c=createCharacter(id);scene.add(c);return[id,c]}));
+const select=document.querySelector('#character'),pose=document.querySelector('#pose');const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let auto=!reduced,angle=0,lastX=null;
+function paintRotate(){const button=document.querySelector('#rotate');button.textContent='Tự xoay: '+(auto?'bật':'tắt');button.setAttribute('aria-pressed',String(auto));}
+document.querySelector('#rotate').onclick=()=>{auto=!auto;paintRotate()};
+document.querySelector('#view').onchange=e=>{angle=Number(e.target.value);auto=false;paintRotate()};paintRotate();
+renderer.domElement.onpointerdown=e=>{lastX=e.clientX;renderer.domElement.setPointerCapture(e.pointerId);auto=false;paintRotate()};renderer.domElement.onpointermove=e=>{if(lastX===null)return;angle+=(e.clientX-lastX)*.009;lastX=e.clientX};renderer.domElement.onpointerup=renderer.domElement.onpointercancel=()=>lastX=null;renderer.domElement.style.touchAction='none';
+function resize(){renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()}addEventListener('resize',resize);resize();
+let previous=performance.now();renderer.setAnimationLoop(now=>{if(now-previous<1000/30)return;const dt=Math.min(.05,(now-previous)/1000);previous=now;if(auto)angle+=dt*.18;for(const[id,c]of Object.entries(actors)){c.visible=id===select.value;if(!c.visible)continue;c.rotation.y=angle;poseCharacter(c,reduced?0:now/1000,pose.value,reduced?.5:(now/1600)%1)}renderer.render(scene,camera)});
+document.body.dataset.ready='true';
+</script></html>

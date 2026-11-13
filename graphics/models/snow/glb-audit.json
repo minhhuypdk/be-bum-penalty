@@ -1,0 +1,266 @@
+[
+  {
+    "file": "graphics/models/snow/snow-review-mobile.glb",
+    "sha256": "1eea7f3e269beba7479bd5d378ad72b6f1c3997c971dac24d6c1fe5c8a863e8d",
+    "bytes": 5580928,
+    "triangles": 105971,
+    "meshPrimitives": 21,
+    "materials": 15,
+    "skinJointCounts": [
+      278
+    ],
+    "clips": [
+      "Idle"
+    ],
+    "textures": [
+      {
+        "name": "skin_diffuse.1003",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 54907
+      },
+      {
+        "name": "skin_roughness.1003",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 11066
+      },
+      {
+        "name": "skin_diffuse.1002",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 44437
+      },
+      {
+        "name": "skin_roughness.1002",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 11188
+      },
+      {
+        "name": "hair_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 44043
+      },
+      {
+        "name": "hair_roughness",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 14633
+      },
+      {
+        "name": "eyes_normal",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 5611
+      },
+      {
+        "name": "eyes_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 37585
+      },
+      {
+        "name": "skin_diffuse.1001",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 48909
+      },
+      {
+        "name": "skin_roughness.1001",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 10760
+      },
+      {
+        "name": "pants_normal",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 19460
+      },
+      {
+        "name": "pants_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 129730
+      },
+      {
+        "name": "pants_roughness",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 10230
+      },
+      {
+        "name": "shirt_normal",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 20046
+      },
+      {
+        "name": "shirt_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 61463
+      },
+      {
+        "name": "shirt_roughness",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 6652
+      },
+      {
+        "name": "shoes_normal",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 50184
+      },
+      {
+        "name": "shoes_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 93377
+      },
+      {
+        "name": "shoes_roughness",
+        "width": 256,
+        "height": 256,
+        "encodedBytes": 12197
+      }
+    ],
+    "estimatedRGBA8TextureMiBWithMipmaps": 50.33,
+    "warning": "Texture estimate excludes geometry, shadows, environment, browser copies and other renderer allocations; actual GPU memory is device-dependent."
+  },
+  {
+    "file": "graphics/models/snow/snow-review-portrait.glb",
+    "sha256": "a0980692efc66e0c3c84c1120de9a458141049cbdacf870a4f9754af27f45c64",
+    "bytes": 19414844,
+    "triangles": 423990,
+    "meshPrimitives": 21,
+    "materials": 15,
+    "skinJointCounts": [
+      278
+    ],
+    "clips": [
+      "Idle"
+    ],
+    "textures": [
+      {
+        "name": "skin_diffuse.1003",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 54907
+      },
+      {
+        "name": "skin_roughness.1003",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 26423
+      },
+      {
+        "name": "skin_diffuse.1002",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 44437
+      },
+      {
+        "name": "skin_roughness.1002",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 25556
+      },
+      {
+        "name": "hair_diffuse",
+        "width": 2048,
+        "height": 2048,
+        "encodedBytes": 136511
+      },
+      {
+        "name": "hair_roughness",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 35500
+      },
+      {
+        "name": "eyes_normal",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 19075
+      },
+      {
+        "name": "eyes_diffuse",
+        "width": 2048,
+        "height": 2048,
+        "encodedBytes": 118732
+      },
+      {
+        "name": "skin_diffuse.1001",
+        "width": 2048,
+        "height": 2048,
+        "encodedBytes": 153640
+      },
+      {
+        "name": "skin_roughness.1001",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 24937
+      },
+      {
+        "name": "pants_normal",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 60044
+      },
+      {
+        "name": "pants_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 129730
+      },
+      {
+        "name": "pants_roughness",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 22642
+      },
+      {
+        "name": "shirt_normal",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 92261
+      },
+      {
+        "name": "shirt_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 61463
+      },
+      {
+        "name": "shirt_roughness",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 15134
+      },
+      {
+        "name": "shoes_normal",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 195860
+      },
+      {
+        "name": "shoes_diffuse",
+        "width": 1024,
+        "height": 1024,
+        "encodedBytes": 93377
+      },
+      {
+        "name": "shoes_roughness",
+        "width": 512,
+        "height": 512,
+        "encodedBytes": 31244
+      }
+    ],
+    "estimatedRGBA8TextureMiBWithMipmaps": 121.33,
+    "warning": "Texture estimate excludes geometry, shadows, environment, browser copies and other renderer allocations; actual GPU memory is device-dependent."
+  }
+]

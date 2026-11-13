@@ -1,0 +1,483 @@
+{
+  "result": "PASS_WITH_LIMITATIONS",
+  "independentReadBack": true,
+  "originalMeshesPreserved": 95,
+  "originalRigActionsPreserved": true,
+  "sourceSha256": "30338d105c61eb206b688d31d74f9a7ccd947607f7ad67a5aff89833a8cb2f4c",
+  "newMeshes": [
+    {
+      "name": "P31 reconstructed head with orbital recesses",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.1243950378950104,
+      "quads": 24192,
+      "faces": 24576
+    },
+    {
+      "name": "P31 globe -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.002943681827438453,
+      "quads": 2432,
+      "faces": 2560
+    },
+    {
+      "name": "P31 iris -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 1.1344065356090902e-05,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 pupil -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 9.91694023054145e-07,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 catchlight -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 5.2496942410375285e-08,
+      "quads": 336,
+      "faces": 384
+    },
+    {
+      "name": "P31 thick orbital lid -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 4.3976024962421894e-05,
+      "quads": 1536,
+      "faces": 1536
+    },
+    {
+      "name": "P31 soft brow -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 5.0608932549390745e-06,
+      "quads": 912,
+      "faces": 960
+    },
+    {
+      "name": "P31 ear -1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0003373026832699811,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 globe 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.002943681827438452,
+      "quads": 2432,
+      "faces": 2560
+    },
+    {
+      "name": "P31 iris 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 1.1344065356090101e-05,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 pupil 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 9.916940230542694e-07,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 catchlight 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 5.249695299869361e-08,
+      "quads": 336,
+      "faces": 384
+    },
+    {
+      "name": "P31 thick orbital lid 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 4.397602575203155e-05,
+      "quads": 1536,
+      "faces": 1536
+    },
+    {
+      "name": "P31 soft brow 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 5.060893254919446e-06,
+      "quads": 912,
+      "faces": 960
+    },
+    {
+      "name": "P31 ear 1",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.00033730268326961807,
+      "quads": 1440,
+      "faces": 1536
+    },
+    {
+      "name": "P31 upper lip",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 3.459550180421207e-06,
+      "quads": 1488,
+      "faces": 1536
+    },
+    {
+      "name": "P31 lower lip",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 3.459545676667837e-06,
+      "quads": 1488,
+      "faces": 1536
+    },
+    {
+      "name": "P31 subtle mouth contact",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 1.4049806765552568e-07,
+      "quads": 992,
+      "faces": 1024
+    },
+    {
+      "name": "P31 shaped scalp foundation",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.005390601408558491,
+      "quads": 6048,
+      "faces": 6050
+    },
+    {
+      "name": "P31 layered sculpt leaf 00",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0005047349601773474,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 01",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0003054312778132246,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 02",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0004342802354920796,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 03",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.00019322572628570196,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 04",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.00024438538137255627,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 05",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0002095708514751095,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 06",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0002249060311954349,
+      "quads": 1534,
+      "faces": 1534
+    },
+    {
+      "name": "P31 layered sculpt leaf 07",
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "volume": 0.0002294346072360525,
+      "quads": 1534,
+      "faces": 1534
+    }
+  ],
+  "morphDeformation": [
+    {
+      "object": "P31 reconstructed head with orbital recesses",
+      "key": "FH_Smile",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.209421964706263e-07
+    },
+    {
+      "object": "P31 reconstructed head with orbital recesses",
+      "key": "FH_Smile",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.209421964706263e-07
+    },
+    {
+      "object": "P31 reconstructed head with orbital recesses",
+      "key": "FH_Smile",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.209421964706263e-07
+    },
+    {
+      "object": "P31 thick orbital lid -1",
+      "key": "FH_Blink",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 4.851458999456828e-06
+    },
+    {
+      "object": "P31 thick orbital lid -1",
+      "key": "FH_Blink",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.482213860922649e-06
+    },
+    {
+      "object": "P31 thick orbital lid -1",
+      "key": "FH_Blink",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 3.4726056501461845e-07
+    },
+    {
+      "object": "P31 thick orbital lid 1",
+      "key": "FH_Blink",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 4.851458999456828e-06
+    },
+    {
+      "object": "P31 thick orbital lid 1",
+      "key": "FH_Blink",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.482213860922649e-06
+    },
+    {
+      "object": "P31 thick orbital lid 1",
+      "key": "FH_Blink",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 3.4726056501461845e-07
+    },
+    {
+      "object": "P31 upper lip",
+      "key": "FH_Smile",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.8632894759695477e-09
+    },
+    {
+      "object": "P31 upper lip",
+      "key": "FH_Smile",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.886235706630038e-09
+    },
+    {
+      "object": "P31 upper lip",
+      "key": "FH_Smile",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.891734381711734e-09
+    },
+    {
+      "object": "P31 lower lip",
+      "key": "FH_Smile",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.983166694602683e-09
+    },
+    {
+      "object": "P31 lower lip",
+      "key": "FH_Smile",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 2.9889262585748896e-09
+    },
+    {
+      "object": "P31 lower lip",
+      "key": "FH_Smile",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 3.012388987591183e-09
+    }
+  ],
+  "motion": [
+    {
+      "action": "Idle",
+      "frame": 1.0,
+      "finite": true,
+      "maxLocalDisplacement": 0
+    },
+    {
+      "action": "Idle",
+      "frame": 60.5,
+      "finite": true,
+      "maxLocalDisplacement": 0.0005045250437523696
+    },
+    {
+      "action": "Idle",
+      "frame": 120.0,
+      "finite": true,
+      "maxLocalDisplacement": 4.570348193658706e-18
+    },
+    {
+      "action": "Run",
+      "frame": 1.0,
+      "finite": true,
+      "maxLocalDisplacement": 0.06827477120911833
+    },
+    {
+      "action": "Run",
+      "frame": 15.5,
+      "finite": true,
+      "maxLocalDisplacement": 0.06831073617693528
+    },
+    {
+      "action": "Run",
+      "frame": 30.0,
+      "finite": true,
+      "maxLocalDisplacement": 0.06827477120911833
+    },
+    {
+      "action": "Kick",
+      "frame": 1.0,
+      "finite": true,
+      "maxLocalDisplacement": 0
+    },
+    {
+      "action": "Kick",
+      "frame": 48.5,
+      "finite": true,
+      "maxLocalDisplacement": 0.02449449315963711
+    },
+    {
+      "action": "Kick",
+      "frame": 96.0,
+      "finite": true,
+      "maxLocalDisplacement": 0
+    },
+    {
+      "action": "Celebrate",
+      "frame": 1.0,
+      "finite": true,
+      "maxLocalDisplacement": 0
+    },
+    {
+      "action": "Celebrate",
+      "frame": 54.5,
+      "finite": true,
+      "maxLocalDisplacement": 0.0012718658937443436
+    },
+    {
+      "action": "Celebrate",
+      "frame": 108.0,
+      "finite": true,
+      "maxLocalDisplacement": 9.669656302892759e-18
+    }
+  ],
+  "limits": [
+    "Manifold per component only; intentional intersections between lids/head/hair roots not a welded production surface",
+    "Finite deformation is not proof of collision-free poses or good facial anatomy",
+    "UV availability/finite values checked by build; overlaps/seam distortion not production certified",
+    "Morph zero-area triangles are reported explicitly, not hidden"
+  ],
+  "artApproved": false,
+  "physicalIPhone": false
+}

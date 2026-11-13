@@ -1,0 +1,38 @@
+{
+  "version": "P3.1R",
+  "blink100Gate": "PASS",
+  "requestedBlinkOcularContact": "PASS",
+  "sampledInterpolationContact": "PASS",
+  "globalFacialDeformation": "FAIL_VISIBLE_FOLDS_AND_UNCLASSIFIED_SELF_CONTACTS",
+  "socketSurfaceForm": "FAIL_VISIBLE_FOLDS",
+  "hairArt": "PARTIAL_STILL_CAP_LIKE",
+  "artAcceptance": "PENDING_OWNER_NOT_9_OF_10",
+  "noNextPhaseAuthorized": true,
+  "physicalIPhone": false,
+  "fullBlinkEyeRedPixels": [
+    {
+      "angle": 0,
+      "redPixels": 0,
+      "engine": "chromium"
+    },
+    {
+      "angle": 45,
+      "redPixels": 0,
+      "engine": "chromium"
+    },
+    {
+      "angle": 0,
+      "redPixels": 0,
+      "engine": "webkit"
+    },
+    {
+      "angle": 45,
+      "redPixels": 0,
+      "engine": "webkit"
+    }
+  ],
+  "limits": [
+    "Unclassified head self-contact candidates and mouth root contacts remain",
+    "Finite sampled poses and full-closure occlusion do not certify all continuous expressions or quality9"
+  ]
+}

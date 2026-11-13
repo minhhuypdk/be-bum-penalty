@@ -1,0 +1,27 @@
+{
+  "character": "bum-player",
+  "version": "C",
+  "name": "BUM 07 original Blender technical art study",
+  "artApproval": false,
+  "isFinal": false,
+  "score9Verified": false,
+  "source": "Original scripted Blender modeling in scripts/assets/build-bum07.py",
+  "snowGeometryUsed": false,
+  "snowTexturesRigAnimationsUsed": false,
+  "externalAssets": [],
+  "sourceBlendSha256": "89f5e9e42adc6b41160958cf9353d526b60191be1b739abf737663862d82b1d1",
+  "scope": "Only BUM striker 07; no other character development before owner approval",
+  "exportedClips": [
+    "Idle",
+    "Run",
+    "Kick",
+    "Celebrate"
+  ],
+  "limitations": [
+    "No professional hand-sculpt quality claim",
+    "Full facial morph/IK/corrective rig not implemented",
+    "FK sports motion studies; foot/ball contact cleanup not complete",
+    "No physical iPhone verification"
+  ],
+  "productionBrief": "PRODUCTION-BRIEF.md"
+}

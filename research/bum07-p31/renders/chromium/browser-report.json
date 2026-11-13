@@ -1,0 +1,759 @@
+{
+  "result": "PASS",
+  "engine": "chromium",
+  "physicalIPhone": false,
+  "artApproved": false,
+  "quality9Verified": false,
+  "scope": "Actual GLB import/render; matched camera and studio; morph and existing action playback. Does not certify collision-free anatomy or iPhone performance.",
+  "sourceHashes": {
+    "graphics/models/bum07/bum07-study-portrait.glb": "848dbcd643225c5396b0c05dc672ffca509abccce2f325cfdb3cb4cba0615fe0",
+    "graphics/models/p2-original.glb": "6121dbdd994b030318291c24a813d007960d767c54e1d101f54ff28099ee5a3c",
+    "graphics/models/bum07-p31/bum07-p31-experimental.glb": "1470c19dbfc0c9784afcc18c5135af02e61687f9c4a90a925275666d8277ec7b"
+  },
+  "shots": [
+    {
+      "variant": "C",
+      "id": "front",
+      "angle": 0,
+      "file": "c-front.png",
+      "sha256": "8062fa8075de48efaea981e238094d5603598b673aaa84b5cc96da6dec673c55",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.7042271345191935
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "bum07",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "Original BUM07 Blender art study — not approved final",
+        "version": "bum07",
+        "lod": "portrait",
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 151164,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "C",
+      "id": "45",
+      "angle": 45,
+      "file": "c-45.png",
+      "sha256": "0beccb8495710f804e7f5fb5dc5fe29df91c927f819b9cda1f7e30a5a6824293",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          1.7127129049358158
+        ],
+        "target": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          -0.0204761484818054
+        ],
+        "version": "bum07",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "Original BUM07 Blender art study — not approved final",
+        "version": "bum07",
+        "lod": "portrait",
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 151164,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "C",
+      "id": "profile",
+      "angle": 90,
+      "file": "c-profile.png",
+      "sha256": "83c3c950e8e89b66773d01d466b7f44567b4bb7f1eb7bfbf8d1a7914ea39a67b",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          1.7331933254279146
+        ],
+        "target": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          0.000004272010293342685
+        ],
+        "version": "bum07",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "Original BUM07 Blender art study — not approved final",
+        "version": "bum07",
+        "lod": "portrait",
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 151164,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "C",
+      "id": "close",
+      "angle": 0,
+      "close": true,
+      "file": "c-close.png",
+      "sha256": "16862e4359636a79c24d1288f6ede86c4860f70ca8167af827a53ff3036f41ed",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.426916885972374
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "bum07",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "Original BUM07 Blender art study — not approved final",
+        "version": "bum07",
+        "lod": "portrait",
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 151164,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P2",
+      "id": "front",
+      "angle": 0,
+      "file": "p2-front.png",
+      "sha256": "9c745b794384f18b6143ddcccdf94eb191a02dc77e55d19b5b10c8a45e92f286",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.7042271345191935
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 206985,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P2",
+      "id": "45",
+      "angle": 45,
+      "file": "p2-45.png",
+      "sha256": "5232f1b06a1ac1c5254a07c0233478c889e006c5d4fc1083382b47cc7d0af2bc",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          1.7127129049358158
+        ],
+        "target": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          -0.0204761484818054
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 206985,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P2",
+      "id": "profile",
+      "angle": 90,
+      "file": "p2-profile.png",
+      "sha256": "9e625f8382bf6218b6bd0db4821df91ae1df6b7aaeba3de2e3fa176188921191",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          1.7331933254279146
+        ],
+        "target": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          0.000004272010293342685
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 206985,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P2",
+      "id": "close",
+      "angle": 0,
+      "close": true,
+      "file": "p2-close.png",
+      "sha256": "4f5cca5ae05517ed44019937544d4a8ac4804c61bfefeb4a888bfc68feb39028",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.426916885972374
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 206985,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "id": "front",
+      "angle": 0,
+      "file": "p31-front.png",
+      "sha256": "fc91143665eb2c933869ce9ef1d0ac3a1e47075225b116cd40fb5b1880610523",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.7042271345191935
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 214596,
+        "drawCalls": 41,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "id": "45",
+      "angle": 45,
+      "file": "p31-45.png",
+      "sha256": "0aea68ddb69c4615a68372da22a8f3c648955133ad74d1833a2f5ae539130b93",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          1.7127129049358158
+        ],
+        "target": [
+          -0.020482190016700853,
+          1.8256305169235283,
+          -0.0204761484818054
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 214598,
+        "drawCalls": 42,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "id": "profile",
+      "angle": 90,
+      "file": "p31-profile.png",
+      "sha256": "7dd9dfa04b831512700e1537c6ab0e0a53d8a93b947d7b45ad176a4d47e75a4e",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          1.7331933254279146
+        ],
+        "target": [
+          -0.028961918898427808,
+          1.8256305169235283,
+          0.000004272010293342685
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 215334,
+        "drawCalls": 44,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "id": "close",
+      "angle": 0,
+      "close": true,
+      "file": "p31-close.png",
+      "sha256": "ff281fcf69e7e98ad70494629bd5c9f87f88aaf18eb5ce4a56e975440ad48ab5",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          1.426916885972374
+        ],
+        "target": [
+          -0.0000042720102933491155,
+          1.8256305169235283,
+          -0.028961918898427808
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 214594,
+        "drawCalls": 40,
+        "measuredOnPhysicalIPhone": false
+      }
+    }
+  ],
+  "motion": [
+    {
+      "action": "idle",
+      "file": "p31-motion-idle.png",
+      "sha256": "3176759c19491ae317b37ec17371a6a82d4ba7d8e1e24b1fb468b0cc9cf0ea35",
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 226984,
+        "drawCalls": 74,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "action": "run",
+      "file": "p31-motion-run.png",
+      "sha256": "4edca3e0054f86a6f5c51620b36658c59c1b7e5cd871c501725e0e360c96604a",
+      "metrics": {
+        "character": "bum-player",
+        "action": "run",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 226984,
+        "drawCalls": 74,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "action": "kick",
+      "file": "p31-motion-kick.png",
+      "sha256": "cf8c48b898f35a9a6e619507927bc9c934a0b4b503aab37d57d6df2ce310f744",
+      "metrics": {
+        "character": "bum-player",
+        "action": "kick",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 226984,
+        "drawCalls": 74,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "action": "celebrate",
+      "file": "p31-motion-celebrate.png",
+      "sha256": "801a2dc2369784feb11c0d080560cc3548c0a4db958c89e42401411e46b477e3",
+      "metrics": {
+        "character": "bum-player",
+        "action": "celebrate",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 226984,
+        "drawCalls": 74,
+        "measuredOnPhysicalIPhone": false
+      }
+    }
+  ],
+  "targets": [
+    {
+      "name": "P31_lower_lip",
+      "names": [
+        "FH_Smile"
+      ],
+      "finite": true
+    },
+    {
+      "name": "P31_reconstructed_head_with_orbital_recesses",
+      "names": [
+        "FH_Smile"
+      ],
+      "finite": true
+    },
+    {
+      "name": "P31_thick_orbital_lid_-1",
+      "names": [
+        "FH_Blink"
+      ],
+      "finite": true
+    },
+    {
+      "name": "P31_thick_orbital_lid_1",
+      "names": [
+        "FH_Blink"
+      ],
+      "finite": true
+    },
+    {
+      "name": "P31_upper_lip",
+      "names": [
+        "FH_Smile"
+      ],
+      "finite": true
+    }
+  ],
+  "errors": [],
+  "noSupabaseRequests": true
+}

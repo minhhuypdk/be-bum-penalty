@@ -1,0 +1,1290 @@
+{
+  "result": "BROWSER_RENDER_PASS",
+  "blink100Gate": "PASS",
+  "engine": "webkit",
+  "physicalIPhone": false,
+  "artApproved": false,
+  "sourceHashes": {
+    "graphics/models/p31.glb": "1470c19dbfc0c9784afcc18c5135af02e61687f9c4a90a925275666d8277ec7b",
+    "graphics/models/p31r/bum07-p31r-experimental.glb": "9acae04ce0cefbc7c5aba16258770190673700fe57d3386a41737326851a29ef"
+  },
+  "shots": [
+    {
+      "variant": "P3.1",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 0,
+      "file": "p31-neutral-0.png",
+      "sha256": "0995107c3fabda59dbf14596a7f76d2673478afc3e8db2c5cb96bde880626878",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 214596,
+        "drawCalls": 41,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 45,
+      "file": "p31-neutral-45.png",
+      "sha256": "30cc25ac87021a112277169035d3de1bcb0a444ef761ac49f2d49adb3cf2dccf",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 214598,
+        "drawCalls": 42,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 90,
+      "file": "p31-neutral-90.png",
+      "sha256": "6eec1d880b66f1e6996af39eff0c510d3eee1d0825e975ed52da660e4c597698",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          -0.021062161059777318,
+          1.8355686431532494,
+          1.7331933518697247
+        ],
+        "target": [
+          -0.021062161059777318,
+          1.8355686431532494,
+          0.000004298452103641312
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 214694,
+        "drawCalls": 43,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0,
+      "angle": 0,
+      "file": "p31-blink-0-0.png",
+      "sha256": "0995107c3fabda59dbf14596a7f76d2673478afc3e8db2c5cb96bde880626878",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 0,
+      "file": "p31-blink-25-0.png",
+      "sha256": "ab754487a41729c295f503e29196ec097d56bf8fde5f38415113bf85748308dc",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p31-blink-50-0.png",
+      "sha256": "7d79c2629e39b969c46b7bf1277146fc7f0eef095a6a54a57127b300b368ea38",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 0,
+      "file": "p31-blink-75-0.png",
+      "sha256": "0420c9d8c9560e9ac472ee898cad416c94ca2aa57fd009482306a359bc581b46",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 1,
+      "angle": 0,
+      "file": "p31-blink-100-0.png",
+      "sha256": "8067eff2b942a26be63f6a5e92f745403213120e5ccb87747ed63e572fe38c82",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 0,
+      "angle": 0,
+      "file": "p31-smile-0-0.png",
+      "sha256": "0995107c3fabda59dbf14596a7f76d2673478afc3e8db2c5cb96bde880626878",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p31-smile-50-0.png",
+      "sha256": "755fc59dc6bb445f1a5710bedc25bda3312f0b855e15bba72c668f8572c754d3",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 1,
+      "angle": 0,
+      "file": "p31-smile-100-0.png",
+      "sha256": "6ffe246ff1874ad51aceafd73aa7929a6114248d7698cc3dfd81f7079337d0e4",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0,
+      "angle": 45,
+      "file": "p31-blink-0-45.png",
+      "sha256": "30cc25ac87021a112277169035d3de1bcb0a444ef761ac49f2d49adb3cf2dccf",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 45,
+      "file": "p31-blink-25-45.png",
+      "sha256": "20fbb3dc3428b8b9667cd2689d592ef26df1bc3ac523ac4792bc2aba2d32e392",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p31-blink-50-45.png",
+      "sha256": "075f29e5164d643c768c6f7637cd51c3b176785b326d1c92fae888a8ef181971",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 45,
+      "file": "p31-blink-75-45.png",
+      "sha256": "97ac965cf555d544cb59a365deeda4d707c41c638b20377ab0ecd9c9e3b68ef4",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Blink",
+      "value": 1,
+      "angle": 45,
+      "file": "p31-blink-100-45.png",
+      "sha256": "0ee6e0052d8cb7ff870be30f44d1a4d336f17062ff756c376c84f4e334d4dc1d",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 0,
+      "angle": 45,
+      "file": "p31-smile-0-45.png",
+      "sha256": "30cc25ac87021a112277169035d3de1bcb0a444ef761ac49f2d49adb3cf2dccf",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p31-smile-50-45.png",
+      "sha256": "da4a97fc3096c9dfbf72cc8df262eaa010bfb42431b54bc87682377d2760fa2c",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1",
+      "mode": "Smile",
+      "value": 1,
+      "angle": 45,
+      "file": "p31-smile-100-45.png",
+      "sha256": "92801b47ce4310bbc2811139db7c0057249885c496212b3240a4045e78f96bf6",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 0,
+      "file": "p31r-neutral-0.png",
+      "sha256": "f62cd545672192b799a6c4b8bc2a3f2fc4401b0398420bec1736e87da50b6f75",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 195184,
+        "drawCalls": 29,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 45,
+      "file": "p31r-neutral-45.png",
+      "sha256": "8ffe4f05d9476ec4e163b4515b60f81a551c6563f44cc8f9b55f51643452ba83",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 195186,
+        "drawCalls": 30,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "neutral",
+      "value": 0,
+      "angle": 90,
+      "file": "p31r-neutral-90.png",
+      "sha256": "3d2027af5e0e018bd333ac5939ee93d7cfe58a11b8fbf5d7a0d027e2cb99198e",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          -0.021062161059777318,
+          1.8355686431532494,
+          1.7331933518697247
+        ],
+        "target": [
+          -0.021062161059777318,
+          1.8355686431532494,
+          0.000004298452103641312
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "face",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 195282,
+        "drawCalls": 31,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0,
+      "angle": 0,
+      "file": "p31r-blink-0-0.png",
+      "sha256": "f62cd545672192b799a6c4b8bc2a3f2fc4401b0398420bec1736e87da50b6f75",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 0,
+      "file": "p31r-blink-25-0.png",
+      "sha256": "b16176f8f83ccfebe94c76c9b73aad555001b717e9fa804869e5bb917d571c61",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p31r-blink-50-0.png",
+      "sha256": "8cf0984c998d49d57dd0535b5a92447ccd9fdb1c862a9f9c9fcee544b305cdd2",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 0,
+      "file": "p31r-blink-75-0.png",
+      "sha256": "5ba2c5d089398c00a23e10724ce55e60626ed052a7125fcb92866a909626742d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 1,
+      "angle": 0,
+      "file": "p31r-blink-100-0.png",
+      "sha256": "1d25713f8f3439e570b0dba5161a9bd46c5df2c7b1e28c355afc97287405c949",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 0,
+      "angle": 0,
+      "file": "p31r-smile-0-0.png",
+      "sha256": "f62cd545672192b799a6c4b8bc2a3f2fc4401b0398420bec1736e87da50b6f75",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p31r-smile-50-0.png",
+      "sha256": "ed2ddaf216032932150b96cb311ac45c3b9ad72a21e5361fef5ae573e2d9d077",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 1,
+      "angle": 0,
+      "file": "p31r-smile-100-0.png",
+      "sha256": "387a36ac4dde67a1495306044e6b632e538d084065eef17c68c10bd94ff5a817",
+      "view": {
+        "angle": 0,
+        "camera": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          1.7121268923578437
+        ],
+        "target": [
+          -0.000004298452103645989,
+          1.8355686431532494,
+          -0.021062161059777318
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0,
+      "angle": 45,
+      "file": "p31r-blink-0-45.png",
+      "sha256": "8ffe4f05d9476ec4e163b4515b60f81a551c6563f44cc8f9b55f51643452ba83",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 45,
+      "file": "p31r-blink-25-45.png",
+      "sha256": "77f3525b8f06fe2e071a467f5bea97a8564097a3a30a2870ca0e2dc158bc46af",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p31r-blink-50-45.png",
+      "sha256": "05a221e80dea060344e463048d4ffdcdc7437df1420cac75f7e06ec97d71e433",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 45,
+      "file": "p31r-blink-75-45.png",
+      "sha256": "ec94b762f6d4eef236c247de5a4268c323a9d0a339ed9acf02fa5c9c7d0c4267",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Blink",
+      "value": 1,
+      "angle": 45,
+      "file": "p31r-blink-100-45.png",
+      "sha256": "4550ab9e80d816ffc3a29487a8059dcc646a302001992a6a2661bc997902d334",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 0,
+      "angle": 45,
+      "file": "p31r-smile-0-45.png",
+      "sha256": "8ffe4f05d9476ec4e163b4515b60f81a551c6563f44cc8f9b55f51643452ba83",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p31r-smile-50-45.png",
+      "sha256": "18059308b396d4c5857262dbd85702b0b3831105c34a970ea5b98603fee6ea79",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "mode": "Smile",
+      "value": 1,
+      "angle": 45,
+      "file": "p31r-smile-100-45.png",
+      "sha256": "a77f358ccbb49e686bea5b60628833dee2173d1cf020235efda8adc233c64512",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          1.7182988959704402
+        ],
+        "target": [
+          -0.014896236376442879,
+          1.8355686431532494,
+          -0.014890157447180688
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    }
+  ],
+  "eyeID": [
+    {
+      "variant": "P3.1",
+      "value": 0,
+      "angle": 0,
+      "redPixels": 12883,
+      "greenPixels": 200287,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-0-0.png",
+      "sha256": "b303b41cfbe76e15e6a2ac67b55008a407102d207b0847457d172a677848cf1e",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.25,
+      "angle": 0,
+      "redPixels": 10172,
+      "greenPixels": 202997,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-25-0.png",
+      "sha256": "001bf2be404a4635e4538666cc3de7ed0474a48d7fa791821c7a882b5065daf6",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.5,
+      "angle": 0,
+      "redPixels": 9284,
+      "greenPixels": 203846,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-50-0.png",
+      "sha256": "94caa74f5916ace0614bae3c52bbffed76252f5696952eedf9c1ebf90e3d0f3a",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.75,
+      "angle": 0,
+      "redPixels": 8217,
+      "greenPixels": 204884,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-75-0.png",
+      "sha256": "15958a466ef590452a9d7932f3da4dec60e17100385e5da939b5bb3b26641af6",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 1,
+      "angle": 0,
+      "redPixels": 5634,
+      "greenPixels": 207045,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-100-0.png",
+      "sha256": "f9395e1b50d7e52d80a95a7ab0a66a48048c59e262068da831814d1b6e762b1b",
+      "gate": "FAIL"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0,
+      "angle": 45,
+      "redPixels": 8266,
+      "greenPixels": 194751,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-0-45.png",
+      "sha256": "93b944423a6a51e6d588d64d3a41333d768b9a7c1b00031af9d79387153dde03",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.25,
+      "angle": 45,
+      "redPixels": 6220,
+      "greenPixels": 196911,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-25-45.png",
+      "sha256": "2e260a81734c90da9901425d97055ba3e840d31d47331361d96d7349adc435f6",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.5,
+      "angle": 45,
+      "redPixels": 5433,
+      "greenPixels": 197880,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-50-45.png",
+      "sha256": "e31cac814be49baa7f7da5ae42e03131cc1962c486b2b40dbb2483ff91ce37e6",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 0.75,
+      "angle": 45,
+      "redPixels": 4726,
+      "greenPixels": 198729,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-75-45.png",
+      "sha256": "8f34b1f36f3d5ee8a19e64f63f955f0ddf7944a1e19b895807035bbd309565ca",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1",
+      "value": 1,
+      "angle": 45,
+      "redPixels": 3388,
+      "greenPixels": 199971,
+      "heads": 3,
+      "eyes": 8,
+      "file": "p31-id-blink-100-45.png",
+      "sha256": "1beb6bee1a3adc15d783615f0a2d711b3aa85937f474f29de37c1367291fd8d9",
+      "gate": "FAIL"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0,
+      "angle": 0,
+      "redPixels": 16895,
+      "greenPixels": 196083,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-0-0.png",
+      "sha256": "20275f3ff8c2eebdfe63faca39873fe96ff62fc7a2b272fb288782805e7c3d01",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.25,
+      "angle": 0,
+      "redPixels": 12593,
+      "greenPixels": 200424,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-25-0.png",
+      "sha256": "55e031b3721ce86cee9585e6c5ef745b87387d2f4028f5809f5b8fd0a01b1152",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.5,
+      "angle": 0,
+      "redPixels": 8209,
+      "greenPixels": 204809,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-50-0.png",
+      "sha256": "877f7d8a4cc059e21f67bda6cceb79b312968294e77e7f3a0979f33b1805aacb",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.75,
+      "angle": 0,
+      "redPixels": 3792,
+      "greenPixels": 209300,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-75-0.png",
+      "sha256": "cb45efbde08a738fa1ac41ece873613fff5c1db3f6a464b42470cdea7befde12",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 1,
+      "angle": 0,
+      "redPixels": 0,
+      "greenPixels": 213480,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-100-0.png",
+      "sha256": "602ce265b9b7561122f2fd4a362b258c49bda1168d17ce490e9a8ac31bff56f1",
+      "gate": "PASS"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0,
+      "angle": 45,
+      "redPixels": 7950,
+      "greenPixels": 195615,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-0-45.png",
+      "sha256": "33d17b837f2938284e484c5b61996d68ad2d6b9291ad6c40a87149a747841520",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.25,
+      "angle": 45,
+      "redPixels": 5974,
+      "greenPixels": 197640,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-25-45.png",
+      "sha256": "81e077ac93836b01dffbc61924f8a64408dcce560876e82530ec1e98b83983dc",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.5,
+      "angle": 45,
+      "redPixels": 3917,
+      "greenPixels": 199743,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-50-45.png",
+      "sha256": "5c63350fc46275ff57fea751ee405cf664e58a2883987e434f89c5642e7a4b62",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 0.75,
+      "angle": 45,
+      "redPixels": 1778,
+      "greenPixels": 201960,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-75-45.png",
+      "sha256": "2e857d9f1c96a2f647bc84d9d101f288aeb8a83c625a04a88b35f85833fc959b",
+      "gate": "not-full-closure"
+    },
+    {
+      "variant": "P3.1R",
+      "value": 1,
+      "angle": 45,
+      "redPixels": 0,
+      "greenPixels": 204473,
+      "heads": 1,
+      "eyes": 6,
+      "file": "p31r-id-blink-100-45.png",
+      "sha256": "6f2a1d407a07d16cb68df3a535746e5b9f0a5ae594878c40953591b0183b01a6",
+      "gate": "PASS"
+    }
+  ],
+  "noSupabaseRequests": true,
+  "errors": [],
+  "baselineEvidenceReused": true,
+  "baselineStudioSha256": "6c6e7f8da13218e04d087d25715dccffd67eff23e3e7558b985255943e4063da",
+  "method": "Actual exported GLB under fixed views. Red eyeball/iris/pupil, green head/lids; zero red pixels at full closure required. Beauty images use unchanged studio. ID pass is diagnostic only, not retouched beauty."
+}

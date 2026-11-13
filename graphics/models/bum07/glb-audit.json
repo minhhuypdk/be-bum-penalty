@@ -1,0 +1,56 @@
+[
+  {
+    "file": "graphics/models/bum07/bum07-study-mobile.glb",
+    "sha256": "9596dd862fdb7dd478d0bf9b809dc7e564b60a0a8926d57498c4d967d1c099a9",
+    "bytes": 4322496,
+    "triangles": 104951,
+    "meshPrimitives": 15,
+    "materials": 15,
+    "skinJointCounts": [
+      51
+    ],
+    "clips": [
+      "Celebrate",
+      "Idle",
+      "Kick",
+      "Run"
+    ],
+    "textures": [
+      {
+        "name": "original woven normal tile",
+        "width": 128,
+        "height": 128,
+        "encodedBytes": 400
+      }
+    ],
+    "estimatedRGBA8TextureMiBWithMipmaps": 0.08,
+    "warning": "Texture estimate excludes geometry, shadows, environment, browser copies and other renderer allocations; actual GPU memory is device-dependent."
+  },
+  {
+    "file": "graphics/models/bum07/bum07-study-portrait.glb",
+    "sha256": "848dbcd643225c5396b0c05dc672ffca509abccce2f325cfdb3cb4cba0615fe0",
+    "bytes": 6443416,
+    "triangles": 160634,
+    "meshPrimitives": 15,
+    "materials": 15,
+    "skinJointCounts": [
+      51
+    ],
+    "clips": [
+      "Celebrate",
+      "Idle",
+      "Kick",
+      "Run"
+    ],
+    "textures": [
+      {
+        "name": "original woven normal tile",
+        "width": 128,
+        "height": 128,
+        "encodedBytes": 400
+      }
+    ],
+    "estimatedRGBA8TextureMiBWithMipmaps": 0.08,
+    "warning": "Texture estimate excludes geometry, shadows, environment, browser copies and other renderer allocations; actual GPU memory is device-dependent."
+  }
+]

@@ -1,0 +1,41 @@
+name: BUM07 artist production dossier
+on:
+  push:
+    branches: [graphics/cinematic-pass]
+    paths:
+      - docs/artist-production/BUM07/**
+      - scripts/package-bum07-artist-dossier.py
+      - scripts/render-bum07-artist-dossier.cjs
+      - .github/workflows/bum07-artist-dossier.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package-documents:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install document renderer
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Prepare documents using unchanged P2 source
+        run: python3 scripts/package-bum07-artist-dossier.py prepare --source docs/artist-production/BUM07/BASELINE-P2 --output artifacts/bum07-artist-dossier
+      - name: Render PDF and check diagrams, images and mobile document layout
+        run: node scripts/render-bum07-artist-dossier.cjs artifacts/bum07-artist-dossier
+      - name: Verify source hashes and package artist handoff
+        run: python3 scripts/package-bum07-artist-dossier.py finalize --source docs/artist-production/BUM07/BASELINE-P2 --output artifacts/bum07-artist-dossier --zip artifacts/BUM07-Artist-Production-Dossier-v1.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-artist-production-dossier-v1
+          path: |
+            artifacts/BUM07-Artist-Production-Dossier-v1.zip
+            artifacts/BUM07-Artist-Production-Dossier-v1.zip.sha256
+            artifacts/bum07-artist-dossier/PRODUCTION-BRIEF.pdf
+            artifacts/bum07-artist-dossier/VALIDATION.json
+          if-no-files-found: error
+          retention-days: 30

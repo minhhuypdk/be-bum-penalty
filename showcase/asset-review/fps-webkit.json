@@ -1,0 +1,85 @@
+{
+  "measuredHardware": "Codex Linux browser rendering, not a physical iPhone",
+  "sourceFilesSha256": {
+    "graphics/showcase.js": "5e89a79176dc975c7e28e2685c0229e2fa72a4f8411f37d992b5db5d0de0fefc",
+    "graphics/showcase-gltf.js": "0177b3ff40e2effc2875ad915e533a13b932097406b20f626ef3a1162a9be7db",
+    "graphics/showcase-motion.js": "0113d8308c409ae2e65d18e1c8db582f29a721859d2236f6972e33236cc6ab06",
+    "graphics/characters.js": "0e4611b4cbdd4701f0ce03df59c48d50b23ad23c1b9ce4f9c60b706a17c47080",
+    "graphics/models/snow/snow-review-portrait.glb": "a0980692efc66e0c3c84c1120de9a458141049cbdacf870a4f9754af27f45c64",
+    "graphics/models/snow/snow-review-mobile.glb": "1eea7f3e269beba7479bd5d378ad72b6f1c3997c971dac24d6c1fe5c8a863e8d"
+  },
+  "results": [
+    {
+      "profile": "desktop-software",
+      "engine": "webkit",
+      "character": "ba-player",
+      "action": "idle",
+      "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+      "version": "snow",
+      "lod": "portrait",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 1012,
+        "height": 657
+      },
+      "renderPixels": {
+        "width": 1012,
+        "height": 657
+      },
+      "devicePixelRatio": 1,
+      "pixelRatio": 1,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "gpu": "Apple GPU",
+      "triangles": 425528,
+      "drawCalls": 24,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T03:43:15.354Z",
+      "durationSeconds": 8.101,
+      "renderedFrames": 15,
+      "averageFps": 1.85,
+      "medianFrameMs": 544,
+      "p95FrameMs": 577,
+      "note": "FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone.",
+      "errors": []
+    },
+    {
+      "profile": "portrait-retina-emulation",
+      "engine": "webkit",
+      "character": "bum-keeper",
+      "action": "idle",
+      "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+      "version": "snow",
+      "lod": "mobile",
+      "quality": "cinema",
+      "focus": "body",
+      "paused": false,
+      "viewport": {
+        "width": 390,
+        "height": 440
+      },
+      "renderPixels": {
+        "width": 1170,
+        "height": 1320
+      },
+      "devicePixelRatio": 3,
+      "pixelRatio": 3,
+      "shadowMap": 2048,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "gpu": "Apple GPU",
+      "triangles": 107509,
+      "drawCalls": 24,
+      "measuredOnPhysicalIPhone": false,
+      "measuredAt": "2026-11-11T03:43:32.247Z",
+      "durationSeconds": 8.351,
+      "renderedFrames": 18,
+      "averageFps": 2.16,
+      "medianFrameMs": 468,
+      "p95FrameMs": 497,
+      "note": "FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone.",
+      "errors": []
+    }
+  ]
+}

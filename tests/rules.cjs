@@ -1,12 +1,12 @@
 const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 (async () => {
-  const browser = await chromium.launch({ executablePath:'/usr/bin/chromium', headless:true, args:['--no-sandbox'] });
+  const browser = await chromium.launch({ executablePath:require('./browser.cjs').executablePath, headless:true, args:['--no-sandbox'] });
   try {
     const page = await browser.newPage();
     await page.route('**/supabase.min.js', r => r.fulfill({body:'window.supabase=undefined;',contentType:'text/javascript'}));
     await page.route('**/graphics/scene.js', r => r.fulfill({body:'',contentType:'text/javascript'}));
-    await page.goto('http://127.0.0.1:4173/');
+    await page.goto(process.env.GAME_URL||'http://127.0.0.1:4173/');
     const result = await page.evaluate(async () => {
       const make = (a,b,score) => ({ history:[...Array.from({length:a},()=>({by:'ba'})),...Array.from({length:b},()=>({by:'bum'}))],score });
       const winners = [
@@ -23,6 +23,7 @@ const assert = require('node:assert/strict');
       const originalMutate = mutate;
       role='ba';
       const state = initial(); state.players={ba:token,bum:'other'};
+      room={version:20,state};render();const firstButton=document.querySelector('#directions button');render();const stableButtons=firstButton===document.querySelector('#directions button');
       mutate=async fn=>fn(state);
       const rejected = [];
       for(const n of [-1,5,1.5,'0',null]) { await choose(n); rejected.push(state.shot===null); }
@@ -30,10 +31,10 @@ const assert = require('node:assert/strict');
       state.players.ba=token; await choose(0); const validShot=state.shot;
       await choose(1); const repeatedShot=state.shot;
       mutate=originalMutate;
-      return {winners,staleAccepted,version,rejected,validShot,repeatedShot};
+      return {winners,staleAccepted,version,rejected,validShot,repeatedShot,stableButtons};
     });
     assert.deepEqual(result.winners,['ba',null,null,'ba',null,'bum']);
-    assert.equal(result.staleAccepted,false); assert.equal(result.version,20);
+    assert.equal(result.stableButtons,true);assert.equal(result.staleAccepted,false); assert.equal(result.version,20);
     assert(result.rejected.every(Boolean)); assert.equal(result.validShot,0); assert.equal(result.repeatedShot,0);
     console.log('PASS: regulation/sudden-death fairness, stale room rejection, invalid/duplicate choices and session ownership.');
   } finally { await browser.close(); }

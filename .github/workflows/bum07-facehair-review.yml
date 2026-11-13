@@ -1,0 +1,59 @@
+name: BUM07 Phase2 face hair artist review
+on:
+  # Historical P2 reproduction only. Automatic mesh generation is paused.
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: bum07-phase2-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  artist-review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Get frozen C render references
+        uses: actions/download-artifact@v4
+        with:
+          name: bum07-C-six-renders
+          path: /tmp/c-reference
+          run-id: 42977152181
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install browser and official Blender 4.3.2
+        run: |
+          if [ -f package-lock.json ]; then npm ci --ignore-scripts --no-audit --no-fund; else npm install --ignore-scripts --no-audit --no-fund; fi
+          npx playwright install --with-deps chromium
+          curl -fLsS --retry 2 https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -o /tmp/blender-4.3.2-linux-x64.tar.xz
+          curl -fLsS https://download.blender.org/release/Blender4.3/blender-4.3.2.sha256 -o /tmp/blender.sha256
+          cd /tmp
+          awk '/blender-4.3.2-linux-x64.tar.xz$/ {print}' blender.sha256 > blender-linux.sha256
+          test -s blender-linux.sha256
+          sha256sum --check blender-linux.sha256
+          tar -xf blender-4.3.2-linux-x64.tar.xz
+      - name: Build isolated face hair workbench
+        run: |
+          /tmp/blender-4.3.2-linux-x64/blender -b --disable-autoexec graphics/models/bum07/bum07-source.blend -P scripts/assets/prepare-bum07-facehair.py -- "$GITHUB_WORKSPACE/graphics/models/bum07-facehair" /tmp/c-reference
+          /tmp/blender-4.3.2-linux-x64/blender -b --factory-startup --disable-autoexec -P tests/facehair-source.py -- "$GITHUB_WORKSPACE/graphics/models/bum07/bum07-source.blend" "$GITHUB_WORKSPACE/graphics/models/bum07-facehair/bum07-facehair-workbench.blend" "$GITHUB_WORKSPACE/graphics/models/bum07-facehair/source-audit.json"
+          python3 scripts/assets/audit-glb.py graphics/models/bum07-facehair
+      - name: Render C versus P2 using identical studio
+        run: |
+          python3 tests/stage-facehair-review.py
+          python3 -m http.server 4180 --bind 127.0.0.1 >/tmp/p2-http.log 2>&1 &
+          review_server_pid=$!
+          trap 'kill "$review_server_pid" 2>/dev/null || true' EXIT
+          node tests/facehair-ci.cjs
+          mkdir -p showcase/facehair-review/artist
+          cp graphics/models/bum07-facehair/* showcase/facehair-review/artist/
+          cp docs/BUM07-PHASE2-ARTIST.md showcase/facehair-review/artist/GUIDE.md
+      - name: Upload Blender source and paired renders
+        uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P2-face-hair-artist-review
+          path: showcase/facehair-review/
+          if-no-files-found: error
+          retention-days: 30

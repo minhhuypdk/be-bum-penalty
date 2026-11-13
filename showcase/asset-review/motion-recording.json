@@ -1,0 +1,35 @@
+{
+  "capturedAt": "2026-11-11T03:44:43.161Z",
+  "engine": "Playwright WebKit on Linux",
+  "actualRunningBrowser": true,
+  "notPhysicalIPhone": true,
+  "content": "Mobile LOD standing / slight head-turn Idle; face and body camera views; no sports clips",
+  "metrics": {
+    "character": "ba-player",
+    "action": "idle",
+    "source": "Snow Rig — Blender Foundation CC-BY 4.0",
+    "version": "snow",
+    "lod": "mobile",
+    "quality": "cinema",
+    "focus": "body",
+    "paused": false,
+    "viewport": {
+      "width": 812,
+      "height": 577
+    },
+    "renderPixels": {
+      "width": 812,
+      "height": 577
+    },
+    "devicePixelRatio": 1,
+    "pixelRatio": 1,
+    "shadowMap": 2048,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+    "gpu": "Apple GPU",
+    "triangles": 107509,
+    "drawCalls": 24,
+    "measuredOnPhysicalIPhone": false
+  },
+  "errors": [],
+  "note": "Video includes startup and camera changes. Its playback frame rate is not game render FPS; use the separate measured FPS report."
+}
