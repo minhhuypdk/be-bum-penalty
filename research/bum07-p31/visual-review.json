@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex observation of actual WebKit GLB PNGs; not owner approval",
+  "version": "P3.1",
+  "result": "FAIL_ART_TARGET",
+  "facialDeformation": "FAIL_VISIBLE_IRIS_SCLERA_THROUGH_FULL_BLINK",
+  "improvement": "Partial: less broken hair silhouette, roots better attached and eyes less protruding. Not a sufficient significant art improvement for acceptance.",
+  "ownerApproval": false,
+  "score9Verified": false,
+  "physicalIPhoneTested": false,
+  "nextPhaseAuthorized": false,
+  "limits": ["Eyelid seams and upper sclera leak", "Hair still has cap foundation", "Face lacks coordinated natural expression", "No production facial retopology or corrective rig"]
+}

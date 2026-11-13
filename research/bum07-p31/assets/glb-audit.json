@@ -1,0 +1,136 @@
+{
+  "result": "PASS",
+  "auditType": "Custom offline structure + all-accessor finite + normal/UV/skin/morph checks; not Khronos certification",
+  "file": "bum07-p31-experimental.glb",
+  "sha256": "1470c19dbfc0c9784afcc18c5135af02e61687f9c4a90a925275666d8277ec7b",
+  "bytes": 7228088,
+  "triangles": 225446,
+  "primitives": 71,
+  "materials": 15,
+  "skins": 1,
+  "clips": [
+    "Celebrate",
+    "Idle",
+    "Kick",
+    "Run"
+  ],
+  "accessorsFinite": 1008,
+  "maxWeightSumError": 1.1827796697616577e-07,
+  "newNormals": [
+    {
+      "mesh": "P31 catchlight -1",
+      "normalLengthSquaredMaxError": 2.0103364106738297e-07
+    },
+    {
+      "mesh": "P31 catchlight 1",
+      "normalLengthSquaredMaxError": 2.0103364106738297e-07
+    },
+    {
+      "mesh": "P31 ear -1",
+      "normalLengthSquaredMaxError": 1.848014017369337e-07
+    },
+    {
+      "mesh": "P31 ear 1",
+      "normalLengthSquaredMaxError": 1.848014017369337e-07
+    },
+    {
+      "mesh": "P31 globe -1",
+      "normalLengthSquaredMaxError": 1.667410254313495e-07
+    },
+    {
+      "mesh": "P31 globe 1",
+      "normalLengthSquaredMaxError": 1.667410254313495e-07
+    },
+    {
+      "mesh": "P31 iris -1",
+      "normalLengthSquaredMaxError": 2.0140374323851518e-07
+    },
+    {
+      "mesh": "P31 iris 1",
+      "normalLengthSquaredMaxError": 2.0140374323851518e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 00",
+      "normalLengthSquaredMaxError": 2.1020462259713213e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 01",
+      "normalLengthSquaredMaxError": 2.1125095983620668e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 02",
+      "normalLengthSquaredMaxError": 1.942780789576659e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 03",
+      "normalLengthSquaredMaxError": 2.0928863353475435e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 04",
+      "normalLengthSquaredMaxError": 1.9734243572600008e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 05",
+      "normalLengthSquaredMaxError": 2.0435149750142045e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 06",
+      "normalLengthSquaredMaxError": 2.0091456498505522e-07
+    },
+    {
+      "mesh": "P31 layered sculpt leaf 07",
+      "normalLengthSquaredMaxError": 2.0108582621247706e-07
+    },
+    {
+      "mesh": "P31 lower lip",
+      "normalLengthSquaredMaxError": 1.9436412035389594e-07
+    },
+    {
+      "mesh": "P31 pupil -1",
+      "normalLengthSquaredMaxError": 1.948846819477268e-07
+    },
+    {
+      "mesh": "P31 pupil 1",
+      "normalLengthSquaredMaxError": 1.948846819477268e-07
+    },
+    {
+      "mesh": "P31 reconstructed head with orbital recesses",
+      "normalLengthSquaredMaxError": 2.201859112815896e-07
+    },
+    {
+      "mesh": "P31 shaped scalp foundation",
+      "normalLengthSquaredMaxError": 2.046588969406571e-07
+    },
+    {
+      "mesh": "P31 soft brow -1",
+      "normalLengthSquaredMaxError": 1.9649790927722677e-07
+    },
+    {
+      "mesh": "P31 soft brow 1",
+      "normalLengthSquaredMaxError": 1.865467282868849e-07
+    },
+    {
+      "mesh": "P31 subtle mouth contact",
+      "normalLengthSquaredMaxError": 1.944182876911782e-07
+    },
+    {
+      "mesh": "P31 thick orbital lid -1",
+      "normalLengthSquaredMaxError": 1.9324033306844512e-07
+    },
+    {
+      "mesh": "P31 thick orbital lid 1",
+      "normalLengthSquaredMaxError": 1.9324033306844512e-07
+    },
+    {
+      "mesh": "P31 upper lip",
+      "normalLengthSquaredMaxError": 2.1466026911554081e-07
+    }
+  ],
+  "embeddedImages": 1,
+  "legacyMeshesWithoutUV": [
+    "torso under kit"
+  ],
+  "uvOverlapCertified": false,
+  "intersectionsCertified": false,
+  "physicalIPhone": false
+}

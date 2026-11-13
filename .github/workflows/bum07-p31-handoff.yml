@@ -1,0 +1,34 @@
+name: BUM07 P3.1 handoff evidence verification
+on:
+  push:
+    branches: [graphics/cinematic-pass]
+    paths:
+      - research/bum07-p31/**
+      - scripts/package-bum07-p31.py
+      - .github/workflows/bum07-p31-handoff.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit shipped GLB independently
+        run: |
+          python3 tests/p31-glb.py research/bum07-p31/assets/bum07-p31-experimental.glb
+          git diff --exit-code -- research/bum07-p31/assets/glb-audit.json
+      - name: Verify source and actual browser evidence; retain failed art gate
+        run: python3 scripts/package-bum07-p31.py artifacts/BUM07-P3.1-Handoff.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P3.1-handoff-art-not-approved
+          path: |
+            artifacts/BUM07-P3.1-Handoff.zip
+            artifacts/BUM07-P3.1-Handoff.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# This workflow verifies existing evidence and packages files. It does not
+# rerun Blender or browsers, build new character variants, or deploy anything.
+# Reproduction commands and real browser tests are supplied in the handoff.
