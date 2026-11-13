@@ -1,0 +1,489 @@
+{
+  "meshes": [
+    {
+      "object": "P41_Circle.001_Runtime",
+      "vertices": 168,
+      "faces": 164,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.1770903617143631,
+          0.169733926653862
+        ],
+        [
+          -0.3777076303958893,
+          -0.041643716394901276
+        ],
+        [
+          3.2738823890686035,
+          3.416318893432617
+        ]
+      ]
+    },
+    {
+      "object": "P41_Cube_Runtime",
+      "vertices": 234,
+      "faces": 232,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.1700516790151596,
+          0.17005164921283722
+        ],
+        [
+          -0.3359343707561493,
+          -0.07290846854448318
+        ],
+        [
+          3.266846179962158,
+          3.3243484497070312
+        ]
+      ]
+    },
+    {
+      "object": "P41_BodyFaceEyes_Runtime",
+      "vertices": 22055,
+      "faces": 22000,
+      "boundaryEdges": 104,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -1.1398327350616455,
+          1.139832854270935
+        ],
+        [
+          -0.529495358467102,
+          0.671888530254364
+        ],
+        [
+          0.042721763253211975,
+          4.420652389526367
+        ]
+      ]
+    },
+    {
+      "object": "P41_Shorts_Runtime",
+      "vertices": 1397,
+      "faces": 1344,
+      "boundaryEdges": 108,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.4015713930130005,
+          0.40161165595054626
+        ],
+        [
+          -0.32979652285575867,
+          0.23336704075336456
+        ],
+        [
+          1.7230874300003052,
+          2.4523773193359375
+        ]
+      ]
+    },
+    {
+      "object": "P41_Jersey_Runtime",
+      "vertices": 5434,
+      "faces": 5374,
+      "boundaryEdges": 168,
+      "nonManifoldNonBoundaryEdges": 8,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 96,
+      "worldBounds": [
+        [
+          -0.4041784405708313,
+          0.4041784405708313
+        ],
+        [
+          -0.3645724952220917,
+          0.25546994805336
+        ],
+        [
+          2.2319154739379883,
+          3.1438770294189453
+        ]
+      ]
+    },
+    {
+      "object": "P41_SculptedHair_Runtime",
+      "vertices": 6462,
+      "faces": 6417,
+      "boundaryEdges": 98,
+      "nonManifoldNonBoundaryEdges": 2,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.7013612389564514,
+          0.6787050366401672
+        ],
+        [
+          -0.45290201902389526,
+          0.8243520855903625
+        ],
+        [
+          3.255948066711426,
+          4.702475547790527
+        ]
+      ]
+    },
+    {
+      "object": "P41_FootballBoots_Runtime",
+      "vertices": 8186,
+      "faces": 8000,
+      "boundaryEdges": 128,
+      "nonManifoldNonBoundaryEdges": 8,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 24,
+      "worldBounds": [
+        [
+          -0.6338967084884644,
+          0.6338968276977539
+        ],
+        [
+          -0.45810213685035706,
+          0.19262047111988068
+        ],
+        [
+          -0.015000002458691597,
+          0.2985805571079254
+        ]
+      ]
+    },
+    {
+      "object": "P41_FootballSock_L_Runtime",
+      "vertices": 416,
+      "faces": 386,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 2,
+      "worldBounds": [
+        [
+          0.23929648101329803,
+          0.5714976191520691
+        ],
+        [
+          -0.14170855283737183,
+          0.17506533861160278
+        ],
+        [
+          0.2999998927116394,
+          1.1200000047683716
+        ]
+      ]
+    },
+    {
+      "object": "P41_SockTop_L_Runtime",
+      "vertices": 64,
+      "faces": 34,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 2,
+      "worldBounds": [
+        [
+          0.23429648578166962,
+          0.4772268831729889
+        ],
+        [
+          -0.14670857787132263,
+          0.09888331592082977
+        ],
+        [
+          1.051666498184204,
+          1.1200000047683716
+        ]
+      ]
+    },
+    {
+      "object": "P41_FootballSock_R_Runtime",
+      "vertices": 416,
+      "faces": 386,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 2,
+      "worldBounds": [
+        [
+          -0.5714975595474243,
+          -0.23929646611213684
+        ],
+        [
+          -0.14170855283737183,
+          0.17506535351276398
+        ],
+        [
+          0.2999999523162842,
+          1.1200001239776611
+        ]
+      ]
+    },
+    {
+      "object": "P41_SockTop_R_Runtime",
+      "vertices": 64,
+      "faces": 34,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 2,
+      "worldBounds": [
+        [
+          -0.4772268533706665,
+          -0.23429648578166962
+        ],
+        [
+          -0.14670859277248383,
+          0.09888331592082977
+        ],
+        [
+          1.0516667366027832,
+          1.1200001239776611
+        ]
+      ]
+    },
+    {
+      "object": "P41_FootballCollar_Runtime",
+      "vertices": 256,
+      "faces": 256,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.19599999487400055,
+          0.19599999487400055
+        ],
+        [
+          -0.1860000044107437,
+          0.20600000023841858
+        ],
+        [
+          2.9971349239349365,
+          3.135999917984009
+        ]
+      ]
+    },
+    {
+      "object": "P41_Shirt07_Runtime",
+      "vertices": 1428,
+      "faces": 1322,
+      "boundaryEdges": 408,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 102,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 200,
+      "worldBounds": [
+        [
+          -0.13680244982242584,
+          0.14287129044532776
+        ],
+        [
+          -0.32673174142837524,
+          -0.2563302218914032
+        ],
+        [
+          2.5267324447631836,
+          2.730891704559326
+        ]
+      ]
+    },
+    {
+      "object": "P41_BUMBadge_Runtime",
+      "vertices": 2786,
+      "faces": 2583,
+      "boundaryEdges": 796,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 199,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 394,
+      "worldBounds": [
+        [
+          -0.23182499408721924,
+          -0.0879499688744545
+        ],
+        [
+          -0.21766000986099243,
+          -0.11521318554878235
+        ],
+        [
+          2.8988242149353027,
+          2.951650381088257
+        ]
+      ]
+    },
+    {
+      "object": "P41_ProjectedBootLaces_Runtime",
+      "vertices": 448,
+      "faces": 384,
+      "boundaryEdges": 128,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 0,
+      "worldBounds": [
+        [
+          -0.5575178861618042,
+          0.5575266480445862
+        ],
+        [
+          -0.24096965789794922,
+          -0.028000012040138245
+        ],
+        [
+          0.1375720351934433,
+          0.30585765838623047
+        ]
+      ]
+    },
+    {
+      "object": "P41_Iris_L_Runtime",
+      "vertices": 768,
+      "faces": 768,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 96,
+      "worldBounds": [
+        [
+          0.10119423270225525,
+          0.25473952293395996
+        ],
+        [
+          -0.2844952344894409,
+          -0.264788419008255
+        ],
+        [
+          3.6105854511260986,
+          3.7641308307647705
+        ]
+      ]
+    },
+    {
+      "object": "P41_Pupil_L_Runtime",
+      "vertices": 768,
+      "faces": 768,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 90,
+      "worldBounds": [
+        [
+          0.14291849732398987,
+          0.21301525831222534
+        ],
+        [
+          -0.28509521484375,
+          -0.28037330508232117
+        ],
+        [
+          3.6523098945617676,
+          3.7224068641662598
+        ]
+      ]
+    },
+    {
+      "object": "P41_Iris_R_Runtime",
+      "vertices": 768,
+      "faces": 768,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 96,
+      "worldBounds": [
+        [
+          -0.25473952293395996,
+          -0.10119421780109406
+        ],
+        [
+          -0.2844952344894409,
+          -0.264788419008255
+        ],
+        [
+          3.6105854511260986,
+          3.7641308307647705
+        ]
+      ]
+    },
+    {
+      "object": "P41_Pupil_R_Runtime",
+      "vertices": 768,
+      "faces": 768,
+      "boundaryEdges": 0,
+      "nonManifoldNonBoundaryEdges": 0,
+      "zeroAreaFaces": 0,
+      "nonFiniteNormals": 0,
+      "uvLayers": 1,
+      "zeroUVAreaFaces": 90,
+      "worldBounds": [
+        [
+          -0.21301524341106415,
+          -0.14291848242282867
+        ],
+        [
+          -0.28509521484375,
+          -0.28037330508232117
+        ],
+        [
+          3.6523098945617676,
+          3.7224068641662598
+        ]
+      ]
+    }
+  ],
+  "scope": "Runtime editable mesh data, pre-skin; separate open clothing boundaries expected. Not a self-intersection or manifold certification. UV degeneracy includes sidewalls/soles/projected labels.",
+  "facialMorphNames": [
+    "Basis",
+    "FH_Blink25",
+    "FH_Blink50",
+    "FH_Blink75",
+    "FH_Blink",
+    "FH_Smile50",
+    "FH_Smile"
+  ]
+}

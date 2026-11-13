@@ -1,0 +1,676 @@
+{
+  "phase": "P4.1",
+  "sourceAuthor": "Mish7913 /3DMish",
+  "sourceLicense": "CC-BY-4.0",
+  "sourceSha256": "95b9848fd0c4a1c9ee94a2ae3a9f6136af71c97256ef63ab7a37017470846568",
+  "sourceUnchanged": true,
+  "nativeJoints": 370,
+  "jointsRemoved": 0,
+  "nativeWeightStats": [
+    {
+      "object": "P41_Circle.001",
+      "maxSourceInfluences": 1,
+      "vertices": 168
+    },
+    {
+      "object": "P41_Cube",
+      "maxSourceInfluences": 3,
+      "vertices": 234
+    },
+    {
+      "object": "P41_BodyFaceEyes",
+      "maxSourceInfluences": 27,
+      "vertices": 22055
+    },
+    {
+      "object": "P41_Shorts",
+      "maxSourceInfluences": 6,
+      "vertices": 1397
+    },
+    {
+      "object": "P41_Jersey",
+      "maxSourceInfluences": 9,
+      "vertices": 5434
+    },
+    {
+      "object": "P41_SculptedHair",
+      "maxSourceInfluences": 9,
+      "vertices": 6462
+    },
+    {
+      "object": "P41_FootballBoots",
+      "maxSourceInfluences": 4,
+      "vertices": 8186
+    },
+    {
+      "object": "P41_FootballSock_L",
+      "maxSourceInfluences": 1,
+      "vertices": 416
+    },
+    {
+      "object": "P41_SockTop_L",
+      "maxSourceInfluences": 1,
+      "vertices": 64
+    },
+    {
+      "object": "P41_FootballSock_R",
+      "maxSourceInfluences": 1,
+      "vertices": 416
+    },
+    {
+      "object": "P41_SockTop_R",
+      "maxSourceInfluences": 1,
+      "vertices": 64
+    },
+    {
+      "object": "P41_FootballCollar",
+      "maxSourceInfluences": 1,
+      "vertices": 256
+    },
+    {
+      "object": "P41_Shirt07",
+      "maxSourceInfluences": 9,
+      "vertices": 1428
+    },
+    {
+      "object": "P41_BUMBadge",
+      "maxSourceInfluences": 5,
+      "vertices": 2786
+    },
+    {
+      "object": "P41_ProjectedBootLaces",
+      "maxSourceInfluences": 1,
+      "vertices": 448
+    },
+    {
+      "object": "P41_Iris_L",
+      "maxSourceInfluences": 1,
+      "vertices": 768
+    },
+    {
+      "object": "P41_Pupil_L",
+      "maxSourceInfluences": 1,
+      "vertices": 768
+    },
+    {
+      "object": "P41_Iris_R",
+      "maxSourceInfluences": 1,
+      "vertices": 768
+    },
+    {
+      "object": "P41_Pupil_R",
+      "maxSourceInfluences": 1,
+      "vertices": 768
+    }
+  ],
+  "runtimeSkinInfluences": 4,
+  "bodyPoseToleranceHeightRatio": 0.002,
+  "faceReferenceSha256": "57e44aa9299a682f431d3aa1e05dcd536bf09e8afe144a8087ebda3e1850e91f",
+  "neutralCompensation": "inverse runtime4 weighted native bone matrix applied to full native evaluated neutral; facial samples transformed by same inverse",
+  "poseErrors": [
+    {
+      "pose": "Neutral",
+      "object": "P41_Circle.001",
+      "maxError": 3.725290298461914e-09,
+      "rmsError": 1.2373835021045636e-09,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Cube",
+      "maxError": 3.268928970170067e-08,
+      "rmsError": 1.0447242317182135e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_BodyFaceEyes",
+      "maxError": 4.915160217178948e-07,
+      "rmsError": 9.894953968284679e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Shorts",
+      "maxError": 4.77825663829564e-07,
+      "rmsError": 1.0562810940284783e-07,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Jersey",
+      "maxError": 4.77825663829564e-07,
+      "rmsError": 1.2654272913871736e-07,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_SculptedHair",
+      "maxError": 2.4620758953479386e-07,
+      "rmsError": 6.819792735107374e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_FootballBoots",
+      "maxError": 1.2293457984924316e-07,
+      "rmsError": 2.8131017533072358e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_FootballSock_L",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 4.4030215727274774e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_SockTop_L",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 8.499219468302782e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_FootballSock_R",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 5.2270602282713344e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_SockTop_R",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 9.434814561354668e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_FootballCollar",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Shirt07",
+      "maxError": 2.1093993732530856e-08,
+      "rmsError": 1.1635608897192703e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_BUMBadge",
+      "maxError": 5.972276205135536e-08,
+      "rmsError": 1.7481207138078642e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_ProjectedBootLaces",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Iris_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Pupil_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Iris_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "Neutral",
+      "object": "P41_Pupil_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Circle.001",
+      "maxError": 1.0221153878952572e-06,
+      "rmsError": 7.975881500550065e-07,
+      "maxNativeDisplacement": 0.10672359599563558
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Cube",
+      "maxError": 1.2005033377052857e-06,
+      "rmsError": 5.497320115673471e-07,
+      "maxNativeDisplacement": 0.07569926355888956
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_BodyFaceEyes",
+      "maxError": 0.006748475308787028,
+      "rmsError": 0.00019762620391702,
+      "maxNativeDisplacement": 0.4667941473391502
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Shorts",
+      "maxError": 4.77825663829564e-07,
+      "rmsError": 1.0562810940284783e-07,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Jersey",
+      "maxError": 0.0023007164157542886,
+      "rmsError": 0.00027642239388722987,
+      "maxNativeDisplacement": 0.018265999886929535
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_SculptedHair",
+      "maxError": 1.4419520382169419e-06,
+      "rmsError": 3.9363549459722465e-07,
+      "maxNativeDisplacement": 0.6044968327927704
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_FootballBoots",
+      "maxError": 1.2293457984924316e-07,
+      "rmsError": 2.8131017533072358e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_FootballSock_L",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 4.4030215727274774e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_SockTop_L",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 8.499219468302782e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_FootballSock_R",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 5.2270602282713344e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_SockTop_R",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 9.434814561354668e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_FootballCollar",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Shirt07",
+      "maxError": 2.1093993732530856e-08,
+      "rmsError": 1.1635608897192703e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_BUMBadge",
+      "maxError": 1.69141652420304e-05,
+      "rmsError": 2.0354094437254186e-06,
+      "maxNativeDisplacement": 5.3524572757522255e-05
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_ProjectedBootLaces",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Iris_L",
+      "maxError": 2.4106867031400207e-07,
+      "rmsError": 1.3224403756361337e-07,
+      "maxNativeDisplacement": 0.19467152542294394
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Pupil_L",
+      "maxError": 2.4581976641876484e-07,
+      "rmsError": 1.348706431971059e-07,
+      "maxNativeDisplacement": 0.19412499637187425
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Iris_R",
+      "maxError": 2.421152116249788e-07,
+      "rmsError": 1.3876393833897393e-07,
+      "maxNativeDisplacement": 0.19297151403399793
+    },
+    {
+      "pose": "HeadTurn",
+      "object": "P41_Pupil_R",
+      "maxError": 2.421152116249788e-07,
+      "rmsError": 1.3258405342736978e-07,
+      "maxNativeDisplacement": 0.19242633195959685
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Circle.001",
+      "maxError": 3.725290298461914e-09,
+      "rmsError": 1.2373835021045636e-09,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Cube",
+      "maxError": 3.268928970170067e-08,
+      "rmsError": 1.0447242317182135e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_BodyFaceEyes",
+      "maxError": 0.009692705732549553,
+      "rmsError": 0.0006763030696140538,
+      "maxNativeDisplacement": 0.31653709267061425
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Shorts",
+      "maxError": 4.77825663829564e-07,
+      "rmsError": 1.0562810940284783e-07,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Jersey",
+      "maxError": 0.0024090577096543566,
+      "rmsError": 0.00015964960229386362,
+      "maxNativeDisplacement": 0.022944137842719918
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_SculptedHair",
+      "maxError": 2.4620758953479386e-07,
+      "rmsError": 6.819792735107374e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_FootballBoots",
+      "maxError": 1.2293457984924316e-07,
+      "rmsError": 2.8131017533072358e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_FootballSock_L",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 4.4030215727274774e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_SockTop_L",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 8.499219468302782e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_FootballSock_R",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 5.2270602282713344e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_SockTop_R",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 9.434814561354668e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_FootballCollar",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Shirt07",
+      "maxError": 2.1093993732530856e-08,
+      "rmsError": 1.1635608897192703e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_BUMBadge",
+      "maxError": 5.972276205135536e-08,
+      "rmsError": 1.7481207138078642e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_ProjectedBootLaces",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Iris_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Pupil_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Iris_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "ArmRaise",
+      "object": "P41_Pupil_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Circle.001",
+      "maxError": 3.725290298461914e-09,
+      "rmsError": 1.2373835021045636e-09,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Cube",
+      "maxError": 3.268928970170067e-08,
+      "rmsError": 1.0447242317182135e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_BodyFaceEyes",
+      "maxError": 0.003765285077616019,
+      "rmsError": 0.00019005961681892262,
+      "maxNativeDisplacement": 0.3500001739568394
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Shorts",
+      "maxError": 0.00019908629033980698,
+      "rmsError": 5.916691097756096e-05,
+      "maxNativeDisplacement": 0.03594308909217955
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Jersey",
+      "maxError": 0.00072024447419423,
+      "rmsError": 3.062918146883384e-05,
+      "maxNativeDisplacement": 0.008109979660642481
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_SculptedHair",
+      "maxError": 2.4620758953479386e-07,
+      "rmsError": 6.819792735107374e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_FootballBoots",
+      "maxError": 2.1126042125758269e-07,
+      "rmsError": 4.247870402951416e-08,
+      "maxNativeDisplacement": 0.3500002051808566
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_FootballSock_L",
+      "maxError": 1.7928866670777111e-07,
+      "rmsError": 7.273279568930378e-08,
+      "maxNativeDisplacement": 0.06348419991726865
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_SockTop_L",
+      "maxError": 1.5359765386647212e-07,
+      "rmsError": 9.812897561449857e-08,
+      "maxNativeDisplacement": 0.06362706439397607
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_FootballSock_R",
+      "maxError": 1.2310379476739693e-07,
+      "rmsError": 5.2270602282713344e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_SockTop_R",
+      "maxError": 1.2377834115800373e-07,
+      "rmsError": 9.434814561354668e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_FootballCollar",
+      "maxError": 0.0,
+      "rmsError": 0.0,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Shirt07",
+      "maxError": 0.0005111442803152042,
+      "rmsError": 6.573291510603676e-05,
+      "maxNativeDisplacement": 0.0005111442803152042
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_BUMBadge",
+      "maxError": 5.972276205135536e-08,
+      "rmsError": 1.7481207138078642e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_ProjectedBootLaces",
+      "maxError": 3.0719530773294423e-08,
+      "rmsError": 1.2084144323506459e-08,
+      "maxNativeDisplacement": 0.35000014032092364
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Iris_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Pupil_L",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Iris_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.450160393998467e-08,
+      "maxNativeDisplacement": 0.0
+    },
+    {
+      "pose": "FootForward",
+      "object": "P41_Pupil_R",
+      "maxError": 2.388837865275353e-07,
+      "rmsError": 5.0216627653712655e-08,
+      "maxNativeDisplacement": 0.0
+    }
+  ],
+  "faceSampleMaxDisplacements": {
+    "Blink0.25": 0.026659881166595224,
+    "Blink0.5": 0.07906419269032933,
+    "Blink0.75": 0.13050747853997527,
+    "Blink1": 0.15386413522704878,
+    "Smile0.5": 0.026233550136458488,
+    "Smile1": 0.052460687244442215
+  },
+  "artApproved": false,
+  "physicalIPhone": false,
+  "gameReplaced": false,
+  "exports": {
+    "scott-bum07-p41-editable.blend": {
+      "bytes": 9959630,
+      "sha256": "4ba297a7f9be44e2093c179a6bb702c71ce97c75bb5efeabbaf9ef26ac0a4763"
+    },
+    "scott-bum07-p41-prototype.glb": {
+      "bytes": 7167624,
+      "sha256": "5ae2bac2f706364c7a6133b45e35534df0728d942ac01dbad976ff89bea0ee4b"
+    }
+  },
+  "limits": [
+    "Retains370joints; no claim rig is mobile optimized",
+    "4influence bind compensation is not arbitrary-pose equivalence; see measured errors",
+    "Native facial rig samples baked to morphs; must check exported GLB visibility and shape roundtrip",
+    "No sports animation clips in this prototypeGLB",
+    "Original source and C/P2/P3.1/P3.1R not overwritten"
+  ],
+  "runtimeVertexIDsExported": true,
+  "exportExplicitOptions": {
+    "export_rest_position_armature": false
+  }
+}

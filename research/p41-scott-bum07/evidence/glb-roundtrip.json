@@ -1,0 +1,1392 @@
+{
+  "result": "PASS",
+  "method": "Decode actual GLB node globals+inverse bind+4 weights+sparse morph; match explicit source vertex IDs against full-influence native Blender evaluated world vertices",
+  "maxWorldError": 1.472358327571029e-06,
+  "tolerance": 0.0001,
+  "checks": [
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.493114814592045e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.492990992846637e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.4927915338812904e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.492680889693256e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.4926634532036367e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.4933684137945324e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 19742,
+      "maxWorldError": 1.472358327571029e-06,
+      "rmsWorldError": 3.493612509820746e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Neutral0",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Blink25",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Blink50",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Blink75",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Blink100",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Smile50",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "pose": "Smile100",
+      "vertices": 4100,
+      "maxWorldError": 5.954689456730087e-07,
+      "rmsWorldError": 3.585255941834078e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 3596,
+      "maxWorldError": 4.636025644429438e-07,
+      "rmsWorldError": 2.1699504355278502e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.504510224463779e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.504510224463779e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.504510224463779e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.504510224463779e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.504510224463779e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.506868841845207e-07
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 282,
+      "maxWorldError": 4.3863069593052973e-07,
+      "rmsWorldError": 3.510236504350927e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 239,
+      "maxWorldError": 8.541284809456277e-07,
+      "rmsWorldError": 4.3776126550366994e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 239,
+      "maxWorldError": 8.541284809456277e-07,
+      "rmsWorldError": 4.3776126550366994e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 239,
+      "maxWorldError": 8.541284809456277e-07,
+      "rmsWorldError": 4.3776126550366994e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 239,
+      "maxWorldError": 8.541284809456277e-07,
+      "rmsWorldError": 4.3776126550366994e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 239,
+      "maxWorldError": 8.541284809456277e-07,
+      "rmsWorldError": 4.3776126550366994e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 239,
+      "maxWorldError": 8.664977150890468e-07,
+      "rmsWorldError": 4.479314973381073e-07
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 239,
+      "maxWorldError": 7.975477624476052e-07,
+      "rmsWorldError": 4.3985793692386895e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 7368,
+      "maxWorldError": 3.246979132116589e-07,
+      "rmsWorldError": 1.5508829581047093e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Neutral0",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Blink25",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Blink50",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Blink75",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Blink100",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Smile50",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "pose": "Smile100",
+      "vertices": 1620,
+      "maxWorldError": 3.2049153082274197e-07,
+      "rmsWorldError": 2.3804754465356763e-07
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 256,
+      "maxWorldError": 9.85379153238185e-08,
+      "rmsWorldError": 9.637537002647145e-08
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 416,
+      "maxWorldError": 2.937443370538904e-07,
+      "rmsWorldError": 2.456140693968483e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 416,
+      "maxWorldError": 2.1786049541362232e-07,
+      "rmsWorldError": 1.2123527024022179e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 768,
+      "maxWorldError": 3.18368172968227e-07,
+      "rmsWorldError": 2.0241465016615685e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 768,
+      "maxWorldError": 3.1836729417128974e-07,
+      "rmsWorldError": 2.0241379042801616e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 5989,
+      "maxWorldError": 9.091942701603574e-07,
+      "rmsWorldError": 3.8676760660992334e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 5989,
+      "maxWorldError": 9.091942701603574e-07,
+      "rmsWorldError": 3.8676760660992334e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 5989,
+      "maxWorldError": 9.091942701603574e-07,
+      "rmsWorldError": 3.8676760660992334e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 5989,
+      "maxWorldError": 9.091942701603574e-07,
+      "rmsWorldError": 3.8676760660992334e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 5989,
+      "maxWorldError": 9.091942701603574e-07,
+      "rmsWorldError": 3.8676760660992334e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 5989,
+      "maxWorldError": 9.091977300392006e-07,
+      "rmsWorldError": 3.867687054582439e-07
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 5989,
+      "maxWorldError": 9.09201191729661e-07,
+      "rmsWorldError": 3.8676973659583517e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 504,
+      "maxWorldError": 1.7853103397246276e-07,
+      "rmsWorldError": 1.2072078362716952e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 768,
+      "maxWorldError": 3.1030466431442816e-07,
+      "rmsWorldError": 1.9446162833433395e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 768,
+      "maxWorldError": 3.103046643198937e-07,
+      "rmsWorldError": 1.9446080752674676e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 6699,
+      "maxWorldError": 1.4655115497525594e-06,
+      "rmsWorldError": 4.873387354080655e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 1860,
+      "maxWorldError": 3.499083112242061e-07,
+      "rmsWorldError": 2.1817866276438408e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 1560,
+      "maxWorldError": 7.815069613343603e-07,
+      "rmsWorldError": 2.0132315497756722e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 64,
+      "maxWorldError": 2.8100971279015973e-07,
+      "rmsWorldError": 2.1476771735791392e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Neutral0",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink25",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink50",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink75",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Blink100",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile50",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "pose": "Smile100",
+      "vertices": 64,
+      "maxWorldError": 2.187389469207069e-07,
+      "rmsWorldError": 1.5079759355093652e-07
+    }
+  ],
+  "primitives": [
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 0,
+      "material": "P41_ScottSkinAtlas",
+      "vertices": 19742,
+      "morphNames": [
+        "FH_Blink25",
+        "FH_Blink50",
+        "FH_Blink75",
+        "FH_Blink",
+        "FH_Smile50",
+        "FH_Smile"
+      ],
+      "hasUV": true
+    },
+    {
+      "node": "P41_BodyFaceEyes_Runtime",
+      "primitive": 1,
+      "material": "P41_Sclera",
+      "vertices": 4100,
+      "morphNames": [
+        "FH_Blink25",
+        "FH_Blink50",
+        "FH_Blink75",
+        "FH_Blink",
+        "FH_Smile50",
+        "FH_Smile"
+      ],
+      "hasUV": true
+    },
+    {
+      "node": "P41_BUMBadge_Runtime",
+      "primitive": 0,
+      "material": "P41_Socks",
+      "vertices": 3596,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Circle.001_Runtime",
+      "primitive": 0,
+      "material": "P41_ScottSkinAtlas",
+      "vertices": 282,
+      "morphNames": [
+        "FH_Smile50",
+        "FH_Smile"
+      ],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Cube_Runtime",
+      "primitive": 0,
+      "material": "P41_ScottSkinAtlas",
+      "vertices": 239,
+      "morphNames": [
+        "FH_Smile50",
+        "FH_Smile"
+      ],
+      "hasUV": true
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 0,
+      "material": "P41_BootUpper",
+      "vertices": 7368,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_FootballBoots_Runtime",
+      "primitive": 1,
+      "material": "P41_BootRubber",
+      "vertices": 1620,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_FootballCollar_Runtime",
+      "primitive": 0,
+      "material": "P41_NavyFootballFabric",
+      "vertices": 256,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_FootballSock_L_Runtime",
+      "primitive": 0,
+      "material": "P41_Socks",
+      "vertices": 416,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_FootballSock_R_Runtime",
+      "primitive": 0,
+      "material": "P41_Socks",
+      "vertices": 416,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Iris_L_Runtime",
+      "primitive": 0,
+      "material": "P41_Iris",
+      "vertices": 768,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Iris_R_Runtime",
+      "primitive": 0,
+      "material": "P41_Iris",
+      "vertices": 768,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Jersey_Runtime",
+      "primitive": 0,
+      "material": "P41_YellowFootballFabric",
+      "vertices": 5989,
+      "morphNames": [
+        "FH_Smile50",
+        "FH_Smile"
+      ],
+      "hasUV": true
+    },
+    {
+      "node": "P41_ProjectedBootLaces_Runtime",
+      "primitive": 0,
+      "material": "P41_LaceWhite",
+      "vertices": 504,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Pupil_L_Runtime",
+      "primitive": 0,
+      "material": "P41_Pupil",
+      "vertices": 768,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Pupil_R_Runtime",
+      "primitive": 0,
+      "material": "P41_Pupil",
+      "vertices": 768,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_SculptedHair_Runtime",
+      "primitive": 0,
+      "material": "P41_ChestnutHair",
+      "vertices": 6699,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Shirt07_Runtime",
+      "primitive": 0,
+      "material": "P41_Socks",
+      "vertices": 1860,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_Shorts_Runtime",
+      "primitive": 0,
+      "material": "P41_NavyFootballFabric",
+      "vertices": 1560,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_SockTop_L_Runtime",
+      "primitive": 0,
+      "material": "P41_NavyFootballFabric",
+      "vertices": 64,
+      "morphNames": [],
+      "hasUV": true
+    },
+    {
+      "node": "P41_SockTop_R_Runtime",
+      "primitive": 0,
+      "material": "P41_NavyFootballFabric",
+      "vertices": 64,
+      "morphNames": [],
+      "hasUV": true
+    }
+  ],
+  "assetTriangles": 103798,
+  "primitiveCount": 21,
+  "joints": [
+    370
+  ],
+  "GLBBytes": 7167624,
+  "GLBSha256": "5ae2bac2f706364c7a6133b45e35534df0728d942ac01dbad976ff89bea0ee4b",
+  "referenceSha256": "57e44aa9299a682f431d3aa1e05dcd536bf09e8afe144a8087ebda3e1850e91f",
+  "limits": [
+    "Tests neutral skeleton and six native facial snapshots only; no arbitrary-pose proof",
+    "Body pose skin loss measured separately",
+    "Numeric roundtrip does not prove Blink eyelid occlusion or art quality"
+  ],
+  "artApproved": false,
+  "physicalIPhone": false
+}

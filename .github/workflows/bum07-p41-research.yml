@@ -1,0 +1,28 @@
+name: BUM07 P4.1 research evidence integrity
+on:
+  push:
+    branches: [research/p41-scott-bum07]
+    paths:
+      - research/p41-scott-bum07/**
+      - .github/workflows/bum07-p41-research.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-research-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify shipped evidence (including explicit FAIL gates)
+        run: python3 research/p41-scott-bum07/scripts/validate-and-package.py artifacts/BUM07-P41-Scott-Research.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P41-scott-prototype-NOT-ACCEPTED
+          path: |
+            artifacts/BUM07-P41-Scott-Research.zip
+            artifacts/BUM07-P41-Scott-Research.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Integrity packaging only; does not rerun Blender/browser, merge, deploy,
+# access Supabase, buy assets, or change production game files.

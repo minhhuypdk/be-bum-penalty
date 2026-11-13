@@ -1,0 +1,1199 @@
+{
+  "result": "PASS_RENDER_EXECUTION",
+  "Blink100Gate": "PASS",
+  "engine": "chromium",
+  "quick": false,
+  "physicalIPhone": false,
+  "artApproved": false,
+  "sourceHashes": {
+    "P31R": "9acae04ce0cefbc7c5aba16258770190673700fe57d3386a41737326851a29ef",
+    "ScottOriginal": "763cde183fb92f8354053b54882dd38407e9c5215ab419ec1e0278571d2a9715",
+    "P41": "5ae2bac2f706364c7a6133b45e35534df0728d942ac01dbad976ff89bea0ee4b"
+  },
+  "shots": [
+    {
+      "variant": "p31r",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "p31r-front.png",
+      "sha256": "bb26149a9560cf127e21aa6157aca0ad28384e5832e66eb60c6eeaae138fbcb8",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "p31r",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "p31r-45.png",
+      "sha256": "976d9038c8c1e682ad674521012fb116cd2316bffe9619637df4a144feb51a6b",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "p31r",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "p31r-profile.png",
+      "sha256": "6f4993304216481f2c862982d3f45b81c0221dc191c5546d7461d73715bfad0e",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "p31r",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "p31r-close.png",
+      "sha256": "44579322337c2f01fdb26906cae4e1ad1ae9376bbc81cbc739258b85f92b0a7a",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 195186,
+        "drawCalls": 30,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "p31r",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "p31r-body.png",
+      "sha256": "6cffcc255bb83a3ded86a1f739576dc7f67e956beeb890e4235ff02ff28d1d71",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 207572,
+        "drawCalls": 62,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-original",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "scott-original-front.png",
+      "sha256": "0a3fe4859f0b73977fc644189b4a8c6447db673d98ac241f734fbec9a9ad3f18",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-original",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "scott-original-45.png",
+      "sha256": "5ed28c33d498ada086e6242eaa640dc3ee938fb1de49db8b3e7d1bde7a83b9f9",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-original",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "scott-original-profile.png",
+      "sha256": "f7d9b4c959f15bb53e41e323d330b4397223fc52a623f237aab0192771adb7f8",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-original",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "scott-original-close.png",
+      "sha256": "9257c5ebcb8a6c011e738a431d2c3041d7e0f7765e529d2cdac585d3864d2092",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-original",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "scott-original-body.png",
+      "sha256": "e8c3e3df9869d6584be8831beac090c0b7e0c166adefe353d3093eb13edb878e",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 25239,
+        "drawCalls": 11,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "scott-bum07-p41-front.png",
+      "sha256": "cb3159638106af498a807e8de4b011754daca2fe37e1b12be41ade57c37638b7",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "scott-bum07-p41-45.png",
+      "sha256": "38f126acbaf0ff3778bef6a95ea57ec2b4e225f8001ee09f8ee126c2a353096e",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "scott-bum07-p41-profile.png",
+      "sha256": "cd2418a50bcfc18367ff803b244259809046ef16c0f6ed3c32f0c289895da5ae",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "scott-bum07-p41-close.png",
+      "sha256": "0fb25468003d0a216d7d7b40e62a394c2dc06f4d379fa4bedfbcedd20e0eb691",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 84028,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "scott-bum07-p41-body.png",
+      "sha256": "4cada8cd864fdf9b946a47b0d334d9009f2dbf97e2bd6a852ff58bddf09e0799",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 105336,
+        "drawCalls": 24,
+        "measuredOnPhysicalIPhone": false
+      }
+    }
+  ],
+  "expressions": [
+    {
+      "mode": "Blink",
+      "value": 0,
+      "angle": 0,
+      "file": "p41-blink-0-0.png",
+      "sha256": "0fb25468003d0a216d7d7b40e62a394c2dc06f4d379fa4bedfbcedd20e0eb691",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 0,
+      "file": "p41-blink-25-0.png",
+      "sha256": "a6babd5af449068fe23fec69dae3af363f5258ef55cd8764b4cb155aa15c95a7",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p41-blink-50-0.png",
+      "sha256": "90997bee6b53519d140ebc11407969726947f28e31d254f7a3a1f6c9e7785f61",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 0,
+      "file": "p41-blink-75-0.png",
+      "sha256": "95ca0b7514a88030368e28a8a5734729c257001012e771679a3e8e861b968293",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 1,
+      "angle": 0,
+      "file": "p41-blink-100-0.png",
+      "sha256": "ac6d7ffc1c6951ddd60f41d4b004f4371cadc23216514c02609d34e1d39d14c7",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0,
+      "angle": 0,
+      "file": "p41-smile-0-0.png",
+      "sha256": "0fb25468003d0a216d7d7b40e62a394c2dc06f4d379fa4bedfbcedd20e0eb691",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p41-smile-50-0.png",
+      "sha256": "bc3c0d88da53df52633efc540ac30b60bf803c0dbeea71b1494653d5c508430d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 1,
+      "angle": 0,
+      "file": "p41-smile-100-0.png",
+      "sha256": "38af91242d52ffef72a5381630dcf6b799d26e6f26bdb3e0bb1c048a4dcda0f7",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0,
+      "angle": 45,
+      "file": "p41-blink-0-45.png",
+      "sha256": "941c775692fcefeb3f898fadc89ecb094a7ac4334889fa2520d9b5139dff243a",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 45,
+      "file": "p41-blink-25-45.png",
+      "sha256": "3c64a2b80ab69e0c06634d2bca1920bc013d038e0fd0fa85f8feb7180fae059f",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p41-blink-50-45.png",
+      "sha256": "abff679930aa0f42ecaa4bd383770be5aa9d80bb079258c9dcd22265a742c5f2",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 45,
+      "file": "p41-blink-75-45.png",
+      "sha256": "d6f0c3febcdbb980f8ab59e0c6861ccf12c994d582d957509c894301bfb85341",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 1,
+      "angle": 45,
+      "file": "p41-blink-100-45.png",
+      "sha256": "59e31d96ac0d7c5712d3fb869879a478bc2bfa858a409ad67056b9308955ace7",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0,
+      "angle": 45,
+      "file": "p41-smile-0-45.png",
+      "sha256": "941c775692fcefeb3f898fadc89ecb094a7ac4334889fa2520d9b5139dff243a",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p41-smile-50-45.png",
+      "sha256": "1582db8c2ba2ba5c1a77b4f67d44f3c767a0256a6d591fbd13c991336fb935e1",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 1,
+      "angle": 45,
+      "file": "p41-smile-100-45.png",
+      "sha256": "f4f10bce0835fbaf9919b7ec5059e7f54493c643f17b3df51a22614fa5410aa1",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    }
+  ],
+  "eyeID": [
+    {
+      "value": 0,
+      "angle": 0,
+      "eyePixels": 10779,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-0-0.png",
+      "sha256": "b54f5798d43a109e3e1a1b072b8ab1c88ceb629a93039c6641d3f0e45cd70e86"
+    },
+    {
+      "value": 0.25,
+      "angle": 0,
+      "eyePixels": 9059,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-25-0.png",
+      "sha256": "1e78c03bee28b8a9826fa8eb93abfb95c6589a4e41c652cd9b40b79364c009d7"
+    },
+    {
+      "value": 0.5,
+      "angle": 0,
+      "eyePixels": 5157,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-50-0.png",
+      "sha256": "2a4455349bf84e3a83aacb964c748d774c2593003d7b8170815329c336cee5fb"
+    },
+    {
+      "value": 0.75,
+      "angle": 0,
+      "eyePixels": 1279,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-75-0.png",
+      "sha256": "53b1efd88273bb832300db072cba7d5fa6f301374c83840e35a8cbb2fb2d612a"
+    },
+    {
+      "value": 1,
+      "angle": 0,
+      "eyePixels": 0,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-100-0.png",
+      "sha256": "35cdc0eb1f8b97e4ae34f58fb433ac46a1b04685c9a5e7e2c8ef9929e7265922"
+    },
+    {
+      "value": 0,
+      "angle": 45,
+      "eyePixels": 7195,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-0-45.png",
+      "sha256": "23f1ab01d75de095b4985958815d8cd047ba8eebecd7588c8d7a9e68edbe4479"
+    },
+    {
+      "value": 0.25,
+      "angle": 45,
+      "eyePixels": 6141,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-25-45.png",
+      "sha256": "4fafabf57b8a90bf9af7d2042a72b943edcecaf6822f0afc6105a01bb4b5088f"
+    },
+    {
+      "value": 0.5,
+      "angle": 45,
+      "eyePixels": 3486,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-50-45.png",
+      "sha256": "e424fc62cc833b2c117a252b2b9c7ed7e5b5a0285f974d226936d9e230f44c20"
+    },
+    {
+      "value": 0.75,
+      "angle": 45,
+      "eyePixels": 844,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-75-45.png",
+      "sha256": "1b6d6fa5eed7f4070d8eebbe91bba87c071263c2881578cb58456091e1a9294a"
+    },
+    {
+      "value": 1,
+      "angle": 45,
+      "eyePixels": 0,
+      "eyes": 5,
+      "skins": 3,
+      "file": "p41-eyeid-100-45.png",
+      "sha256": "19e6fe9bb7d97c26460b6113a1ca961fbd5938bf164ba871930599a38b76aaef"
+    }
+  ],
+  "errors": [],
+  "noSupabaseRequests": true,
+  "note": "Actual exported GLBs; same camera/studio/height2.2 per comparison, native/rest original poses. ID pass uses own P41 eye materials, not P3.1R results. Numeric GLB roundtrip and native skin errors are separate gates."
+}

@@ -1,0 +1,13 @@
+{
+  "baseline": "7c2c676a34bf30d90b6eadd9db2e0e49e1f7645c",
+  "branch": "research/p41-scott-bum07",
+  "main": "c3567aff87ce54adfa251895cecc2247c4d4b705",
+  "pr2": {
+    "draft": true,
+    "merged": false,
+    "head": "7ef321881935874e4349b486f8f2a7f4836920cd"
+  },
+  "supabaseRequests": 0,
+  "gameReplacement": false,
+  "otherCharactersModified": false
+}
