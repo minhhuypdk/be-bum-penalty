@@ -1,0 +1,963 @@
+{
+  "result": "PASS_WITH_LIMITATIONS",
+  "independentReadBack": true,
+  "originalMeshesUnchanged": 122,
+  "originalRigActionsUnchanged": true,
+  "sourceSha256": "c703426e8bad4a6e7d702e14b96fbbe214c280d33bcd38b2ede7b8a08df22b4b",
+  "candidateSha256": "337410b56547447227a8fd9d93a50e117254f2ad504f3be3b6f98d800551db95",
+  "mesh": [
+    {
+      "name": "P31R soft brow -1",
+      "vertices": 938,
+      "faces": 960,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 5.0608932549390745e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R ear -1",
+      "vertices": 1490,
+      "faces": 1536,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.0003373026832699811,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R soft brow 1",
+      "vertices": 938,
+      "faces": 960,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 5.060893254919446e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R ear 1",
+      "vertices": 1490,
+      "faces": 1536,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.00033730268326961807,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R globe -1",
+      "vertices": 2498,
+      "faces": 2560,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.002943681827438453,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R iris -1",
+      "vertices": 1106,
+      "faces": 1152,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 1.5902185101753615e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R pupil -1",
+      "vertices": 1106,
+      "faces": 1152,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 3.0437890456116565e-07,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R globe 1",
+      "vertices": 2498,
+      "faces": 2560,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.002943681827438452,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R iris 1",
+      "vertices": 1106,
+      "faces": 1152,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 1.590218510174438e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R pupil 1",
+      "vertices": 1106,
+      "faces": 1152,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 3.0437890456153835e-07,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R unified head socket eyelid and orbital lining",
+      "vertices": 28216,
+      "faces": 28488,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.11687844459712532,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R upper lip",
+      "vertices": 1762,
+      "faces": 1792,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 6.811883256685098e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R lower lip",
+      "vertices": 1762,
+      "faces": 1792,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 6.811868535327713e-06,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R oral opening interior",
+      "vertices": 1762,
+      "faces": 1792,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 3.39345969072743e-07,
+      "uvFinite": true
+    },
+    {
+      "name": "P31R continuous lobed hair with scalloped hairline",
+      "vertices": 8960,
+      "faces": 8850,
+      "boundary": 0,
+      "nonManifold": 0,
+      "inconsistentNormals": 0,
+      "degenerateFaces": 0,
+      "signedVolume": 0.008191144904982064,
+      "uvFinite": true
+    }
+  ],
+  "deformation": [
+    {
+      "mode": "Blink",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.125,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.25,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.375,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.625,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.75,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 0.875,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Blink",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 1.5607292309249789e-07
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R unified head socket eyelid and orbital lining",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R upper lip",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.2096546414256045e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R lower lip",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.5564571512025084e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R oral opening interior",
+      "value": 0,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.561853809759417e-10
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R unified head socket eyelid and orbital lining",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R upper lip",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.401806963974564e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R lower lip",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.23562245557388e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R oral opening interior",
+      "value": 0.5,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 6.001611007808935e-10
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R unified head socket eyelid and orbital lining",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 8.124967178277602e-07
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R upper lip",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.550263483701916e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R lower lip",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 4.796680052772517e-09
+    },
+    {
+      "mode": "Smile",
+      "object": "P31R oral opening interior",
+      "value": 1,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "minTriangleArea": 5.949445933656913e-10
+    }
+  ],
+  "contact": [
+    {
+      "side": -1,
+      "blink": 0,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 224,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 131,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 224,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 114,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.125,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 190,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 111,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.125,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 190,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 97,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.25,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 167,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 99,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.25,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 167,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 86,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.375,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 131,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 78,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.375,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 131,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 69,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.5,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 108,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 64,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.5,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 108,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 57,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.625,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 74,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 45,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.625,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 74,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 41,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.75,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 42,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 25,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.75,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 42,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 22,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 0.875,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 13,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 8,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 0.875,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 13,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 8,
+          "fullBlinkOcclusionGate": "not-full-closure"
+        }
+      ]
+    },
+    {
+      "side": -1,
+      "blink": 1,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 0,
+          "fullBlinkOcclusionGate": "PASS"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 0,
+          "fullBlinkOcclusionGate": "PASS"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 1,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.09367324995522348,
+      "skinTrianglesInsideOcularEnvelope": 0,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 0,
+          "fullBlinkOcclusionGate": "PASS"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 0,
+          "fullBlinkOcclusionGate": "PASS"
+        }
+      ]
+    }
+  ],
+  "headSelfContact": [
+    {
+      "blink": 0,
+      "nonAdjacentTriangleOverlapPairs": 180,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.125,
+      "nonAdjacentTriangleOverlapPairs": 185,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.25,
+      "nonAdjacentTriangleOverlapPairs": 183,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.375,
+      "nonAdjacentTriangleOverlapPairs": 187,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.5,
+      "nonAdjacentTriangleOverlapPairs": 187,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.625,
+      "nonAdjacentTriangleOverlapPairs": 191,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.75,
+      "nonAdjacentTriangleOverlapPairs": 193,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 0.875,
+      "nonAdjacentTriangleOverlapPairs": 203,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    },
+    {
+      "blink": 1,
+      "nonAdjacentTriangleOverlapPairs": 1590,
+      "classification": "Unclassified non-adjacent overlap candidates; includes some seam contact but also requires cleanup. Not certified self-intersection-free."
+    }
+  ],
+  "mouthContact": [
+    {
+      "smile": 0,
+      "object": "P31R upper lip",
+      "headTriangleOverlapPairs": 238,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09099999815225601,
+        -0.269440621137619,
+        1.711650013923645
+      ],
+      "boundsMax": [
+        0.09099999815225601,
+        -0.24567992985248566,
+        1.7209739685058594
+      ]
+    },
+    {
+      "smile": 0,
+      "object": "P31R lower lip",
+      "headTriangleOverlapPairs": 250,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09099999815225601,
+        -0.2631092965602875,
+        1.6991499662399292
+      ],
+      "boundsMax": [
+        0.09099999815225601,
+        -0.24557992815971375,
+        1.716138243675232
+      ]
+    },
+    {
+      "smile": 0,
+      "object": "P31R oral opening interior",
+      "headTriangleOverlapPairs": 236,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.08500000089406967,
+        -0.263286292552948,
+        1.7104500532150269
+      ],
+      "boundsMax": [
+        0.08500000089406967,
+        -0.24760009348392487,
+        1.7152429819107056
+      ]
+    },
+    {
+      "smile": 0.5,
+      "object": "P31R upper lip",
+      "headTriangleOverlapPairs": 246,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09462451934814453,
+        -0.269469678401947,
+        1.7134604454040527
+      ],
+      "boundsMax": [
+        0.09462451934814453,
+        -0.24623218178749084,
+        1.727684497833252
+      ]
+    },
+    {
+      "smile": 0.5,
+      "object": "P31R lower lip",
+      "headTriangleOverlapPairs": 226,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09462451934814453,
+        -0.26313120126724243,
+        1.6966933012008667
+      ],
+      "boundsMax": [
+        0.09462451934814453,
+        -0.24611914157867432,
+        1.7270798683166504
+      ]
+    },
+    {
+      "smile": 0.5,
+      "object": "P31R oral opening interior",
+      "headTriangleOverlapPairs": 284,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.08845885843038559,
+        -0.26331186294555664,
+        1.7075086832046509
+      ],
+      "boundsMax": [
+        0.08845885843038559,
+        -0.2480861246585846,
+        1.7253600358963013
+      ]
+    },
+    {
+      "smile": 1,
+      "object": "P31R upper lip",
+      "headTriangleOverlapPairs": 248,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09824903309345245,
+        -0.2694987654685974,
+        1.715270757675171
+      ],
+      "boundsMax": [
+        0.09824903309345245,
+        -0.2467835247516632,
+        1.7384412288665771
+      ]
+    },
+    {
+      "smile": 1,
+      "object": "P31R lower lip",
+      "headTriangleOverlapPairs": 92,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09824903309345245,
+        -0.263153076171875,
+        1.6942366361618042
+      ],
+      "boundsMax": [
+        0.09824903309345245,
+        -0.24665673077106476,
+        1.738181233406067
+      ]
+    },
+    {
+      "smile": 1,
+      "object": "P31R oral opening interior",
+      "headTriangleOverlapPairs": 286,
+      "classification": "Embedded vermilion/oral insert contacts counted, not certified collision-free",
+      "boundsMin": [
+        -0.09191771596670151,
+        -0.2633374333381653,
+        1.704567313194275
+      ],
+      "boundsMax": [
+        0.09191771596670151,
+        -0.24857215583324432,
+        1.7355238199234009
+      ]
+    }
+  ],
+  "negativeControlP31": [
+    {
+      "side": -1,
+      "blink": 1,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.04874803205267169,
+      "skinTrianglesInsideOcularEnvelope": 789,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 39,
+          "fullBlinkOcclusionGate": "FAIL"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 33,
+          "fullBlinkOcclusionGate": "FAIL"
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "blink": 1,
+      "sphereEnvelopeRadius": 0.09,
+      "minimumSkinTriangleDistance": 0.04871572109002183,
+      "skinTrianglesInsideOcularEnvelope": 797,
+      "views": [
+        {
+          "angle": 0,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 37,
+          "fullBlinkOcclusionGate": "FAIL"
+        },
+        {
+          "angle": 45,
+          "globeSamples": 481,
+          "visibleGlobeSamples": 19,
+          "fullBlinkOcclusionGate": "FAIL"
+        }
+      ]
+    }
+  ],
+  "blink100RayGate": "PASS",
+  "ocularTriangleContactGate": "PASS",
+  "interpolationContactGate": "PASS",
+  "limits": [
+    "Exact triangle-sphere envelope test, not arbitrary-object collision certification",
+    "Intentional full-closure lid contact overlap is not excluded as global self-intersection-free",
+    "Ray coverage uses 25x25 disk grid per eye per view in bind space; exported GLB gets independent ID render gate",
+    "No physical iPhone measurements or art approval"
+  ],
+  "artApproved": false
+}

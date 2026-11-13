@@ -1,0 +1,72 @@
+{
+  "result": "PASS",
+  "auditType": "Custom offline structure + all-accessor finite + normal/UV/skin/morph checks; not Khronos certification",
+  "file": "bum07-p31r-experimental.glb",
+  "sha256": "9acae04ce0cefbc7c5aba16258770190673700fe57d3386a41737326851a29ef",
+  "bytes": 7360064,
+  "triangles": 206034,
+  "primitives": 59,
+  "materials": 15,
+  "skins": 1,
+  "clips": [
+    "Celebrate",
+    "Idle",
+    "Kick",
+    "Run"
+  ],
+  "accessorsFinite": 951,
+  "maxWeightSumError": 1.1827796697616577e-07,
+  "newNormals": [
+    {
+      "mesh": "P31R continuous lobed hair with scalloped hairline",
+      "normalLengthSquaredMaxError": 2.2748333816657862e-07
+    },
+    {
+      "mesh": "P31R globe -1",
+      "normalLengthSquaredMaxError": 1.667410254313495e-07
+    },
+    {
+      "mesh": "P31R globe 1",
+      "normalLengthSquaredMaxError": 1.667410254313495e-07
+    },
+    {
+      "mesh": "P31R iris -1",
+      "normalLengthSquaredMaxError": 1.817777681711874e-07
+    },
+    {
+      "mesh": "P31R iris 1",
+      "normalLengthSquaredMaxError": 1.817777681711874e-07
+    },
+    {
+      "mesh": "P31R lower lip",
+      "normalLengthSquaredMaxError": 1.918447731785733e-07
+    },
+    {
+      "mesh": "P31R oral opening interior",
+      "normalLengthSquaredMaxError": 1.9249784788399893e-07
+    },
+    {
+      "mesh": "P31R pupil -1",
+      "normalLengthSquaredMaxError": 2.0068988604293736e-07
+    },
+    {
+      "mesh": "P31R pupil 1",
+      "normalLengthSquaredMaxError": 2.0068988604293736e-07
+    },
+    {
+      "mesh": "P31R unified head socket eyelid and orbital lining",
+      "normalLengthSquaredMaxError": 2.201859112815896e-07
+    },
+    {
+      "mesh": "P31R upper lip",
+      "normalLengthSquaredMaxError": 1.9897978464911148e-07
+    }
+  ],
+  "embeddedImages": 1,
+  "legacyMeshesWithoutUV": [
+    "torso under kit"
+  ],
+  "uvOverlapCertified": false,
+  "intersectionsCertified": false,
+  "physicalIPhone": false
+}

@@ -1,0 +1,34 @@
+name: BUM07 P3.1R handoff evidence verification
+on:
+  push:
+    branches: [graphics/cinematic-pass]
+    paths:
+      - research/bum07-p31r/**
+      - scripts/package-bum07-p31r.py
+      - tests/p31r-glb.py
+      - .github/workflows/bum07-p31r-handoff.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit shipped GLB independently
+        run: |
+          python3 tests/p31r-glb.py research/bum07-p31r/assets/bum07-p31r-experimental.glb
+          git diff --exit-code -- research/bum07-p31r/assets/glb-audit.json
+      - name: Verify evidence and derive explicit Blink gate
+        run: python3 scripts/package-bum07-p31r.py artifacts/BUM07-P3.1R-Handoff.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P3.1R-facial-repair-owner-review
+          path: |
+            artifacts/BUM07-P3.1R-Handoff.zip
+            artifacts/BUM07-P3.1R-Handoff.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Evidence verification/packaging only, not new character generation, browser
+# reruns, deployment, merge or Supabase changes. Blender/browser commands in README.

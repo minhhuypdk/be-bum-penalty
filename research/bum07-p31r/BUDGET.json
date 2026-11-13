@@ -1,0 +1,149 @@
+{
+  "assetTotals": {
+    "P3.1": {
+      "triangles": 225446,
+      "primitives": 71,
+      "bytes": 7228088
+    },
+    "P3.1R": {
+      "triangles": 206034,
+      "primitives": 59,
+      "bytes": 7360064
+    }
+  },
+  "renderedFrames": [
+    {
+      "engine": "chromium",
+      "variant": "P3.1",
+      "angle": 0,
+      "drawCalls": 41,
+      "renderedTriangles": 214596,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "chromium",
+      "variant": "P3.1R",
+      "angle": 0,
+      "drawCalls": 29,
+      "renderedTriangles": 195184,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "chromium",
+      "variant": "P3.1",
+      "angle": 45,
+      "drawCalls": 42,
+      "renderedTriangles": 214598,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "chromium",
+      "variant": "P3.1R",
+      "angle": 45,
+      "drawCalls": 30,
+      "renderedTriangles": 195186,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "chromium",
+      "variant": "P3.1",
+      "angle": 90,
+      "drawCalls": 43,
+      "renderedTriangles": 214694,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "chromium",
+      "variant": "P3.1R",
+      "angle": 90,
+      "drawCalls": 31,
+      "renderedTriangles": 195282,
+      "viewport": {
+        "width": 1180,
+        "height": 866
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1",
+      "angle": 0,
+      "drawCalls": 41,
+      "renderedTriangles": 214596,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1R",
+      "angle": 0,
+      "drawCalls": 29,
+      "renderedTriangles": 195184,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1",
+      "angle": 45,
+      "drawCalls": 42,
+      "renderedTriangles": 214598,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1R",
+      "angle": 45,
+      "drawCalls": 30,
+      "renderedTriangles": 195186,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1",
+      "angle": 90,
+      "drawCalls": 43,
+      "renderedTriangles": 214694,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    },
+    {
+      "engine": "webkit",
+      "variant": "P3.1R",
+      "angle": 90,
+      "drawCalls": 31,
+      "renderedTriangles": 195282,
+      "viewport": {
+        "width": 1180,
+        "height": 857
+      }
+    }
+  ],
+  "note": "Primitives are potential draw units; measured drawCalls differ with culling and studio. No FPS/iPhone inference."
+}
