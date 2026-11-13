@@ -1,0 +1,9 @@
+# Credits và phạm vi ảnh
+
+- **Boy (Scott)** — Mish7913 / 3DMish. [Bài phát hành và grant](https://blenderartists.org/t/boy-scott-free-3d-character-mish7913/1510925), [source](https://projects.blender.org/3DMish/M7s-Assets-Library/raw/branch/main/data/characters/scott-3d-model.blend), [CC BY4.0](https://creativecommons.org/licenses/by/4.0/). Preview tác giả được giữ nguyên; ảnh WebKit là original-geometry static GLB export nghiên cứu, cùng studio dự án. Thay đổi: chuyển định dạng/render, exporter giới hạn4influences, không sửa mặt/tóc/trang phục. Chưa phải BUM07. Không hàm ý tác giả bảo trợ hoặc nghiệm thu game.
+- **Universal Base Characters** — Quaternius. [Nguồn pack/preview](https://quaternius.com/packs/universalbasecharacters.html), [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). `previews/quaternius-preview.jpg` là hình giới thiệu publisher giữ credit, không phải render mới hoặc kết quả BUM. Không gắn nhãn ảnh này do Codex tạo.
+- **Spring Rig** — Blender Foundation / Blender Studio. [Nguồn](https://studio.blender.org/characters/spring/v1/), publisherCC-BY→BY4.0. Chỉ link ảnh/rig nguồn, không đính kèm binary/ảnh Studio chưa tải được. Khi chọn và sửa phải giữ credit publisher, license/source link và changelog.
+- **Storm Rig** — Blender Foundation / Blender Studio. [Nguồn](https://studio.blender.org/characters/storm/v1/), publisherCC-BY→BY4.0. Chỉ link ảnh và metadata. Không lấy file subscriber/mirror. Code/add-on hoặc thành phần nhúng cần kiểm license riêng khi có binary.
+- **P3.1R** là asset nghiên cứu BÉ BUM cũ, nguyên GLB giữ hash; ảnh đối chiếu xuất lại với camera chung, không sửa model hoặc thay trạng thái nghiệm thu mỹ thuật. Owner chỉ nghiệm thu Blink100 của bản đó.
+
+Các ảnh ghép thêm nhãn ngoài render và giữ pixel ảnh, không retouch. Asset/preview nguồn không biến thành tài sản độc quyền do Codex tạo. Render study/collection không tự cấp phép model khác có cùng tên Scott hoặc fan-art khác.

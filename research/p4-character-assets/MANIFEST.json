@@ -1,0 +1,196 @@
+{
+  "phase": "P4_RESEARCH",
+  "ownerApprovalRequiredBeforeAdaptation": true,
+  "files": [
+    {
+      "path": "ASSET-CANDIDATES-P4.pdf",
+      "bytes": 3843247,
+      "sha256": "1771b3ce7226027dd3713cfb5097c1d4ca21c46ea4b1e736409a276ad6e2f7a9"
+    },
+    {
+      "path": "LICENSES.md",
+      "bytes": 4787,
+      "sha256": "665d3e37f8b12aa60e82cd61e09caa6c1936aaae456f72216158be2a657ee73a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6880,
+      "sha256": "67f026bddbb6f61b16bd853c5d3c31d832070616568779da22a9222acf574565"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 11226,
+      "sha256": "b1dbc30fc13f2f682a1a56f90431cd92ceafa9bf31c3345f82cc38000c6e538f"
+    },
+    {
+      "path": "THIRD-PARTY-CREDITS.md",
+      "bytes": 2199,
+      "sha256": "6a3aca4c0aa06fb8c26a9dad840054cff35308d154c2e9181e06003ff4ba6b9c"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 744,
+      "sha256": "6ab0fd044838269cff1ab69c2716c575e706459919989596a43f1ee3b1dd0fac"
+    },
+    {
+      "path": "audits/export-observations.json",
+      "bytes": 378,
+      "sha256": "b628b98c8d78d1653f28e0119f767aadbbb8e281517d3f0ddf56bc7a793f7d38"
+    },
+    {
+      "path": "audits/scott-audit.json",
+      "bytes": 6200,
+      "sha256": "c50d4ba390cd322bf1de768747c7ee1a4784c829ab021ed517ef7d21437f3b2d"
+    },
+    {
+      "path": "audits/scott-export-probe.json",
+      "bytes": 16622,
+      "sha256": "59c4bc36e47edbfcec6d8ff73ba2f10f1c5e8eb0edcd3a4852f6330099822370"
+    },
+    {
+      "path": "audits/scott-glb-audit.json",
+      "bytes": 146,
+      "sha256": "26f8c0584b8d7bba4cbce5bb03421a2c3c5b7426685f19f57dc3e785f4d9c814"
+    },
+    {
+      "path": "candidates.json",
+      "bytes": 9647,
+      "sha256": "839a85bb68238a0bf5b2434057ccb67dd12dc659e549c1eeff5b10623409d804"
+    },
+    {
+      "path": "comparison/45.png",
+      "bytes": 448382,
+      "sha256": "82f3e1828e0aa34051eeae5397ac6ff992cbfb851fd8aaae45c0bbb6b09d11ce"
+    },
+    {
+      "path": "comparison/body.png",
+      "bytes": 244941,
+      "sha256": "cfc7127e51b44d7f987ae2c30a14c70c0d76b87f2b8767815439aebbcaf19d21"
+    },
+    {
+      "path": "comparison/close.png",
+      "bytes": 711063,
+      "sha256": "670c9a6504f994cc56e642047e02f79d8b2eea07212e8cf34545f429877fa04b"
+    },
+    {
+      "path": "comparison/front.png",
+      "bytes": 471272,
+      "sha256": "4ce8ddd6638a45a2873b199355c787f585a64366ab95c9c2bb37e24e713b0f3b"
+    },
+    {
+      "path": "comparison/profile.png",
+      "bytes": 361441,
+      "sha256": "b3aaad0f4442d5ea152f22a4399908b037784368f8b27aa67fc3015659448726"
+    },
+    {
+      "path": "evidence/studio-license-mapping.json",
+      "bytes": 652,
+      "sha256": "ad1911f407aaebf3bcb5910a6ecb721e5ac7423082a1a93f81fbaa56d1564203"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5712,
+      "sha256": "86ada4b246e90998a6b2a9119ba037fc02e8e9cd09c706af4dc06aaf325ede28"
+    },
+    {
+      "path": "previews/quaternius-preview.jpg",
+      "bytes": 339223,
+      "sha256": "cb171f30b928d966fbcecfdf37ff51d606360d4fd3e5a797a34c71a23a219221"
+    },
+    {
+      "path": "previews/scott-preview.png",
+      "bytes": 184469,
+      "sha256": "1dec02c4d51536cec248bb2ef499d0169e5e8c1514a65e0f87f92868bfcff104"
+    },
+    {
+      "path": "renders/original-asset-preview.json",
+      "bytes": 13200,
+      "sha256": "2658399dbe0c3d0d45a17ff64a62741d5c7ffe8b63a3bf79129bba444afc74fe"
+    },
+    {
+      "path": "renders/p31r-45.png",
+      "bytes": 230539,
+      "sha256": "b8ad45c0be90d55cf8d8e0bf2b5b1d2f0b47c57c19b04abc58787b2e707d4cf3"
+    },
+    {
+      "path": "renders/p31r-body.png",
+      "bytes": 124646,
+      "sha256": "8a9afcb84a591c33991162c0f2e0d20276701b74947c33718b3bfc48b996bb4d"
+    },
+    {
+      "path": "renders/p31r-close.png",
+      "bytes": 385023,
+      "sha256": "8b0377ebe799cdc154c46e56be1be7bd86aa27010f01eb172cf4874dbf45a596"
+    },
+    {
+      "path": "renders/p31r-front.png",
+      "bytes": 256610,
+      "sha256": "5658895984993da37d5380b75c73f750c9cc748ea138039b428d3989ee9a925d"
+    },
+    {
+      "path": "renders/p31r-profile.png",
+      "bytes": 161691,
+      "sha256": "d20d40e360cf06ea294c70e075236a67146e00018d0430250bfb73d19b188761"
+    },
+    {
+      "path": "renders/scott-original-45.png",
+      "bytes": 258828,
+      "sha256": "14fe72da194be893c1d13abd1bf57af85d89e04de85a181169bd72cf305b3a2c"
+    },
+    {
+      "path": "renders/scott-original-body.png",
+      "bytes": 146948,
+      "sha256": "e88906d4147d71528e7b8ab79feeada11d605c2bcfadcf487f70f692a091e00c"
+    },
+    {
+      "path": "renders/scott-original-close.png",
+      "bytes": 385977,
+      "sha256": "2621b00ce6e35b3b9861670d48113fe0ac6711663db49ab5309d3206e2c11fd4"
+    },
+    {
+      "path": "renders/scott-original-front.png",
+      "bytes": 255824,
+      "sha256": "c3fb6a8ca964bfabde031cd7e14dc37b46f77502c8be63d71e083d4aa5be4cf3"
+    },
+    {
+      "path": "renders/scott-original-profile.png",
+      "bytes": 231562,
+      "sha256": "a34b5fe444ba5a8853e5f9ebf89a8b71eb560e72f7254b270e2fd509295ede4a"
+    },
+    {
+      "path": "scripts/export-scott-probe.py",
+      "bytes": 1849,
+      "sha256": "147f8f30f54acf7d2aaa9d148b34874166c68718f7074ac74696ff0e008c48d4"
+    },
+    {
+      "path": "scripts/inspect-scott.py",
+      "bytes": 2173,
+      "sha256": "f9fd75ad933452ee6e8af3406293fd98c0b14b3e17c025da081ebf6c2d4dce62"
+    },
+    {
+      "path": "scripts/make-gallery.py",
+      "bytes": 4247,
+      "sha256": "297fc75cc99113a0bb245da87245e3bc4ea13570a106e46422154e0a78f1be70"
+    },
+    {
+      "path": "scripts/prepare-preview.py",
+      "bytes": 1027,
+      "sha256": "ec48ba7f6e17b55593a2692db51aeb5e3beb29cee86f1eceebc484e83e69943f"
+    },
+    {
+      "path": "scripts/render-original-scott.cjs",
+      "bytes": 3689,
+      "sha256": "a2a6f5af5af6b52d1d30f68f0d44e24a6106ae6495e467dd6f76dfc9847f4c50"
+    },
+    {
+      "path": "scripts/render-pdf.cjs",
+      "bytes": 2443,
+      "sha256": "682f94777bfa624aca82b81d5c1844cceedc010310e02c11fc7994ea067d8e33"
+    },
+    {
+      "path": "scripts/validate-and-package.py",
+      "bytes": 4523,
+      "sha256": "c2a87dad64dc1c4fa8abbf9704624c11d8cb4e9cb89711a221f9b3790d674f6b"
+    }
+  ]
+}

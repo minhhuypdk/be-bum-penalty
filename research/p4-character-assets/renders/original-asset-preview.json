@@ -1,0 +1,510 @@
+{
+  "result": "PASS_STATIC_PREVIEW_ONLY",
+  "engine": "WebKit WPE Linux",
+  "physicalIPhone": false,
+  "BUMAdaptation": false,
+  "ownerAssetApproval": false,
+  "sourceHashes": {
+    "Scott": "763cde183fb92f8354053b54882dd38407e9c5215ab419ec1e0278571d2a9715",
+    "P31R": "9acae04ce0cefbc7c5aba16258770190673700fe57d3386a41737326851a29ef"
+  },
+  "notes": [
+    "Scott geometry/clothing unchanged; original static GLB probe, not BUM07",
+    "4-influence export warning and 370 joints mean animated portability is NOT verified",
+    "Same camera/FOV/studio/height2.2 for both originals; not a quality9 claim"
+  ],
+  "shots": [
+    {
+      "variant": "P3.1R",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "p31r-front.png",
+      "sha256": "5658895984993da37d5380b75c73f750c9cc748ea138039b428d3989ee9a925d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "p31r-45.png",
+      "sha256": "b8ad45c0be90d55cf8d8e0bf2b5b1d2f0b47c57c19b04abc58787b2e707d4cf3",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "p31r-profile.png",
+      "sha256": "d20d40e360cf06ea294c70e075236a67146e00018d0430250bfb73d19b188761",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 196564,
+        "drawCalls": 34,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "p31r-close.png",
+      "sha256": "8b0377ebe799cdc154c46e56be1be7bd86aa27010f01eb172cf4874dbf45a596",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.8,
+          1.25
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 195074,
+        "drawCalls": 25,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "P3.1R",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "p31r-body.png",
+      "sha256": "8a9afcb84a591c33991162c0f2e0d20276701b74947c33718b3bfc48b996bb4d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 207572,
+        "drawCalls": 62,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "SCOTT_ORIGINAL_NOT_BUM",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "scott-original-front.png",
+      "sha256": "c3fb6a8ca964bfabde031cd7e14dc37b46f77502c8be63d71e083d4aa5be4cf3",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "SCOTT_ORIGINAL_NOT_BUM",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "scott-original-45.png",
+      "sha256": "14fe72da194be893c1d13abd1bf57af85d89e04de85a181169bd72cf305b3a2c",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "SCOTT_ORIGINAL_NOT_BUM",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "scott-original-profile.png",
+      "sha256": "a34b5fe444ba5a8853e5f9ebf89a8b71eb560e72f7254b270e2fd509295ede4a",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.8000000000000003,
+          2
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 21455,
+        "drawCalls": 10,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "SCOTT_ORIGINAL_NOT_BUM",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "scott-original-close.png",
+      "sha256": "2621b00ce6e35b3b9861670d48113fe0ac6711663db49ab5309d3206e2c11fd4",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.8,
+          1.25
+        ],
+        "target": [
+          0,
+          1.8,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 18505,
+        "drawCalls": 9,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "SCOTT_ORIGINAL_NOT_BUM",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "scott-original-body.png",
+      "sha256": "e88906d4147d71528e7b8ab79feeada11d605c2bcfadcf487f70f692a091e00c",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 857
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 857
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+        "gpu": "Apple GPU",
+        "triangles": 25239,
+        "drawCalls": 11,
+        "measuredOnPhysicalIPhone": false
+      }
+    }
+  ],
+  "errors": [],
+  "noSupabaseRequests": true
+}

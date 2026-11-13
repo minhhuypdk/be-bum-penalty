@@ -1,0 +1,310 @@
+{
+  "sourceFile": "scott-source.blend",
+  "sourceSha256": "95b9848fd0c4a1c9ee94a2ae3a9f6136af71c97256ef63ab7a37017470846568",
+  "readOnly": true,
+  "autoExecDisabled": true,
+  "blender": "4.3.2",
+  "objects": [
+    {
+      "name": "Bone.Form.Circle",
+      "vertices": 8,
+      "faces": 0,
+      "triangles": 0,
+      "quads": 0,
+      "uvLayers": 1,
+      "materials": [],
+      "shapeKeys": [],
+      "modifiers": [],
+      "armatureModifiers": 0,
+      "drivers": 0
+    },
+    {
+      "name": "Bone.Form.Sphere",
+      "vertices": 26,
+      "faces": 0,
+      "triangles": 0,
+      "quads": 0,
+      "uvLayers": 1,
+      "materials": [],
+      "shapeKeys": [],
+      "modifiers": [],
+      "armatureModifiers": 0,
+      "drivers": 0
+    },
+    {
+      "name": "Circle",
+      "vertices": 218,
+      "faces": 198,
+      "triangles": 396,
+      "quads": 198,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Circle.001",
+      "vertices": 168,
+      "faces": 164,
+      "triangles": 328,
+      "quads": 164,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Cube",
+      "vertices": 234,
+      "faces": 232,
+      "triangles": 464,
+      "quads": 232,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Plane",
+      "vertices": 5369,
+      "faces": 5660,
+      "triangles": 10680,
+      "quads": 5004,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Plane.001",
+      "vertices": 1478,
+      "faces": 1424,
+      "triangles": 2950,
+      "quads": 1175,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Plane.002",
+      "vertices": 1238,
+      "faces": 1469,
+      "triangles": 2436,
+      "quads": 967,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Plane.003",
+      "vertices": 1353,
+      "faces": 1877,
+      "triangles": 2663,
+      "quads": 781,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    },
+    {
+      "name": "Plane.004",
+      "vertices": 1928,
+      "faces": 2024,
+      "triangles": 3784,
+      "quads": 1752,
+      "uvLayers": 1,
+      "materials": [
+        "Material"
+      ],
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "levels": null,
+          "renderLevels": null
+        },
+        {
+          "type": "NODES",
+          "name": "Auto Smooth",
+          "levels": null,
+          "renderLevels": null
+        }
+      ],
+      "armatureModifiers": 1,
+      "drivers": 0
+    }
+  ],
+  "armatures": [
+    {
+      "name": "Boy",
+      "bones": 370,
+      "deformBones": 370,
+      "constraints": 557,
+      "drivers": 440
+    }
+  ],
+  "images": [
+    {
+      "name": "boy-texture",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": ""
+    },
+    {
+      "name": "water_color.png.003",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "/home/mish7913/.config/blender/3.0/scripts/addons/megabag-0-2-0-alpha/data/m7a_brushes/water_color.png"
+    }
+  ],
+  "texts": [
+    {
+      "name": "Text",
+      "bytes": 16,
+      "autoRun": false
+    }
+  ],
+  "actions": [
+    {
+      "name": "boy_lib_actions",
+      "frames": [
+        1.0,
+        85.0
+      ]
+    }
+  ],
+  "totals": {
+    "meshes": 10,
+    "baseTriangles": 23701,
+    "materialSlots": 8,
+    "shapeKeys": 0
+  }
+}

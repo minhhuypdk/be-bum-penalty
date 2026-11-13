@@ -1,0 +1,11 @@
+{
+  "sourceLogSha256": "0d7db6c7e1730a34f148b0ac8071c596f5356d756a8809688c4c0179c47945c9",
+  "staticExportSucceeded": true,
+  "animationsDisabledByProbeChoice": true,
+  "skinInfluencesTruncatedTo4": true,
+  "unusedVertexColorOmitted": true,
+  "optionalDracoUnavailable": true,
+  "DracoUsed": false,
+  "animatedEquivalenceVerified": false,
+  "geometryOrKitAdaptedToBUM": false
+}

@@ -1,0 +1,12 @@
+{
+  "checkedDate": "2026-11-13",
+  "source": "https://projects.blender.org/studio/blender-studio/raw/branch/main/static_assets/fixtures/licenses.json",
+  "sourceSha256": "f3e1dae6acaed924af267dca750f06b6408498edd6f39aa840a81bf40ae6bfec",
+  "entry": {
+    "name": "CC-BY",
+    "slug": "cc-by",
+    "description": "You are free to share and adapt this content - but you must give attribution to Blender Studio.",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "limitation": "Asset pages available via indexed primary-source text; direct HTTP403. Binary/license notices still must be checked before importing a selected Studio asset."
+}

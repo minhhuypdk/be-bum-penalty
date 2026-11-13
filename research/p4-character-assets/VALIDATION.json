@@ -1,0 +1,26 @@
+{
+  "result": "PASS_RESEARCH_EVIDENCE_ONLY",
+  "candidates": 4,
+  "localPublisherPreviews": 2,
+  "publisherPreviewLinksOnly": [
+    "spring",
+    "storm"
+  ],
+  "nativeBinaryInspected": [
+    "scott"
+  ],
+  "originalAssetPreviewEngine": "WebKit WPE Linux",
+  "ScottStaticGLBExport": "PASS_WITH_SKIN_INFLUENCE_WARNING",
+  "ScottAnimatedEquivalence": "NOT_VERIFIED",
+  "physicalIPhone": false,
+  "ownerApprovedP31RBlinkOnly": true,
+  "ownerApprovedOverallArt": false,
+  "donorApproved": false,
+  "BUMDonorTrialCreated": false,
+  "gameReplacement": false,
+  "purchaseOrSubscription": false,
+  "protectedP31RGLBHashMatches": true,
+  "noSupabaseRequestsInPreview": true,
+  "quality9Verified": false,
+  "unmeasuredCandidateMetricsRemainNull": true
+}

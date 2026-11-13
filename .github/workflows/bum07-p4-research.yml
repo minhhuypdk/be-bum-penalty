@@ -1,0 +1,28 @@
+name: BUM07 P4 research dossier verification
+on:
+  push:
+    branches: [research/p4-character-assets]
+    paths:
+      - research/p4-character-assets/**
+      - .github/workflows/bum07-p4-research.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify research evidence and preserve approval gates
+        run: python3 research/p4-character-assets/scripts/validate-and-package.py artifacts/BUM07-P4-Asset-Research.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P4-asset-research-no-replacement
+          path: |
+            artifacts/BUM07-P4-Asset-Research.zip
+            artifacts/BUM07-P4-Asset-Research.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Validates shipped original-asset evidence; does not rerun Blender/browsers,
+# download donor binaries, buy assets, change the game, merge or deploy.
