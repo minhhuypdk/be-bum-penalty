@@ -1,0 +1,23 @@
+id,name,z_H,measurement_type
+ground,Mặt đất,0,PROPOSED_NOT_MESH
+sole,Độ dày đế tham chiếu,0.06,PROPOSED_NOT_MESH
+ankle,Tâm cổ chân,0.28,PROPOSED_NOT_MESH
+boot-top,Miệng giày / lưỡi gà,0.42,PROPOSED_NOT_MESH
+knee,Tâm gối,1.5,PROPOSED_NOT_MESH
+shorts-hem,Gấu quần,1.82,PROPOSED_NOT_MESH
+crotch,Đáy chậu,2.15,PROPOSED_NOT_MESH
+shirt-hem,Gấu áo,2.43,PROPOSED_NOT_MESH
+waistband,Cạp quần,2.48,PROPOSED_NOT_MESH
+hip,Tâm hông,2.55,PROPOSED_NOT_MESH
+waist,Eo giải phẫu,2.68,PROPOSED_NOT_MESH
+shoulder,Tâm vai,3.85,PROPOSED_NOT_MESH
+v-tip,Đáy cổ V,3.78,PROPOSED_NOT_MESH
+chin,Cằm neutral,4.0,PROPOSED_NOT_MESH
+mouth,Tâm môi neutral,4.2,PROPOSED_NOT_MESH
+nose,Đáy mũi,4.32,PROPOSED_NOT_MESH
+ear-low,Mốc dưới tai,4.22,PROPOSED_NOT_MESH
+eye,Tâm mắt,4.54,PROPOSED_NOT_MESH
+ear-high,Mốc trên tai,4.58,PROPOSED_NOT_MESH
+brow,Tâm mày neutral,4.66,PROPOSED_NOT_MESH
+crown,"Đỉnh sọ, không tính tóc",5.0,PROPOSED_NOT_MESH
+hair-top,"Đỉnh tóc, đề xuất tối đa",5.2,PROPOSED_NOT_MESH

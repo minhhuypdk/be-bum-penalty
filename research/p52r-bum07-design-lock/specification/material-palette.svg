@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><rect width="100%" height="100%" fill="#fff"/><style>text{font-family:DejaVu Sans,Arial;fill:#182b45}</style>
+<text x="35" y="48" font-size="28">BUM07 B — PROPOSED sRGB BASE COLORS / MATERIALS</text>
+<text x="35" y="85" font-size="21">Not color samples from lit AI images; no texture/shader or GLB has been produced.</text>
+<rect x="35" y="125" width="280" height="185" rx="12" fill="#F6C744" stroke="#999"/>
+<text x="35" y="340" font-size="21">Áo vàng</text>
+<text x="35" y="373" font-size="23">#F6C744</text>
+<text x="35" y="405" font-size="18">roughness 0.70–0.85</text>
+<text x="35" y="435" font-size="18">metallic0 / proposed</text>
+<rect x="345" y="125" width="280" height="185" rx="12" fill="#182B45" stroke="#999"/>
+<text x="345" y="340" font-size="21">Quần / cổ / số</text>
+<text x="345" y="373" font-size="23">#182B45</text>
+<text x="345" y="405" font-size="18">roughness 0.70–0.85</text>
+<text x="345" y="435" font-size="18">metallic0 / proposed</text>
+<rect x="655" y="125" width="280" height="185" rx="12" fill="#F2EBDD" stroke="#999"/>
+<text x="655" y="340" font-size="21">Tất sáng</text>
+<text x="655" y="373" font-size="23">#F2EBDD</text>
+<text x="655" y="405" font-size="18">roughness 0.80–0.95</text>
+<text x="655" y="435" font-size="18">metallic0 / proposed</text>
+<rect x="965" y="125" width="280" height="185" rx="12" fill="#1C2D42" stroke="#999"/>
+<text x="965" y="340" font-size="21">Giày</text>
+<text x="965" y="373" font-size="23">#1C2D42</text>
+<text x="965" y="405" font-size="18">roughness 0.45–0.65</text>
+<text x="965" y="435" font-size="18">metallic0 / proposed</text>
+<rect x="1275" y="125" width="280" height="185" rx="12" fill="#D9A078" stroke="#999"/>
+<text x="1275" y="340" font-size="21">Da nền tham chiếu</text>
+<text x="1275" y="373" font-size="23">#D9A078</text>
+<text x="1275" y="405" font-size="18">roughness 0.45–0.60</text>
+<text x="1275" y="435" font-size="18">metallic0 / proposed</text>
+<rect x="35" y="480" width="280" height="185" rx="12" fill="#B97465" stroke="#999"/>
+<text x="35" y="695" font-size="21">Môi</text>
+<text x="35" y="728" font-size="23">#B97465</text>
+<text x="35" y="760" font-size="18">roughness 0.45–0.60</text>
+<text x="35" y="790" font-size="18">metallic0 / proposed</text>
+<rect x="345" y="480" width="280" height="185" rx="12" fill="#241D1A" stroke="#999"/>
+<text x="345" y="695" font-size="21">Tóc nâu đen</text>
+<text x="345" y="728" font-size="23">#241D1A</text>
+<text x="345" y="760" font-size="18">roughness 0.45–0.65</text>
+<text x="345" y="790" font-size="18">metallic0 / proposed</text>
+<rect x="655" y="480" width="280" height="185" rx="12" fill="#4E331D" stroke="#999"/>
+<text x="655" y="695" font-size="21">Iris nâu</text>
+<text x="655" y="728" font-size="23">#4E331D</text>
+<text x="655" y="760" font-size="18">roughness 0.20–0.35</text>
+<text x="655" y="790" font-size="18">metallic0 / proposed</text>
+<rect x="965" y="480" width="280" height="185" rx="12" fill="#EFE7DA" stroke="#999"/>
+<text x="965" y="695" font-size="21">Sclera ngà</text>
+<text x="965" y="728" font-size="23">#EFE7DA</text>
+<text x="965" y="760" font-size="18">roughness 0.20–0.35</text>
+<text x="965" y="790" font-size="18">metallic0 / proposed</text>
+<rect x="1275" y="480" width="280" height="185" rx="12" fill="#EDE3D2" stroke="#999"/>
+<text x="1275" y="695" font-size="21">Răng ngà</text>
+<text x="1275" y="728" font-size="23">#EDE3D2</text>
+<text x="1275" y="760" font-size="18">roughness 0.30–0.45</text>
+<text x="1275" y="790" font-size="18">metallic0 / proposed</text>
+</svg>

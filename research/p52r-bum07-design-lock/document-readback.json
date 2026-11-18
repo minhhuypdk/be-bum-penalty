@@ -1,0 +1,20 @@
+{
+  "png_decode_pass": 22,
+  "size": [
+    1024,
+    1536
+  ],
+  "numeric_tables_byte_identical": 4,
+  "pdf_pages": {
+    "turnaround": 10,
+    "expressions": 16
+  },
+  "pdf_visual_readback": [
+    "turnaround page5",
+    "expression page13"
+  ],
+  "pdf_readback_warning": "Poppler ICC profile warning on some embedded images; inspected pages render successfully. Not a mesh test.",
+  "owner_approval": "PENDING",
+  "art_lock": "NOT_FULLY_VERIFIED",
+  "mesh_created": false
+}

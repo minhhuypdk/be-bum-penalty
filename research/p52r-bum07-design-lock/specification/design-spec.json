@@ -1,0 +1,477 @@
+{
+  "phase": "P5.2",
+  "status": "PROPOSED_DESIGN_SPEC_NOT_OWNER_APPROVED",
+  "sourceConcept": "B / Field Breeze",
+  "unit": "H = skull crown to neutral chin, excluding hair",
+  "physicalScaleMeters": null,
+  "crownToFloor_H": 5.0,
+  "includingHair_H": 5.2,
+  "meshMeasurementsExist": false,
+  "cameraAnglesAreProposedNotMeasured": true,
+  "coordinates": {
+    "Xpositive": "anatomical LEFT",
+    "forward": "-Y",
+    "up": "+Z",
+    "frontCamera": "(0,-R,z)",
+    "orbitTowards": "anatomical RIGHT",
+    "cameraOrbitFormula": "x=-R*sin(theta), y=-R*cos(theta); look at same target; orthographic proposed",
+    "sideNoseDirection": "image RIGHT",
+    "thetaDegrees": [
+      0,
+      45,
+      90,
+      180
+    ]
+  },
+  "landmarks": [
+    {
+      "id": "ground",
+      "name": "Mặt đất",
+      "z_H": 0,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "sole",
+      "name": "Độ dày đế tham chiếu",
+      "z_H": 0.06,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "ankle",
+      "name": "Tâm cổ chân",
+      "z_H": 0.28,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "boot-top",
+      "name": "Miệng giày / lưỡi gà",
+      "z_H": 0.42,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "knee",
+      "name": "Tâm gối",
+      "z_H": 1.5,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shorts-hem",
+      "name": "Gấu quần",
+      "z_H": 1.82,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "crotch",
+      "name": "Đáy chậu",
+      "z_H": 2.15,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shirt-hem",
+      "name": "Gấu áo",
+      "z_H": 2.43,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "waistband",
+      "name": "Cạp quần",
+      "z_H": 2.48,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "hip",
+      "name": "Tâm hông",
+      "z_H": 2.55,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "waist",
+      "name": "Eo giải phẫu",
+      "z_H": 2.68,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shoulder",
+      "name": "Tâm vai",
+      "z_H": 3.85,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "v-tip",
+      "name": "Đáy cổ V",
+      "z_H": 3.78,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "chin",
+      "name": "Cằm neutral",
+      "z_H": 4.0,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "mouth",
+      "name": "Tâm môi neutral",
+      "z_H": 4.2,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "nose",
+      "name": "Đáy mũi",
+      "z_H": 4.32,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "ear-low",
+      "name": "Mốc dưới tai",
+      "z_H": 4.22,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "eye",
+      "name": "Tâm mắt",
+      "z_H": 4.54,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "ear-high",
+      "name": "Mốc trên tai",
+      "z_H": 4.58,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "brow",
+      "name": "Tâm mày neutral",
+      "z_H": 4.66,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "crown",
+      "name": "Đỉnh sọ, không tính tóc",
+      "z_H": 5.0,
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "hair-top",
+      "name": "Đỉnh tóc, đề xuất tối đa",
+      "z_H": 5.2,
+      "kind": "PROPOSED_NOT_MESH"
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "head-height",
+      "name": "Chiều cao sọ–cằm",
+      "value": 1.0,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "head-width",
+      "name": "Rộng sọ, không tính tai",
+      "value": 0.74,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "head-depth",
+      "name": "Sâu sọ, chưa tính nhô mũi",
+      "value": 0.78,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "ear-span",
+      "name": "Rộng cả hai tai",
+      "value": 0.92,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shoulder-span",
+      "name": "Khoảng hai tâm vai",
+      "value": 1.05,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "chest-width",
+      "name": "Rộng thân ngực, chưa tính vải",
+      "value": 1.0,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "pelvis-width",
+      "name": "Rộng hông giải phẫu",
+      "value": 0.95,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "upper-arm",
+      "name": "Dài cánh tay trên",
+      "value": 0.82,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "forearm",
+      "name": "Dài cẳng tay",
+      "value": 0.65,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "hand-length",
+      "name": "Cổ tay đến đầu ngón giữa",
+      "value": 0.44,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "hand-width",
+      "name": "Rộng bàn tay",
+      "value": 0.24,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "upper-leg",
+      "name": "Tâm hông đến tâm gối",
+      "value": 1.05,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "lower-leg",
+      "name": "Tâm gối đến cổ chân",
+      "value": 1.22,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "foot-length",
+      "name": "Dài giày từ gót đến mũi",
+      "value": 0.82,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "foot-width",
+      "name": "Rộng giày",
+      "value": 0.34,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "stance",
+      "name": "Khoảng tâm hai bàn chân",
+      "value": 0.8,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "eye-span",
+      "name": "Khoảng hai tâm mắt",
+      "value": 0.32,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "eye-opening",
+      "name": "Rộng khe mắt neutral",
+      "value": 0.19,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "globe-diameter",
+      "name": "Đường kính nhãn cầu",
+      "value": 0.22,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "iris-diameter",
+      "name": "Đường kính iris",
+      "value": 0.1,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "lid-thickness",
+      "name": "Dày vành mí tham chiếu",
+      "value": 0.01,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "nose-width",
+      "name": "Rộng cánh mũi",
+      "value": 0.17,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "neutral-mouth",
+      "name": "Rộng miệng neutral",
+      "value": 0.34,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shirt-07-height",
+      "name": "Cao số07 mặt trước",
+      "value": 0.38,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "shirt-07-width",
+      "name": "Rộng bố cục07 mặt trước",
+      "value": 0.5,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "back-07-height",
+      "name": "Cao số07 sau lưng",
+      "value": 0.42,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "collar-width",
+      "name": "Rộng dải cổ navy",
+      "value": 0.045,
+      "unit": "H",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "a-pose",
+      "name": "Góc cánh tay so với thân dọc",
+      "value": 35.0,
+      "unit": "degree",
+      "kind": "PROPOSED_NOT_MESH"
+    },
+    {
+      "id": "rest-arm",
+      "name": "Góc tay ở dáng đứng",
+      "value": 12.0,
+      "unit": "degree",
+      "kind": "PROPOSED_NOT_MESH"
+    }
+  ],
+  "palette": [
+    {
+      "id": "jersey-yellow",
+      "name": "Áo vàng",
+      "baseColor_sRGB": "#F6C744",
+      "roughnessProposed": [
+        0.7,
+        0.85
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "navy",
+      "name": "Quần / cổ / số",
+      "baseColor_sRGB": "#182B45",
+      "roughnessProposed": [
+        0.7,
+        0.85
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "sock-ivory",
+      "name": "Tất sáng",
+      "baseColor_sRGB": "#F2EBDD",
+      "roughnessProposed": [
+        0.8,
+        0.95
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "boot-navy",
+      "name": "Giày",
+      "baseColor_sRGB": "#1C2D42",
+      "roughnessProposed": [
+        0.45,
+        0.65
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "skin",
+      "name": "Da nền tham chiếu",
+      "baseColor_sRGB": "#D9A078",
+      "roughnessProposed": [
+        0.45,
+        0.6
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "lip",
+      "name": "Môi",
+      "baseColor_sRGB": "#B97465",
+      "roughnessProposed": [
+        0.45,
+        0.6
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "hair",
+      "name": "Tóc nâu đen",
+      "baseColor_sRGB": "#241D1A",
+      "roughnessProposed": [
+        0.45,
+        0.65
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "iris",
+      "name": "Iris nâu",
+      "baseColor_sRGB": "#4E331D",
+      "roughnessProposed": [
+        0.2,
+        0.35
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "sclera",
+      "name": "Sclera ngà",
+      "baseColor_sRGB": "#EFE7DA",
+      "roughnessProposed": [
+        0.2,
+        0.35
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    },
+    {
+      "id": "teeth",
+      "name": "Răng ngà",
+      "baseColor_sRGB": "#EDE3D2",
+      "roughnessProposed": [
+        0.3,
+        0.45
+      ],
+      "metallicProposed": 0,
+      "kind": "PROPOSED_NOT_SAMPLED_FROM_LIT_IMAGES"
+    }
+  ]
+}

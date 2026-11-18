@@ -1,0 +1,41 @@
+{
+  "phase": "P5.2R",
+  "owner_approval": "PENDING",
+  "blender_gate": "CLOSED",
+  "numeric_changes": 0,
+  "hair": {
+    "part": "anatomical LEFT; viewer RIGHT front, viewer LEFT back",
+    "fringe": "low sweep, 5–7 broad soft groups, no tall quiff",
+    "nape": "short low soft U/taper above continuous back collar"
+  },
+  "dentition": {
+    "template": "single proposed upper arch",
+    "ids": [
+      "UR4",
+      "UR3",
+      "UR2",
+      "UR1",
+      "UL1",
+      "UL2",
+      "UL3",
+      "UL4"
+    ],
+    "relative_widths": [
+      0.58,
+      0.68,
+      0.82,
+      1,
+      1,
+      0.82,
+      0.68,
+      0.58
+    ],
+    "central_gap": false,
+    "verification": "2D intention only; generated tooth shapes still vary"
+  },
+  "kit": {
+    "front": "shallow navy V, raglan piping, centred 07",
+    "back": "rounded continuous navy collar, centred BUM and07, no sponsors"
+  },
+  "camera": "illustrated angle labels only; NOT verified 3D orthographic"
+}

@@ -1,0 +1,138 @@
+{
+  "type": "AI design concepts, NOT Blender renders",
+  "baseline": "8529f6b",
+  "images": [
+    {
+      "path": "expressions/01-neutral-000.png",
+      "status": "retained",
+      "baseline_sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0",
+      "sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0"
+    },
+    {
+      "path": "expressions/01-neutral-045.png",
+      "status": "revised",
+      "baseline_sha256": "eaa93b328f69d0d1389e352cfb6f1a1c5f90f1dddb7a4a6a62bb49d45b62350d",
+      "sha256": "62b3278451e23219d127b0f4dfb6e55b68f5b7aaae38bcc8c82a310d4e1866b0"
+    },
+    {
+      "path": "expressions/02-happy-000.png",
+      "status": "revised",
+      "baseline_sha256": "0c12a0f1f4572cac595522bb616e7ce3e0859581caa8b0295119152e37fa53a0",
+      "sha256": "2d854f2596d62dcf811712fa4846d6ca095fa31c931726acc785be85d02219d1"
+    },
+    {
+      "path": "expressions/02-happy-045.png",
+      "status": "revised",
+      "baseline_sha256": "320eee914728984dc8a9f91d6854e9cc3ad3ab052479386b4a7db31d1d29b5c0",
+      "sha256": "caa2ae0cb78a57a28e47ec2b0868a2de521d36ae00d71a5569e527f53c772a69"
+    },
+    {
+      "path": "expressions/03-big-smile-000.png",
+      "status": "revised",
+      "baseline_sha256": "9996222e68874ac52a4eb0e8c3b3f93da20da22f5946abcf7d00ec21f937a3de",
+      "sha256": "f28313f83d6257b25bdcf43fbcb5c8edf89aef8abcc35369636cf3208871f968"
+    },
+    {
+      "path": "expressions/03-big-smile-045.png",
+      "status": "revised",
+      "baseline_sha256": "93a30f079b0f37e5853d556a0bcfaef7c10cc3ebd5296d0c64ac0063c5846060",
+      "sha256": "0dc3384af1e486d2746afc65e70230e054dd8a7c9ecadfe810083180eb44ea5c"
+    },
+    {
+      "path": "expressions/04-blink-100-000.png",
+      "status": "retained",
+      "baseline_sha256": "a19b94185f128439c5a7cb5507dcf7ec1623afdf488e1af954ab39f239a9c593",
+      "sha256": "a19b94185f128439c5a7cb5507dcf7ec1623afdf488e1af954ab39f239a9c593"
+    },
+    {
+      "path": "expressions/04-blink-100-045.png",
+      "status": "revised",
+      "baseline_sha256": "55eae2f0a9bcb26ee2f4e18cf6e3447fd5feab6bbda4118072c710185c552b4c",
+      "sha256": "d8e2da6c707ebd7060648d7c42234a6458fe6e5f3a0e76eff48dbd993b0487b5"
+    },
+    {
+      "path": "expressions/05-focused-000.png",
+      "status": "revised",
+      "baseline_sha256": "7d413f8b2e329d91415dc965a1cd932a8f18df5e087944f67d090caff43f123e",
+      "sha256": "00c50135361332141361ffabefbd0f9eb8b7b629cf70ab68624776ba774aea7f"
+    },
+    {
+      "path": "expressions/05-focused-045.png",
+      "status": "revised",
+      "baseline_sha256": "4c399de38b61249190be1b33bc2df98f063ffe5da9f17043a9c10ad5cb8871cc",
+      "sha256": "c546ed5cad99bec3369fe7ef94339e6d019c4a4c621a05a58e0571f5650723dc"
+    },
+    {
+      "path": "expressions/06-surprised-000.png",
+      "status": "retained",
+      "baseline_sha256": "4a3e1952fb9f18939474e2e289d8cd672c2b963696f7548be35a43a97472b001",
+      "sha256": "4a3e1952fb9f18939474e2e289d8cd672c2b963696f7548be35a43a97472b001"
+    },
+    {
+      "path": "expressions/06-surprised-045.png",
+      "status": "revised",
+      "baseline_sha256": "792988bea21210e3a0e28a00209b331a1e0550e7c180a8c50cb40d5faa0bfc66",
+      "sha256": "cf70bb1e9f8725fdfc77bfe2617dfcd8cd23b2e595d8d56cd8986cca59af2af1"
+    },
+    {
+      "path": "expressions/07-disappointed-000.png",
+      "status": "retained",
+      "baseline_sha256": "4099ca22d04132cff72891408641336ff1136791d7c606bfca20667e613c611e",
+      "sha256": "4099ca22d04132cff72891408641336ff1136791d7c606bfca20667e613c611e"
+    },
+    {
+      "path": "expressions/07-disappointed-045.png",
+      "status": "revised",
+      "baseline_sha256": "dfc36b50bea8b67f6a4e905bfaabbaa55e6ccb0851f4333f690af07d7f1cfc53",
+      "sha256": "69ce36c0b6a93a49404d152b3626acdf2b01b45fb719b9138db2a3d80a7ec9fc"
+    },
+    {
+      "path": "expressions/08-celebration-000.png",
+      "status": "revised",
+      "baseline_sha256": "139ddd64f501da1a4d140395287494abc6df9ac9c13993dae80bac93f21bad18",
+      "sha256": "a76be83f92db9bf735cc45d3f2d0854975842df53e78267195b76cbd1b3877e7"
+    },
+    {
+      "path": "expressions/08-celebration-045.png",
+      "status": "revised",
+      "baseline_sha256": "b7bb47c67c4d60745a4a34bdd0e78ba25d72a0edcd693fcbb40cc88c8a644a42",
+      "sha256": "96ac6a4ac2488d23f6f5f654a6e738c6faec548d17e51b45b2b440f844e4f323"
+    },
+    {
+      "path": "turnaround/01-front-000.png",
+      "status": "retained",
+      "baseline_sha256": "d6eead008a7db8696d798c6088b1acde4fbe5648433aff44a018dd75da08f094",
+      "sha256": "d6eead008a7db8696d798c6088b1acde4fbe5648433aff44a018dd75da08f094"
+    },
+    {
+      "path": "turnaround/02-three-quarter-045.png",
+      "status": "revised",
+      "baseline_sha256": "e71ac359ae346786a9aaa1b2ff3a81d7d594059a454f235aa5ccd1f4873f9e00",
+      "sha256": "c5325f04986a6486204c6d11a826cdc88e9f3b7cfb077f1d1c15920811286580"
+    },
+    {
+      "path": "turnaround/03-profile-090.png",
+      "status": "revised",
+      "baseline_sha256": "3bda71616204ac9b70fdfc5856d5ba279f0a289a1db6b4703a32058b42a8ca5e",
+      "sha256": "8b58220172e2c4a90db44903773d43c77ddb16c3a0847289795044fde6605ad6"
+    },
+    {
+      "path": "turnaround/04-back-180.png",
+      "status": "revised",
+      "baseline_sha256": "1fe0e4bdd44e1726826248eabcd84eb536cba3dcf93ecc57506214307db6f3ef",
+      "sha256": "935fc5f339de736c1d9f3ae68276e9ac3136d394224624a44f390ec038a0a350"
+    },
+    {
+      "path": "turnaround/05-a-pose-000.png",
+      "status": "retained",
+      "baseline_sha256": "aa5471592e97ccd3293119b4c33ab680b3524aa6ac8a6680ba2deb2a64709cb0",
+      "sha256": "aa5471592e97ccd3293119b4c33ab680b3524aa6ac8a6680ba2deb2a64709cb0"
+    },
+    {
+      "path": "turnaround/06-neutral-face-000.png",
+      "status": "retained",
+      "baseline_sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0",
+      "sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0"
+    }
+  ]
+}
