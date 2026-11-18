@@ -1,0 +1,53 @@
+{
+  "phase": "P5.1",
+  "baseline": "c15575936425bfeb89b335a4c59947981152745b",
+  "type": "AI-generated character art direction concepts",
+  "notBlenderRenders": true,
+  "modelCreated": false,
+  "rigChanged": false,
+  "productionGLBExported": false,
+  "scottUsedAsImageReference": false,
+  "artApproved": false,
+  "quality9of10Claimed": false,
+  "stopForOwnerChoice": true,
+  "concepts": [
+    {
+      "id": "A",
+      "name": "Mầm Nắng",
+      "file": "concepts/A-mam-nang.png",
+      "views": [
+        "front",
+        "approximate45",
+        "profile",
+        "full body"
+      ],
+      "targetHeightInHeads": 4.2
+    },
+    {
+      "id": "B",
+      "name": "Gió Sân Cỏ",
+      "file": "concepts/B-gio-san-co.png",
+      "views": [
+        "front",
+        "approximate45",
+        "profile",
+        "full body"
+      ],
+      "targetHeightInHeads": 5.0
+    },
+    {
+      "id": "C",
+      "name": "Tia Vui",
+      "file": "concepts/C-tia-vui.png",
+      "views": [
+        "front",
+        "approximate45",
+        "profile",
+        "full body"
+      ],
+      "targetHeightInHeads": 4.5
+    }
+  ],
+  "proportionNote": "Design intent, not measurements from geometry. Generated views are not an exact orthographic turnaround.",
+  "generation": "image_gen; original three proposal sheets; conceptC same-design eye/branding refinements, no fourth proposal"
+}
