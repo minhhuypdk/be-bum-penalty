@@ -1,0 +1,177 @@
+{
+  "phase": "P5.2",
+  "sourceCommit": "35997cc84fdba629b347fac4725ddc39bf14a7b0",
+  "sourceConcept": "research/p51-bum07-art-direction/concepts/B-gio-san-co.png",
+  "sourceConceptSha256": "6f62491978a2620b2184cbcc67ed9970b1df724491630716bdca3f5bc81d9332",
+  "directionSelection": "USER_APPROVED_B_FIELD_BREEZE",
+  "P52OwnerApproval": "PENDING",
+  "BlenderAuthorized": false,
+  "meshCreated": false,
+  "rigCreatedOrChanged": false,
+  "productionGLBExported": false,
+  "gameIntegrated": false,
+  "quality9of10Claimed": false,
+  "explicitImageInputs": "Selected B sheet and derived P5.2 canonical images only; no Scott/A/C image inputs",
+  "measurementType": "PROPOSED_DESIGN_DIMENSIONS_NOT_MESH",
+  "cameraType": "AI orthographic-style intent + common-scale proposed-ruler document; not a measured 3D camera",
+  "pngUpscaledOrRetouchedByScripts": false,
+  "generation": "image_gen; references fixed per portrait, independent final PNG for each view; neutral-front reused byte-identically",
+  "createdAtClientTime": "2026-11-18T13:57:58.780360+07:00",
+  "stopAfterHandoff": true,
+  "images": [
+    {
+      "file": "turnaround/01-front-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "d6eead008a7db8696d798c6088b1acde4fbe5648433aff44a018dd75da08f094"
+    },
+    {
+      "file": "turnaround/02-three-quarter-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "e71ac359ae346786a9aaa1b2ff3a81d7d594059a454f235aa5ccd1f4873f9e00"
+    },
+    {
+      "file": "turnaround/03-profile-090.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "3bda71616204ac9b70fdfc5856d5ba279f0a289a1db6b4703a32058b42a8ca5e"
+    },
+    {
+      "file": "turnaround/04-back-180.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "1fe0e4bdd44e1726826248eabcd84eb536cba3dcf93ecc57506214307db6f3ef"
+    },
+    {
+      "file": "turnaround/05-a-pose-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "aa5471592e97ccd3293119b4c33ab680b3524aa6ac8a6680ba2deb2a64709cb0"
+    },
+    {
+      "file": "turnaround/06-neutral-face-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0"
+    },
+    {
+      "file": "expressions/01-neutral-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "aa8ce88ae35114894de91adda7706b864190d83960aed3df88a4ac7f97c2dba0"
+    },
+    {
+      "file": "expressions/01-neutral-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "eaa93b328f69d0d1389e352cfb6f1a1c5f90f1dddb7a4a6a62bb49d45b62350d"
+    },
+    {
+      "file": "expressions/02-happy-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "0c12a0f1f4572cac595522bb616e7ce3e0859581caa8b0295119152e37fa53a0"
+    },
+    {
+      "file": "expressions/02-happy-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "320eee914728984dc8a9f91d6854e9cc3ad3ab052479386b4a7db31d1d29b5c0"
+    },
+    {
+      "file": "expressions/03-big-smile-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "9996222e68874ac52a4eb0e8c3b3f93da20da22f5946abcf7d00ec21f937a3de"
+    },
+    {
+      "file": "expressions/03-big-smile-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "93a30f079b0f37e5853d556a0bcfaef7c10cc3ebd5296d0c64ac0063c5846060"
+    },
+    {
+      "file": "expressions/04-blink-100-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "a19b94185f128439c5a7cb5507dcf7ec1623afdf488e1af954ab39f239a9c593"
+    },
+    {
+      "file": "expressions/04-blink-100-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "55eae2f0a9bcb26ee2f4e18cf6e3447fd5feab6bbda4118072c710185c552b4c"
+    },
+    {
+      "file": "expressions/05-focused-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "7d413f8b2e329d91415dc965a1cd932a8f18df5e087944f67d090caff43f123e"
+    },
+    {
+      "file": "expressions/05-focused-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "4c399de38b61249190be1b33bc2df98f063ffe5da9f17043a9c10ad5cb8871cc"
+    },
+    {
+      "file": "expressions/06-surprised-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "4a3e1952fb9f18939474e2e289d8cd672c2b963696f7548be35a43a97472b001"
+    },
+    {
+      "file": "expressions/06-surprised-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "792988bea21210e3a0e28a00209b331a1e0550e7c180a8c50cb40d5faa0bfc66"
+    },
+    {
+      "file": "expressions/07-disappointed-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "4099ca22d04132cff72891408641336ff1136791d7c606bfca20667e613c611e"
+    },
+    {
+      "file": "expressions/07-disappointed-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "dfc36b50bea8b67f6a4e905bfaabbaa55e6ccb0851f4333f690af07d7f1cfc53"
+    },
+    {
+      "file": "expressions/08-celebration-000.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "139ddd64f501da1a4d140395287494abc6df9ac9c13993dae80bac93f21bad18"
+    },
+    {
+      "file": "expressions/08-celebration-045.png",
+      "width": 1024,
+      "height": 1536,
+      "type": "AI_CONCEPT_NOT_BLENDER_RENDER",
+      "sha256": "b7bb47c67c4d60745a4a34bdd0e78ba25d72a0edcd693fcbb40cc88c8a644a42"
+    }
+  ]
+}

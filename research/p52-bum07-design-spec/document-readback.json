@@ -1,0 +1,45 @@
+{
+  "type": "DOCUMENT_READBACK_NOT_MODEL_TEST",
+  "pngCount": 22,
+  "nativePngDimensions": [
+    1024,
+    1536
+  ],
+  "turnaroundFiles": 6,
+  "expressionStates": 8,
+  "expressionAngles": [
+    0,
+    45
+  ],
+  "expressionFiles": 16,
+  "allPngFilesOpened": true,
+  "sourcePngHashUnchangedAfterPDFCompression": true,
+  "neutralFrontByteIdentical": true,
+  "pdfs": [
+    {
+      "file": "BUM07-P52-TURNAROUND-AND-GUIDE.pdf",
+      "pages": 9,
+      "bytes": 536583,
+      "sha256": "40602c1542b0a5950941cdc4334bb7375cc42c2c398cf118c77d7f9f5706b9f5",
+      "compression": "PDF-only JPEG90; source PNGs unchanged"
+    },
+    {
+      "file": "BUM07-P52-EXPRESSIONS.pdf",
+      "pages": 9,
+      "bytes": 1494728,
+      "sha256": "bce99b7025d316c0b9bebe17bcc9f865f04228b955cd073b40f1dbbadcb1190a",
+      "compression": "PDF-only JPEG90; source PNGs unchanged"
+    }
+  ],
+  "readbackVisualChecks": [
+    "common ruler layout: four images visible, no independent scaling",
+    "face vector diagram readable",
+    "BigSmile pair in optimized expression PDF readable",
+    "corrected vector guide: visible iris clipped by lid opening, proposed globe volume shown dashed"
+  ],
+  "documentsComplete": "PASS",
+  "cameraGeometry": "NOT_VERIFIED_NO_MESH",
+  "crossViewMeshConsistency": "NOT_VERIFIED_NO_MESH",
+  "artApproval": "PENDING_OWNER",
+  "BlenderGate": "CLOSED_UNTIL_EXPLICIT_APPROVAL"
+}

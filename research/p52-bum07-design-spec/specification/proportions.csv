@@ -1,0 +1,30 @@
+id,name,value,unit,measurement_type
+head-height,Chiều cao sọ–cằm,1.0,H,PROPOSED_NOT_MESH
+head-width,"Rộng sọ, không tính tai",0.74,H,PROPOSED_NOT_MESH
+head-depth,"Sâu sọ, chưa tính nhô mũi",0.78,H,PROPOSED_NOT_MESH
+ear-span,Rộng cả hai tai,0.92,H,PROPOSED_NOT_MESH
+shoulder-span,Khoảng hai tâm vai,1.05,H,PROPOSED_NOT_MESH
+chest-width,"Rộng thân ngực, chưa tính vải",1.0,H,PROPOSED_NOT_MESH
+pelvis-width,Rộng hông giải phẫu,0.95,H,PROPOSED_NOT_MESH
+upper-arm,Dài cánh tay trên,0.82,H,PROPOSED_NOT_MESH
+forearm,Dài cẳng tay,0.65,H,PROPOSED_NOT_MESH
+hand-length,Cổ tay đến đầu ngón giữa,0.44,H,PROPOSED_NOT_MESH
+hand-width,Rộng bàn tay,0.24,H,PROPOSED_NOT_MESH
+upper-leg,Tâm hông đến tâm gối,1.05,H,PROPOSED_NOT_MESH
+lower-leg,Tâm gối đến cổ chân,1.22,H,PROPOSED_NOT_MESH
+foot-length,Dài giày từ gót đến mũi,0.82,H,PROPOSED_NOT_MESH
+foot-width,Rộng giày,0.34,H,PROPOSED_NOT_MESH
+stance,Khoảng tâm hai bàn chân,0.8,H,PROPOSED_NOT_MESH
+eye-span,Khoảng hai tâm mắt,0.32,H,PROPOSED_NOT_MESH
+eye-opening,Rộng khe mắt neutral,0.19,H,PROPOSED_NOT_MESH
+globe-diameter,Đường kính nhãn cầu,0.22,H,PROPOSED_NOT_MESH
+iris-diameter,Đường kính iris,0.1,H,PROPOSED_NOT_MESH
+lid-thickness,Dày vành mí tham chiếu,0.01,H,PROPOSED_NOT_MESH
+nose-width,Rộng cánh mũi,0.17,H,PROPOSED_NOT_MESH
+neutral-mouth,Rộng miệng neutral,0.34,H,PROPOSED_NOT_MESH
+shirt-07-height,Cao số07 mặt trước,0.38,H,PROPOSED_NOT_MESH
+shirt-07-width,Rộng bố cục07 mặt trước,0.5,H,PROPOSED_NOT_MESH
+back-07-height,Cao số07 sau lưng,0.42,H,PROPOSED_NOT_MESH
+collar-width,Rộng dải cổ navy,0.045,H,PROPOSED_NOT_MESH
+a-pose,Góc cánh tay so với thân dọc,35.0,degree,PROPOSED_NOT_MESH
+rest-arm,Góc tay ở dáng đứng,12.0,degree,PROPOSED_NOT_MESH

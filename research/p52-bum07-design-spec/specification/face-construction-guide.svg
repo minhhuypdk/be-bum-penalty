@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150"><rect width="100%" height="100%" fill="#fff"/><style>text{font-family:DejaVu Sans,Arial;fill:#182b45}.a{fill:none;stroke:#182b45;stroke-width:4}.b{fill:none;stroke:#3482ad;stroke-width:2;stroke-dasharray:7 5}</style>
+<text x="40" y="50" font-size="30">BUM07 B — PROPOSED FACE / SOCKET / LID CONSTRUCTION</text>
+<text x="40" y="88" font-size="22">H dimensions are design proposals. No mesh or rig exists; diagram is not Scott topology.</text>
+<ellipse class="a" cx="420" cy="510" rx="244.2" ry="330.0"/>
+<defs><clipPath id="openingL"><path d="M251.7,483.6 Q314.4,440.70000000000005 377.09999999999997,483.6 Q314.4,513.3000000000001 251.7,483.6 Z"/></clipPath></defs><circle class="b" cx="314.4" cy="483.6" r="72.6"/><circle class="a" cx="314.4" cy="483.6" r="33.0" clip-path="url(#openingL)"/><path class="a" d="M251.7,483.6 Q314.4,440.70000000000005 377.09999999999997,483.6 Q314.4,513.3000000000001 251.7,483.6 Z"/>
+<defs><clipPath id="openingR"><path d="M462.90000000000003,483.6 Q525.6,440.70000000000005 588.3000000000001,483.6 Q525.6,513.3000000000001 462.90000000000003,483.6 Z"/></clipPath></defs><circle class="b" cx="525.6" cy="483.6" r="72.6"/><circle class="a" cx="525.6" cy="483.6" r="33.0" clip-path="url(#openingR)"/><path class="a" d="M462.90000000000003,483.6 Q525.6,440.70000000000005 588.3000000000001,483.6 Q525.6,513.3000000000001 462.90000000000003,483.6 Z"/>
+<path class="a" d="M307.8,708 Q420,694 532.2,708 Q420,737 307.8,708"/>
+<path class="a" d="M363.9,622 Q420,650 476.1,622"/>
+<text x="100" y="935" font-size="22">Skull width0.74H; eye centers ±0.16H; mouth neutral0.34H.</text>
+<text x="100" y="977" font-size="22">Dashed circles = proposed globe diameter0.22H, not exposed eyeball outlines.</text>
+<text x="100" y="1019" font-size="22">Opening0.19H; iris0.10H; lid rim0.008–0.012H. Lid must wrap globe, not float.</text>
+<text x="850" y="190" font-size="27">Construction contract</text>
+<text x="850" y="245" font-size="22">1. Shape skull + soft oval cheeks before skin detail.</text>
+<text x="850" y="300" font-size="22">2. Keep globe centers / radius fixed across expressions.</text>
+<text x="850" y="355" font-size="22">3. Continuous upper/lower lids + anchored canthi.</text>
+<text x="850" y="410" font-size="22">4. Upper-lid travel dominates Blink; no globe shrink.</text>
+<text x="850" y="465" font-size="22">5. Real lip volume / corners / inner mouth cavity.</text>
+<text x="850" y="520" font-size="22">6. Stable tooth arches; jaw carries lower teeth.</text>
+<text x="850" y="575" font-size="22">7. Smile cheeks lift lower lids; preserve identity.</text>
+<text x="850" y="630" font-size="22">8. Skin, eye, mouth clearance must be tested later.</text>
+<text x="850" y="740" font-size="24">Not an orthographic mesh measurement or rig test.</text>
+<text x="850" y="800" font-size="22">Skull depth0.78H; no large exposed white eye rim.</text>
+<text x="850" y="855" font-size="22">No flat line smile / tubular iris patches / hair cap.</text>
+</svg>

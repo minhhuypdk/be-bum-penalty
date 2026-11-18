@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "35997cc84fdba629b347fac4725ddc39bf14a7b0",
+  "branch": "research/p52-bum07-design-spec",
+  "main": "c3567aff87ce54adfa251895cecc2247c4d4b705",
+  "pagesSha256": "6477b3465f5ef71ea7ca2632da3856ff3bf282918e69069b775dc57100acf587",
+  "PR2": {
+    "draft": true,
+    "merged": false,
+    "head": "7ef321881935874e4349b486f8f2a7f4836920cd"
+  },
+  "trackedHistoricalFilesUnchanged": true,
+  "SupabaseAccessed": false,
+  "meshCreated": false,
+  "rigOrGLBChanged": false,
+  "gameIntegrated": false,
+  "otherCharactersChanged": false,
+  "BlenderAuthorized": false,
+  "checkedAtClientTime": "2026-11-18T14:02:47.822216+07:00"
+}
