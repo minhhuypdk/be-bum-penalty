@@ -1,0 +1,28 @@
+name: BUM07 P4.1R research evidence integrity
+on:
+  push:
+    branches: [research/p41r-scott-bum07]
+    paths:
+      - research/p41r-scott-bum07/**
+      - .github/workflows/bum07-p41r-research.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify shipped native/browser evidence and preserve owner approval gate
+        run: python3 research/p41r-scott-bum07/scripts/validate-and-package.py artifacts/BUM07-P41R-Scott-Research.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P41R-scott-repair-ART-PENDING
+          path: |
+            artifacts/BUM07-P41R-Scott-Research.zip
+            artifacts/BUM07-P41R-Scott-Research.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Validates shipped evidence/rig names and makes an isolated viewer copy.
+# Does NOT rerun Blender/browsers, approve art, merge, deploy or access Supabase.

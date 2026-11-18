@@ -1,0 +1,1562 @@
+{
+  "result": "PASS_RENDER_EXECUTION",
+  "Blink100Gate": "PASS",
+  "engine": "chromium",
+  "quick": false,
+  "physicalIPhone": false,
+  "artApproved": false,
+  "sourceHashes": {
+    "P31R": "9acae04ce0cefbc7c5aba16258770190673700fe57d3386a41737326851a29ef",
+    "ScottOriginal": "763cde183fb92f8354053b54882dd38407e9c5215ab419ec1e0278571d2a9715",
+    "P41": "5ae2bac2f706364c7a6133b45e35534df0728d942ac01dbad976ff89bea0ee4b",
+    "P41R": "a8d9bc70891022e521e8290234e9946bec80fdb13472611a42ee018f91f055a4"
+  },
+  "desktopBenchmark": {
+    "character": "bum-player",
+    "action": "idle",
+    "source": "local GLB",
+    "version": "local",
+    "lod": null,
+    "quality": "cinema",
+    "focus": "body",
+    "paused": true,
+    "viewport": {
+      "width": 1180,
+      "height": 866
+    },
+    "renderPixels": {
+      "width": 1180,
+      "height": 866
+    },
+    "devicePixelRatio": 1,
+    "pixelRatio": 1,
+    "shadowMap": 2048,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "triangles": 106329,
+    "drawCalls": 20,
+    "measuredOnPhysicalIPhone": false,
+    "measuredAt": "2026-11-18T04:54:06.995Z",
+    "durationSeconds": 5.917,
+    "renderedFrames": 3,
+    "averageFps": 0.51,
+    "medianFrameMs": 2049.9,
+    "p95FrameMs": 3849.9,
+    "note": "FPS thực đo trên môi trường ghi ở userAgent/GPU. Không dùng số desktop/emulator làm cam kết FPS Safari iPhone."
+  },
+  "mobileViewport": [
+    {
+      "angle": 0,
+      "value": 0,
+      "eyePixels": 11170,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41r-mobile-eyeid-0-0.png",
+      "sha256": "b16af3ec93906af788a796009a10c90b8156ce9c798fca74b541a47528696dab",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "DPR": 2,
+      "physicalIPhone": false
+    },
+    {
+      "angle": 0,
+      "value": 1,
+      "eyePixels": 0,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41r-mobile-eyeid-100-0.png",
+      "sha256": "f21c154a71d930f1a6bc896afdd586a5558c47908f2f237c37aa3f8fd1845595",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "DPR": 2,
+      "physicalIPhone": false
+    },
+    {
+      "angle": 45,
+      "value": 0,
+      "eyePixels": 7416,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41r-mobile-eyeid-0-45.png",
+      "sha256": "5d12b471b39b400b56c31ed0f69316c761c41d9113529e5313db6d1d938a765a",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "DPR": 2,
+      "physicalIPhone": false
+    },
+    {
+      "angle": 45,
+      "value": 1,
+      "eyePixels": 0,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41r-mobile-eyeid-100-45.png",
+      "sha256": "a56f34cf4f7d2de4b11f653e09624ee374b465ce4aa23d10c26d8b04be196b07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "DPR": 2,
+      "physicalIPhone": false
+    }
+  ],
+  "gpuDeformation": {
+    "result": "PASS",
+    "tolerance": 0.0001,
+    "checks": [
+      {
+        "pose": "Neutral",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.0000014399921600065096,
+        "rmsError": 5.418902766900878e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "Neutral",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.86061168619993e-7,
+        "rmsError": 2.297085510592714e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "Neutral",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 177,
+        "maxError": 0.0000014644324175315103,
+        "rmsError": 5.693491533211858e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_15",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 152,
+        "maxError": 0.0000026771362709536293,
+        "rmsError": 7.346145053537091e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_15",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_15",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.000002436920794510967,
+        "rmsError": 7.897276114213692e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_35",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000002652448549368982,
+        "rmsError": 7.516214166052492e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_35",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_35",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.000002669804086950657,
+        "rmsError": 8.889619169223277e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_55",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.00000216423736869088,
+        "rmsError": 6.722251578929771e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_55",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmL_55",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.000002392286178217186,
+        "rmsError": 7.553579690505037e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmR_35",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000002659262412333991,
+        "rmsError": 7.518071771712072e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmR_35",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmR_35",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 177,
+        "maxError": 0.0000024251038982269627,
+        "rmsError": 8.527193325137556e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmsBoth",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 152,
+        "maxError": 0.0000024211181276697437,
+        "rmsError": 7.65151225657063e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmsBoth",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmsBoth",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 174,
+        "maxError": 0.00000218464693930389,
+        "rmsError": 8.248836364006325e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootL",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000022644063622575885,
+        "rmsError": 0.0000040034441690987514,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootL",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootL",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.000005418720390281416,
+        "rmsError": 0.0000010977761170660675,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootR",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000022610163890777914,
+        "rmsError": 0.000004002343775978997,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootR",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "FootR",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.0000034689314376774793,
+        "rmsError": 8.099170470984199e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadLeft",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000005274674302467066,
+        "rmsError": 0.0000011604834504549669,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadLeft",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 144,
+        "maxError": 0.0000011984091557790697,
+        "rmsError": 5.640320480558669e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadLeft",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.000005505380411230185,
+        "rmsError": 0.0000012266265282772486,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadRight",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000005297778019161596,
+        "rmsError": 0.0000011407002745873967,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadRight",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 144,
+        "maxError": 0.0000011962072615771361,
+        "rmsError": 6.44885862383245e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadRight",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 175,
+        "maxError": 0.000005743928939967024,
+        "rmsError": 0.0000011915447865241677,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadArm",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.000003651499070086249,
+        "rmsError": 0.0000011429955827942964,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadArm",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 144,
+        "maxError": 0.0000023874695340208135,
+        "rmsError": 0.0000017558516414104353,
+        "floatTarget": true
+      },
+      {
+        "pose": "HeadArm",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.0000037610398755780504,
+        "rmsError": 0.0000010282323996789937,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmAcross",
+        "mesh": "Plane011",
+        "method": "DUAL_QUATERNION",
+        "samples": 153,
+        "maxError": 0.0000022992737981067136,
+        "rmsError": 7.101544542642052e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmAcross",
+        "mesh": "Plane011_1",
+        "method": "DUAL_QUATERNION",
+        "samples": 143,
+        "maxError": 4.814712530792806e-7,
+        "rmsError": 2.231848245583908e-7,
+        "floatTarget": true
+      },
+      {
+        "pose": "ArmAcross",
+        "mesh": "P41_Jersey001_Runtime",
+        "method": "DUAL_QUATERNION",
+        "samples": 176,
+        "maxError": 0.0000019408154672580884,
+        "rmsError": 7.549848158566032e-7,
+        "floatTarget": true
+      }
+    ]
+  },
+  "poseShots": [
+    {
+      "pose": "Neutral",
+      "file": "p41r-pose-Neutral.png",
+      "sha256": "58006ce1a33584d6671f1bc9e4bf3405e26cea1de02ebfe38c42dbe4cf9069ee"
+    },
+    {
+      "pose": "ArmL_55",
+      "file": "p41r-pose-ArmL_55.png",
+      "sha256": "e3dad353ab794a359be601538960d86738051aeba7b426136572d068266b80de"
+    },
+    {
+      "pose": "ArmsBoth",
+      "file": "p41r-pose-ArmsBoth.png",
+      "sha256": "274ee6cc6313fea006b45f77eee7a2a3e7dca9d4171015a19f548f36c3e06286"
+    },
+    {
+      "pose": "HeadLeft",
+      "file": "p41r-pose-HeadLeft.png",
+      "sha256": "bc20a15de9d648263f77605d5de9a133c9ba6f33c27fb95c45112dd6c1adec2b"
+    },
+    {
+      "pose": "HeadArm",
+      "file": "p41r-pose-HeadArm.png",
+      "sha256": "f3996a0a032bfc2ad7fc1f84bd8b53d495a734457ce4c2a54e6b0e6338c2ea5f"
+    }
+  ],
+  "skinAdapter": [
+    {
+      "mesh": "Plane011",
+      "method": "DQS",
+      "vertices": 19742,
+      "sets": 7,
+      "maxInfluences": 27,
+      "maxSumError": 1.387670636177063e-7,
+      "textureBytes": 4423680
+    },
+    {
+      "mesh": "Plane011_1",
+      "method": "DQS",
+      "vertices": 4070,
+      "sets": 7,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 917504
+    },
+    {
+      "mesh": "P41_BUMBadge_Runtime",
+      "method": "DQS",
+      "vertices": 4335,
+      "sets": 2,
+      "maxInfluences": 5,
+      "maxSumError": 1.0186340659856796e-7,
+      "textureBytes": 278528
+    },
+    {
+      "mesh": "P41_Circle001_Runtime",
+      "method": "DQS",
+      "vertices": 282,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 16384
+    },
+    {
+      "mesh": "P41_Cube_Runtime",
+      "method": "DQS",
+      "vertices": 239,
+      "sets": 1,
+      "maxInfluences": 3,
+      "maxSumError": 8.940696716308594e-8,
+      "textureBytes": 16384
+    },
+    {
+      "mesh": "Plane015",
+      "method": "LBS",
+      "vertices": 9163,
+      "sets": 1,
+      "maxInfluences": 4,
+      "maxSumError": 8.940696716308594e-8,
+      "textureBytes": 294912
+    },
+    {
+      "mesh": "Plane015_1",
+      "method": "LBS",
+      "vertices": 684,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 32768
+    },
+    {
+      "mesh": "P41_FootballCollar_Runtime",
+      "method": "LBS",
+      "vertices": 368,
+      "sets": 2,
+      "maxInfluences": 7,
+      "maxSumError": 1.1455267667770386e-7,
+      "textureBytes": 32768
+    },
+    {
+      "mesh": "P41_FootballSock_L_Runtime",
+      "method": "LBS",
+      "vertices": 532,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 32768
+    },
+    {
+      "mesh": "P41_FootballSock_R_Runtime",
+      "method": "LBS",
+      "vertices": 532,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 32768
+    },
+    {
+      "mesh": "P41_Jersey001_Runtime",
+      "method": "DQS",
+      "vertices": 3507,
+      "sets": 2,
+      "maxInfluences": 8,
+      "maxSumError": 1.30385160446167e-7,
+      "textureBytes": 229376
+    },
+    {
+      "mesh": "P41_ProjectedBootLaces_Runtime",
+      "method": "LBS",
+      "vertices": 841,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 32768
+    },
+    {
+      "mesh": "P41_SculptedHair_Runtime",
+      "method": "LBS",
+      "vertices": 21760,
+      "sets": 2,
+      "maxInfluences": 8,
+      "maxSumError": 1.2293457984924316e-7,
+      "textureBytes": 1392640
+    },
+    {
+      "mesh": "P41_Shirt07_Runtime",
+      "method": "DQS",
+      "vertices": 2157,
+      "sets": 2,
+      "maxInfluences": 7,
+      "maxSumError": 1.1082738637924194e-7,
+      "textureBytes": 147456
+    },
+    {
+      "mesh": "P41_Shorts_Runtime",
+      "method": "DQS",
+      "vertices": 1693,
+      "sets": 2,
+      "maxInfluences": 6,
+      "maxSumError": 1.1920928955078125e-7,
+      "textureBytes": 114688
+    },
+    {
+      "mesh": "P41_SockTop_L_Runtime",
+      "method": "LBS",
+      "vertices": 136,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 16384
+    },
+    {
+      "mesh": "P41_SockTop_R_Runtime",
+      "method": "LBS",
+      "vertices": 136,
+      "sets": 1,
+      "maxInfluences": 1,
+      "maxSumError": 0,
+      "textureBytes": 16384
+    }
+  ],
+  "shots": [
+    {
+      "variant": "scott-bum07-p41",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "scott-bum07-p41-front.png",
+      "sha256": "5b5b345feddef8b1c7f45478100ee4c6b6fbce3676322cb4ee47c7ad95a4fe54",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "scott-bum07-p41-45.png",
+      "sha256": "3f1718a71960ef5f586d3bb8561a710e67a33f81de147dfdc790848d75c1795a",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "scott-bum07-p41-profile.png",
+      "sha256": "ea5660f2ca2f36d38fe121ff6747f2e097c180e0d081bdb57f62af680d7eb093",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 86472,
+        "drawCalls": 17,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "scott-bum07-p41-close.png",
+      "sha256": "925878ae7e7498ac494bed245101c556369cdba34888028bea3f1da14305337f",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 84028,
+        "drawCalls": 16,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "scott-bum07-p41-body.png",
+      "sha256": "cb15507b487a675554b58bdbeea05c6b7112a0cb49b24ff76a16327e1b8935fe",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 105336,
+        "drawCalls": 24,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41r",
+      "id": "front",
+      "angle": 0,
+      "mode": "face",
+      "file": "scott-bum07-p41r-front.png",
+      "sha256": "42a72ef6985dd644a4599c792ed75c589d08eda62a8ae180b36ccee8f48bcf0f",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 89641,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41r",
+      "id": "45",
+      "angle": 45,
+      "mode": "face",
+      "file": "scott-bum07-p41r-45.png",
+      "sha256": "44370f17ed01c8114da6976857caf32572a86eb42d04cb12b0525f819498a3ae",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 89641,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41r",
+      "id": "profile",
+      "angle": 90,
+      "mode": "face",
+      "file": "scott-bum07-p41r-profile.png",
+      "sha256": "ccde38d0ffc971abfdbf01e703e181a9488bfaa1dfda3199264e9ef2f16b0957",
+      "view": {
+        "angle": 1.5707963267948966,
+        "camera": [
+          0,
+          1.7800000000000002,
+          2
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 89641,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41r",
+      "id": "close",
+      "angle": 0,
+      "mode": "close",
+      "file": "scott-bum07-p41r-close.png",
+      "sha256": "5f48ea04e4e3a91e26eebd61f89c9c2fe7b00bc2dc81c7f6b40bcc7f0d345f8d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 89641,
+        "drawCalls": 13,
+        "measuredOnPhysicalIPhone": false
+      }
+    },
+    {
+      "variant": "scott-bum07-p41r",
+      "id": "body",
+      "angle": 0,
+      "mode": "body",
+      "file": "scott-bum07-p41r-body.png",
+      "sha256": "bedbfd818f9a84bb61acbc220929820f96ea3d9eeb85cf09d05fab5348e07979",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.1000000000000003,
+          5.2
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      },
+      "metrics": {
+        "character": "bum-player",
+        "action": "idle",
+        "source": "local GLB",
+        "version": "local",
+        "lod": null,
+        "quality": "cinema",
+        "focus": "body",
+        "paused": true,
+        "viewport": {
+          "width": 1180,
+          "height": 866
+        },
+        "renderPixels": {
+          "width": 1180,
+          "height": 866
+        },
+        "devicePixelRatio": 1,
+        "pixelRatio": 1,
+        "shadowMap": 2048,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "triangles": 106329,
+        "drawCalls": 20,
+        "measuredOnPhysicalIPhone": false
+      }
+    }
+  ],
+  "expressions": [
+    {
+      "mode": "Blink",
+      "value": 0,
+      "angle": 0,
+      "file": "p41-blink-0-0.png",
+      "sha256": "5f48ea04e4e3a91e26eebd61f89c9c2fe7b00bc2dc81c7f6b40bcc7f0d345f8d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 0,
+      "file": "p41-blink-25-0.png",
+      "sha256": "8888add1ded84b3c54f65bd047a5726b3f739a885a23fb71687794e663a9f394",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p41-blink-50-0.png",
+      "sha256": "b0f0c619b3b28bebd844bc978fce72770290e6a7e162b11b60eecf55a8eb0523",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 0,
+      "file": "p41-blink-75-0.png",
+      "sha256": "0c6c95fb818a043ec4ec328df5aa4b16910aaa0cafb2d7fed8bc13864a24e69a",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 1,
+      "angle": 0,
+      "file": "p41-blink-100-0.png",
+      "sha256": "15a120ad932ff639c435d03792d0ca32b29a7c36ea2c9c34525ab1056ef48860",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0,
+      "angle": 0,
+      "file": "p41-smile-0-0.png",
+      "sha256": "5f48ea04e4e3a91e26eebd61f89c9c2fe7b00bc2dc81c7f6b40bcc7f0d345f8d",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 0,
+      "file": "p41-smile-50-0.png",
+      "sha256": "87bd61cd0a2fb25a50360d230ba16e97184cac446810eb68d881dd5d28c47e07",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 1,
+      "angle": 0,
+      "file": "p41-smile-100-0.png",
+      "sha256": "e3986c5744a0c598d769364006c163b248c18e090a1e0bbba928825d0d8bf3c5",
+      "view": {
+        "angle": 0,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0,
+      "angle": 45,
+      "file": "p41-blink-0-45.png",
+      "sha256": "baff55c97e01a3011bddafd97bc432efbbc4f7d10bd77ad4998a96f56cb70446",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.25,
+      "angle": 45,
+      "file": "p41-blink-25-45.png",
+      "sha256": "9bc7579e19e512bc228512d41bef27af4d89693889a5b711415cf807bd661cdb",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p41-blink-50-45.png",
+      "sha256": "0d746bf70c64c292ee35dedc34c5b279ce92f1075efd035dfd8766f716e33791",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 0.75,
+      "angle": 45,
+      "file": "p41-blink-75-45.png",
+      "sha256": "c2505aff93abbad008585d1ac0f1c906c73f2056e0a3fe80b19b51f0916e954a",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Blink",
+      "value": 1,
+      "angle": 45,
+      "file": "p41-blink-100-45.png",
+      "sha256": "ea59a29970adccb7f70d7f459199215573233e9de13bf55110d875e20ae0dc76",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0,
+      "angle": 45,
+      "file": "p41-smile-0-45.png",
+      "sha256": "baff55c97e01a3011bddafd97bc432efbbc4f7d10bd77ad4998a96f56cb70446",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 0.5,
+      "angle": 45,
+      "file": "p41-smile-50-45.png",
+      "sha256": "4ef42657e0e608f9eee819fcb18d931ab11324030a6d50c5546a016a4e286350",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    },
+    {
+      "mode": "Smile",
+      "value": 1,
+      "angle": 45,
+      "file": "p41-smile-100-45.png",
+      "sha256": "a21fd5fd894634fb00e791a9ab713671dd884ed5f6ea4d409fff7da622aa3199",
+      "view": {
+        "angle": 0.7853981633974483,
+        "camera": [
+          0,
+          1.78,
+          1.6
+        ],
+        "target": [
+          0,
+          1.78,
+          0
+        ],
+        "version": "local",
+        "lod": "portrait"
+      }
+    }
+  ],
+  "eyeID": [
+    {
+      "value": 0,
+      "angle": 0,
+      "eyePixels": 10796,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-0-0.png",
+      "sha256": "ebea5c4aacd1cfdb45f85f3e5c848e6292ab9850ca4a655eee8f65295b34fdc9"
+    },
+    {
+      "value": 0.25,
+      "angle": 0,
+      "eyePixels": 9085,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-25-0.png",
+      "sha256": "f4f83d4d673d6cb74e01c5f7c9d95dcffe35fa3677f8b22aaf379f8bb3f9afd1"
+    },
+    {
+      "value": 0.5,
+      "angle": 0,
+      "eyePixels": 5198,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-50-0.png",
+      "sha256": "e5ce09b15bd98ec2035eaa49cd60afc7a8b4c8c0a5509bce4448bb12025c7caf"
+    },
+    {
+      "value": 0.75,
+      "angle": 0,
+      "eyePixels": 1248,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-75-0.png",
+      "sha256": "426983436170d3b7dcd62bc380196513c18f45cec8ae0f80cfea2374754744af"
+    },
+    {
+      "value": 1,
+      "angle": 0,
+      "eyePixels": 0,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-100-0.png",
+      "sha256": "1f25961746ab90293714d564662eea4b3f6412ed7109e04e779e869cf1205760"
+    },
+    {
+      "value": 0,
+      "angle": 45,
+      "eyePixels": 7193,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-0-45.png",
+      "sha256": "fd9fbbdcaaa8097e670f1f484fcbd9484dc11af5090879a7a288e9a33192a37d"
+    },
+    {
+      "value": 0.25,
+      "angle": 45,
+      "eyePixels": 6122,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-25-45.png",
+      "sha256": "e1c00d4c8f0420b24a33e8d824a157837192fb531700281ab5eca30d111cd07f"
+    },
+    {
+      "value": 0.5,
+      "angle": 45,
+      "eyePixels": 3470,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-50-45.png",
+      "sha256": "faa36227e91779f004edb68c7af67be32d821e6e341defed36347d0c272edc6e"
+    },
+    {
+      "value": 0.75,
+      "angle": 45,
+      "eyePixels": 841,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-75-45.png",
+      "sha256": "6a9bbf79ff0d2f0bce193784720bb32e1aca701e4defe31615f11420100607e3"
+    },
+    {
+      "value": 1,
+      "angle": 45,
+      "eyePixels": 0,
+      "eyes": 1,
+      "skins": 3,
+      "file": "p41-eyeid-100-45.png",
+      "sha256": "94c3565278654eabac14e509cd5ac57e4ae62583f9d25995ab7b7539cc1b9b38"
+    }
+  ],
+  "errors": [],
+  "noSupabaseRequests": true,
+  "note": "Actual exported GLBs; same camera/studio/height2.2 per comparison, native/rest original poses. ID pass uses own P41 eye materials, not P3.1R results. Numeric GLB roundtrip and native skin errors are separate gates."
+}

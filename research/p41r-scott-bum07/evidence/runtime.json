@@ -1,0 +1,13 @@
+{
+  "hostOS": "Linux",
+  "Blender": "4.3.2",
+  "Playwright": "1.62.1",
+  "Chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)",
+  "ChromiumFlags": [
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader"
+  ],
+  "WebKitSoftwareFlag": "LIBGL_ALWAYS_SOFTWARE=1",
+  "physicalIPhone": false,
+  "softwareBenchContext": "Both headless engines ran concurrently. Not an isolated hardware benchmark or a prediction of Safari iPhone FPS."
+}

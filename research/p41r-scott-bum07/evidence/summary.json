@@ -1,0 +1,36 @@
+{
+  "baseline": "ea273ab94459525c34af07f4022d6ef52ff2e904",
+  "phase": "P4.1R",
+  "GLBSha256": "a8d9bc70891022e521e8290234e9946bec80fdb13472611a42ee018f91f055a4",
+  "technicalScope": "PASS_NATIVE_CPU_AND_RESEARCH_ADAPTER_GPU",
+  "artApproval": "PENDING_OWNER",
+  "quality9of10Claimed": false,
+  "gameReady": false,
+  "physicalIPhoneTested": false,
+  "requiresCustomDQSAdapter": true,
+  "joints": 370,
+  "triangles": 104791,
+  "primitives": 17,
+  "GLBBytes": 11857720,
+  "maxNativeError": 2.264053511425272e-05,
+  "geometry": "PASS_SCOPED",
+  "browserResults": {
+    "webkit": {
+      "Blink100": "PASS",
+      "GPU": "PASS",
+      "maxGPUError": 2.265940092816282e-05,
+      "poses": 12,
+      "desktopSoftwareFpsUnderConcurrentTestLoad": 1.08,
+      "weightLookupTextureBytes": 8028160
+    },
+    "chromium": {
+      "Blink100": "PASS",
+      "GPU": "PASS",
+      "maxGPUError": 2.2644063622575885e-05,
+      "poses": 12,
+      "desktopSoftwareFpsUnderConcurrentTestLoad": 0.51,
+      "weightLookupTextureBytes": 8028160
+    }
+  },
+  "stopAfterHandoff": true
+}

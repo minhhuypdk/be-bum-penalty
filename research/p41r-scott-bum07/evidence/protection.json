@@ -1,0 +1,18 @@
+{
+  "baseline": "ea273ab94459525c34af07f4022d6ef52ff2e904",
+  "branch": "research/p41r-scott-bum07",
+  "main": "c3567aff87ce54adfa251895cecc2247c4d4b705",
+  "pr2": {
+    "draft": true,
+    "merged": false,
+    "head": "7ef321881935874e4349b486f8f2a7f4836920cd"
+  },
+  "pagesSha256": "6477b3465f5ef71ea7ca2632da3856ff3bf282918e69069b775dc57100acf587",
+  "pagesUnchanged": true,
+  "priorTrackedFilesUnchanged": true,
+  "SupabaseRequestsInBrowserTests": 0,
+  "SupabaseModified": false,
+  "gameReplaced": false,
+  "otherCharactersModified": false,
+  "checkedAtUTC": "2026-11-18T05:01:38.169076+00:00"
+}

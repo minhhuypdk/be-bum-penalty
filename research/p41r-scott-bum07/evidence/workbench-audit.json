@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "savedBlenderOpened": true,
+  "nativeJoints": 370,
+  "nativeBodyKeys": [
+    "Basis",
+    "P41R_CanthusContact_L",
+    "P41R_CanthusContact_R"
+  ],
+  "runtimeBodyKeys": [
+    "Basis",
+    "FH_Blink25",
+    "FH_Blink50",
+    "FH_Blink75",
+    "FH_Blink",
+    "FH_Smile50",
+    "FH_Smile"
+  ],
+  "nativeCorrectiveDrivers": 2,
+  "nativePreserveVolume": true,
+  "sourceUnchanged": true,
+  "fileSha256": "5d6a951c87c98c2668592895a4e5be2aed3156b667aa931cf53165c0add2a928",
+  "scope": "Saved native rig/correctives and exact runtime keys verified; no editing or saving"
+}
