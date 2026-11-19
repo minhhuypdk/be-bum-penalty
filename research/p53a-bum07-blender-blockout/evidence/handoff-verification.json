@@ -1,0 +1,41 @@
+{
+  "png_decode_PASS": 8,
+  "independent_renders": 7,
+  "explicit_A_pose_alias": 1,
+  "resolution": [
+    1200,
+    1600
+  ],
+  "model_fingerprint_consistent": true,
+  "lights_fixed": true,
+  "native_blend_sha256_matches": true,
+  "pdfinfo": "Title:           BUM07 P5.3A — Blender Blockout Review\nCreator:         Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\nProducer:        GPL Ghostscript 10.05.1\nCreationDate:    Thu Nov 19 08:42:00 2026 UTC\nModDate:         Thu Nov 19 08:42:00 2026 UTC\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           13\nEncrypted:       no\nPage size:       841.92 x 594.96 pts (A4)\nPage rot:        0\nFile size:       1088882 bytes\nOptimized:       no\nPDF version:     1.6\n",
+  "visual_review": {
+    "status": "READ_BACK_NOT_ART_APPROVED",
+    "pngs": [
+      "full-front-000",
+      "full-three-quarter-045",
+      "full-profile-090",
+      "full-back-180",
+      "face-front-000",
+      "face-three-quarter-045",
+      "face-profile-090"
+    ],
+    "pdf_pages_rendered_and_viewed": [
+      8,
+      12,
+      13
+    ],
+    "pdf_text_pages": 13,
+    "observed_remaining_flaws": [
+      "Rigid hair masses/grooves",
+      "Bulging eye impression and broad45degree catchlights",
+      "Simplified mouth/nose/ears/chin",
+      "Uneven collar/piping/hem/sock stripe edges",
+      "Unfinished hands/body/boots/cloth"
+    ],
+    "pdf_readback_warning": "Poppler warned about an ICC profile in reference images; inspected pages render and text reads successfully. Source PNGs unchanged."
+  },
+  "art_finish": "FAIL / NOT_APPROVED",
+  "future_phase_authorization": "CLOSED"
+}

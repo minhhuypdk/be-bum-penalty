@@ -1,0 +1,337 @@
+"""BUM07 P5.3A. New procedural blockout, no imported human/Scott mesh.
+Coordinates +X anatomical LEFT, -Y forward, +Z up. 1 scene unit = 1H.
+This is not a production topology/rig/GLB or an art approval.
+Run: blender -b -t 8 --python scripts/build-blockout.py -- --preview
+"""
+import bpy, math, json, sys, hashlib
+from pathlib import Path
+from mathutils import Vector
+from math import sin,cos,pi,sqrt,exp
+ROOT=Path(__file__).resolve().parents[1]
+PREVIEW='--preview' in sys.argv
+bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
+for c in list(bpy.data.collections):
+ if c.name!='Collection' and c.users==0:bpy.data.collections.remove(c)
+COL={}
+for name in ['BUM07_FACE','BUM07_HAIR','BUM07_BODY_KIT','BUM07_DENTITION','STUDIO','CAMERAS','DESIGN_LANDMARKS']:
+ c=bpy.data.collections.new(name);bpy.context.scene.collection.children.link(c);COL[name]=c
+ACTIVE='BUM07_FACE'
+def move(o,col=None):
+ for c in list(o.users_collection):c.objects.unlink(o)
+ COL[col or ACTIVE].objects.link(o);return o
+def srgb(h):
+ v=[int(h[i:i+2],16)/255 for i in (1,3,5)];return tuple(c/12.92 if c<=.04045 else ((c+.055)/1.055)**2.4 for c in v)+(1,)
+def mat(n,h,rough=.55,sss=0):
+ m=bpy.data.materials.new(n);m.diffuse_color=srgb(h);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=srgb(h);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=0
+ p.inputs['Subsurface Weight'].default_value=sss
+ if sss:p.inputs['Subsurface Radius'].default_value=(1,.45,.25);p.inputs['Subsurface Scale'].default_value=.035
+ m['source_sRGB']=h;return m
+spec=json.loads((ROOT.parent/'p52r-bum07-design-lock/specification/design-spec.json').read_text())
+M={}
+for p in spec['palette']:M[p['id']]=mat(p['id'],p['baseColor_sRGB'],sum(p['roughnessProposed'])/2,.06 if p['id']=='skin' else 0)
+M['mouth']=mat('mouth_cavity','#653E35',.8);M['nostril']=mat('nostril_shadow','#7F503C',.8);M['hair2']=mat('hair_secondary_mass','#2C221C',.59);M['pupil']=mat('pupil','#100E0C',.22);M['lid']=mat('lid_margin','#BD896A',.6);M['brow']=mat('brow','#30221A',.7)
+M['hair'].node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value=.22
+M['hair2'].node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value=.22
+p=M['iris'].node_tree.nodes['Principled BSDF'];p.inputs['Coat Weight'].default_value=.50;p.inputs['Coat Roughness'].default_value=.06;p.inputs['Specular IOR Level'].default_value=.35
+M['studio']=mat('studio_warm','#E7E4DF',.85)
+def mesh(name,v,f,m,sub=0,col=None):
+ d=bpy.data.meshes.new(name);d.from_pydata(v,[],f);d.update();o=bpy.data.objects.new(name,d);COL[col or ACTIVE].objects.link(o)
+ if m:o.data.materials.append(m)
+ for p in d.polygons:p.use_smooth=True
+ if sub:mod=o.modifiers.new('Editable subdivision','SUBSURF');mod.levels=sub;mod.render_levels=sub
+ return o
+def uv(name,loc,scale,m,seg=48,rings=32,col=None):
+ bpy.ops.mesh.primitive_uv_sphere_add(segments=seg,ring_count=rings,location=loc);o=move(bpy.context.object,col);o.name=name;o.scale=scale;bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.data.materials.append(m)
+ for p in o.data.polygons:p.use_smooth=True
+ return o
+def curve(name,pts,r,m,col=None):
+ d=bpy.data.curves.new(name,'CURVE');d.dimensions='3D';d.resolution_u=16;d.bevel_depth=r;d.bevel_resolution=3;s=d.splines.new('BEZIER');s.bezier_points.add(len(pts)-1)
+ for p,co in zip(s.bezier_points,pts):p.co=co;p.handle_left_type='AUTO';p.handle_right_type='AUTO'
+ o=bpy.data.objects.new(name,d);COL[col or ACTIVE].objects.link(o);o.data.materials.append(m);return o
+def smoothinterp(z,knots):
+ # Cubic Hermite: shared nonzero tangents avoid horizontal ring steps at each design anchor.
+ if z<=knots[0][0]:return knots[0][1]
+ if z>=knots[-1][0]:return knots[-1][1]
+ for i,((a,va),(b,vb)) in enumerate(zip(knots,knots[1:])):
+  if z<=b:
+   t=(z-a)/(b-a);left=knots[max(0,i-1)];right=knots[min(len(knots)-1,i+2)]
+   ma=(vb-left[1])/(b-left[0]);mb=(right[1]-va)/(right[0]-a)
+   return max(.001,(2*t**3-3*t*t+1)*va+(t**3-2*t*t+t)*(b-a)*ma+(-2*t**3+3*t*t)*vb+(t**3-t*t)*(b-a)*mb)
+ return knots[-1][1]
+def fuse(name,objects,voxel=.004,iterations=2):
+ # Geometric union/remesh, not hiding artifacts or swapping geometry by camera.
+ bpy.ops.object.select_all(action='DESELECT')
+ for o in objects:
+  o.select_set(True);bpy.context.view_layer.objects.active=o
+  for mod in list(o.modifiers):bpy.ops.object.modifier_apply(modifier=mod.name)
+ bpy.context.view_layer.objects.active=objects[0];bpy.ops.object.join();o=bpy.context.object;o.name=name;o.data.remesh_voxel_size=voxel;bpy.ops.object.voxel_remesh()
+ sm=o.modifiers.new('Blockout surface relaxation','SMOOTH');sm.factor=.45;sm.iterations=iterations;bpy.ops.object.modifier_apply(modifier=sm.name)
+ for face in o.data.polygons:face.use_smooth=True
+ return o
+# Anatomical cross-sections: continuous oval face with integrated cheek/nose/muzzle/chin.
+WIDTH=[(4,.025),(4.05,.145),(4.15,.235),(4.28,.30),(4.42,.35),(4.58,.365),(4.74,.36),(4.88,.285),(4.96,.16),(5,.001)]
+FRONT=[(4,.13),(4.06,.22),(4.20,.285),(4.40,.318),(4.58,.32),(4.75,.30),(4.90,.245),(5,.001)]
+BACK=[(4,.13),(4.20,.25),(4.45,.36),(4.65,.40),(4.83,.34),(4.96,.17),(5,.001)]
+def ga(x,z,xc,zc,sx,sz):return exp(-((x-xc)/sx)**2-((z-zc)/sz)**2)
+def fy(x,z):
+ w=max(.001,smoothinterp(z,WIDTH));y=-smoothinterp(z,FRONT)*sqrt(max(0,1-(x/w)**2))
+ y-=.090*ga(x,z,0,4.35,.072,.052)+.015*(ga(x,z,-.055,4.34,.035,.032)+ga(x,z,.055,4.34,.035,.032))+.033*ga(x,z,0,4.43,.038,.11)
+ y-=.020*(ga(x,z,-.23,4.38,.11,.105)+ga(x,z,.23,4.38,.11,.105))
+ y-=.016*ga(x,z,0,4.21,.155,.075)+.011*ga(x,z,0,4.075,.11,.045)
+ y+=.008*(ga(x,z,-.16,4.54,.105,.070)+ga(x,z,.16,4.54,.105,.070))
+ return y
+v=[];f=[];N=192;Z=160
+for j in range(Z+1):
+ z=4+j/Z;w=smoothinterp(z,WIDTH)
+ for i in range(N):
+  a=2*pi*i/N;x=w*sin(a);front=cos(a)>=0;y=fy(x,z) if front else smoothinterp(z,BACK)*(-cos(a));v.append((x,y,z))
+for j in range(Z):
+ for i in range(N):a=j*N+i;b=j*N+(i+1)%N;f.append((a,b,b+N,a+N))
+f += [tuple(range(N-1,-1,-1)),tuple(Z*N+i for i in range(N))]
+head=mesh('Head_NEW_oval_integrated_nose_cheeks',v,f,M['skin']);head['source']='New analytic surface; no Scott mesh';head['design_skull_chin_H']=1.0
+# True socket cutouts. Eyelid surface bridges opening to head; eyeballs retained inside skull.
+for sign,side in [(-1,'R'),(1,'L')]:
+ x=sign*.16
+ cutter=uv('temporary_socket_'+side,(x,-.318,4.54),(.105,.19,.052),M['skin'],64,40)
+ bpy.context.view_layer.objects.active=head;mod=head.modifiers.new('Eye socket '+side,'BOOLEAN');mod.operation='DIFFERENCE';mod.solver='EXACT';mod.object=cutter;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cutter,do_unlink=True)
+ eye=uv('Eyeball_'+side,(x,-.193,4.54),(.106,.106,.106),M['sclera'])
+ # Thin iris and pupil curved on spherical eyeball, no striped coplanar decals.
+ for n,rad,off,ma in [('Iris',.048,0,M['iris']),('Pupil',.022,.0015,M['pupil'])]:
+  verts=[(x,-.193-.106-.001-off,4.54)];faces=[]
+  for k in range(1,9):
+   rr=rad*k/8
+   for i in range(64):
+    a=2*pi*i/64;verts.append((x+rr*cos(a),-.193-sqrt(.106**2-rr**2)-.001-off,4.54+rr*sin(a)))
+  for i in range(64):faces.append((0,1+i,1+(i+1)%64))
+  for k in range(7):
+   for i in range(64):a=1+k*64+i;b=1+k*64+(i+1)%64;faces.append((a,a+64,b+64,b))
+  mesh(n+'_'+side,verts,faces,ma)
+ verts=[];faces=[]
+ for k in range(9):
+  t=k/8
+  for i in range(96):
+   a=2*pi*i/96;dx=.101*cos(a);dz=(.053 if sin(a)>=0 else .029)*sin(a)+sign*.005*cos(a)
+   xi=x+dx;zi=4.54+dz;inner=-.193-sqrt(max(.0001,.106**2-dx*dx-dz*dz))-.004
+   xo=x+.15*cos(a);zo=4.54+(.105 if sin(a)>=0 else .095)*sin(a)+sign*.005*cos(a)
+   xx=xi*(1-t)+xo*t;zz=zi*(1-t)+zo*t;yy=inner*(1-t)+(fy(xo,zo)+.022)*t-.011*sin(pi*t)
+   dist2=(xx-x)**2+(zz-4.54)**2
+   if dist2<.106**2:yy=min(yy,-.193-sqrt(.106**2-dist2)-.006)
+   verts.append((xx,yy,zz))
+ for k in range(8):
+  for i in range(96):a=k*96+i;b=k*96+(i+1)%96;faces.append((a,a+96,b+96,b))
+ lid=mesh('Socket_eyelid_bridge_'+side,verts,faces,M['skin'],1);sol=lid.modifiers.new('Lid physical thickness','SOLIDIFY');sol.thickness=.006
+ # Lid rim restrained, darker than skin, no full black outline.
+ pts=[]
+ for i in range(49):
+  a=pi*i/48;dx=.101*cos(a);dz=.053*sin(a)+sign*.005*cos(a);pts.append((x+dx,-.193-sqrt(max(.0001,.106**2-dx*dx-dz*dz))-.006,4.54+dz))
+ curve('Upper_lid_margin_'+side,pts,.0025,M['lid'])
+ # Brow ribbon with tapered ends, gentle neutral arch.
+ verts=[];faces=[]
+ for i in range(41):
+  t=i/40;xx=x+(.108*(2*t-1));zz=4.66+.022*sin(pi*t)-sign*.008*(2*t-1);w=.009*sin(pi*t)**.5
+  for dz in [-w,w]:verts.append((xx,fy(xx,zz+dz)-.009,zz+dz))
+ for i in range(40):faces.append((2*i,2*i+1,2*i+3,2*i+2))
+ brow=mesh('Neutral_brow_'+side,verts,faces,M['brow'],1);s=brow.modifiers.new('Brow thickness','SOLIDIFY');s.thickness=.004
+ # Ear with outer helix and concha recess; attached as blockout component.
+ ear=uv('Ear_shell_'+side,(sign*.374,.006,4.40),(.087,.058,.18),M['skin'])
+ uv('Ear_concha_'+side,(sign*.421,-.036,4.40),(.034,.014,.087),M['lid'])
+ pts=[(sign*(.397+.046*sin(t)), -.043-.008*sin(t),4.40+.143*cos(t)) for t in [i*pi*1.75/30-.5 for i in range(31)]]
+ curve('Ear_helix_'+side,pts,.012,M['skin'])
+ curve('Ear_antihelix_'+side,[(sign*.42,-.053,4.47),(sign*.398,-.060,4.43),(sign*.414,-.055,4.36)],.008,M['skin'])
+ # Nostrils are inset/shadow targets, not holes claimed finished.
+ uv('Nostril_recess_'+side,(sign*.044,fy(sign*.044,4.319)-.0008,4.319),(.010,.003,.0045),M['nostril'],32,16)
+head=fuse('Head_NEW_oval_integrated_nose_cheeks',[head]+[bpy.data.objects['Socket_eyelid_bridge_'+side] for side in ['R','L']],.0032,2)
+head['source']='NEW face + anatomically joined eyelid bridges, no Scott geometry'
+# Soft closed neutral lips: same mesh for every camera.
+def seamz(x):return 4.20+.022*(abs(x)/.17)**1.7
+for upper in [True,False]:
+ verts=[];faces=[]
+ for i in range(65):
+  x=-.17+.34*i/64;t=sin(pi*i/64)**.65
+  for j in range(9):
+   q=j/8;dz=(.024 if upper else -.028)*q*t
+   if upper:dz*=1-.18*exp(-(x/.028)**2)
+   z=seamz(x)+dz;y=fy(x,z)-(.008+.007*sin(pi*q))*t;verts.append((x,y,z))
+ for i in range(64):
+  for j in range(8):a=i*9+j;faces.append((a,a+9,a+10,a+1))
+ mesh('Upper_lip' if upper else 'Lower_lip',verts,faces,M['lip'],1)
+curve('Closed_mouth_soft_seam',[(x,fy(x,seamz(x))-.0095,seamz(x)) for x in [-.17+i*.34/48 for i in range(49)]],.0016,M['mouth'])
+# Exactly ONE upper dental component comprising eight teeth. Hidden inside closed mouth, not copied per view.
+ACTIVE='BUM07_DENTITION';teeth=[];ratios=[.58,.68,.82,1,1,.82,.68,.58];unit=.045;cursor=-sum(ratios)*unit/2
+for label,w in zip(['UR4','UR3','UR2','UR1','UL1','UL2','UL3','UL4'],ratios):
+ width=w*unit;x=cursor+width/2;cursor+=width;y=-.267+.070*(x/.16)**2
+ bpy.ops.mesh.primitive_cube_add(size=1,location=(x,y,4.208));o=move(bpy.context.object);o.name='Tooth_'+label;o.scale=(width,.035,.048 if '1' in label else .043);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.rotation_euler.z=-x*2.6;o.data.materials.append(M['teeth']);bev=o.modifiers.new('Rounded tooth corners','BEVEL');bev.width=.006;bev.segments=3;bpy.context.view_layer.objects.active=o;bpy.ops.object.modifier_apply(modifier=bev.name)
+ for p in o.data.polygons:p.use_smooth=True
+ teeth.append(o)
+bpy.ops.object.select_all(action='DESELECT')
+for o in teeth:o.select_set(True)
+bpy.context.view_layer.objects.active=teeth[0];bpy.ops.object.join();arch=bpy.context.object;arch.name='UpperDentalArch_SINGLE_8_teeth';arch['tooth_ids']='UR4 UR3 UR2 UR1 UL1 UL2 UL3 UL4';arch['intentional_central_gap']=False
+# Hair: edited volumetric masses, low sweep from anatomical left. No tube/strand cylinders.
+ACTIVE='BUM07_HAIR';verts=[];faces=[];N=128;K=48
+for j in range(K+1):
+ for i in range(N):
+  a=2*pi*i/N
+  # front center hairline4.76, temple4.58, nape4.30.
+  boundary=4.30+.46*max(0,cos(a))**.6+.22*abs(sin(a))**1.8
+  pmax=math.acos(max(-1,min(1,(boundary-4.57)/.575)));p=.002+(pmax-.002)*j/K
+  verts.append((.386*sin(p)*sin(a),-.402*sin(p)*cos(a)+.015,4.57+.575*cos(p)))
+for j in range(K):
+ for i in range(N):a=j*N+i;b=j*N+(i+1)%N;faces.append((a,a+N,b+N,b))
+faces.append(tuple(range(N-1,-1,-1)))
+cap=mesh('Hair_base_low_hairline',verts,faces,M['hair'],1);sol=cap.modifiers.new('Editable hair shell thickness','SOLIDIFY');sol.thickness=.018
+# Catmull-Rom curved sculpted flattened clumps.
+def cat(points,t):
+ pts=[Vector(points[0])]+[Vector(p) for p in points]+[Vector(points[-1])];u=t*(len(points)-1);i=min(len(points)-2,int(u));q=u-i;p0,p1,p2,p3=pts[i:i+4];return .5*((2*p1)+(-p0+p2)*q+(2*p0-5*p1+4*p2-p3)*q*q+(-p0+3*p1-3*p2+p3)*q*q*q)
+def lock(name,points,width,depth=.023,ma=None):
+ verts=[];faces=[];L=48;C=16
+ for i in range(L+1):
+  t=i/L;c=cat(points,t)
+  q=Vector((c.x/.386,(c.y-.015)/.402,(c.z-4.57)/.575));q.normalize();c=Vector((q.x*.386,q.y*.402+.015,q.z*.575+4.57));c+=Vector((q.x,q.y,q.z)).normalized()*.010
+  tangent=(cat(points,min(1,t+.002))-cat(points,max(0,t-.002))).normalized();n=Vector((c.x/.386**2,(c.y-.015)/.402**2,(c.z-4.57)/.575**2)).normalized();b=tangent.cross(n).normalized();n=b.cross(tangent).normalized();taper=.10+.90*sin(pi*t)**.5
+  for j in range(C):
+   a=2*pi*j/C;co=c+b*(width*.5*taper*cos(a))+n*(depth*taper*sin(a));verts.append(co)
+ for i in range(L):
+  for j in range(C):a=i*C+j;b=i*C+(j+1)%C;faces.append((a,b,b+C,a+C))
+ faces.extend([tuple(range(C-1,-1,-1)),tuple(L*C+j for j in range(C))]);return mesh(name,verts,faces,ma or M['hair'],1)
+paths=[[(.18,-.308,4.94),(.07,-.383,4.88),(-.10,-.39,4.78),(-.28,-.30,4.69)],[(.20,-.24,5.025),(.04,-.337,4.995),(-.19,-.338,4.89),(-.35,-.19,4.72)],[(.20,-.14,5.10),(.02,-.25,5.12),(-.23,-.26,5.01),(-.38,-.06,4.80)],[(.17,-.025,5.145),(-.04,-.09,5.17),(-.29,-.13,5.075),(-.38,.08,4.86)],[(.14,.10,5.13),(-.07,.09,5.16),(-.29,.02,5.07),(-.36,.18,4.84)]]
+for i,pts in enumerate(paths):lock('Swept_fringe_mass_%02d'%i,pts,.12,.014,M['hair2'] if i%3==0 else M['hair'])
+for i in range(3):
+ z=4.96+i*.055;y=-.30+i*.07
+ lock('Left_part_short_mass_%d'%i,[(.22,y,z),(.31,y+.02,z-.045),(.39,y+.07,z-.18),(.35,y+.13,4.62+i*.04)],.105,.014)
+for i in range(9):
+ a=pi*.50+i*pi/8;x=.36*sin(a);y=-.37*cos(a)+.015
+ lock('Side_back_mass_%02d'%i,[(x*.50,y*.50,5.08),(x*.90,y*.90,4.94),(x,y,4.69),(x*.70,y*.84,4.32+.22*abs(sin(a)))],.125,.014,M['hair2'] if i%4==0 else M['hair'])
+hair=fuse('Hair_unified_low_swept_masses',list(COL['BUM07_HAIR'].objects),.005,6)
+# Body and basic kit, arms35° A-pose. No armature, weights or animation.
+ACTIVE='BUM07_BODY_KIT'
+def loft(name,rings,m,cap=True,N=48,sub=1):
+ # rings: cx,cy,z,rx,ry; z may be non-monotonic only for independent pieces.
+ v=[];f=[]
+ for cx,cy,z,rx,ry in rings:
+  for i in range(N):a=2*pi*i/N;v.append((cx+rx*sin(a),cy-ry*cos(a),z))
+ for k in range(len(rings)-1):
+  for i in range(N):a=k*N+i;b=k*N+(i+1)%N;f.append((a,b,b+N,a+N))
+ if cap:f.extend([tuple(range(N-1,-1,-1)),tuple((len(rings)-1)*N+i for i in range(N))])
+ return mesh(name,v,f,m,sub)
+neck=loft('Neck_blockout',[(0,.035,3.77,.155,.13),(0,.035,3.83,.155,.135),(0,.035,4.10,.15,.14),(0,.035,4.14,.125,.13)],M['skin'])
+rings=[(0,0,2.43,.46,.245),(0,0,2.46,.468,.25),(0,0,2.65,.45,.24),(0,0,3.15,.475,.255),(0,0,3.55,.50,.265),(0,0,3.75,.49,.25)]
+shirt=loft('Jersey_body_open_neck',rings,M['jersey-yellow'],False)
+# Append shoulder/V-opening rings to same garment mesh.
+bpy.context.view_layer.objects.active=shirt
+vv=[tuple(v.co) for v in shirt.data.vertices];ff=[tuple(p.vertices) for p in shirt.data.polygons];base=len(vv)-48
+for i in range(48):
+ a=2*pi*i/48;vv.append((.54*sin(a),-.235*cos(a),3.88-.14*max(0,cos(a))**2))
+for i in range(48):ff.append((base+i,base+(i+1)%48,base+48+(i+1)%48,base+48+i))
+base+=48
+for i in range(48):
+ a=2*pi*i/48;vv.append((.16*sin(a),-.165*cos(a),(3.78+.18*abs(sin(a)) if cos(a)>0 else 3.96)))
+for i in range(48):ff.append((base+i,base+(i+1)%48,base+48+(i+1)%48,base+48+i))
+old=shirt.data;dd=bpy.data.meshes.new('Jersey actual V opening');dd.from_pydata(vv,[],ff);dd.update();shirt.data=dd;dd.materials.append(M['jersey-yellow']);bpy.data.meshes.remove(old)
+for p in dd.polygons:p.use_smooth=True
+# Neckline upper ring to shoulder shell with front V vs back round.
+v=[];f=[];N=64
+for k in range(2):
+ for i in range(N):
+  a=2*pi*i/N;outer=k==0;x=(.194 if outer else .16)*sin(a);y=-(.190 if outer else .165)*cos(a);z=(3.78+.18*abs(sin(a)) if cos(a)>0 else 3.96)-(.036 if outer else 0)
+  v.append((x,y,z))
+for i in range(N):f.append((i,(i+1)%N,(i+1)%N+N,i+N))
+collar=mesh('Front_V_back_round_collar',v,f,M['navy'],0)
+# Collar lies on actual garment rather than inside the shirt surface.
+mod=collar.modifiers.new('Collar follows actual neckline','SHRINKWRAP');mod.target=shirt;mod.wrap_method='NEAREST_SURFACEPOINT';mod.wrap_mode='ON_SURFACE';mod.offset=.0025;bpy.context.view_layer.objects.active=collar;bpy.ops.object.modifier_apply(modifier=mod.name)
+# Hem gives readable tailored edge, basic geometry only.
+loft('Jersey_hem',[(0,0,2.435,.467,.252),(0,0,2.47,.472,.255)],M['jersey-yellow'],False,48,1)
+def limb(name,centres,radii,m,N=32):
+ pts=[Vector(c) for c in centres];v=[];f=[]
+ for k,(c,rad) in enumerate(zip(pts,radii)):
+  t=(pts[min(k+1,len(pts)-1)]-pts[max(0,k-1)]).normalized();u=t.cross(Vector((0,1,0))).normalized();w=t.cross(u).normalized()
+  for j in range(N):a=2*pi*j/N;v.append(c+u*(rad*cos(a))+w*(rad*.88*sin(a)))
+ for k in range(len(pts)-1):
+  for j in range(N):a=k*N+j;b=k*N+(j+1)%N;f.append((a,b,b+N,a+N))
+ f.extend([tuple(range(N-1,-1,-1)),tuple((len(pts)-1)*N+j for j in range(N))]);return mesh(name,v,f,m,1)
+for sign,side in [(-1,'R'),(1,'L')]:
+ d=Vector((sign*sin(math.radians(35)),0,-cos(math.radians(35))));sh=Vector((sign*.525,0,3.85));el=sh+d*.82;wr=el+d*.65
+ limb('Arm_'+side,[sh,sh+d*.08,el-d*.13,el,el+d*.13,wr-d*.04,wr],[.155,.157,.120,.115,.124,.084,.083],M['skin'])
+ limb('Jersey_sleeve_'+side,[sh-d*.03,sh+d*.10,sh+d*.42,sh+d*.48],[.194,.195,.182,.18],M['jersey-yellow'])
+ limb('Sleeve_navy_cuff_'+side,[sh+d*.46,sh+d*.47,sh+d*.52,sh+d*.53],[.184,.185,.182,.180],M['navy'])
+ # Raglan piping on front/back sleeve shoulder, no sponsors.
+ curve('Front_raglan_'+side,[(sign*.17,-.165,3.91),(sign*.38,-.217,3.78),(sign*.52,-.211,3.53)],.006,M['navy'])
+ curve('Back_raglan_'+side,[(sign*.17,.165,3.95),(sign*.38,.217,3.78),(sign*.52,.211,3.53)],.006,M['navy'])
+ # Palm and four distinct fingers + thumb. Structural sketch, no skin/rig claim.
+ u=Vector((sign*cos(math.radians(35)),0,sin(math.radians(35))))
+ palm=uv('Palm_'+side,wr+d*.11,(.115,.065,.145),M['skin']);palm.rotation_euler.y=-sign*math.radians(35)
+ for i,L in enumerate([.19,.23,.215,.17]):
+  start=wr+d*.24+u*((i-1.5)*.054);end=start+d*L+Vector((0,-.020,0));limb('Finger_'+side+'_'+str(i),[start,start+d*.04,(start+end)/2,end-d*.015,end],[.029,.029,.026,.020,.008],M['skin'],20)
+ start=wr+d*.07-u*.105;end=start+d*.12-u*.07+Vector((0,-.025,0));limb('Thumb_'+side,[start,(start+end)/2,end-d*.01,end],[.041,.035,.025,.01],M['skin'],24)
+ # Shorts/leg/sock, physically plausible knee and calf outline, no rig.
+ x=sign*.28
+ loft('Shorts_leg_'+side,[(x,0,1.82,.245,.235),(x,0,1.86,.247,.238),(x,0,2.18,.26,.245),(sign*.23,0,2.43,.25,.24),(sign*.23,0,2.49,.25,.24)],M['navy'])
+ loft('Shorts_hem_'+side,[(x,0,1.825,.249,.241),(x,0,1.86,.25,.242)],M['navy'],False)
+ loft('Leg_'+side,[(sign*.40,.02,.29,.10,.105),(sign*.39,.02,.45,.105,.12),(sign*.36,.02,.85,.15,.16),(sign*.33,.00,1.30,.155,.16),(sign*.32,-.01,1.50,.16,.17),(sign*.30,0,1.80,.18,.19),(x,0,1.96,.18,.195)],M['skin'])
+ loft('Sock_'+side,[(sign*.40,.02,.29,.126,.132),(sign*.40,.02,.33,.129,.136),(sign*.39,.02,.70,.168,.173),(sign*.35,.01,1.08,.178,.188),(sign*.34,.01,1.30,.180,.188),(sign*.34,.01,1.33,.178,.187)],M['sock-ivory'])
+ for j in range(2):
+  z=1.13+j*.10;xx=sign*(.34+(1.30-z)*.10);loft('Sock_band_'+side+'_'+str(j),[(xx,.01,z,.184,.194),(xx,.01,z+.042,.183,.193)],M['navy'],False)
+ # Boot silhouette generated from horizontal outlines, toe forward -Y.
+ boot=loft('Football_boot_'+side,[(sign*.40,-.20,.07,.164,.40),(sign*.40,-.20,.095,.17,.41),(sign*.40,-.20,.19,.17,.405),(sign*.40,-.15,.28,.145,.32),(sign*.40,-.04,.35,.11,.20),(sign*.40,.015,.38,.105,.15)],M['boot-navy'])
+ loft('Boot_sole_'+side,[(sign*.40,-.20,.055,.17,.41),(sign*.40,-.20,.09,.174,.415)],M['jersey-yellow'])
+ for j in range(5):
+  y=-.36+j*.055;z=.27+(y+.36)*.18
+  curve('Lace_'+side+'_'+str(j),[(sign*.40-.085,y,z),(sign*.40,y-.015,z+.014),(sign*.40+.085,y,z)],.009,M['jersey-yellow'])
+ for xx in [-.105,.105]:
+  for yy in [-.43,-.21,.05]:
+   bpy.ops.mesh.primitive_cylinder_add(vertices=16,radius=.026,depth=.048,location=(sign*.40+xx,yy,.025));o=move(bpy.context.object);o.name='Boot_stud_'+side;o.data.materials.append(M['boot-navy'])
+# Slightly rounded shorts crotch bridge hidden under shirt.
+uv('Shorts_pelvis_bridge',(0,0,2.32),(.47,.23,.20),M['navy'])
+for o in list(COL['BUM07_BODY_KIT'].objects):
+ if 'raglan_' in o.name or o.name.startswith('Sock_band_'):
+  bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;bpy.ops.object.convert(target='MESH');o=bpy.context.object
+  mod=o.modifiers.new('Piping follows garment','SHRINKWRAP');mod.target=bpy.data.objects['Sock_'+o.name.split('_')[2]] if o.name.startswith('Sock_band_') else shirt;mod.wrap_method='NEAREST_SURFACEPOINT';mod.wrap_mode='ON_SURFACE';mod.offset=.002;bpy.ops.object.modifier_apply(modifier=mod.name)
+font=bpy.data.fonts.load('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+def text(name,body,pos,height,width,back=False):
+ d=bpy.data.curves.new(name,'FONT');d.body=body;d.font=font;d.align_x='CENTER';d.align_y='CENTER';d.size=1;d.extrude=0;d.bevel_depth=0;o=bpy.data.objects.new(name,d);COL[ACTIVE].objects.link(o);o.location=pos;d.materials.append(M['navy']);bpy.context.view_layer.update();o.scale=(width/o.dimensions.x,height/o.dimensions.y,1);o.rotation_euler=(pi/2,0,pi if back else 0)
+ bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;bpy.ops.object.convert(target='MESH');o=bpy.context.object;bpy.ops.object.transform_apply(location=False,rotation=True,scale=True)
+ mod=o.modifiers.new('Conform number tessellation','TRIANGULATE');bpy.ops.object.modifier_apply(modifier=mod.name)
+ bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT');bpy.ops.mesh.subdivide(number_cuts=2);bpy.ops.object.mode_set(mode='OBJECT')
+ mod=o.modifiers.new('Number follows cloth surface','SHRINKWRAP');mod.target=shirt;mod.wrap_method='PROJECT';mod.use_project_x=False;mod.use_project_y=True;mod.use_project_z=False;mod.use_positive_direction=not back;mod.use_negative_direction=back;mod.project_limit=.3;mod.wrap_mode='ON_SURFACE';mod.offset=.0015
+ bpy.ops.object.modifier_apply(modifier=mod.name);o['cloth_offset_H']=.0015;return o
+text('Front_07','07',(0,-.270,3.19),.38,.50)
+text('Front_BUM','BUM',(.235,-.253,3.55),.10,.23)
+text('Back_07','07',(0,.272,3.14),.42,.54,True)
+text('Back_BUM','BUM',(0,.267,3.58),.13,.30,True)
+# Named non-rendering landmarks, explicit proposed→actual construction anchors.
+for id,z in [('ground',0),('ankle',.28),('knee',1.50),('shoulder',3.85),('chin',4),('eye',4.54),('crown',5)]:
+ o=bpy.data.objects.new('H_'+id,None);o.location=(0,0,z);o.empty_display_size=.035;COL['DESIGN_LANDMARKS'].objects.link(o)
+# Scene/studio. True orthographic cameras all orbit same unchanged character.
+ACTIVE='STUDIO';bpy.ops.mesh.primitive_plane_add(size=200,location=(0,0,-.003));o=move(bpy.context.object);o.name='Studio_floor';o.data.materials.append(M['studio'])
+world=bpy.data.worlds.new('Warm_studio_world');bpy.context.scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=srgb('#E7E4DF');world.node_tree.nodes['Background'].inputs[1].default_value=.25
+def area(name,pos,power,size,target):
+ d=bpy.data.lights.new(name,'AREA');d.energy=power;d.shape='DISK';d.size=size;o=bpy.data.objects.new(name,d);COL['STUDIO'].objects.link(o);o.location=pos;o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler()
+area('Key_fixed',(-3,-4,7),500,4,(0,0,3));area('Eye_catchlight_fixed',(-1.3,-3,5.5),18,.45,(0,0,4.5));area('Fill_fixed',(3,-2,5),250,3,(0,0,3.8));area('Rim_fixed',(0,3,6),450,3,(0,0,3.5))
+def camera(name,angle,target,scale):
+ d=bpy.data.cameras.new(name);d.type='ORTHO';d.ortho_scale=scale;d.clip_start=.05;d.clip_end=100;o=bpy.data.objects.new(name,d);COL['CAMERAS'].objects.link(o);a=math.radians(angle);o.location=(-12*sin(a),-12*cos(a),target[2]);o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler();d['orbit_degrees']=angle;d['target']=list(target);return o
+cams=[]
+for angle,label in [(0,'front-000'),(45,'three-quarter-045'),(90,'profile-090'),(180,'back-180')]:cams.append((camera('Full_'+label,angle,(0,0,2.60),5.80),'full-'+label))
+cams.append((camera('Full_A-pose-000',0,(0,0,2.60),5.80),'full-a-pose-000'))
+for angle,label in [(0,'front-000'),(45,'three-quarter-045'),(90,'profile-090')]:cams.append((camera('Face_'+label,angle,(0,-.01,4.53),1.50),'face-'+label))
+scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=24 if PREVIEW else 64;scene.cycles.use_denoising=False;scene.cycles.max_bounces=6
+scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGBA';scene.render.resolution_x=720 if PREVIEW else 1200;scene.render.resolution_y=960 if PREVIEW else 1600;scene.render.resolution_percentage=100
+scene.view_settings.view_transform='AgX';scene.view_settings.look='AgX - Medium High Contrast';scene.render.film_transparent=False;scene.render.fps=24;scene.camera=cams[0][0]
+scene['phase']='P5.3A BLOCKOUT / NOT ART APPROVED';scene['baseline']='4218375';scene['H_unit']='1 scene unit = 1H; physical meter scale not set';scene['no_rig_no_animation_no_game_integration']=True;scene['source']='New procedural meshes only. No Scott or imported character mesh.'
+# Save editable file BEFORE rendering, actual camera datablocks are inside.
+# Native font packed to avoid missing external resources on owner computer.
+try:font.pack()
+except Exception:pass
+scene.render.use_file_extension=True;scene.render.image_settings.color_depth='8'
+bpy.context.preferences.filepaths.save_version=0
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'bum07-p53a-blockout.blend'),compress=True)
+meta={'phase':'P5.3A','baseline':'4218375','model_source':'New procedural mesh, no Scott geometry','scene_H_unit':1,'physical_scale_meters':None,'render_engine':scene.render.engine,'samples':scene.cycles.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],'view_transform':scene.view_settings.view_transform,'same_model_all_views':True,'model_mesh_fingerprint':None,'cameras':[],'lights':[{ 'name':o.name,'location':list(o.location),'energy':o.data.energy,'size':o.data.size} for o in COL['STUDIO'].objects if o.type=='LIGHT'],'materials':{n:{'sRGB':M[n]['source_sRGB'],'roughness':M[n].node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value} for n in [p['id'] for p in spec['palette']]}}
+# Fingerprint all raw character meshes; cameras and lights excluded.
+def fingerprint():
+ h=hashlib.sha256()
+ for o in sorted([o for c in COL.values() for o in c.objects if o.type=='MESH' and c.name.startswith('BUM07')],key=lambda o:o.name):
+  h.update(o.name.encode());h.update(str([list(row) for row in o.matrix_world]).encode());h.update(str([tuple(v.co) for v in o.data.vertices]).encode());h.update(str([tuple(p.vertices) for p in o.data.polygons]).encode())
+ return h.hexdigest()
+meta['model_mesh_fingerprint']=fingerprint()
+selected=[] if '--no-render' in sys.argv else cams if '--all-check' in sys.argv else cams[5:] if '--eyes-check' in sys.argv else (cams[:1]+cams[5:6] if PREVIEW else cams)
+for cam,name in selected:
+ scene.camera=cam;scene.render.filepath=str(ROOT/'renders'/((name+'-preview' if PREVIEW else name)+'.png'));meta['cameras'].append({'name':cam.name,'type':cam.data.type,'orbit_degrees':cam.data['orbit_degrees'],'ortho_scale':cam.data.ortho_scale,'location':list(cam.location),'rotation_euler':list(cam.rotation_euler),'target':list(cam.data['target']),'model_fingerprint_before':fingerprint()});bpy.ops.render.render(write_still=True);assert fingerprint()==meta['model_mesh_fingerprint']
+(ROOT/'evidence'/('preview-render-metadata.json' if PREVIEW else 'render-metadata.json')).write_text(json.dumps(meta,indent=2));print('P53A_RENDER_COMPLETE',len(selected),flush=True)

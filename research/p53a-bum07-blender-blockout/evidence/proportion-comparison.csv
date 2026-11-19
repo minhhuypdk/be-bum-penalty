@@ -1,0 +1,6 @@
+dimension,P52R_proposed_H,P53A_measured_H,basis
+skull_to_floor,5,5.000674934505819,head bbox crown to stud bottom / actual head H
+including_hair,5.2,5.1621986666133575,"5.2 was proposed max, not exact target"
+head_width_excluding_ears,0.74,0.737215680059,head evaluated bbox
+ear_span_shells,0.92,0.9223863089939579,ear-shell bbox only; helix may extend slightly beyond
+head_depth_including_nose,NOT_COMPARABLE_TO_.78_EXCLUDING_NOSE,0.8261733377888577,new integrated head mesh includes nose; no fabricated nose-excluded measurement

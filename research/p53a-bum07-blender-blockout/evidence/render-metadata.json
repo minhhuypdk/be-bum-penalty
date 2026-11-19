@@ -1,0 +1,334 @@
+{
+  "baseline": "4218375",
+  "phase": "P5.3A",
+  "source": "Actual Blender4.3.2 CyclesCPU renders; no AI render replacement or postprocessing",
+  "resolution": [
+    1200,
+    1600
+  ],
+  "samples": 64,
+  "denoising": false,
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "model_fingerprint": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+  "same_model_all_views": true,
+  "fixed_lights": [
+    {
+      "name": "Eye_catchlight_fixed",
+      "matrix": [
+        [
+          0.9175556302070618,
+          0.11629131436347961,
+          -0.38022103905677795,
+          -1.2999999523162842
+        ],
+        [
+          -0.3976074755191803,
+          0.2683645188808441,
+          -0.8774330615997314,
+          -3.0
+        ],
+        [
+          -9.796811362150493e-09,
+          0.9562723636627197,
+          0.29247766733169556,
+          5.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 18.0,
+      "size": 0.44999998807907104
+    },
+    {
+      "name": "Fill_fixed",
+      "matrix": [
+        [
+          0.5547001957893372,
+          -0.2627527117729187,
+          0.7894737124443054,
+          3.0
+        ],
+        [
+          0.8320503234863281,
+          0.17516843974590302,
+          -0.5263158082962036,
+          -2.0
+        ],
+        [
+          1.7519047545988542e-08,
+          0.9488292932510376,
+          0.31578943133354187,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 250.0,
+      "size": 3.0
+    },
+    {
+      "name": "Key_fixed",
+      "matrix": [
+        [
+          0.800000011920929,
+          0.37481701374053955,
+          -0.4685212969779968,
+          -3.0
+        ],
+        [
+          -0.6000000238418579,
+          0.4997560977935791,
+          -0.6246950030326843,
+          -4.0
+        ],
+        [
+          4.214170701288822e-08,
+          0.7808687686920166,
+          0.6246950626373291,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 500.0,
+      "size": 4.0
+    },
+    {
+      "name": "Rim_fixed",
+      "matrix": [
+        [
+          -1.0,
+          -1.4825890559677646e-07,
+          7.300339888161034e-08,
+          0.0
+        ],
+        [
+          1.5099580252808664e-07,
+          -0.6401843428611755,
+          0.768221378326416,
+          3.0
+        ],
+        [
+          -6.716003042583907e-08,
+          0.768221378326416,
+          0.6401843428611755,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 450.0,
+      "size": 3.0
+    }
+  ],
+  "art_approval": "OWNER_PENDING",
+  "renders": [
+    {
+      "file": "renders/full-front-000.png",
+      "camera": "Full_front-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 5.800000190734863,
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "location": [
+        -0.0,
+        -12.0,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "duration_seconds": 93.677,
+      "sha256": "adc9d3e7e02bd729a97c62b5a09853ec6807a45bb1c5a19126635ae572f33e96",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/full-three-quarter-045.png",
+      "camera": "Full_three-quarter-045",
+      "type": "ORTHO",
+      "orbit_degrees": 45,
+      "ortho_scale": 5.800000190734863,
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        1.490736281084537e-07,
+        -0.7853981256484985
+      ],
+      "duration_seconds": 82.246,
+      "sha256": "96ec1fa9404a8d21447524162e49c474a44a41740f3f6bb2377c38be467eebda",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/full-profile-090.png",
+      "camera": "Full_profile-090",
+      "type": "ORTHO",
+      "orbit_degrees": 90,
+      "ortho_scale": 5.800000190734863,
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -1.5707963705062866
+      ],
+      "duration_seconds": 54.694,
+      "sha256": "fe1f8235c267bb0db83bcae6c7096fc920859ffbabe6e639705ebb6c7d2e9be7",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/full-back-180.png",
+      "camera": "Full_back-180",
+      "type": "ORTHO",
+      "orbit_degrees": 180,
+      "ortho_scale": 5.800000190734863,
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "location": [
+        -1.469576117223083e-15,
+        12.0,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        -1.570796251296997,
+        3.141592502593994,
+        -0.0
+      ],
+      "duration_seconds": 87.179,
+      "sha256": "619738120d7ecee861861820802fdabd9b4b20940040f186f12b1ab2d0559e57",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/face-front-000.png",
+      "camera": "Face_front-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 1.5,
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "location": [
+        -0.0,
+        -12.0,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "duration_seconds": 253.588,
+      "sha256": "0d67035932be44ef5a5a22d80fe43ea81b221ddb31fadbf2df3f91ac1503aa43",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/face-three-quarter-045.png",
+      "camera": "Face_three-quarter-045",
+      "type": "ORTHO",
+      "orbit_degrees": 45,
+      "ortho_scale": 1.5,
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -0.785987913608551
+      ],
+      "duration_seconds": 245.035,
+      "sha256": "f277d7cdff9917786cfb8552bab4f76261f55803931d870e2d71eef93fc7c6c4",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/face-profile-090.png",
+      "camera": "Face_profile-090",
+      "type": "ORTHO",
+      "orbit_degrees": 90,
+      "ortho_scale": 1.5,
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -1.571629524230957
+      ],
+      "duration_seconds": 222.319,
+      "sha256": "bc7f1e167a4dfccbe726a506f7164907265cde4bfcfbbf2e2dc859b33cf455e8",
+      "model_fingerprint_before_and_after": "f95ae72a071a91405940d4f6b0ee3129ae8c29be6a4d72440fe0146409708165",
+      "lights_unchanged": true
+    }
+  ],
+  "aliases": [
+    {
+      "file": "renders/full-a-pose-000.png",
+      "byte_identical_to": "renders/full-front-000.png",
+      "reason": "Front turnaround is already the full-body35degree A-pose; no rig or pose change."
+    }
+  ],
+  "blend_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071"
+}

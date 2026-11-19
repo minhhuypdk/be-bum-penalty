@@ -1,0 +1,278 @@
+{
+  "phase": "P5.3A",
+  "baseline": "4218375",
+  "model_source": "New procedural mesh, no Scott geometry",
+  "scene_H_unit": 1,
+  "physical_scale_meters": null,
+  "render_engine": "CYCLES",
+  "samples": 24,
+  "resolution": [
+    720,
+    960
+  ],
+  "view_transform": "AgX",
+  "same_model_all_views": true,
+  "model_mesh_fingerprint": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805",
+  "cameras": [
+    {
+      "name": "Full_front-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 5.800000190734863,
+      "location": [
+        -0.0,
+        -12.0,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Full_three-quarter-045",
+      "type": "ORTHO",
+      "orbit_degrees": 45,
+      "ortho_scale": 5.800000190734863,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        1.490736281084537e-07,
+        -0.7853981256484985
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Full_profile-090",
+      "type": "ORTHO",
+      "orbit_degrees": 90,
+      "ortho_scale": 5.800000190734863,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -1.5707963705062866
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Full_back-180",
+      "type": "ORTHO",
+      "orbit_degrees": 180,
+      "ortho_scale": 5.800000190734863,
+      "location": [
+        -1.469576117223083e-15,
+        12.0,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        -1.570796251296997,
+        3.141592502593994,
+        -0.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Full_A-pose-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 5.800000190734863,
+      "location": [
+        -0.0,
+        -12.0,
+        2.5999999046325684
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Face_front-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 1.5,
+      "location": [
+        -0.0,
+        -12.0,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Face_three-quarter-045",
+      "type": "ORTHO",
+      "orbit_degrees": 45,
+      "ortho_scale": 1.5,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -0.785987913608551
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    },
+    {
+      "name": "Face_profile-090",
+      "type": "ORTHO",
+      "orbit_degrees": 90,
+      "ortho_scale": 1.5,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -1.571629524230957
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "model_fingerprint_before": "5712ec82457cc4516ff15d31ac78669acbd29761c9cb891140300628e4540805"
+    }
+  ],
+  "lights": [
+    {
+      "name": "Key_fixed",
+      "location": [
+        -3.0,
+        -4.0,
+        7.0
+      ],
+      "energy": 500.0,
+      "size": 4.0
+    },
+    {
+      "name": "Eye_catchlight_fixed",
+      "location": [
+        -1.2999999523162842,
+        -3.0,
+        5.5
+      ],
+      "energy": 18.0,
+      "size": 0.44999998807907104
+    },
+    {
+      "name": "Fill_fixed",
+      "location": [
+        3.0,
+        -2.0,
+        5.0
+      ],
+      "energy": 250.0,
+      "size": 3.0
+    },
+    {
+      "name": "Rim_fixed",
+      "location": [
+        0.0,
+        3.0,
+        6.0
+      ],
+      "energy": 450.0,
+      "size": 3.0
+    }
+  ],
+  "materials": {
+    "jersey-yellow": {
+      "sRGB": "#F6C744",
+      "roughness": 0.7749999761581421
+    },
+    "navy": {
+      "sRGB": "#182B45",
+      "roughness": 0.7749999761581421
+    },
+    "sock-ivory": {
+      "sRGB": "#F2EBDD",
+      "roughness": 0.875
+    },
+    "boot-navy": {
+      "sRGB": "#1C2D42",
+      "roughness": 0.550000011920929
+    },
+    "skin": {
+      "sRGB": "#D9A078",
+      "roughness": 0.5249999761581421
+    },
+    "lip": {
+      "sRGB": "#B97465",
+      "roughness": 0.5249999761581421
+    },
+    "hair": {
+      "sRGB": "#241D1A",
+      "roughness": 0.550000011920929
+    },
+    "iris": {
+      "sRGB": "#4E331D",
+      "roughness": 0.2750000059604645
+    },
+    "sclera": {
+      "sRGB": "#EFE7DA",
+      "roughness": 0.2750000059604645
+    },
+    "teeth": {
+      "sRGB": "#EDE3D2",
+      "roughness": 0.375
+    }
+  }
+}

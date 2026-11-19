@@ -1,0 +1,41 @@
+name: BUM07 P5.3A Blender blockout dossier handoff
+on:
+  push:
+    branches: [research/p53a-bum07-blender-blockout]
+    paths:
+      - research/p53a-bum07-blender-blockout/**
+      - .github/workflows/bum07-p53a-blockout-handoff.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive-design-documents:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify dossier checksums (not model or art approval)
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path('research/p53a-bum07-blender-blockout')
+          for file,expected in json.loads((root/'SHA256SUMS.json').read_text()).items():
+              assert hashlib.sha256((root/file).read_bytes()).hexdigest()==expected,file
+          print('Dossier integrity verified; P5.3A art approval and P5.3B authorization remain pending.')
+          PY
+      - name: Archive only the P5.3A blockout dossier
+        run: |
+          mkdir -p artifacts
+          git archive --format=zip --output=artifacts/BUM07-P53A-BLENDER-BLOCKOUT.zip HEAD research/p53a-bum07-blender-blockout
+          sha256sum artifacts/BUM07-P53A-BLENDER-BLOCKOUT.zip > artifacts/BUM07-P53A-BLENDER-BLOCKOUT.zip.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P53A-field-breeze-blockout-OWNER-REVIEW
+          path: |
+            artifacts/BUM07-P53A-BLENDER-BLOCKOUT.zip
+            artifacts/BUM07-P53A-BLENDER-BLOCKOUT.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Archives the saved blockout, renders and review dossier only.
+# No rig/GLB/game tests, merge, Pages deployment, PR2 changes or Supabase access.

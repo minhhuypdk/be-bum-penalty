@@ -1,0 +1,2407 @@
+{
+  "phase": "P5.3A_BLOCKOUT",
+  "saved_blend_readback": true,
+  "mesh_source": "New procedural authoring; no imports/Scott meshes",
+  "object_count": 95,
+  "surface_objects": 95,
+  "mesh_objects": 78,
+  "evaluated_triangles": 1183138,
+  "materials_used": [
+    "boot-navy",
+    "brow",
+    "hair",
+    "hair_secondary_mass",
+    "iris",
+    "jersey-yellow",
+    "lid_margin",
+    "lip",
+    "mouth_cavity",
+    "navy",
+    "nostril_shadow",
+    "pupil",
+    "sclera",
+    "skin",
+    "sock-ivory",
+    "teeth"
+  ],
+  "head_bounds": {
+    "min": [
+      -0.3684535026550293,
+      -0.4254987835884094,
+      4.0
+    ],
+    "max": [
+      0.3684535324573517,
+      0.400328665971756,
+      4.999581336975098
+    ]
+  },
+  "actual_H_from_head_bbox": 0.9995813369750977,
+  "actual_skull_to_floor_H": 5.000674934505819,
+  "actual_floor_z": 0.0010000001639127731,
+  "actual_hair_to_floor_H": 5.1621986666133575,
+  "hair_max_z": 5.161037445068359,
+  "design_hair_max_H": 5.2,
+  "upper_teeth_connected_components": 8,
+  "upper_arch_objects": 1,
+  "armatures": 0,
+  "actions": 0,
+  "shape_keys": 0,
+  "camera_checks": [
+    {
+      "name": "Full_front-000",
+      "type": "ORTHO",
+      "ortho_scale": 5.800000190734863,
+      "angle_degrees": 0,
+      "location": [
+        -0.0,
+        -12.0,
+        2.5999999046325684
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        275.8620500564575,
+        275.8620500564575
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Full_three-quarter-045",
+      "type": "ORTHO",
+      "ortho_scale": 5.800000190734863,
+      "angle_degrees": 45,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        2.5999999046325684
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        275.8620500564575,
+        275.8620500564575
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Full_profile-090",
+      "type": "ORTHO",
+      "ortho_scale": 5.800000190734863,
+      "angle_degrees": 90,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        2.5999999046325684
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        275.8620500564575,
+        275.8620500564575
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Full_back-180",
+      "type": "ORTHO",
+      "ortho_scale": 5.800000190734863,
+      "angle_degrees": 180,
+      "location": [
+        -1.469576117223083e-15,
+        12.0,
+        2.5999999046325684
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        275.8620500564575,
+        275.8620500564575
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Full_A-pose-000",
+      "type": "ORTHO",
+      "ortho_scale": 5.800000190734863,
+      "angle_degrees": 0,
+      "location": [
+        -0.0,
+        -12.0,
+        2.5999999046325684
+      ],
+      "target": [
+        0.0,
+        0.0,
+        2.6
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        275.8620500564575,
+        275.8620500564575
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Face_front-000",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "angle_degrees": 0,
+      "location": [
+        -0.0,
+        -12.0,
+        4.53000020980835
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        1066.666603088379,
+        1066.666603088379
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Face_three-quarter-045",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "angle_degrees": 45,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        4.53000020980835
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        1066.6668891906738,
+        1066.6667461395264
+      ],
+      "depth_independent_scale_PASS": true
+    },
+    {
+      "name": "Face_profile-090",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "angle_degrees": 90,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        4.53000020980835
+      ],
+      "target": [
+        0.0,
+        -0.01,
+        4.53
+      ],
+      "one_H_projected_pixels_at_two_depths": [
+        1066.6667461395264,
+        1066.666603088379
+      ],
+      "depth_independent_scale_PASS": true
+    }
+  ],
+  "geometry": [
+    {
+      "name": "Head_NEW_oval_integrated_nose_cheeks",
+      "type": "MESH",
+      "evaluated_vertices": 331714,
+      "triangles": 663420,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.3684535026550293,
+          -0.4254987835884094,
+          4.0
+        ],
+        "max": [
+          0.3684535324573517,
+          0.400328665971756,
+          4.999581336975098
+        ]
+      }
+    },
+    {
+      "name": "Eyeball_R",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.26600009202957153,
+          -0.299000084400177,
+          4.434000015258789
+        ],
+        "max": [
+          -0.05399996042251587,
+          -0.08700000494718552,
+          4.645999908447266
+        ]
+      }
+    },
+    {
+      "name": "Iris_R",
+      "type": "MESH",
+      "evaluated_vertices": 513,
+      "triangles": 960,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.20800000429153442,
+          -0.30000001192092896,
+          4.492000102996826
+        ],
+        "max": [
+          -0.1120000034570694,
+          -0.2885092496871948,
+          4.5879998207092285
+        ]
+      }
+    },
+    {
+      "name": "Pupil_R",
+      "type": "MESH",
+      "evaluated_vertices": 513,
+      "triangles": 960,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.18199999630451202,
+          -0.30149999260902405,
+          4.51800012588501
+        ],
+        "max": [
+          -0.1379999965429306,
+          -0.2991918623447418,
+          4.561999797821045
+        ]
+      }
+    },
+    {
+      "name": "Upper_lid_margin_R",
+      "type": "CURVE",
+      "evaluated_vertices": 7690,
+      "triangles": 15360,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.2610000371932983,
+          -1.2908142805099487,
+          3.5349998474121094
+        ],
+        "max": [
+          0.9409999847412109,
+          0.7692645788192749,
+          5.5932135581970215
+        ]
+      }
+    },
+    {
+      "name": "Neutral_brow_R",
+      "type": "MESH",
+      "evaluated_vertices": 486,
+      "triangles": 968,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.270420104265213,
+          -0.32328277826309204,
+          4.651825428009033
+        ],
+        "max": [
+          -0.05222500115633011,
+          -0.22518789768218994,
+          4.69188928604126
+        ]
+      }
+    },
+    {
+      "name": "Ear_shell_R",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.46100011467933655,
+          -0.05200004577636719,
+          4.220000267028809
+        ],
+        "max": [
+          -0.28700000047683716,
+          0.06399999558925629,
+          4.579999923706055
+        ]
+      }
+    },
+    {
+      "name": "Ear_concha_R",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.45500004291534424,
+          -0.050000011920928955,
+          4.313000202178955
+        ],
+        "max": [
+          -0.3869999945163727,
+          -0.02199999801814556,
+          4.486999988555908
+        ]
+      }
+    },
+    {
+      "name": "Ear_helix_R",
+      "type": "CURVE",
+      "evaluated_vertices": 4810,
+      "triangles": 9600,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4429305791854858,
+          -1.050987958908081,
+          3.257040023803711
+        ],
+        "max": [
+          0.6488487720489502,
+          0.9649736881256104,
+          5.54282283782959
+        ]
+      }
+    },
+    {
+      "name": "Ear_antihelix_R",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4199999570846558,
+          -1.059999942779541,
+          3.3600001335144043
+        ],
+        "max": [
+          0.6019999980926514,
+          0.9470000267028809,
+          5.46999979019165
+        ]
+      }
+    },
+    {
+      "name": "Nostril_recess_R",
+      "type": "MESH",
+      "evaluated_vertices": 482,
+      "triangles": 960,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.05399999022483826,
+          -0.36793768405914307,
+          4.314499855041504
+        ],
+        "max": [
+          -0.03400000184774399,
+          -0.3619377017021179,
+          4.32349967956543
+        ]
+      }
+    },
+    {
+      "name": "Eyeball_L",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.0539998859167099,
+          -0.299000084400177,
+          4.434000015258789
+        ],
+        "max": [
+          0.26600003242492676,
+          -0.08700000494718552,
+          4.645999908447266
+        ]
+      }
+    },
+    {
+      "name": "Iris_L",
+      "type": "MESH",
+      "evaluated_vertices": 513,
+      "triangles": 960,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.1120000034570694,
+          -0.30000001192092896,
+          4.492000102996826
+        ],
+        "max": [
+          0.20800000429153442,
+          -0.2885092496871948,
+          4.5879998207092285
+        ]
+      }
+    },
+    {
+      "name": "Pupil_L",
+      "type": "MESH",
+      "evaluated_vertices": 513,
+      "triangles": 960,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.1379999965429306,
+          -0.30149999260902405,
+          4.51800012588501
+        ],
+        "max": [
+          0.18199999630451202,
+          -0.2991918623447418,
+          4.561999797821045
+        ]
+      }
+    },
+    {
+      "name": "Upper_lid_margin_L",
+      "type": "CURVE",
+      "evaluated_vertices": 7690,
+      "triangles": 15360,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.9409999847412109,
+          -1.2908142805099487,
+          3.5349998474121094
+        ],
+        "max": [
+          1.2610000371932983,
+          0.7692645788192749,
+          5.5932135581970215
+        ]
+      }
+    },
+    {
+      "name": "Neutral_brow_L",
+      "type": "MESH",
+      "evaluated_vertices": 486,
+      "triangles": 968,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.05222500115633011,
+          -0.3232828378677368,
+          4.651825904846191
+        ],
+        "max": [
+          0.2704196274280548,
+          -0.22518789768218994,
+          4.69188928604126
+        ]
+      }
+    },
+    {
+      "name": "Ear_shell_L",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.28699991106987,
+          -0.05200004577636719,
+          4.220000267028809
+        ],
+        "max": [
+          0.4610000252723694,
+          0.06399999558925629,
+          4.579999923706055
+        ]
+      }
+    },
+    {
+      "name": "Ear_concha_L",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.3869999647140503,
+          -0.050000011920928955,
+          4.313000202178955
+        ],
+        "max": [
+          0.45500001311302185,
+          -0.02199999801814556,
+          4.486999988555908
+        ]
+      }
+    },
+    {
+      "name": "Ear_helix_L",
+      "type": "CURVE",
+      "evaluated_vertices": 4810,
+      "triangles": 9600,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6488487720489502,
+          -1.050987958908081,
+          3.257040023803711
+        ],
+        "max": [
+          1.4429305791854858,
+          0.9649736881256104,
+          5.54282283782959
+        ]
+      }
+    },
+    {
+      "name": "Ear_antihelix_L",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6019999980926514,
+          -1.059999942779541,
+          3.3600001335144043
+        ],
+        "max": [
+          1.4199999570846558,
+          0.9470000267028809,
+          5.46999979019165
+        ]
+      }
+    },
+    {
+      "name": "Nostril_recess_L",
+      "type": "MESH",
+      "evaluated_vertices": 482,
+      "triangles": 960,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.034000009298324585,
+          -0.36793768405914307,
+          4.314499855041504
+        ],
+        "max": [
+          0.053999997675418854,
+          -0.3619377017021179,
+          4.32349967956543
+        ]
+      }
+    },
+    {
+      "name": "Upper_lip",
+      "type": "MESH",
+      "evaluated_vertices": 2193,
+      "triangles": 4096,
+      "boundary_edges": 288,
+      "nonmanifold_edges": 288,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.17000001668930054,
+          -0.3194875717163086,
+          4.200020790100098
+        ],
+        "max": [
+          0.17000001668930054,
+          -0.23481485247612,
+          4.226360321044922
+        ]
+      }
+    },
+    {
+      "name": "Lower_lip",
+      "type": "MESH",
+      "evaluated_vertices": 2193,
+      "triangles": 4096,
+      "boundary_edges": 288,
+      "nonmanifold_edges": 288,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.17000001668930054,
+          -0.3114605247974396,
+          4.172028064727783
+        ],
+        "max": [
+          0.17000001668930054,
+          -0.23481485247612,
+          4.222000598907471
+        ]
+      }
+    },
+    {
+      "name": "Closed_mouth_soft_seam",
+      "type": "CURVE",
+      "evaluated_vertices": 7690,
+      "triangles": 15360,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.1699999570846558,
+          -1.3106882572174072,
+          3.1999998092651367
+        ],
+        "max": [
+          1.1699999570846558,
+          0.7556851506233215,
+          5.2220001220703125
+        ]
+      }
+    },
+    {
+      "name": "Hair_unified_low_swept_masses",
+      "type": "MESH",
+      "evaluated_vertices": 175600,
+      "triangles": 351192,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.4026170074939728,
+          -0.3855452537536621,
+          4.285061836242676
+        ],
+        "max": [
+          0.4026172161102295,
+          0.4379308223724365,
+          5.161037445068359
+        ]
+      }
+    },
+    {
+      "name": "Neck_blockout",
+      "type": "MESH",
+      "evaluated_vertices": 674,
+      "triangles": 1344,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.15372703969478607,
+          -0.10210788995027542,
+          3.770817756652832
+        ],
+        "max": [
+          0.15372703969478607,
+          0.17210789024829865,
+          4.139464378356934
+        ]
+      }
+    },
+    {
+      "name": "Jersey_body_open_neck",
+      "type": "MESH",
+      "evaluated_vertices": 1440,
+      "triangles": 2688,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5058451294898987,
+          -0.2600895166397095,
+          2.4300003051757812
+        ],
+        "max": [
+          0.5058451294898987,
+          0.2600895166397095,
+          3.960000514984131
+        ]
+      }
+    },
+    {
+      "name": "Front_V_back_round_collar",
+      "type": "MESH",
+      "evaluated_vertices": 128,
+      "triangles": 128,
+      "boundary_edges": 128,
+      "nonmanifold_edges": 128,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.19946177303791046,
+          -0.20002970099449158,
+          3.7616164684295654
+        ],
+        "max": [
+          0.19945675134658813,
+          0.19053784012794495,
+          3.962331533432007
+        ]
+      }
+    },
+    {
+      "name": "Jersey_hem",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.47065404057502747,
+          -0.25427284836769104,
+          2.434999942779541
+        ],
+        "max": [
+          0.47065404057502747,
+          0.25427284836769104,
+          2.4700002670288086
+        ]
+      }
+    },
+    {
+      "name": "Arm_R",
+      "type": "MESH",
+      "evaluated_vertices": 834,
+      "triangles": 1664,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4188475608825684,
+          -0.1321612149477005,
+          2.614527702331543
+        ],
+        "max": [
+          -0.43107059597969055,
+          0.1321612149477005,
+          3.9074201583862305
+        ]
+      }
+    },
+    {
+      "name": "Jersey_sleeve_R",
+      "type": "MESH",
+      "evaluated_vertices": 450,
+      "triangles": 896,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.9225940704345703,
+          -0.16846074163913727,
+          3.3834333419799805
+        ],
+        "max": [
+          -0.3948187530040741,
+          0.16846074163913727,
+          3.940110921859741
+        ]
+      }
+    },
+    {
+      "name": "Sleeve_navy_cuff_R",
+      "type": "MESH",
+      "evaluated_vertices": 450,
+      "triangles": 896,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.9689791798591614,
+          -0.16117438673973083,
+          3.3204009532928467
+        ],
+        "max": [
+          -0.6462103128433228,
+          0.16117438673973083,
+          3.570497512817383
+        ]
+      }
+    },
+    {
+      "name": "Front_raglan_R",
+      "type": "MESH",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.4388095736503601,
+          -0.17843618988990784,
+          3.526573896408081
+        ],
+        "max": [
+          -0.16315200924873352,
+          -0.12084661424160004,
+          3.88712739944458
+        ]
+      }
+    },
+    {
+      "name": "Back_raglan_R",
+      "type": "MESH",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.43882209062576294,
+          0.1208648756146431,
+          3.526747465133667
+        ],
+        "max": [
+          -0.1625872701406479,
+          0.18839044868946075,
+          3.9344606399536133
+        ]
+      }
+    },
+    {
+      "name": "Palm_R",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.6086219549179077,
+          -0.06500004976987839,
+          2.3710012435913086
+        ],
+        "max": [
+          -1.2538796663284302,
+          0.06499999761581421,
+          2.740478038787842
+        ]
+      }
+    },
+    {
+      "name": "Finger_R_0",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.5544075965881348,
+          -0.03467664122581482,
+          2.244781255722046
+        ],
+        "max": [
+          -1.4257915019989014,
+          0.0240961741656065,
+          2.408351182937622
+        ]
+      }
+    },
+    {
+      "name": "Finger_R_1",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.6213451623916626,
+          -0.034712906926870346,
+          2.2429890632629395
+        ],
+        "max": [
+          -1.470025897026062,
+          0.0241195447742939,
+          2.4393134117126465
+        ]
+      }
+    },
+    {
+      "name": "Finger_R_2",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.6570658683776855,
+          -0.03470197692513466,
+          2.2862491607666016
+        ],
+        "max": [
+          -1.5142598152160645,
+          0.02411232329905033,
+          2.470290184020996
+        ]
+      }
+    },
+    {
+      "name": "Finger_R_3",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.675757884979248,
+          -0.03464603051543236,
+          2.3540842533111572
+        ],
+        "max": [
+          -1.5584940910339355,
+          0.024077635258436203,
+          2.5012786388397217
+        ]
+      }
+    },
+    {
+      "name": "Thumb_R",
+      "type": "MESH",
+      "evaluated_vertices": 338,
+      "triangles": 672,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.3613680601119995,
+          -0.043989066034555435,
+          2.3878908157348633
+        ],
+        "max": [
+          -1.28909432888031,
+          0.02476280927658081,
+          2.5265555381774902
+        ]
+      }
+    },
+    {
+      "name": "Shorts_leg_R",
+      "type": "MESH",
+      "evaluated_vertices": 866,
+      "triangles": 1728,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5314860939979553,
+          -0.24230706691741943,
+          1.8205504417419434
+        ],
+        "max": [
+          0.012615653686225414,
+          0.24230706691741943,
+          2.4891819953918457
+        ]
+      }
+    },
+    {
+      "name": "Shorts_hem_R",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5292870998382568,
+          -0.24130991101264954,
+          1.8250001668930054
+        ],
+        "max": [
+          -0.030712930485606194,
+          0.24130991101264954,
+          1.8600002527236938
+        ]
+      }
+    },
+    {
+      "name": "Leg_R",
+      "type": "MESH",
+      "evaluated_vertices": 1250,
+      "triangles": 2496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5029246211051941,
+          -0.18863199651241302,
+          0.2921813726425171
+        ],
+        "max": [
+          -0.11628731340169907,
+          0.18615375459194183,
+          1.9578263759613037
+        ]
+      }
+    },
+    {
+      "name": "Sock_R",
+      "type": "MESH",
+      "evaluated_vertices": 1058,
+      "triangles": 2112,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.547701358795166,
+          -0.1772977113723755,
+          0.2905462980270386
+        ],
+        "max": [
+          -0.16284476220607758,
+          0.19733984768390656,
+          1.3295938968658447
+        ]
+      }
+    },
+    {
+      "name": "Sock_band_R_0",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5289860367774963,
+          -0.17858053743839264,
+          1.1293683052062988
+        ],
+        "max": [
+          -0.17057649791240692,
+          0.19923396408557892,
+          1.172113299369812
+        ]
+      }
+    },
+    {
+      "name": "Sock_band_R_1",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5241064429283142,
+          -0.17907345294952393,
+          1.2297332286834717
+        ],
+        "max": [
+          -0.16297166049480438,
+          0.19920381903648376,
+          1.2722272872924805
+        ]
+      }
+    },
+    {
+      "name": "Football_boot_R",
+      "type": "MESH",
+      "evaluated_vertices": 1058,
+      "triangles": 2112,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.568871259689331,
+          -0.6063379645347595,
+          0.07034087926149368
+        ],
+        "max": [
+          -0.23112879693508148,
+          0.20633797347545624,
+          0.3795919418334961
+        ]
+      }
+    },
+    {
+      "name": "Boot_sole_R",
+      "type": "MESH",
+      "evaluated_vertices": 290,
+      "triangles": 576,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.5624781250953674,
+          -0.5896639227867126,
+          0.05547714978456497
+        ],
+        "max": [
+          -0.23752199113368988,
+          0.1896638125181198,
+          0.0895233154296875
+        ]
+      }
+    },
+    {
+      "name": "Lace_R_0",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4850000143051147,
+          -1.375,
+          -0.7300000190734863
+        ],
+        "max": [
+          0.6850000023841858,
+          0.6399999856948853,
+          1.284000039100647
+        ]
+      }
+    },
+    {
+      "name": "Lace_R_1",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4850000143051147,
+          -1.3199999332427979,
+          -0.7200999855995178
+        ],
+        "max": [
+          0.6850000023841858,
+          0.6949999928474426,
+          1.2939000129699707
+        ]
+      }
+    },
+    {
+      "name": "Lace_R_2",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4850000143051147,
+          -1.2649999856948853,
+          -0.7102000117301941
+        ],
+        "max": [
+          0.6850000023841858,
+          0.75,
+          1.3037999868392944
+        ]
+      }
+    },
+    {
+      "name": "Lace_R_3",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4850000143051147,
+          -1.2100000381469727,
+          -0.7002999782562256
+        ],
+        "max": [
+          0.6850000023841858,
+          0.8050000071525574,
+          1.3136999607086182
+        ]
+      }
+    },
+    {
+      "name": "Lace_R_4",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -1.4850000143051147,
+          -1.1549999713897705,
+          -0.6904000043869019
+        ],
+        "max": [
+          0.6850000023841858,
+          0.8600000143051147,
+          1.3236000537872314
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.531000018119812,
+          -0.4560000002384186,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.4790000021457672,
+          -0.40400001406669617,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R.001",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.531000018119812,
+          -0.23600000143051147,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.4790000021457672,
+          -0.18399998545646667,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R.002",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.531000018119812,
+          0.024000000208616257,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.4790000021457672,
+          0.07600000500679016,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R.003",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.32099997997283936,
+          -0.4560000002384186,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.26899999380111694,
+          -0.40400001406669617,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R.004",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.32099997997283936,
+          -0.23600000143051147,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.26899999380111694,
+          -0.18399998545646667,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_R.005",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.32099997997283936,
+          0.024000000208616257,
+          0.0010000001639127731
+        ],
+        "max": [
+          -0.26899999380111694,
+          0.07600000500679016,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Arm_L",
+      "type": "MESH",
+      "evaluated_vertices": 834,
+      "triangles": 1664,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.43107059597969055,
+          -0.1321612149477005,
+          2.614527940750122
+        ],
+        "max": [
+          1.4188474416732788,
+          0.1321612149477005,
+          3.9074201583862305
+        ]
+      }
+    },
+    {
+      "name": "Jersey_sleeve_L",
+      "type": "MESH",
+      "evaluated_vertices": 450,
+      "triangles": 896,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.3948187232017517,
+          -0.16846074163913727,
+          3.3834333419799805
+        ],
+        "max": [
+          0.9225940704345703,
+          0.16846074163913727,
+          3.940110921859741
+        ]
+      }
+    },
+    {
+      "name": "Sleeve_navy_cuff_L",
+      "type": "MESH",
+      "evaluated_vertices": 450,
+      "triangles": 896,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.6462103128433228,
+          -0.16117438673973083,
+          3.3204009532928467
+        ],
+        "max": [
+          0.9689792990684509,
+          0.16117438673973083,
+          3.570497512817383
+        ]
+      }
+    },
+    {
+      "name": "Front_raglan_L",
+      "type": "MESH",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.1636340320110321,
+          -0.17802272737026215,
+          3.5267484188079834
+        ],
+        "max": [
+          0.438824862241745,
+          -0.12086192518472672,
+          3.886941909790039
+        ]
+      }
+    },
+    {
+      "name": "Back_raglan_L",
+      "type": "MESH",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.16205884516239166,
+          0.12084966152906418,
+          3.5265743732452393
+        ],
+        "max": [
+          0.4388068914413452,
+          0.18839046359062195,
+          3.934563636779785
+        ]
+      }
+    },
+    {
+      "name": "Palm_L",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.2538796663284302,
+          -0.06500004976987839,
+          2.3710012435913086
+        ],
+        "max": [
+          1.6086219549179077,
+          0.06499999761581421,
+          2.740478038787842
+        ]
+      }
+    },
+    {
+      "name": "Finger_L_0",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.425791621208191,
+          -0.03467664122581482,
+          2.244781255722046
+        ],
+        "max": [
+          1.5544075965881348,
+          0.0240961741656065,
+          2.408351182937622
+        ]
+      }
+    },
+    {
+      "name": "Finger_L_1",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.470025897026062,
+          -0.034712906926870346,
+          2.2429890632629395
+        ],
+        "max": [
+          1.6213452816009521,
+          0.0241195447742939,
+          2.4393131732940674
+        ]
+      }
+    },
+    {
+      "name": "Finger_L_2",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.5142598152160645,
+          -0.03470197692513466,
+          2.2862489223480225
+        ],
+        "max": [
+          1.6570658683776855,
+          0.02411232329905033,
+          2.470290184020996
+        ]
+      }
+    },
+    {
+      "name": "Finger_L_3",
+      "type": "MESH",
+      "evaluated_vertices": 362,
+      "triangles": 720,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.558494210243225,
+          -0.03464603051543236,
+          2.354084014892578
+        ],
+        "max": [
+          1.6757580041885376,
+          0.024077635258436203,
+          2.5012786388397217
+        ]
+      }
+    },
+    {
+      "name": "Thumb_L",
+      "type": "MESH",
+      "evaluated_vertices": 338,
+      "triangles": 672,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          1.28909432888031,
+          -0.043989066034555435,
+          2.3878912925720215
+        ],
+        "max": [
+          1.3613680601119995,
+          0.02476280927658081,
+          2.5265557765960693
+        ]
+      }
+    },
+    {
+      "name": "Shorts_leg_L",
+      "type": "MESH",
+      "evaluated_vertices": 866,
+      "triangles": 1728,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.012615653686225414,
+          -0.24230706691741943,
+          1.8205504417419434
+        ],
+        "max": [
+          0.5314860939979553,
+          0.24230706691741943,
+          2.4891819953918457
+        ]
+      }
+    },
+    {
+      "name": "Shorts_hem_L",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.030712930485606194,
+          -0.24130991101264954,
+          1.8250001668930054
+        ],
+        "max": [
+          0.5292870998382568,
+          0.24130991101264954,
+          1.8600002527236938
+        ]
+      }
+    },
+    {
+      "name": "Leg_L",
+      "type": "MESH",
+      "evaluated_vertices": 1250,
+      "triangles": 2496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.11628731340169907,
+          -0.18863199651241302,
+          0.2921813726425171
+        ],
+        "max": [
+          0.5029246211051941,
+          0.18615375459194183,
+          1.9578263759613037
+        ]
+      }
+    },
+    {
+      "name": "Sock_L",
+      "type": "MESH",
+      "evaluated_vertices": 1058,
+      "triangles": 2112,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.16284476220607758,
+          -0.1772977113723755,
+          0.2905462980270386
+        ],
+        "max": [
+          0.547701358795166,
+          0.19733984768390656,
+          1.3295938968658447
+        ]
+      }
+    },
+    {
+      "name": "Sock_band_L_0",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.17057649791240692,
+          -0.17858055233955383,
+          1.1293683052062988
+        ],
+        "max": [
+          0.5289860367774963,
+          0.19923396408557892,
+          1.1721134185791016
+        ]
+      }
+    },
+    {
+      "name": "Sock_band_L_1",
+      "type": "MESH",
+      "evaluated_vertices": 288,
+      "triangles": 384,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.16297166049480438,
+          -0.17907364666461945,
+          1.2297332286834717
+        ],
+        "max": [
+          0.5241064429283142,
+          0.19920353591442108,
+          1.2722272872924805
+        ]
+      }
+    },
+    {
+      "name": "Football_boot_L",
+      "type": "MESH",
+      "evaluated_vertices": 1058,
+      "triangles": 2112,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.23112879693508148,
+          -0.6063379645347595,
+          0.07034087926149368
+        ],
+        "max": [
+          0.568871259689331,
+          0.20633797347545624,
+          0.3795919418334961
+        ]
+      }
+    },
+    {
+      "name": "Boot_sole_L",
+      "type": "MESH",
+      "evaluated_vertices": 290,
+      "triangles": 576,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.23752199113368988,
+          -0.5896639227867126,
+          0.05547714978456497
+        ],
+        "max": [
+          0.5624781250953674,
+          0.1896638125181198,
+          0.0895233154296875
+        ]
+      }
+    },
+    {
+      "name": "Lace_L_0",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6850000023841858,
+          -1.375,
+          -0.7300000190734863
+        ],
+        "max": [
+          1.4850000143051147,
+          0.6399999856948853,
+          1.284000039100647
+        ]
+      }
+    },
+    {
+      "name": "Lace_L_1",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6850000023841858,
+          -1.3199999332427979,
+          -0.7200999855995178
+        ],
+        "max": [
+          1.4850000143051147,
+          0.6949999928474426,
+          1.2939000129699707
+        ]
+      }
+    },
+    {
+      "name": "Lace_L_2",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6850000023841858,
+          -1.2649999856948853,
+          -0.7102000117301941
+        ],
+        "max": [
+          1.4850000143051147,
+          0.75,
+          1.3037999868392944
+        ]
+      }
+    },
+    {
+      "name": "Lace_L_3",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6850000023841858,
+          -1.2100000381469727,
+          -0.7002999782562256
+        ],
+        "max": [
+          1.4850000143051147,
+          0.8050000071525574,
+          1.3136999607086182
+        ]
+      }
+    },
+    {
+      "name": "Lace_L_4",
+      "type": "CURVE",
+      "evaluated_vertices": 330,
+      "triangles": 640,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.6850000023841858,
+          -1.1549999713897705,
+          -0.6904000043869019
+        ],
+        "max": [
+          1.4850000143051147,
+          0.8600000143051147,
+          1.3236000537872314
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.26899999380111694,
+          -0.4560000002384186,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.32099997997283936,
+          -0.40400001406669617,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L.001",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.26899999380111694,
+          -0.23600000143051147,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.32099997997283936,
+          -0.18399998545646667,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L.002",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.26899999380111694,
+          0.024000000208616257,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.32099997997283936,
+          0.07600000500679016,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L.003",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.4790000021457672,
+          -0.4560000002384186,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.531000018119812,
+          -0.40400001406669617,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L.004",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.4790000021457672,
+          -0.23600000143051147,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.531000018119812,
+          -0.18399998545646667,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Boot_stud_L.005",
+      "type": "MESH",
+      "evaluated_vertices": 32,
+      "triangles": 60,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.4790000021457672,
+          0.024000000208616257,
+          0.0010000001639127731
+        ],
+        "max": [
+          0.531000018119812,
+          0.07600000500679016,
+          0.049000002443790436
+        ]
+      }
+    },
+    {
+      "name": "Shorts_pelvis_bridge",
+      "type": "MESH",
+      "evaluated_vertices": 1490,
+      "triangles": 2976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.4700005054473877,
+          -0.23000019788742065,
+          2.119999885559082
+        ],
+        "max": [
+          0.47000017762184143,
+          0.23000000417232513,
+          2.5199999809265137
+        ]
+      }
+    },
+    {
+      "name": "Front_07",
+      "type": "MESH",
+      "evaluated_vertices": 1186,
+      "triangles": 1773,
+      "boundary_edges": 597,
+      "nonmanifold_edges": 597,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.25627654790878296,
+          -0.2599993050098419,
+          3.0089542865753174
+        ],
+        "max": [
+          0.24372345209121704,
+          -0.21584902703762054,
+          3.3889541625976562
+        ]
+      }
+    },
+    {
+      "name": "Front_BUM",
+      "type": "MESH",
+      "evaluated_vertices": 1888,
+      "triangles": 2826,
+      "boundary_edges": 948,
+      "nonmanifold_edges": 948,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          0.1199764534831047,
+          -0.25353455543518066,
+          3.5015110969543457
+        ],
+        "max": [
+          0.34997645020484924,
+          -0.1830851137638092,
+          3.601511001586914
+        ]
+      }
+    },
+    {
+      "name": "Back_07",
+      "type": "MESH",
+      "evaluated_vertices": 1186,
+      "triangles": 1773,
+      "boundary_edges": 597,
+      "nonmanifold_edges": 597,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.2632213234901428,
+          0.2067655324935913,
+          2.939896821975708
+        ],
+        "max": [
+          0.2767786681652069,
+          0.25971123576164246,
+          3.359896659851074
+        ]
+      }
+    },
+    {
+      "name": "Back_BUM",
+      "type": "MESH",
+      "evaluated_vertices": 1888,
+      "triangles": 2826,
+      "boundary_edges": 948,
+      "nonmanifold_edges": 948,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.14996929466724396,
+          0.24535059928894043,
+          3.5169644355773926
+        ],
+        "max": [
+          0.150030717253685,
+          0.2615080773830414,
+          3.6469645500183105
+        ]
+      }
+    },
+    {
+      "name": "UpperDentalArch_SINGLE_8_teeth",
+      "type": "MESH",
+      "evaluated_vertices": 768,
+      "triangles": 1504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "finite_vertices": true,
+      "bounds": {
+        "min": [
+          -0.1435224860906601,
+          -0.3351300060749054,
+          4.184000015258789
+        ],
+        "max": [
+          0.15352682769298553,
+          -0.1251124143600464,
+          4.232000350952148
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Separate overlapping blockout components and intentional cloth/hair boundaries; not production connected topology.",
+    "Not rigged, not weight tested, not UV unwrapped or game optimized.",
+    "Triangle count is Blender evaluated geometry, not GLB triangle budget/drawcalls.",
+    "No Blink/Smile animation, no collision/occlusion deformation PASS.",
+    "Art approval remains OWNER_PENDING; no9/10 claim."
+  ],
+  "number_surface_checks": [
+    {
+      "object": "Front_07",
+      "height_H": 0.37999987602233887,
+      "target_height_H": 0.38,
+      "min_distance_to_cloth_H": 0.0014065986033529043,
+      "max_distance_to_cloth_H": 0.0015006153844296932,
+      "surface_offset_target_H": 0.0015,
+      "PASS_surface_distance_under_003H": true,
+      "PASS_height_within_005H": true
+    },
+    {
+      "object": "Back_07",
+      "height_H": 0.4199998378753662,
+      "target_height_H": 0.42,
+      "min_distance_to_cloth_H": 0.0013873563148081303,
+      "max_distance_to_cloth_H": 0.0014999918639659882,
+      "surface_offset_target_H": 0.0015,
+      "PASS_surface_distance_under_003H": true,
+      "PASS_height_within_005H": true
+    },
+    {
+      "object": "Front_BUM",
+      "height_H": 0.09999990463256836,
+      "target_height_H": 0.1,
+      "min_distance_to_cloth_H": 0.0013125755358487368,
+      "max_distance_to_cloth_H": 0.0015219873748719692,
+      "surface_offset_target_H": 0.0015,
+      "PASS_surface_distance_under_003H": true,
+      "PASS_height_within_005H": true
+    },
+    {
+      "object": "Back_BUM",
+      "height_H": 0.13000011444091797,
+      "target_height_H": 0.13,
+      "min_distance_to_cloth_H": 0.0014495757641270757,
+      "max_distance_to_cloth_H": 0.001519623794592917,
+      "surface_offset_target_H": 0.0015,
+      "PASS_surface_distance_under_003H": true,
+      "PASS_height_within_005H": true
+    }
+  ],
+  "number_surface_PASS": true,
+  "hidden_character_objects": [],
+  "hidden_character_collections": [],
+  "static_eye_visibility": [
+    {
+      "camera": "Face_front-000",
+      "grid_per_eye": [
+        90,
+        90
+      ],
+      "grid_step_H": 0.0031460674157303375,
+      "visible_optical_hits": 2464,
+      "outside_nominal_aperture_hits": 0,
+      "outside_aperture_plus_004H_hits": 0,
+      "worst_outliers": [],
+      "PASS_no_abnormal_globe_exposure_at_grid_tolerance": true
+    },
+    {
+      "camera": "Face_three-quarter-045",
+      "grid_per_eye": [
+        90,
+        90
+      ],
+      "grid_step_H": 0.0031460674157303375,
+      "visible_optical_hits": 1677,
+      "outside_nominal_aperture_hits": 0,
+      "outside_aperture_plus_004H_hits": 0,
+      "worst_outliers": [],
+      "PASS_no_abnormal_globe_exposure_at_grid_tolerance": true
+    },
+    {
+      "camera": "Face_profile-090",
+      "grid_per_eye": [
+        90,
+        90
+      ],
+      "grid_step_H": 0.0031460674157303375,
+      "visible_optical_hits": 640,
+      "outside_nominal_aperture_hits": 0,
+      "outside_aperture_plus_004H_hits": 0,
+      "worst_outliers": [],
+      "PASS_no_abnormal_globe_exposure_at_grid_tolerance": true
+    }
+  ],
+  "static_eye_visibility_PASS": true,
+  "static_eye_visibility_limit": "Geometric ray grid .00315H, aperture tolerance .004H; not per-pixel zero-leak proof, no blink/animation test. Visual0/45/90 render review also required."
+}

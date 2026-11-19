@@ -1,0 +1,28 @@
+{
+  "status": "AUTHORED_PARAMETERS_NOT_POST_REMESH_MEASUREMENTS",
+  "H": "nominal scene unit; actual bbox H recorded separately",
+  "parameters": [
+    {
+      "id": "eye-opening-width",
+      "P52R_proposed_H": 0.19,
+      "P53A_authored_H": 0.202,
+      "relative_difference_percent": 6.3158,
+      "note": "Inner boundary before voxel union; actual opening not segmented/measured from final head. Blockout socket construction choice, not owner-approved spec change."
+    },
+    {
+      "id": "globe-diameter",
+      "P52R_proposed_H": 0.22,
+      "P53A_authored_H": 0.212,
+      "relative_difference_percent": -3.6364,
+      "note": "Native eyeball sphere diameter; radius chosen with depth/lid repair."
+    },
+    {
+      "id": "iris-diameter",
+      "P52R_proposed_H": 0.1,
+      "P53A_authored_H": 0.096,
+      "relative_difference_percent": -4,
+      "note": "One curved iris surface per eye; not image-based diameter measurement."
+    }
+  ],
+  "owner_approval": "PENDING; baseline P5.2R files unchanged"
+}
