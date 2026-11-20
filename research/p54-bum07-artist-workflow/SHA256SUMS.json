@@ -1,0 +1,22 @@
+{
+  ".gitignore": "4aae16e3beb2464f40d1e2cbce6e1f157a83a5e0c910e9f52b05aedb012c9257",
+  "ACCEPTANCE.md": "2c7b0579002fff232dc1b9534b82b5089265538fabd52c7c40e25fd89c70332d",
+  "ARTIST-WORKFLOW.md": "e166317c838bc523d6bdf9b2617460babbb825f6c27735239d0ba710cca2013f",
+  "ASSETS-LICENSES.md": "735e059bde53061d6b339c7a13e244e7fadaf8c6e3e365ef91e9afa1b0edeb98",
+  "BUM07-P54-WORKFLOW-EVALUATION.pdf": "37887b693ac20ec07e0cd0f0a2ca6b3000c7cc5916ade70cf407c8ad17febb75",
+  "COMPARISON.md": "cd1789378f927e279cf1c527551560dc1354767ac12495718ec65ffc0c600572",
+  "README.md": "4151200dcf058556aa8d94be059943cb3dd68db0068910d499bc028e61981d92",
+  "candidates.json": "87782e0c36d14d9366d529f34054a444a02cc994121d6b3995e77d30781a3f6f",
+  "evidence/dossier-verification.json": "66cc119ede43dd3aa1278eaca5745e766f6477bdb066872a7397f4ba153daa6c",
+  "evidence/human-bases-acquisition.json": "aa47fbba3a5466c93fdf32382a596f4a660d0b90a00a88e61ff9c6f9b9ab12d4",
+  "evidence/human-bundle-audit.json": "3cf2004a95489851bd60ad4761fe4b2e91dec03479d585c65836a9a4d5bc6a32",
+  "evidence/protected-state-before.json": "da17260ddd46a2f125a91c3e1c81b4f94e1a1c485da5c0434c974c5651d39dd2",
+  "evidence/read-only-mesh-audit.json": "12f838562fdfe40156a98106a28ee902f0327cdaf2b7292d729458b8b0a6204f",
+  "evidence/source-register.json": "1ab23eef79c8e63af65e791b58be57fad9f9026241a29472997aa09b18b4f574",
+  "evidence/tiby-acquisition.json": "d7ea4b9aebed51a7a0c3a1ed578ff255dca443b447e0f1be17f078e2a1e72db6",
+  "scripts/build-review.py": "008b4477bd01e5302e5f9fc2b8ba45363cdf0b0f87994a9c69c75520409b934c",
+  "scripts/export-pdf.cjs": "4ad3caa4167bf7514b45ab8ba9d330c5ac259b30683b8c93ea1106a0d4616619",
+  "scripts/inspect-human-bundle.py": "2c5b897425610269c7a5c2526abdb4f660316d5a9382d17cdd525be3ac2f9bc7",
+  "scripts/read-only-mesh-audit.py": "8797f4069368fb503de1d9161610f1db5564d4c9d66869fc3f967621f43b836d",
+  "scripts/verify-dossier.py": "8b06b2baf1ef6a66f81cc8742d0dcbea8037b703c0a62cb37cf09d7b5bab5809"
+}

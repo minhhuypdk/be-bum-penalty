@@ -1,0 +1,29 @@
+{
+  "source_page": "https://opengameart.org/content/tiby-3d-rigged-model",
+  "download": "https://opengameart.org/sites/default/files/Tiby_Character_MnF_0.zip",
+  "license_page": "CC0 on exact source page",
+  "original_zip_sha256": "2c438d05446eedff5e59c879d93922c38fe0e42692e646be783eef278a2a744c",
+  "bytes": 3101018,
+  "files": [
+    "TIBY.blend",
+    "TIBY.fbx",
+    "TIBY.png",
+    "Tiby_Hair_uv.png",
+    "Tiby_uv.png",
+    "Tiby_Character_Female/",
+    "Tiby_Character_Female/TIBYF.blend",
+    "Tiby_Character_Female/TIBYF.blend1",
+    "Tiby_Character_Female/TIBYF.fbx",
+    "Tiby_Character_Female/TIBYF_LongHair.blend",
+    "Tiby_Character_Female/TIBYF_LongHair.blend1",
+    "Tiby_Character_Female/TIBYF_LongHair.fbx",
+    "Tiby_Character_Female/Tiby_Hair_uv.png",
+    "Tiby_Character_Female/Tiby_uv.png",
+    "Tiby_Texture_Hair.png",
+    "Tiby_Texture.png",
+    "Tiby_Texture.psd"
+  ],
+  "location": "temporary workspace only; not redistributed or modified",
+  "autoexec": "disabled in read-only inspection",
+  "production_sculpt_started": false
+}

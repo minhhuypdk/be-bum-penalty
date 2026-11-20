@@ -1,0 +1,1366 @@
+{
+  "source": "Official Human Base Meshes bundle1.4.1, exact unmodified native",
+  "sha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+  "source_unchanged": true,
+  "autoexec": false,
+  "saved_or_exported": false,
+  "asset_metadata": [
+    {
+      "name": "Eye - Realistic",
+      "type": "MESH",
+      "author": "Dan Ulrich",
+      "description": "Realistically sized eyeball with cornea",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Eye - Stylized",
+      "type": "MESH",
+      "author": "Julien Kaspar",
+      "description": "Stylized eyeball without a cornea",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Foot - Realistic",
+      "type": "MESH",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Foot - Stylized ",
+      "type": "MESH",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized foot topology",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Hand  - Realistic",
+      "type": "MESH",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Hand - Stylized ",
+      "type": "MESH",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized hand topology",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head - Generic Topology",
+      "type": "MESH",
+      "author": "Paul Kotelevets",
+      "description": "Topology with high flexibility to deform into many designs. Comes with example shape keys attached",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head - Planar",
+      "type": "MESH",
+      "author": "Paul Kotelevets",
+      "description": "Generic topology with planar shapes on a multiresolution modifier",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Jaw - Realistic",
+      "type": "MESH",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Jaw - Stylized ",
+      "type": "MESH",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized inner mouth topology",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Skull - Planar",
+      "type": "MESH",
+      "author": "Tonatiuh de San Juli\u00e1n",
+      "description": "Hard surface model with subdivision modifier.",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Skull - Realistic",
+      "type": "MESH",
+      "author": "Paul Kotelevets, Tonatiuh de San Juli\u00e1n",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Female - Primitive (Stylized)",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets",
+      "description": "Simple objects with subdivision modifiers. Easy for design sculpting and remeshing",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Female - Primitve (Realistic)",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets, Julien Kaspar",
+      "description": "Simple objects with subdivision modifiers. Easy for design sculpting and remeshing",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Female - Realistic",
+      "type": "COLLECTION",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Female - Stylized",
+      "type": "COLLECTION",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized topology. Based on the open source character \"Rain\"",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Male - Primitve (Realistic)",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets, Julien Kaspar",
+      "description": "Simple objects with subdivision modifiers. Easy for design sculpting and remeshing",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Male - Primitve (Stylized)",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets",
+      "description": "Simple objects with subdivision modifiers. Easy for design sculpting and remeshing",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Male - Realistic",
+      "type": "COLLECTION",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Body Male - Stylized",
+      "type": "COLLECTION",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized topology. Based on the open source character \"Snow\"",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head (Animation) - Realistic",
+      "type": "COLLECTION",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details. Topology optimized for rigging and animation",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head (Sculpting) - Realistic",
+      "type": "COLLECTION",
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details. Topology is optimized for multiresolution sculpting",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head - Primitives",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets, Julien Kaspar",
+      "description": "Simple objects with subdivision modifiers. Easy for design sculpting and remeshing",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Head - Stylized",
+      "type": "COLLECTION",
+      "author": "Julien Kaspar",
+      "description": "Generic stylized head topology",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    },
+    {
+      "name": "Skeleton - Realistic",
+      "type": "COLLECTION",
+      "author": "Paul Kotelevets",
+      "description": "Realistic model of a full human skeleton.",
+      "license": "CC0",
+      "copyright": "",
+      "tags": []
+    }
+  ],
+  "head_eye_jaw_meshes": [
+    {
+      "name": "Eye - Realistic",
+      "vertices_raw": 946,
+      "polygons_raw": 944,
+      "quad_faces_raw": 944,
+      "triangles_base": 1888,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "Eye - Stylized",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_female_realistic.eye.L",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_female_realistic.eye.R",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_female_stylized.eye.L",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_female_stylized.eye.R",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_male_realistic.eye.L",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_male_realistic.eye.R",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_male_stylized.eye.L",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-body_male_stylized.eye.R",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_female_primitive_stylized.L",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_female_primitive_stylized.R",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_male_primitive_realistic.L",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_male_primitive_realistic.R",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_male_primitive_stylized.L",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_male_primitive_stylized.R",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_primitve.L",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_primitve.R",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_primitve_female_realistic.L",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eye_primitve_female_realistic.R",
+      "vertices_raw": 162,
+      "polygons_raw": 176,
+      "quad_faces_raw": 144,
+      "triangles_base": 320,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_female_primitive_stylized.L",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_female_primitive_stylized.R",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_male_primitive_realistic.L",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_male_primitive_realistic.R",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_male_primitive_stylized.L",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_male_primitive_stylized.R",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_primitve.L",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_primitve.R",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_primitve_female_realistic.L",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_lower_primitve_female_realistic.R",
+      "vertices_raw": 98,
+      "polygons_raw": 96,
+      "quad_faces_raw": 96,
+      "triangles_base": 192,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_female_primitive_stylized.L",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_female_primitive_stylized.R",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_male_primitive_realistic.L",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_male_primitive_realistic.R",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_male_primitive_stylized.L",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_male_primitive_stylized.R",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_primitve.L",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_primitve.R",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_primitve_female_realistic.L",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-eyelid_upper_primitve_female_realistic.R",
+      "vertices_raw": 131,
+      "polygons_raw": 129,
+      "quad_faces_raw": 129,
+      "triangles_base": 258,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_animation_realistic",
+      "vertices_raw": 3242,
+      "polygons_raw": 3234,
+      "quad_faces_raw": 3206,
+      "triangles_base": 6480,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "MULTIRES",
+          "levels": 1,
+          "total_levels": 1
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_animation_realistic.iris.L",
+      "vertices_raw": 400,
+      "polygons_raw": 400,
+      "quad_faces_raw": 400,
+      "triangles_base": 800,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_animation_realistic.iris.R",
+      "vertices_raw": 400,
+      "polygons_raw": 400,
+      "quad_faces_raw": 400,
+      "triangles_base": 800,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_animation_realistic.sclera.L",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_animation_realistic.sclera.R",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_female_primitive_stylized",
+      "vertices_raw": 266,
+      "polygons_raw": 264,
+      "quad_faces_raw": 264,
+      "triangles_base": 528,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_male_primitive_realistic",
+      "vertices_raw": 266,
+      "polygons_raw": 264,
+      "quad_faces_raw": 264,
+      "triangles_base": 528,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_male_primitive_stylized",
+      "vertices_raw": 266,
+      "polygons_raw": 264,
+      "quad_faces_raw": 264,
+      "triangles_base": 528,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_primitive_female_realistic",
+      "vertices_raw": 266,
+      "polygons_raw": 264,
+      "quad_faces_raw": 264,
+      "triangles_base": 528,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_primitve",
+      "vertices_raw": 266,
+      "polygons_raw": 264,
+      "quad_faces_raw": 264,
+      "triangles_base": 528,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 2,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_sculpting_realistic",
+      "vertices_raw": 3307,
+      "polygons_raw": 3300,
+      "quad_faces_raw": 3268,
+      "triangles_base": 6610,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "MULTIRES",
+          "levels": 1,
+          "total_levels": 1
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_sculpting_realistic.iris.L",
+      "vertices_raw": 400,
+      "polygons_raw": 400,
+      "quad_faces_raw": 400,
+      "triangles_base": 800,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_sculpting_realistic.iris.R",
+      "vertices_raw": 400,
+      "polygons_raw": 400,
+      "quad_faces_raw": 400,
+      "triangles_base": 800,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_sculpting_realistic.sclera.L",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_sculpting_realistic.sclera.R",
+      "vertices_raw": 546,
+      "polygons_raw": 544,
+      "quad_faces_raw": 544,
+      "triangles_base": 1088,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_stylized",
+      "vertices_raw": 4118,
+      "polygons_raw": 4134,
+      "quad_faces_raw": 4098,
+      "triangles_base": 8232,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_stylized.eye.L",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "GEO-head_stylized.eye.R",
+      "vertices_raw": 802,
+      "polygons_raw": 832,
+      "quad_faces_raw": 768,
+      "triangles_base": 1600,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "Head - Generic Topology",
+      "vertices_raw": 318,
+      "polygons_raw": 316,
+      "quad_faces_raw": 316,
+      "triangles_base": 632,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [
+        "Basis",
+        "Real_MALE",
+        "Real_FEMALE",
+        "Real_Kid",
+        "Toon_MALE",
+        "Toon_FEMALE",
+        "Toon_Anime_Kid",
+        "Toon Animal",
+        "Ork",
+        "Suzanne"
+      ],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "levels": 1,
+          "total_levels": null
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "Head - Planar",
+      "vertices_raw": 318,
+      "polygons_raw": 316,
+      "quad_faces_raw": 316,
+      "triangles_base": 632,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [
+        {
+          "type": "MULTIRES",
+          "levels": 5,
+          "total_levels": 5
+        }
+      ],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "Jaw - Realistic",
+      "vertices_raw": 5294,
+      "polygons_raw": 5058,
+      "quad_faces_raw": 5002,
+      "triangles_base": 10472,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 0,
+      "nonmanifold_edges_raw": 0
+    },
+    {
+      "name": "Jaw - Stylized ",
+      "vertices_raw": 6566,
+      "polygons_raw": 6308,
+      "quad_faces_raw": 6308,
+      "triangles_base": 12616,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "boundary_edges_raw": 448,
+      "nonmanifold_edges_raw": 448
+    }
+  ],
+  "embedded_notices": [
+    {
+      "name": "License",
+      "text": "LICENSE\n\nThe Rain Rig is released under the Creative Commons Attribution 4.0 license. \nThe attribution is \u00a9 Blender Foundation | cloud.blender.org"
+    },
+    {
+      "name": "README",
+      "text": "Important Info\n==============\n\nHuman Base Meshes: Asset Bundle - Version 1.4\n\nAll provided assets are public domain under the CC0 license.\nThe minimum supported Blender version is 4.2!\n\nWhat's included\n==============\n\nThese are various human base meshes that are provided by the Blender community and the Blender Studio.\nThey include:\n    - Quad topology for multi-resolution sculpting\n    - Closed volumes for voxel remeshing\n    - Face sets\n    - UV maps (including UDIMs)\n    - Multiresoluton levels for realistic assets\n    - Creased edges and Subdiv modifiers for planar/primitive assets\n\nHow to install the Asset Bundle\n===============================\n\nIt's recommended to create a new Asset Library in the preferences first:\n- Open the Preferences\n- Go to \"File Paths\"\n- Add a New Asset Library with the + button and call it \"Human Base Meshes\"\n- Set the \"Import Method\" to \"Append\"\n\nTo add the assets from this file to the Asset Library:\n- In the Asset Browser below, click on \"Copy Bundle to Asset Library\"\n- Choose a target Asset Library\n- Choose a target folder location\n\nThat's it. Enjoy!"
+    }
+  ],
+  "armatures": [],
+  "actions": 0,
+  "limitations": [
+    "Original bundle inspection only; no BUM adaptation or art approval.",
+    "Base topology counts are not evaluated render tris or GLB counts.",
+    "No deformation or export test performed."
+  ]
+}

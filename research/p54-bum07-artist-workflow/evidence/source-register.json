@@ -1,0 +1,88 @@
+[
+  {
+    "id": "tiby",
+    "url": "https://opengameart.org/content/tiby-3d-rigged-model",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:05.605072+00:00",
+    "sha256_of_received_document": "9a04537ec8991b9a67875c27b1e6794e72a3a18e23756753aa83cffda4469669",
+    "observed_facts": "CC0; PINKCANNON; FBX/.blend; 1794 body triangles claimed by publisher"
+  },
+  {
+    "id": "boy",
+    "url": "https://blendswap.com/blend/5024",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:05.605286+00:00",
+    "sha256_of_received_document": "1296eec6ab01d00ef4dcd184dcce50668169214d69d349a113a4b6c7cd221dea",
+    "observed_facts": "License CC0; Lula Borges; rigged low-poly boy, not textured; Blender2.6x"
+  },
+  {
+    "id": "spring",
+    "url": "https://studio.blender.org/characters/spring/v1/",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:05.606448+00:00",
+    "sha256_of_received_document": "cf0dcca89fc352330ac0918482456ef28d63a739b7ecf7ec776d1b017e5e11e3",
+    "observed_facts": "Free; CC-BY linked directly to BY4.0; Blender2.8\u20133.6; requires BlenRig"
+  },
+  {
+    "id": "studio-license-map",
+    "url": "https://projects.blender.org/studio/blender-studio/raw/branch/main/static_assets/fixtures/licenses.json",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:05.607274+00:00",
+    "sha256_of_received_document": "f3e1dae6acaed924af267dca750f06b6408498edd6f39aa840a81bf40ae6bfec",
+    "observed_facts": "Publisher registry cc-by URL is BY4.0"
+  },
+  {
+    "id": "quaternius",
+    "url": "https://quaternius.itch.io/universal-base-characters",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:20.483302+00:00",
+    "sha256_of_received_document": "94d86dac2f369e8c693f66549e91f3b710aea3adadd62d9f227614e6709ea5fe"
+  },
+  {
+    "id": "quaternius-official",
+    "url": "https://quaternius.com/packs/universalbasecharacters.html",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:20.765052+00:00",
+    "sha256_of_received_document": "4d31a8888b388ef4d951678f997d3662ae993f1a01e0e1a41a916135240f332e"
+  },
+  {
+    "id": "CC0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:21.060765+00:00",
+    "sha256_of_received_document": "4f7659a6941f5160fc0afde17380d7312ab8d5382a6e5355ee07c7d6d7d2349d"
+  },
+  {
+    "id": "BY4",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieval": "Direct HTTPS200, no auth",
+    "checked_at": "2026-11-20T04:39:21.337271+00:00",
+    "sha256_of_received_document": "2c31f90b734f0e2dd5dc017737eb2094e133be99a188396659c9cdb3bd3d0625"
+  },
+  {
+    "id": "human-bundle",
+    "url": "https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+    "retrieval": "Official download HTTPS200; no auth, original ZIP50,643,039bytes",
+    "sha256_of_received_zip": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+    "evidence": "human-bundle-audit.json exact object metadata + embedded README and Rain license notice",
+    "asset_scope": "Head - Generic Topology / Paul Kotelevets / CC0; do not infer Rain Rig CC0"
+  },
+  {
+    "id": "tiby-preview",
+    "url": "https://opengameart.org/sites/default/files/Display_Tiby.png",
+    "retrieval": "HTTP200 with ordinary browser UA/referer, visual inspection only; not republished",
+    "sha256": "104c4bddd814f62bb6807fe5ea659d14330e1b9ae3bdf670e4818e6842431c8d"
+  },
+  {
+    "id": "boy-preview",
+    "url": "https://img.blendswap.com/archive/images/2012/04/blend_41773/lula_borges_boy_big_3777c06ac6df3a1cd996b46818b47df037d8c920.jpg",
+    "retrieval": "HTTP200 with ordinary browser UA/referer, visual inspection only; not republished",
+    "sha256": "14e1f8996c7950542ce48a83c21b031319f45dc03d552088a57b8922c7b297b1"
+  },
+  {
+    "id": "spring-preview",
+    "url": "https://studio.blender.org/files/public/thumbnail/1b/ff/1bffff08b464375d842e7da43b4f5293_m.webp",
+    "retrieval": "HTTP200 with ordinary browser UA/referer, visual inspection only; not republished",
+    "sha256": "b1124900b1bbb87d384414d8c2dca126248ebab89f13943054c54be1e1962d0a"
+  }
+]
