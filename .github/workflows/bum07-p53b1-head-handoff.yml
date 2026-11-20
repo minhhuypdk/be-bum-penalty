@@ -1,0 +1,40 @@
+name: BUM07 P5.3B.1 head study dossier handoff
+on:
+  push:
+    branches: [research/p53b1-bum07-head-sculpt]
+    paths:
+      - research/p53b1-bum07-head-sculpt/**
+      - .github/workflows/bum07-p53b1-head-handoff.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive-head-study:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify dossier integrity, not artistic approval
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path('research/p53b1-bum07-head-sculpt')
+          for file,expected in json.loads((root/'SHA256SUMS.json').read_text()).items():
+              assert hashlib.sha256((root/file).read_bytes()).hexdigest()==expected,file
+          print('P5.3B.1 dossier integrity verified. Artistic objective FAIL; owner review pending.')
+          PY
+      - name: Archive only this research dossier
+        run: |
+          mkdir -p artifacts
+          git archive --format=zip --output=artifacts/BUM07-P53B1-HEAD-STUDY.zip HEAD research/p53b1-bum07-head-sculpt
+          sha256sum artifacts/BUM07-P53B1-HEAD-STUDY.zip > artifacts/BUM07-P53B1-HEAD-STUDY.zip.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bum07-P53B1-head-study-ART-FAIL-OWNER-REVIEW
+          path: |
+            artifacts/BUM07-P53B1-HEAD-STUDY.zip
+            artifacts/BUM07-P53B1-HEAD-STUDY.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+# Read-only archive. No Pages, Supabase, PR changes, merge, rig or game integration.

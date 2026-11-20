@@ -1,0 +1,22 @@
+{
+  "phase": "P5.3B.1",
+  "verified_at": "2026-11-20T04:27:05.750710+00:00",
+  "native_reopened_in_blender": "PASS per native-audit; Blender4.3.2",
+  "editable_local_data_no_unpacked_dependencies": true,
+  "four_actual_renders_complete": true,
+  "all_four_PNGs_visually_reviewed": true,
+  "same_model_fingerprint_all_four": true,
+  "pdf_pages": 8,
+  "pdf_text_within_page_bounds": true,
+  "pdf_pages_visually_reviewed": [
+    2,
+    6
+  ],
+  "pdf_poppler_warning": "ICCBased profile allocation warning from embedded reference; sampled pages rendered/readable. Not a Blender mesh error.",
+  "python_scripts_syntax": "PASS py_compile/ast",
+  "pdf_exporter_syntax": "PASS node --check",
+  "artistic_objective": "FAIL_ARTISTIC_OBJECTIVE",
+  "owner_approval": "PENDING",
+  "runtime_iPhone_tests": "NOT_RUN; no game/GLB changes",
+  "next_stage_started": false
+}

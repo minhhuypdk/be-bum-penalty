@@ -1,0 +1,231 @@
+{
+  "baseline": "cebfbe1",
+  "phase": "P5.3B.1",
+  "source": "Actual Blender4.3.2 CyclesCPU. No AI replacement or retouch.",
+  "resolution": [
+    1200,
+    1600
+  ],
+  "samples": 64,
+  "denoising": false,
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "model_fingerprint": "a96ba0beb553f162bbdb0f302baf0ffb909893f1489ef65219c0a2c168ef7292",
+  "same_model_all_views": true,
+  "fixed_lights": [
+    {
+      "name": "Eye_catchlight_fixed",
+      "matrix": [
+        [
+          0.9175556302070618,
+          0.11629131436347961,
+          -0.38022103905677795,
+          -1.2999999523162842
+        ],
+        [
+          -0.3976074755191803,
+          0.2683645188808441,
+          -0.8774330615997314,
+          -3.0
+        ],
+        [
+          -9.796811362150493e-09,
+          0.9562723636627197,
+          0.29247766733169556,
+          5.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 18.0,
+      "size": 0.44999998807907104
+    },
+    {
+      "name": "Fill_fixed",
+      "matrix": [
+        [
+          0.5547001957893372,
+          -0.2627527117729187,
+          0.7894737124443054,
+          3.0
+        ],
+        [
+          0.8320503234863281,
+          0.17516843974590302,
+          -0.5263158082962036,
+          -2.0
+        ],
+        [
+          1.7519047545988542e-08,
+          0.9488292932510376,
+          0.31578943133354187,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 250.0,
+      "size": 3.0
+    },
+    {
+      "name": "Key_fixed",
+      "matrix": [
+        [
+          0.800000011920929,
+          0.37481701374053955,
+          -0.4685212969779968,
+          -3.0
+        ],
+        [
+          -0.6000000238418579,
+          0.4997560977935791,
+          -0.6246950030326843,
+          -4.0
+        ],
+        [
+          4.214170701288822e-08,
+          0.7808687686920166,
+          0.6246950626373291,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 500.0,
+      "size": 4.0
+    },
+    {
+      "name": "Rim_fixed",
+      "matrix": [
+        [
+          -1.0,
+          -1.4825890559677646e-07,
+          7.300339888161034e-08,
+          0.0
+        ],
+        [
+          1.5099580252808664e-07,
+          -0.6401843428611755,
+          0.768221378326416,
+          3.0
+        ],
+        [
+          -6.716003042583907e-08,
+          0.768221378326416,
+          0.6401843428611755,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 450.0,
+      "size": 3.0
+    }
+  ],
+  "art_result": "FAIL_ARTISTIC_OBJECTIVE",
+  "owner_approval": "PENDING",
+  "comparison_limits": "R front/45 camera, lights, look unchanged. B1 body cropped; indirect bounce can differ. Skin/hair/iris materials intentionally changed. R lacks delivered close-up90/back pair.",
+  "renders": [
+    {
+      "file": "renders/after/head-front-000.png",
+      "camera": "Face_front-000",
+      "type": "ORTHO",
+      "orbit_degrees": 0,
+      "ortho_scale": 1.5,
+      "location": [
+        -0.0,
+        -12.0,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "duration_seconds": 257.414,
+      "sha256": "1f52e9497acfc251754fa8dcb5bc725cc8372f1e0457b6cfe343963b10c911f4",
+      "model_fingerprint_before_and_after": "a96ba0beb553f162bbdb0f302baf0ffb909893f1489ef65219c0a2c168ef7292",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/after/head-three-quarter-045.png",
+      "camera": "Face_three-quarter-045",
+      "type": "ORTHO",
+      "orbit_degrees": 45,
+      "ortho_scale": 1.5,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -0.785987913608551
+      ],
+      "duration_seconds": 227.387,
+      "sha256": "fd077c7143e7a0c8c246ca8e901042e6ce1f16aa2b0face520fce1f7facf8d4c",
+      "model_fingerprint_before_and_after": "a96ba0beb553f162bbdb0f302baf0ffb909893f1489ef65219c0a2c168ef7292",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/after/head-profile-090.png",
+      "camera": "Face_profile-090",
+      "type": "ORTHO",
+      "orbit_degrees": 90,
+      "ortho_scale": 1.5,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        -1.571629524230957
+      ],
+      "duration_seconds": 189.0,
+      "sha256": "403e7b50438b141238a0c12ec01b6f451fd295d9d6e1696c073269228017034c",
+      "model_fingerprint_before_and_after": "a96ba0beb553f162bbdb0f302baf0ffb909893f1489ef65219c0a2c168ef7292",
+      "lights_unchanged": true
+    },
+    {
+      "file": "renders/after/head-back-180.png",
+      "camera": "B1_back_180",
+      "type": "ORTHO",
+      "orbit_degrees": 180,
+      "ortho_scale": 1.5,
+      "location": [
+        0.0,
+        12.0,
+        4.53000020980835
+      ],
+      "rotation_euler": [
+        -1.570796251296997,
+        3.141592502593994,
+        -0.0
+      ],
+      "duration_seconds": 202.21,
+      "sha256": "a2b878d60a7bdab14b24fa29ead34649a69a28efe46530f9cfa01a8ec1fc5aae",
+      "model_fingerprint_before_and_after": "a96ba0beb553f162bbdb0f302baf0ffb909893f1489ef65219c0a2c168ef7292",
+      "lights_unchanged": true
+    }
+  ],
+  "blend_sha256": "93a340627e4035b82fbf9fe5733eb00f670120e07e8b9a1804329df57c1eb406"
+}

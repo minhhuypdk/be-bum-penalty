@@ -1,0 +1,22 @@
+{
+  "baseline": "cebfbe1bf97fa45351142ece5c3c77c44e1e5a1a",
+  "main": "c3567aff87ce54adfa251895cecc2247c4d4b705",
+  "PR2": {
+    "headRefOid": "7ef321881935874e4349b486f8f2a7f4836920cd",
+    "isDraft": true,
+    "mergedAt": null,
+    "state": "OPEN"
+  },
+  "pages_html_sha256": "6477b3465f5ef71ea7ca2632da3856ff3bf282918e69069b775dc57100acf587",
+  "Supabase_requests": 0,
+  "external_mutations_so_far": [],
+  "pages_configuration": {
+    "build_type": "legacy",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "status": "built"
+  },
+  "workflow_review": "Existing push workflows target other branches; new handoff workflow only packages this branch. No Pages deploy job."
+}

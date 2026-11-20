@@ -1,0 +1,660 @@
+{
+  "phase": "P5.3B.1",
+  "scope": "Head neck shoulder bust, no full-body model in new study",
+  "triangles_total": 574016,
+  "geometry": [
+    {
+      "object": "Neck_blockout",
+      "type": "MESH",
+      "vertices": 674,
+      "triangles": 1344,
+      "min": [
+        -0.15708966553211212,
+        -0.11137132346630096,
+        3.770817756652832
+      ],
+      "max": [
+        0.15708966553211212,
+        0.18137133121490479,
+        4.139464378356934
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": 0.02328468137108279
+    },
+    {
+      "object": "Jersey_body_open_neck",
+      "type": "MESH",
+      "vertices": 768,
+      "triangles": 1344,
+      "min": [
+        -0.5058451294898987,
+        -0.2600895166397095,
+        3.4000000953674316
+      ],
+      "max": [
+        0.5058451294898987,
+        0.2600895166397095,
+        3.960000514984131
+      ],
+      "finite": true,
+      "boundary_edges": 192,
+      "nonmanifold_edges": 192,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Front_V_back_round_collar",
+      "type": "MESH",
+      "vertices": 128,
+      "triangles": 128,
+      "min": [
+        -0.16772547364234924,
+        -0.18226741254329681,
+        3.779393196105957
+      ],
+      "max": [
+        0.16771118342876434,
+        0.18384848535060883,
+        3.96272611618042
+      ],
+      "finite": true,
+      "boundary_edges": 128,
+      "nonmanifold_edges": 128,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Front_raglan_R",
+      "type": "MESH",
+      "vertices": 66,
+      "triangles": 64,
+      "min": [
+        -0.4350692331790924,
+        -0.17615576088428497,
+        3.526120662689209
+      ],
+      "max": [
+        -0.17027591168880463,
+        -0.12487080693244934,
+        3.8866782188415527
+      ],
+      "finite": true,
+      "boundary_edges": 66,
+      "nonmanifold_edges": 66,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Back_raglan_R",
+      "type": "MESH",
+      "vertices": 66,
+      "triangles": 64,
+      "min": [
+        -0.43514397740364075,
+        0.12477468699216843,
+        3.5262680053710938
+      ],
+      "max": [
+        -0.1701970100402832,
+        0.18810218572616577,
+        3.9323060512542725
+      ],
+      "finite": true,
+      "boundary_edges": 66,
+      "nonmanifold_edges": 66,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Front_raglan_L",
+      "type": "MESH",
+      "vertices": 66,
+      "triangles": 64,
+      "min": [
+        0.17022639513015747,
+        -0.17596465349197388,
+        3.5262832641601562
+      ],
+      "max": [
+        0.43514323234558105,
+        -0.12477511912584305,
+        3.8863883018493652
+      ],
+      "finite": true,
+      "boundary_edges": 66,
+      "nonmanifold_edges": 66,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Back_raglan_L",
+      "type": "MESH",
+      "vertices": 66,
+      "triangles": 64,
+      "min": [
+        0.1699613481760025,
+        0.12486975640058517,
+        3.5261096954345703
+      ],
+      "max": [
+        0.4350704252719879,
+        0.18808190524578094,
+        3.931872844696045
+      ],
+      "finite": true,
+      "boundary_edges": 66,
+      "nonmanifold_edges": 66,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "Front_BUM",
+      "type": "MESH",
+      "vertices": 1888,
+      "triangles": 2826,
+      "min": [
+        0.1199764534831047,
+        -0.25353455543518066,
+        3.5015110969543457
+      ],
+      "max": [
+        0.34997645020484924,
+        -0.1830851137638092,
+        3.601511001586914
+      ],
+      "finite": true,
+      "boundary_edges": 948,
+      "nonmanifold_edges": 948,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_HEAD_new_orbital_topology_and_face_forms",
+      "type": "MESH",
+      "vertices": 24568,
+      "triangles": 49132,
+      "min": [
+        -0.3737928569316864,
+        -0.37131810188293457,
+        4.0
+      ],
+      "max": [
+        0.3737928569316864,
+        0.3915082514286041,
+        5.0
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": 0.28739699054455176
+    },
+    {
+      "object": "B1_closed_relaxed_smile",
+      "type": "CURVE",
+      "vertices": 7690,
+      "triangles": 15360,
+      "min": [
+        -0.18032653629779816,
+        -0.2903025448322296,
+        4.204320907592773
+      ],
+      "max": [
+        0.18032653629779816,
+        -0.2525255084037781,
+        4.229653835296631
+      ],
+      "finite": true,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_Eyeball_R",
+      "type": "MESH",
+      "vertices": 2498,
+      "triangles": 4992,
+      "min": [
+        -0.2669999599456787,
+        -0.31699997186660767,
+        4.433000087738037
+      ],
+      "max": [
+        -0.04300001263618469,
+        -0.09300003945827484,
+        4.6570000648498535
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": 0.0058664409939806995
+    },
+    {
+      "object": "B1_Iris_R",
+      "type": "MESH",
+      "vertices": 1153,
+      "triangles": 2208,
+      "min": [
+        -0.2040308713912964,
+        -0.321276992559433,
+        4.494444847106934
+      ],
+      "max": [
+        -0.1020500659942627,
+        -0.3049805164337158,
+        4.596444129943848
+      ],
+      "finite": true,
+      "boundary_edges": 96,
+      "nonmanifold_edges": 96,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "IrisRadialUV"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_Pupil_R",
+      "type": "MESH",
+      "vertices": 1153,
+      "triangles": 2208,
+      "min": [
+        -0.17376944422721863,
+        -0.32269078493118286,
+        4.524505138397217
+      ],
+      "max": [
+        -0.1317773461341858,
+        -0.31934231519699097,
+        4.566504955291748
+      ],
+      "finite": true,
+      "boundary_edges": 96,
+      "nonmanifold_edges": 96,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "IrisRadialUV"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_upper_waterline_R",
+      "type": "CURVE",
+      "vertices": 5770,
+      "triangles": 11520,
+      "min": [
+        -0.2518618702888489,
+        -0.31138405203819275,
+        4.538863658905029
+      ],
+      "max": [
+        -0.0651257112622261,
+        -0.26469799876213074,
+        4.592259883880615
+      ],
+      "finite": true,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_brow_R",
+      "type": "MESH",
+      "vertices": 98,
+      "triangles": 96,
+      "min": [
+        -0.25999999046325684,
+        -0.32443758845329285,
+        4.646420001983643
+      ],
+      "max": [
+        -0.05000000074505806,
+        -0.26468393206596375,
+        4.66811990737915
+      ],
+      "finite": true,
+      "boundary_edges": 98,
+      "nonmanifold_edges": 98,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_ear_sculpt_R",
+      "type": "MESH",
+      "vertices": 4516,
+      "triangles": 9028,
+      "min": [
+        -0.4490000009536743,
+        -0.026770349591970444,
+        4.260000228881836
+      ],
+      "max": [
+        -0.3009999990463257,
+        0.05400000140070915,
+        4.550000190734863
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": 0.0019312896358284896
+    },
+    {
+      "object": "B1_Eyeball_L",
+      "type": "MESH",
+      "vertices": 2498,
+      "triangles": 4992,
+      "min": [
+        0.043000027537345886,
+        -0.31699997186660767,
+        4.433000087738037
+      ],
+      "max": [
+        0.2669999897480011,
+        -0.09300003945827484,
+        4.6570000648498535
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": 0.005866440993980696
+    },
+    {
+      "object": "B1_Iris_L",
+      "type": "MESH",
+      "vertices": 1153,
+      "triangles": 2208,
+      "min": [
+        0.1020500659942627,
+        -0.321276992559433,
+        4.494444847106934
+      ],
+      "max": [
+        0.2040308713912964,
+        -0.3049805164337158,
+        4.596444129943848
+      ],
+      "finite": true,
+      "boundary_edges": 96,
+      "nonmanifold_edges": 96,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "IrisRadialUV"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_Pupil_L",
+      "type": "MESH",
+      "vertices": 1153,
+      "triangles": 2208,
+      "min": [
+        0.1317773461341858,
+        -0.32269078493118286,
+        4.524505138397217
+      ],
+      "max": [
+        0.17376944422721863,
+        -0.31934231519699097,
+        4.566504955291748
+      ],
+      "finite": true,
+      "boundary_edges": 96,
+      "nonmanifold_edges": 96,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "IrisRadialUV"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_upper_waterline_L",
+      "type": "CURVE",
+      "vertices": 5770,
+      "triangles": 11520,
+      "min": [
+        0.06510210037231445,
+        -0.3113647699356079,
+        4.5388569831848145
+      ],
+      "max": [
+        0.25189468264579773,
+        -0.26472097635269165,
+        4.592284679412842
+      ],
+      "finite": true,
+      "boundary_edges": 20,
+      "nonmanifold_edges": 20,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_brow_L",
+      "type": "MESH",
+      "vertices": 98,
+      "triangles": 96,
+      "min": [
+        0.05000000074505806,
+        -0.32443758845329285,
+        4.646420001983643
+      ],
+      "max": [
+        0.25999999046325684,
+        -0.26468393206596375,
+        4.66811990737915
+      ],
+      "finite": true,
+      "boundary_edges": 98,
+      "nonmanifold_edges": 98,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": null
+    },
+    {
+      "object": "B1_ear_sculpt_L",
+      "type": "MESH",
+      "vertices": 4515,
+      "triangles": 9026,
+      "min": [
+        0.3009999990463257,
+        -0.026770349591970444,
+        4.260000228881836
+      ],
+      "max": [
+        0.4490000009536743,
+        0.05400000140070915,
+        4.550000190734863
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": 0.0019312896351560574
+    },
+    {
+      "object": "B1_HAIR_REDESIGNED_sculpt_volume",
+      "type": "MESH",
+      "vertices": 221766,
+      "triangles": 443524,
+      "min": [
+        -0.3819567561149597,
+        -0.3885968327522278,
+        4.42426061630249
+      ],
+      "max": [
+        0.3975563049316406,
+        0.42015331983566284,
+        5.141349792480469
+      ],
+      "finite": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces_under_1e12": 0,
+      "hidden": false,
+      "uv_layers": [],
+      "signed_volume_if_closed": 0.17589836900849748
+    }
+  ],
+  "head_height_H": 1.0,
+  "hair_max_Z": 5.141349792480469,
+  "optics": [
+    {
+      "object": "B1_Iris_R",
+      "min_radial_clearance": 0.0011586418127842446,
+      "below_globe": 0,
+      "PASS": true
+    },
+    {
+      "object": "B1_Pupil_R",
+      "min_radial_clearance": 0.004687540169433985,
+      "below_globe": 0,
+      "PASS": true
+    },
+    {
+      "object": "B1_Iris_L",
+      "min_radial_clearance": 0.0011586418127842446,
+      "below_globe": 0,
+      "PASS": true
+    },
+    {
+      "object": "B1_Pupil_L",
+      "min_radial_clearance": 0.004687540169433985,
+      "below_globe": 0,
+      "PASS": true
+    }
+  ],
+  "cameras": [
+    {
+      "name": "Face_front-000",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "location": [
+        -0.0,
+        -12.0,
+        4.53000020980835
+      ],
+      "rotation": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Face_three-quarter-045",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "location": [
+        -8.485280990600586,
+        -8.485280990600586,
+        4.53000020980835
+      ],
+      "rotation": [
+        1.5707963705062866,
+        -0.0,
+        -0.785987913608551
+      ]
+    },
+    {
+      "name": "Face_profile-090",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "location": [
+        -12.0,
+        -7.347880586115415e-16,
+        4.53000020980835
+      ],
+      "rotation": [
+        1.5707963705062866,
+        -0.0,
+        -1.571629524230957
+      ]
+    },
+    {
+      "name": "B1_back_180",
+      "type": "ORTHO",
+      "ortho_scale": 1.5,
+      "location": [
+        0.0,
+        12.0,
+        4.53000020980835
+      ],
+      "rotation": [
+        -1.570796251296997,
+        3.141592502593994,
+        -0.0
+      ]
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "shape_key_datablocks": 0,
+  "linked_libraries": [],
+  "unpacked_file_images": [],
+  "unpacked_fonts": [],
+  "source_reference_preserved": true,
+  "art_approval": "OWNER_PENDING",
+  "artistic_objective": "FAIL_ARTISTIC_OBJECTIVE",
+  "limitations": [
+    "Triangulated sculpt construction, not production facial topology.",
+    "Finite/manifold/cap clearance does not prove natural eye expression or beauty.",
+    "5H is retained as design datum; only a1H head/bust is built, no measured full-body B1 ratio."
+  ]
+}
