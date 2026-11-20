@@ -1,0 +1,16 @@
+{
+  "before": {
+    "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+    "resolution": [
+      1200,
+      1600
+    ]
+  },
+  "after": {
+    "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+    "resolution": [
+      1200,
+      1600
+    ]
+  }
+}

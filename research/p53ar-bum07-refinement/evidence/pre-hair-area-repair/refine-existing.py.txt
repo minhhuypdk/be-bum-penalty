@@ -1,0 +1,188 @@
+"""P5.3A-R: LOAD existing5dd8744 .blend; refine mesh, curves and materials.
+Never execute P5.3A builder, delete the character, or import another face.
+Existing topology retained for face/hair/body; only faulty local garment trim
+is replaced with lower-density surface ribbons. No production retopology.
+"""
+import bpy,math,json,hashlib
+from pathlib import Path
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+from math import exp,sin,cos,pi,sqrt,atan2
+R=Path(__file__).resolve().parents[1];B=R.parent/'p53a-bum07-blender-blockout';SOURCE=B/'bum07-p53a-blockout.blend';original_sha=hashlib.sha256(SOURCE.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(SOURCE));s=bpy.context.scene
+# Read diagnostic results; no speculative bounding-box geometry fix.
+diag=json.loads((R/'evidence/curve-diagnosis-before.json').read_text());assert diag['source_sha256']==original_sha and not diag['geometry_modified']
+def g(x,z,cx,cz,sx,sz):return exp(-((x-cx)/sx)**2-((z-cz)/sz)**2)
+def clamp(t):return max(0,min(1,t))
+def ease(t):t=clamp(t);return t*t*(3-2*t)
+def worldverts(o):return [o.matrix_world@v.co for v in o.data.vertices]
+def mesh_sig(o):
+ h=hashlib.sha256()
+ for p in worldverts(o):h.update(str(tuple(p)).encode())
+ return h.hexdigest()
+def edit_mesh(o,fn):
+ inv=o.matrix_world.inverted()
+ for v in o.data.vertices:v.co=inv@fn(o.matrix_world@v.co)
+ o.data.update()
+def edit_curve(o,fn):
+ inv=o.matrix_world.inverted()
+ for sp in o.data.splines:
+  for p in sp.bezier_points:
+   a,b,c=fn(o.matrix_world@p.co),fn(o.matrix_world@p.handle_left),fn(o.matrix_world@p.handle_right)
+   p.co=inv@a;p.handle_left=inv@b;p.handle_right=inv@c
+changes=[];before={o.name:{'vertices':len(o.data.vertices),'polygons':len(o.data.polygons),'mesh_sha':mesh_sig(o)} for o in s.objects if o.type=='MESH' and any(c.name.startswith('BUM07') for c in o.users_collection)}
+def face(p):
+ x,y,z=p;front=ease((.12-y)/.20)
+ eye=g(x,z,-.16,4.54,.13,.10)+g(x,z,.16,4.54,.13,.10)
+ bag=g(x,z,-.16,4.485,.12,.060)+g(x,z,.16,4.485,.12,.060)
+ nose=g(x,z,0,4.351,.084,.073);bridge=g(x,z,0,4.43,.045,.10)
+ cheek=g(x,z,-.205,4.36,.12,.11)+g(x,z,.205,4.36,.12,.11)
+ chin=g(x,z,0,4.105,.17,.10)*ease((z-4.015)/.04)
+ mouth=g(x,z,0,4.205,.20,.065)
+ xx=x*(1+.16*nose+.12*chin+.34*g(x,z,0,4.018,.12,.045)-.040*mouth)+(.005 if x>=0 else -.005)*cheek*front
+ yy=y+front*(.013*eye+.007*bag+.060*nose+.010*bridge-.014*cheek+.006*chin)
+ zz=z+.003*nose*front
+ return Vector((xx,yy,zz))
+head=bpy.data.objects['Head_NEW_oval_integrated_nose_cheeks'];edit_mesh(head,face)
+# Controlled orbital relaxation only, not whole-head shrinkage or adding polygons.
+vg=head.vertex_groups.new(name='P53AR_orbital_softening')
+for v in head.data.vertices:
+ p=head.matrix_world@v.co;w=(g(p.x,p.z,-.16,4.54,.15,.12)+g(p.x,p.z,.16,4.54,.15,.12))*ease((.08-p.y)/.2)
+ if w>.005:vg.add([v.index],min(1,w),'REPLACE')
+bpy.context.view_layer.objects.active=head;mod=head.modifiers.new('Refine orbital surface','SMOOTH');mod.factor=.16;mod.iterations=3;mod.vertex_group=vg.name;bpy.ops.object.modifier_apply(modifier=mod.name)
+head['P53AR']='existing head softened, shorter/broader nose, fuller cheeks/rounder jaw, orbital recess; same topology'
+for side,sgn in [('R',-1),('L',1)]:
+ eye=bpy.data.objects['Eyeball_'+side];eye.location.y+=.017  # retain spherical globe for future rotation
+ for prefix in ['Iris_','Pupil_']:
+  o=bpy.data.objects[prefix+side]
+  def optical(p):
+   radius=sqrt((p.x-sgn*.16)**2+(p.z-4.54)**2);dome=.006*max(0,1-(radius/.048)**2)**2
+   return Vector((p.x-sgn*.0025,p.y+.017-dome,p.z+.0015))
+  edit_mesh(o,optical)
+ brow=bpy.data.objects['Neutral_brow_'+side];edit_mesh(brow,face)
+ margin=bpy.data.objects['Upper_lid_margin_'+side];edit_curve(margin,face);margin.data.bevel_depth=.0022
+ for prefix in ['Nostril_recess_']:
+  edit_mesh(bpy.data.objects[prefix+side],face)
+ # Ear refinement follows all corresponding objects and curves; no radius change to manipulate bbox.
+ def ear(p):
+  center=Vector((sgn*.374,.006,4.40));q=p-center
+  return center+Vector((q.x*.94-sgn*.004,q.y*.92,q.z*.94))
+ for prefix in ['Ear_shell_','Ear_concha_','Ear_helix_','Ear_antihelix_']:
+  o=bpy.data.objects[prefix+side]
+  if o.type=='CURVE':edit_curve(o,ear);o.data.bevel_depth*=.82
+  else:edit_mesh(o,ear)
+# Lips receive same face field plus restrained volume, no graphic straight-line smile.
+for name in ['Upper_lip','Lower_lip']:
+ o=bpy.data.objects[name]
+ def lip(p):
+  q=face(p);mask=g(q.x,q.z,0,4.205,.145,.055);q.y-=.0025*mask
+  if name=='Upper_lip':q.z+=.0014*mask*ease((q.z-4.200)/.020)
+  else:q.z-=.0014*mask*ease((4.200-q.z)/.025)
+  return q
+ edit_mesh(o,lip)
+seam=bpy.data.objects['Closed_mouth_soft_seam']
+def lip_seam(p):q=face(p);q.y-=.0022*g(q.x,q.z,0,4.205,.145,.055);return q
+edit_curve(seam,lip_seam);seam.data.bevel_depth=.00115
+# Soft neck transition while retaining the native separate editable neck blockout.
+neck=bpy.data.objects['Neck_blockout']
+def neckwarp(p):
+ q=p.copy();w=ease((q.z-3.96)/.18);q.x*=1+.085*w;q.y=.035+(q.y-.035)*(1+.09*w);return q
+edit_mesh(neck,neckwarp)
+# Existing unified hair mesh: volumetric relaxation and asymmetric sculpt fields.
+# No new clumps, strands, subdivisions or texture noise disguised as art detail.
+hair=bpy.data.objects['Hair_unified_low_swept_masses'];bpy.context.view_layer.objects.active=hair;mod=hair.modifiers.new('Soften rigid hair mass creases','SMOOTH');mod.factor=.62;mod.iterations=95;bpy.ops.object.modifier_apply(modifier=mod.name)
+def hairwarp(p):
+ x,y,z=p;front=ease((-y-.06)/.20);top=ease((z-4.91)/.24);back=ease((y-.08)/.20);low=1-ease((z-4.38)/.23)
+ fringe=g(x,z,-.13,4.79,.25,.18)*front
+ x+=.010*g(x,z,.10,4.99,.26,.24)*front-.004*back
+ z-=.026*top+.018*fringe;z+=.052*exp(-(x/.19)**2)*back*low
+ y-=.009*fringe;y-=.010*back*low
+ # Broad low-frequency asymmetry only; not individual noise strands.
+ phi=atan2(x,-(y-.015));ripple=.0035*sin(3.7*phi+1.3*(z-4.5))+.002*sin(6.1*phi-2.0*(z-4.5))
+ x+=ripple*sin(phi)+.012*sin(6.0*(z-4.3)+1.7*x)*back;y-=ripple*cos(phi)
+ return Vector((x,y,z))
+edit_mesh(hair,hairwarp);hair['P53AR']='Existing mass mesh relaxed and asymmetrically sculpted, same vertex connectivity; nape softened, low sweep retained'
+# Retain all10 approved base colors. Adjust reflectance, not lights or painted highlights.
+for name in ['hair','hair_secondary_mass']:
+ if name in bpy.data.materials:
+  p=bpy.data.materials[name].node_tree.nodes.get('Principled BSDF');p.inputs['Roughness'].default_value=.64;p.inputs['Specular IOR Level'].default_value=.15
+p=bpy.data.materials['iris'].node_tree.nodes['Principled BSDF'];p.inputs['Roughness'].default_value=.30;p.inputs['Specular IOR Level'].default_value=.12;p.inputs['Coat Weight'].default_value=.08;p.inputs['Coat Roughness'].default_value=.12
+p=bpy.data.materials['pupil'].node_tree.nodes['Principled BSDF'];p.inputs['Roughness'].default_value=.30;p.inputs['Specular IOR Level'].default_value=.12
+p=bpy.data.materials['sclera'].node_tree.nodes['Principled BSDF'];p.inputs['Roughness'].default_value=.35;p.inputs['Specular IOR Level'].default_value=.18
+bpy.data.materials['lip'].node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.59
+# LOCAL TRIM REPAIR. Use evaluated garment boundaries, existing cloth connectivity and unchanged07 geometry.
+shirt=bpy.data.objects['Jersey_body_open_neck']
+# Confirmed hem issue: pants caps sit in front of the original narrow shirt hem.
+# Relax ONLY the lowest native cloth rings to provide clearance, same topology.
+def hem_clearance(p):
+ w=1-ease((p.z-2.43)/.06);return Vector((p.x*(1+.09*w),p.y*(1+.29*w),p.z))
+edit_mesh(shirt,hem_clearance)
+dg=bpy.context.evaluated_depsgraph_get();bpy.context.view_layer.update();e=shirt.evaluated_get(dg);me=e.to_mesh();coords=[e.matrix_world@v.co for v in me.vertices];polys=[tuple(p.vertices) for p in me.polygons];edgecount={}
+for poly in polys:
+ for a,b in zip(poly,poly[1:]+poly[:1]):key=tuple(sorted((a,b)));edgecount[key]=edgecount.get(key,0)+1
+adj={}
+for (a,b),n in edgecount.items():
+ if n==1:adj.setdefault(a,set()).add(b);adj.setdefault(b,set()).add(a)
+loops=[];seen=set()
+for first in adj:
+ if first in seen:continue
+ stack=[first];group=[]
+ while stack:
+  i=stack.pop()
+  if i in seen:continue
+  seen.add(i);group.append(i);stack.extend(adj[i]-seen)
+ loops.append([coords[i] for i in group])
+assert len(loops)==2
+neckloop=max(loops,key=lambda points:sum(p.z for p in points)/len(points));hemloop=min(loops,key=lambda points:sum(p.z for p in points)/len(points));tree=BVHTree.FromPolygons(coords,polys);e.to_mesh_clear()
+def surface(p,offset=.0025):
+ loc,normal,index,dist=tree.find_nearest(p);return loc+normal*offset
+
+def ring_sample(loop,a):
+ pts=sorted([(atan2(p.x,-p.y)%(2*pi),p) for p in loop],key=lambda a:a[0]);ext=[(pts[-1][0]-2*pi,pts[-1][1])]+pts+[(pts[0][0]+2*pi,pts[0][1])]
+ for (a0,p0),(a1,p1) in zip(ext,ext[1:]):
+  if a0<=a<=a1:return p0.lerp(p1,(a-a0)/(a1-a0))
+ return pts[0][1].copy()
+def replace_trim(o,v,f):
+ before_n=len(o.data.vertices);old=o.data;m=bpy.data.meshes.new(o.name+'_surface_repair');m.from_pydata(v,[],f);m.update()
+ for mat in old.materials:m.materials.append(mat)
+ o.data=m
+ for mod in list(o.modifiers):o.modifiers.remove(mod)
+ o.matrix_world.identity()
+ for poly in m.polygons:poly.use_smooth=True
+ changes.append({'object':o.name,'kind':'local trim repair, character topology not retopologized','before_vertices':before_n,'after_vertices':len(v)})
+# Smooth collars/hem follow continuous garment loops instead of snapping to unrelated nearest triangles.
+for name,loop,dz in [('Front_V_back_round_collar',neckloop,-.035),('Jersey_hem',hemloop,.027)]:
+ v=[];f=[];N=64
+ for band in [0,1]:
+  for i in range(N):
+   p=ring_sample(loop,2*pi*i/N).copy()
+   if band:p.z+=dz;p=surface(p,.0028)
+   else:p=surface(p,.0028)
+   v.append(p)
+ for i in range(N):f.append((i,(i+1)%N,(i+1)%N+N,i+N))
+ replace_trim(bpy.data.objects[name],v,f)
+# Old flattened tube piping has duplicate projected surfaces. Replace ONLY each trim mesh
+# with a surface ribbon fitted to a smooth centreline sampled from its existing points.
+for name in ['Front_raglan_R','Front_raglan_L','Back_raglan_R','Back_raglan_L']:
+ o=bpy.data.objects[name];pts=worldverts(o);zlo=min(p.z for p in pts);zhi=max(p.z for p in pts);centres=[]
+ for i in range(33):
+  z=zhi+(zlo-zhi)*i/32;near=sorted(pts,key=lambda p:abs(p.z-z))[:max(16,len(pts)//80)];centre=sum(near,Vector())/len(near);centre.z=z;centres.append(centre)
+ for _ in range(5):centres=[centres[0]]+[(centres[i-1]+centres[i]*2+centres[i+1])/4 for i in range(1,len(centres)-1)]+[centres[-1]]
+ v=[];f=[]
+ for i,p in enumerate(centres):
+  t=(centres[min(i+1,32)]-centres[max(0,i-1)]).normalized();width=Vector((t.z,0,-t.x)).normalized()*.004
+  for sign in [-1,1]:v.append(surface(p+width*sign,.0022))
+ for i in range(32):f.append((2*i,2*i+1,2*i+3,2*i+2))
+ replace_trim(o,v,f)
+# Save separate native file. No hidden objects, no animation, no lighting/camera changes.
+for o in bpy.data.objects:
+ if any(c.name.startswith('BUM07') for c in o.users_collection):assert not o.hide_render and not o.hide_viewport
+assert not bpy.data.actions and not any(o.type=='ARMATURE' for o in s.objects)
+s['phase']='P5.3A-R APPEARANCE REFINEMENT / OWNER_PENDING';s['baseline']='5dd8744';s['source']='Loaded existing P5.3A .blend and refined it; no Scott or rebuild from primitive builder.';s.camera=bpy.data.objects['Full_front-000'];s.render.filepath='//renders/after/full-front-000.png';bpy.context.preferences.filepaths.save_version=0
+bpy.ops.wm.save_as_mainfile(filepath=str(R/'bum07-p53ar-refinement.blend'),compress=True)
+assert hashlib.sha256(SOURCE.read_bytes()).hexdigest()==original_sha
+modified=[];unchanged=[]
+for name,b in before.items():
+ o=bpy.data.objects[name];a={'vertices':len(o.data.vertices),'polygons':len(o.data.polygons),'mesh_sha':mesh_sig(o)}
+ (unchanged if a==b else modified).append({'name':name,'before':b,'after':a})
+log={'baseline':'5dd8744','source_sha256':original_sha,'source_unchanged':True,'loaded_existing_native_file':True,'rebuilt_character':False,'imported_assets':False,'face_hair_vertex_connectivity_retained':True,'lighting_changed':False,'cameras_changed':False,'modified_meshes':modified,'unchanged_meshes':unchanged,'local_trim_repairs':changes,'scope':'P5.3A-R only; no P5.3B/rig/animation/productionGLB','art_approval':'OWNER_PENDING'}
+(R/'evidence/refinement-changes.json').write_text(json.dumps(log,indent=2));print('P53AR_SAVED_REFINEMENT',len(modified),'MESHES_CHANGED',len(unchanged),'UNCHANGED')

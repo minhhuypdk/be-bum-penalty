@@ -1,0 +1,126 @@
+{
+  "stage": "FINAL",
+  "method": "Distance of each cap vertex from centre minus maximum globe radius. Positive everywhere plus500microunit margin required; sphere verified. Not a full rig/animation test.",
+  "rows": [
+    {
+      "version": "baseline",
+      "object": "Iris_R",
+      "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+      "globe_center": [
+        -0.1599999964237213,
+        -0.19300000369548798,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0008922123683076932,
+      "max_radial_clearance_H": 0.0009997989054000983,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "baseline",
+      "object": "Pupil_R",
+      "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+      "globe_center": [
+        -0.1599999964237213,
+        -0.19300000369548798,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.00244655892990267,
+      "max_radial_clearance_H": 0.0024997814349857067,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "baseline",
+      "object": "Iris_L",
+      "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+      "globe_center": [
+        0.1599999964237213,
+        -0.19300000369548798,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0008922123683076932,
+      "max_radial_clearance_H": 0.0009997989054000983,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "baseline",
+      "object": "Pupil_L",
+      "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+      "globe_center": [
+        0.1599999964237213,
+        -0.19300000369548798,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.00244655892990267,
+      "max_radial_clearance_H": 0.0024997814349857067,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "R",
+      "object": "Iris_R",
+      "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+      "globe_center": [
+        -0.1599999964237213,
+        -0.17599999904632568,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0008922276751070768,
+      "max_radial_clearance_H": 0.0069998064568385365,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "R",
+      "object": "Pupil_R",
+      "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+      "globe_center": [
+        -0.1599999964237213,
+        -0.17599999904632568,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0061152112237868594,
+      "max_radial_clearance_H": 0.008499789338103608,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "R",
+      "object": "Iris_L",
+      "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+      "globe_center": [
+        0.1599999964237213,
+        -0.17599999904632568,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0008922276751070768,
+      "max_radial_clearance_H": 0.0069998064568385365,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    },
+    {
+      "version": "R",
+      "object": "Pupil_L",
+      "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+      "globe_center": [
+        0.1599999964237213,
+        -0.17599999904632568,
+        4.539999961853027
+      ],
+      "globe_radius": 0.10600020917632097,
+      "min_radial_clearance_H": 0.0061152112237868594,
+      "max_radial_clearance_H": 0.008499789338103608,
+      "vertices_below_globe": 0,
+      "PASS_cap_outside_globe": true
+    }
+  ]
+}

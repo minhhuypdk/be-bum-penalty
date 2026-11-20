@@ -1,0 +1,1069 @@
+{
+  "baseline": "5dd8744",
+  "source_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+  "source_unchanged": true,
+  "loaded_existing_native_file": true,
+  "rebuilt_character": false,
+  "imported_assets": false,
+  "face_hair_vertex_connectivity_retained": true,
+  "lighting_changed": false,
+  "cameras_changed": false,
+  "modified_meshes": [
+    {
+      "name": "Head_NEW_oval_integrated_nose_cheeks",
+      "before": {
+        "vertices": 331714,
+        "polygons": 331710,
+        "mesh_sha": "8f77e698909e0f6a1f7502cea4f9b641a0b0968e958d3785781e64e9edf9535f"
+      },
+      "after": {
+        "vertices": 331714,
+        "polygons": 331710,
+        "mesh_sha": "1ec9939b7d7c96a61f651078feed96949984050a0aabada37d91de8ae8ba53c9"
+      }
+    },
+    {
+      "name": "Eyeball_R",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "50fffbfeeca49cfa2010ffe2b8fb2251695a56d1dca743bf3023a0937b2e6a76"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "74ddeddb172f00ae406b9acee7a595b165eb8c90f81366f649032808a571bdb6"
+      }
+    },
+    {
+      "name": "Iris_R",
+      "before": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "e1c2d8e2c58a47500c2a2cc434f1c843e63e51b064e9a0c8cf9960bbec421f05"
+      },
+      "after": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "5bb5a15e404b59d218f21b621c605f3954a8cbe4c78df075f5f9ac7f8bbd389f"
+      }
+    },
+    {
+      "name": "Pupil_R",
+      "before": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "82c2eec06408bda8152249c66c280f5481179d01aaded6188738cdf89552d632"
+      },
+      "after": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "4bbebf98cbd8169a86e63dd0d0d267aae4d4b5611cf718cbce2ec1604fa5214f"
+      }
+    },
+    {
+      "name": "Neutral_brow_R",
+      "before": {
+        "vertices": 82,
+        "polygons": 40,
+        "mesh_sha": "27b557f0c54aaa61b94db97e5829e6717819eb01a1db643807dd3d8d8bccb8d9"
+      },
+      "after": {
+        "vertices": 82,
+        "polygons": 40,
+        "mesh_sha": "af0e9926502de488a70672a112cf6d2f196a9e091d727842a269a76a094ff22c"
+      }
+    },
+    {
+      "name": "Ear_shell_R",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "245aad2515d0113ddc40d5e5b031260cb56184fc60cab5a748129abbbae2d32e"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "bd279154beb375742c7ba1b730c4418b7735b48d5867e343a413addf8b4453b8"
+      }
+    },
+    {
+      "name": "Ear_concha_R",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "1eef1327644771973a46755d53fa5df5b048e5a64ee789fe333bf4c236daff14"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "6e919de648a7d745ae17eedc16702ebf5a947c7e8e609de3503cb4e90b1c0418"
+      }
+    },
+    {
+      "name": "Nostril_recess_R",
+      "before": {
+        "vertices": 482,
+        "polygons": 512,
+        "mesh_sha": "861afa04fd8a2c3ef599f6d6eb1427dccd5ba7fe423741cf1e563e46d6b247f9"
+      },
+      "after": {
+        "vertices": 482,
+        "polygons": 512,
+        "mesh_sha": "36579bf4a5cc68a80486f9edc71354ac21215e2139c613fc5530d215b466c3a9"
+      }
+    },
+    {
+      "name": "Eyeball_L",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "f1f61453dd15b0b3331e51baa63e5a4533385b29b88933a9a1f82a0736fce6e8"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "22878982b073efce4c2ef492563b1b88915ee0e38f298357c568c5e9f081216d"
+      }
+    },
+    {
+      "name": "Iris_L",
+      "before": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "c9eb94cfc833ee88538f773bf69743cdf81b152a4551a60aa6141ee63e36d32b"
+      },
+      "after": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "a7cd0adaff1422161a73e57e6aa1d023b8fce1317f35ec79ce98371e7e286c07"
+      }
+    },
+    {
+      "name": "Pupil_L",
+      "before": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "2020998f53f04731ae5bc055ceb170df879a884f4e301add587009db426ef6bc"
+      },
+      "after": {
+        "vertices": 513,
+        "polygons": 512,
+        "mesh_sha": "bd2eab766dc02fea1d249af9c68ed0a1d0df8d0ff39e3fe82385c3da675bef91"
+      }
+    },
+    {
+      "name": "Neutral_brow_L",
+      "before": {
+        "vertices": 82,
+        "polygons": 40,
+        "mesh_sha": "210414115bfb954ecce8006c3418bdab7d93e0986435c2e2f74a99e2f8481a39"
+      },
+      "after": {
+        "vertices": 82,
+        "polygons": 40,
+        "mesh_sha": "07c66a5a4dc01c4927e187b17df82a74b367912f850c1e07b6ab5900b322f2eb"
+      }
+    },
+    {
+      "name": "Ear_shell_L",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "662488fcfab3a483a58548141a5e48b3c174255909e4b9bb0c4bf2aae952c821"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "91b2dfc0f4640704337c7e1e3613943d3ffc90a91493f2c7690809e5a3f3f2c6"
+      }
+    },
+    {
+      "name": "Ear_concha_L",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "7fd57e3c8446c650cada804ffd1b598421b9890a8480c15f9a5f17d104ff1a17"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "b7d23b6fbf48e909b3684f1d5ddbabf77f74b246d3997ff9172467ea7b841863"
+      }
+    },
+    {
+      "name": "Nostril_recess_L",
+      "before": {
+        "vertices": 482,
+        "polygons": 512,
+        "mesh_sha": "524ff2413fe572e4ad001de4f1971f118e9b60a435751dc05a5a0ea106fe6c0f"
+      },
+      "after": {
+        "vertices": 482,
+        "polygons": 512,
+        "mesh_sha": "654b7e2f1ca93e5f2acd317650c9624c071455dbf4615b3d400a9ca32f2e978f"
+      }
+    },
+    {
+      "name": "Upper_lip",
+      "before": {
+        "vertices": 585,
+        "polygons": 512,
+        "mesh_sha": "dda066ff7358ad0a88c2459c078045b012bb2ee2807d55bb68cf58b880ac0d47"
+      },
+      "after": {
+        "vertices": 585,
+        "polygons": 512,
+        "mesh_sha": "8745cf873463ecb995a1beeeff14b5c2e0c4f444621af06073b1e6a65737141a"
+      }
+    },
+    {
+      "name": "Lower_lip",
+      "before": {
+        "vertices": 585,
+        "polygons": 512,
+        "mesh_sha": "9e1e174b9eb9ab911645e248778b07bab1a24c6606241090496e89132ca01931"
+      },
+      "after": {
+        "vertices": 585,
+        "polygons": 512,
+        "mesh_sha": "43e799ae1f25eebc8701b18e5d1b12657f41b54ae472ec2f543329b3d0890064"
+      }
+    },
+    {
+      "name": "Hair_unified_low_swept_masses",
+      "before": {
+        "vertices": 175600,
+        "polygons": 175596,
+        "mesh_sha": "7f9ba3f87fc3322af279965b2aafb99304d86bd408736978d3da8edb82f16cd2"
+      },
+      "after": {
+        "vertices": 175600,
+        "polygons": 175596,
+        "mesh_sha": "4323f40793c1ffab324378e7cc1b1669fa60395ef90923c8e1649256ff68807e"
+      }
+    },
+    {
+      "name": "Neck_blockout",
+      "before": {
+        "vertices": 192,
+        "polygons": 146,
+        "mesh_sha": "dc7fba38b82a611ca0b402a9223e4777c3a9595415ef516b5aab61bf35452fe4"
+      },
+      "after": {
+        "vertices": 192,
+        "polygons": 146,
+        "mesh_sha": "8068cfd337b2df814eaef5c75b55e21f85b14851e2022ba50d2f7b1aca93af91"
+      }
+    },
+    {
+      "name": "Jersey_body_open_neck",
+      "before": {
+        "vertices": 384,
+        "polygons": 336,
+        "mesh_sha": "ceaaf3cc8812b0c7c680bd769ebb29ba93b4746d058ddc5d7706114bdad4c57d"
+      },
+      "after": {
+        "vertices": 384,
+        "polygons": 336,
+        "mesh_sha": "86bce2f08048ba213e1e8cd8419aad5bd203cf521aacc7051d77be187e36fdb5"
+      }
+    },
+    {
+      "name": "Front_V_back_round_collar",
+      "before": {
+        "vertices": 128,
+        "polygons": 64,
+        "mesh_sha": "0d95be4ebd541286354164d7120c403ae87569c9c1dccffd23603e127c30bd29"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 64,
+        "mesh_sha": "8d3a1ce72a714f85b375aa5b8411e27aaf647ef241639533a0561c695389513d"
+      }
+    },
+    {
+      "name": "Jersey_hem",
+      "before": {
+        "vertices": 96,
+        "polygons": 48,
+        "mesh_sha": "fbac324d5fe17c184c242488f88abf0e513ecaf431f843e428348d2f5d99fffe"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 64,
+        "mesh_sha": "57f8b5eb735dca6643c6a45e630e2c595c78dfc1f36b927889d1932ba554130d"
+      }
+    },
+    {
+      "name": "Front_raglan_R",
+      "before": {
+        "vertices": 330,
+        "polygons": 320,
+        "mesh_sha": "e976339aee769d10209a5ef38ccc7d78a906fc6429a213608c23d3aa5912815c"
+      },
+      "after": {
+        "vertices": 66,
+        "polygons": 32,
+        "mesh_sha": "697d7f32dca537ec51843fa6f2305947c7af1b10a0ea8fdf5617eff0cb482ca1"
+      }
+    },
+    {
+      "name": "Back_raglan_R",
+      "before": {
+        "vertices": 330,
+        "polygons": 320,
+        "mesh_sha": "7a17d6c64500fa2d3d4349860a3cd55f0d1864dacaf0d7ce039ab9432c87c136"
+      },
+      "after": {
+        "vertices": 66,
+        "polygons": 32,
+        "mesh_sha": "e42ff03f92605f94c7fcf90ea91308e89989d6220a9d1ea83db5014c10a183be"
+      }
+    },
+    {
+      "name": "Front_raglan_L",
+      "before": {
+        "vertices": 330,
+        "polygons": 320,
+        "mesh_sha": "d9187e13dac855f4090994d8b2dd3c1dbd9f472a4936d1006f09e1a091a0c582"
+      },
+      "after": {
+        "vertices": 66,
+        "polygons": 32,
+        "mesh_sha": "5e2e8091a1b226153617e2328abe6d999d142ae35e7bcde4b85b5850b9b0a409"
+      }
+    },
+    {
+      "name": "Back_raglan_L",
+      "before": {
+        "vertices": 330,
+        "polygons": 320,
+        "mesh_sha": "bca5c84af1e89acf241d0ce141c1502325b9352db8470d92e1c4ed1afe605304"
+      },
+      "after": {
+        "vertices": 66,
+        "polygons": 32,
+        "mesh_sha": "26e669a26890eb4f8627efba1a81787f004e58ff352f0aee18ab9da1df45e3ba"
+      }
+    }
+  ],
+  "unchanged_meshes": [
+    {
+      "name": "Arm_R",
+      "before": {
+        "vertices": 224,
+        "polygons": 194,
+        "mesh_sha": "b0f2607b26301916125da4084cc96adeeffe82f22dcfda60657d565a9b322196"
+      },
+      "after": {
+        "vertices": 224,
+        "polygons": 194,
+        "mesh_sha": "b0f2607b26301916125da4084cc96adeeffe82f22dcfda60657d565a9b322196"
+      }
+    },
+    {
+      "name": "Jersey_sleeve_R",
+      "before": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "f996378c8564a1b1ff848b7cc5bddd40a497e22efcfcecdc5dad04548ccfa672"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "f996378c8564a1b1ff848b7cc5bddd40a497e22efcfcecdc5dad04548ccfa672"
+      }
+    },
+    {
+      "name": "Sleeve_navy_cuff_R",
+      "before": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "84b4b486c51fd6402fa1b01f8582223d9cf22cd2f8f928a09ebde258f5f46cea"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "84b4b486c51fd6402fa1b01f8582223d9cf22cd2f8f928a09ebde258f5f46cea"
+      }
+    },
+    {
+      "name": "Palm_R",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "d456c7a71f26db626bc45f30695ccb5794d2209159f65cd063a1d33448765817"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "d456c7a71f26db626bc45f30695ccb5794d2209159f65cd063a1d33448765817"
+      }
+    },
+    {
+      "name": "Finger_R_0",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "00cd10f963eaf1d696342d982f8b1feda337fee6e18b180bf8370d89fbbf54b6"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "00cd10f963eaf1d696342d982f8b1feda337fee6e18b180bf8370d89fbbf54b6"
+      }
+    },
+    {
+      "name": "Finger_R_1",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "937d10e38e2676fe8111234d1816f14d7be4e98d3ae24f7711d4d84955639dca"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "937d10e38e2676fe8111234d1816f14d7be4e98d3ae24f7711d4d84955639dca"
+      }
+    },
+    {
+      "name": "Finger_R_2",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "26d9454a27ffde1e8f4f7a7516de752d4af06899fe885dd3bad6d33b1a4857d9"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "26d9454a27ffde1e8f4f7a7516de752d4af06899fe885dd3bad6d33b1a4857d9"
+      }
+    },
+    {
+      "name": "Finger_R_3",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "9e0e2e34f6fc8704433b9a87ce898cb5f9afec805a436dd7d6cc556027bd7588"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "9e0e2e34f6fc8704433b9a87ce898cb5f9afec805a436dd7d6cc556027bd7588"
+      }
+    },
+    {
+      "name": "Thumb_R",
+      "before": {
+        "vertices": 96,
+        "polygons": 74,
+        "mesh_sha": "7a286482ed0762a38b9a684451988039c4d0297d207f5e86275f2f83382c3095"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 74,
+        "mesh_sha": "7a286482ed0762a38b9a684451988039c4d0297d207f5e86275f2f83382c3095"
+      }
+    },
+    {
+      "name": "Shorts_leg_R",
+      "before": {
+        "vertices": 240,
+        "polygons": 194,
+        "mesh_sha": "f3f1752877ac83233c12408976ebb5603dd4150d986d9cc52d3e2c34335c6c37"
+      },
+      "after": {
+        "vertices": 240,
+        "polygons": 194,
+        "mesh_sha": "f3f1752877ac83233c12408976ebb5603dd4150d986d9cc52d3e2c34335c6c37"
+      }
+    },
+    {
+      "name": "Shorts_hem_R",
+      "before": {
+        "vertices": 96,
+        "polygons": 48,
+        "mesh_sha": "50ff034ea25eedfd63226e916992adf7f6072acb0ad659f80429751015279baf"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 48,
+        "mesh_sha": "50ff034ea25eedfd63226e916992adf7f6072acb0ad659f80429751015279baf"
+      }
+    },
+    {
+      "name": "Leg_R",
+      "before": {
+        "vertices": 336,
+        "polygons": 290,
+        "mesh_sha": "bc7490c0bda93e94a2ef7663ae56847459bc24978e07ab26cc1337c8598d6dc4"
+      },
+      "after": {
+        "vertices": 336,
+        "polygons": 290,
+        "mesh_sha": "bc7490c0bda93e94a2ef7663ae56847459bc24978e07ab26cc1337c8598d6dc4"
+      }
+    },
+    {
+      "name": "Sock_R",
+      "before": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "1d214575e4db950eb5f96ec34c961463b897ce60b1677e147ee175edce2b71dd"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "1d214575e4db950eb5f96ec34c961463b897ce60b1677e147ee175edce2b71dd"
+      }
+    },
+    {
+      "name": "Sock_band_R_0",
+      "before": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "2b7f6789bfff096251cfb9e03b3559af8e79c5e6536deb191f13f2b6648aa8ed"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "2b7f6789bfff096251cfb9e03b3559af8e79c5e6536deb191f13f2b6648aa8ed"
+      }
+    },
+    {
+      "name": "Sock_band_R_1",
+      "before": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "47895165f53543c78355227caff6efb21df4920d3f1ccf8caf9ef51cdeb62685"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "47895165f53543c78355227caff6efb21df4920d3f1ccf8caf9ef51cdeb62685"
+      }
+    },
+    {
+      "name": "Football_boot_R",
+      "before": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "15682babc66f889ce59fea775d0a5fe287d424982114280090e004a36a3284b7"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "15682babc66f889ce59fea775d0a5fe287d424982114280090e004a36a3284b7"
+      }
+    },
+    {
+      "name": "Boot_sole_R",
+      "before": {
+        "vertices": 96,
+        "polygons": 50,
+        "mesh_sha": "9bdd682b91ea54daa559f5f1bf3b84e82bb2df48f334329db9675b78058299a9"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 50,
+        "mesh_sha": "9bdd682b91ea54daa559f5f1bf3b84e82bb2df48f334329db9675b78058299a9"
+      }
+    },
+    {
+      "name": "Boot_stud_R",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "cf87ab26bb7cffd2e98e5a0a19fded5750a987d55c23bef3d5e4e8653dfe9beb"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "cf87ab26bb7cffd2e98e5a0a19fded5750a987d55c23bef3d5e4e8653dfe9beb"
+      }
+    },
+    {
+      "name": "Boot_stud_R.001",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "4d8a5caeb4d130a50c5290a055e512844f4759f288b69c926d885d3a107a3e7b"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "4d8a5caeb4d130a50c5290a055e512844f4759f288b69c926d885d3a107a3e7b"
+      }
+    },
+    {
+      "name": "Boot_stud_R.002",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "d8f450dcaad9f4f94a9533c8345ec10bf106618a2c40bb5ff7b5e5d275f4e525"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "d8f450dcaad9f4f94a9533c8345ec10bf106618a2c40bb5ff7b5e5d275f4e525"
+      }
+    },
+    {
+      "name": "Boot_stud_R.003",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "08e4cc416c953ba5d90751ac2bfcaa9b5ffb1c44784e820db75d095e4fcad734"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "08e4cc416c953ba5d90751ac2bfcaa9b5ffb1c44784e820db75d095e4fcad734"
+      }
+    },
+    {
+      "name": "Boot_stud_R.004",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "e408c671104ec7d3a9d633eec3b447589e21587ad8152dff44a1cf93cb18db9f"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "e408c671104ec7d3a9d633eec3b447589e21587ad8152dff44a1cf93cb18db9f"
+      }
+    },
+    {
+      "name": "Boot_stud_R.005",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "323179da7e5e09feb6ca89a1f52ab2d63ff9ded9f584679a2a3fa30afa006f90"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "323179da7e5e09feb6ca89a1f52ab2d63ff9ded9f584679a2a3fa30afa006f90"
+      }
+    },
+    {
+      "name": "Arm_L",
+      "before": {
+        "vertices": 224,
+        "polygons": 194,
+        "mesh_sha": "fe74da01741bda259336544c3d23afa09fc393db2cddbdbf0a23f9177bbd9604"
+      },
+      "after": {
+        "vertices": 224,
+        "polygons": 194,
+        "mesh_sha": "fe74da01741bda259336544c3d23afa09fc393db2cddbdbf0a23f9177bbd9604"
+      }
+    },
+    {
+      "name": "Jersey_sleeve_L",
+      "before": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "0a2ad5335a910ebe2c5172a21cb99d4467badffedd1c83c8a6998e11ab1cbb59"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "0a2ad5335a910ebe2c5172a21cb99d4467badffedd1c83c8a6998e11ab1cbb59"
+      }
+    },
+    {
+      "name": "Sleeve_navy_cuff_L",
+      "before": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "80c073b8cc469981c3bbbc72baa6823edad143e52aa48670f4fb1d58075391df"
+      },
+      "after": {
+        "vertices": 128,
+        "polygons": 98,
+        "mesh_sha": "80c073b8cc469981c3bbbc72baa6823edad143e52aa48670f4fb1d58075391df"
+      }
+    },
+    {
+      "name": "Palm_L",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "cb184ea943c28c82408cd0d76ceff90ce8164f915e603f0f9a21d8c21abf64b8"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "cb184ea943c28c82408cd0d76ceff90ce8164f915e603f0f9a21d8c21abf64b8"
+      }
+    },
+    {
+      "name": "Finger_L_0",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "ccb8fce2927171b707e1a1a1192c0979d219840b0816d6465e9511bebc4b2e8b"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "ccb8fce2927171b707e1a1a1192c0979d219840b0816d6465e9511bebc4b2e8b"
+      }
+    },
+    {
+      "name": "Finger_L_1",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "dc0eb54ec85134cae5ad889c7a59ac55f5d10499e6d8ec8b9dc658b695fd77b3"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "dc0eb54ec85134cae5ad889c7a59ac55f5d10499e6d8ec8b9dc658b695fd77b3"
+      }
+    },
+    {
+      "name": "Finger_L_2",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "396526b86ddf9e5160fbd23f8e600c8bb45694b0cd95b3f1946d07074ee70b24"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "396526b86ddf9e5160fbd23f8e600c8bb45694b0cd95b3f1946d07074ee70b24"
+      }
+    },
+    {
+      "name": "Finger_L_3",
+      "before": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "5d7cec0079f0157a406a6f6d9a80b08c280fcb3bbdf7ec811f6cfc6df898f1df"
+      },
+      "after": {
+        "vertices": 100,
+        "polygons": 82,
+        "mesh_sha": "5d7cec0079f0157a406a6f6d9a80b08c280fcb3bbdf7ec811f6cfc6df898f1df"
+      }
+    },
+    {
+      "name": "Thumb_L",
+      "before": {
+        "vertices": 96,
+        "polygons": 74,
+        "mesh_sha": "66b512a6be265eacda1904cf05ae8351fb7018d033a6dad63d38397f62266fcd"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 74,
+        "mesh_sha": "66b512a6be265eacda1904cf05ae8351fb7018d033a6dad63d38397f62266fcd"
+      }
+    },
+    {
+      "name": "Shorts_leg_L",
+      "before": {
+        "vertices": 240,
+        "polygons": 194,
+        "mesh_sha": "c35d6f47d2a882ace53269ef6f162311aadb7430a6f06678c7c181d9a998a776"
+      },
+      "after": {
+        "vertices": 240,
+        "polygons": 194,
+        "mesh_sha": "c35d6f47d2a882ace53269ef6f162311aadb7430a6f06678c7c181d9a998a776"
+      }
+    },
+    {
+      "name": "Shorts_hem_L",
+      "before": {
+        "vertices": 96,
+        "polygons": 48,
+        "mesh_sha": "c0c7d2408742a70a69195757e4dda3eeee0d571c42a5b74f6d3ee9320caa8f4e"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 48,
+        "mesh_sha": "c0c7d2408742a70a69195757e4dda3eeee0d571c42a5b74f6d3ee9320caa8f4e"
+      }
+    },
+    {
+      "name": "Leg_L",
+      "before": {
+        "vertices": 336,
+        "polygons": 290,
+        "mesh_sha": "a5e850e935bfaa4a36a029dc0022d32dad1f4ae664be098be7bf78b83043bbfb"
+      },
+      "after": {
+        "vertices": 336,
+        "polygons": 290,
+        "mesh_sha": "a5e850e935bfaa4a36a029dc0022d32dad1f4ae664be098be7bf78b83043bbfb"
+      }
+    },
+    {
+      "name": "Sock_L",
+      "before": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "76a1c302c296a21ade98ef9757deb86f25c39ecc20b6ea13cb0991f766d2a051"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "76a1c302c296a21ade98ef9757deb86f25c39ecc20b6ea13cb0991f766d2a051"
+      }
+    },
+    {
+      "name": "Sock_band_L_0",
+      "before": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "18b9f0624dfba561592dcb562c356df01e5f59a0a7f647dcda350d3bcf4a90df"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "18b9f0624dfba561592dcb562c356df01e5f59a0a7f647dcda350d3bcf4a90df"
+      }
+    },
+    {
+      "name": "Sock_band_L_1",
+      "before": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "c8c97e754cf1f8dfa1467ad22543bb53131c049b07d919620db921a5c34c736d"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 192,
+        "mesh_sha": "c8c97e754cf1f8dfa1467ad22543bb53131c049b07d919620db921a5c34c736d"
+      }
+    },
+    {
+      "name": "Football_boot_L",
+      "before": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "5e777506e806f3e4c38aab63998baac54118c79f804d9e19f4ab23831278b83c"
+      },
+      "after": {
+        "vertices": 288,
+        "polygons": 242,
+        "mesh_sha": "5e777506e806f3e4c38aab63998baac54118c79f804d9e19f4ab23831278b83c"
+      }
+    },
+    {
+      "name": "Boot_sole_L",
+      "before": {
+        "vertices": 96,
+        "polygons": 50,
+        "mesh_sha": "bb7e52d2ae59218fe07f172e991433395dc6367749ee242eb65c86e0fdec5ce1"
+      },
+      "after": {
+        "vertices": 96,
+        "polygons": 50,
+        "mesh_sha": "bb7e52d2ae59218fe07f172e991433395dc6367749ee242eb65c86e0fdec5ce1"
+      }
+    },
+    {
+      "name": "Boot_stud_L",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "3ae7f8e043763d39b07cb05249612ec832ec41d0895eb5233e52d639ad512f02"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "3ae7f8e043763d39b07cb05249612ec832ec41d0895eb5233e52d639ad512f02"
+      }
+    },
+    {
+      "name": "Boot_stud_L.001",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "0c25c5b20ab0cf70e66b46d0d79551b1c8206e3b2afdaf3bc131e7672b0dc3e7"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "0c25c5b20ab0cf70e66b46d0d79551b1c8206e3b2afdaf3bc131e7672b0dc3e7"
+      }
+    },
+    {
+      "name": "Boot_stud_L.002",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "f16c7b9c0cd2351f01786ca502be2e4f697e2602488eb63d61c73ab3bf45d28a"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "f16c7b9c0cd2351f01786ca502be2e4f697e2602488eb63d61c73ab3bf45d28a"
+      }
+    },
+    {
+      "name": "Boot_stud_L.003",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "967cc18098b99dfbd801862e57de08329a542bd34ec2cd4c983dde9547d67708"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "967cc18098b99dfbd801862e57de08329a542bd34ec2cd4c983dde9547d67708"
+      }
+    },
+    {
+      "name": "Boot_stud_L.004",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "ccf098589014aae052df9c60a3eb34b1d892a4ae883a08d5631d724ebcc74cf3"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "ccf098589014aae052df9c60a3eb34b1d892a4ae883a08d5631d724ebcc74cf3"
+      }
+    },
+    {
+      "name": "Boot_stud_L.005",
+      "before": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "76a4df1920ee00932bf900e12bf7326e587ae3073b684210fde477d1f5d2cdf3"
+      },
+      "after": {
+        "vertices": 32,
+        "polygons": 18,
+        "mesh_sha": "76a4df1920ee00932bf900e12bf7326e587ae3073b684210fde477d1f5d2cdf3"
+      }
+    },
+    {
+      "name": "Shorts_pelvis_bridge",
+      "before": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "c67d729a63451aace3014878a59bc18a1185f5dd92c115a579f58e61efd8a974"
+      },
+      "after": {
+        "vertices": 1490,
+        "polygons": 1536,
+        "mesh_sha": "c67d729a63451aace3014878a59bc18a1185f5dd92c115a579f58e61efd8a974"
+      }
+    },
+    {
+      "name": "Front_07",
+      "before": {
+        "vertices": 1186,
+        "polygons": 1773,
+        "mesh_sha": "be4bfceff3a59c98091f515c54e800f4f6d3a21fbe1ed034ceaca9763c2fb8ac"
+      },
+      "after": {
+        "vertices": 1186,
+        "polygons": 1773,
+        "mesh_sha": "be4bfceff3a59c98091f515c54e800f4f6d3a21fbe1ed034ceaca9763c2fb8ac"
+      }
+    },
+    {
+      "name": "Front_BUM",
+      "before": {
+        "vertices": 1888,
+        "polygons": 2826,
+        "mesh_sha": "ba0e02dce5b16b521b05213a1e972cc0d44ddf205bcc3ac7609d7181704a7cf4"
+      },
+      "after": {
+        "vertices": 1888,
+        "polygons": 2826,
+        "mesh_sha": "ba0e02dce5b16b521b05213a1e972cc0d44ddf205bcc3ac7609d7181704a7cf4"
+      }
+    },
+    {
+      "name": "Back_07",
+      "before": {
+        "vertices": 1186,
+        "polygons": 1773,
+        "mesh_sha": "f355cea6a9126211a8648262313b3ae2e8360d378d507e848b09c2fd97a24028"
+      },
+      "after": {
+        "vertices": 1186,
+        "polygons": 1773,
+        "mesh_sha": "f355cea6a9126211a8648262313b3ae2e8360d378d507e848b09c2fd97a24028"
+      }
+    },
+    {
+      "name": "Back_BUM",
+      "before": {
+        "vertices": 1888,
+        "polygons": 2826,
+        "mesh_sha": "2180f7f62bac6be5b39b7af95d9af8005e0c62ca8c5503558a4f7ef375e26296"
+      },
+      "after": {
+        "vertices": 1888,
+        "polygons": 2826,
+        "mesh_sha": "2180f7f62bac6be5b39b7af95d9af8005e0c62ca8c5503558a4f7ef375e26296"
+      }
+    },
+    {
+      "name": "UpperDentalArch_SINGLE_8_teeth",
+      "before": {
+        "vertices": 768,
+        "polygons": 784,
+        "mesh_sha": "38cd3f2a0a423e8d54e0e66bd72dc5213c9498946cc48aa2aa70312057de5ef8"
+      },
+      "after": {
+        "vertices": 768,
+        "polygons": 784,
+        "mesh_sha": "38cd3f2a0a423e8d54e0e66bd72dc5213c9498946cc48aa2aa70312057de5ef8"
+      }
+    }
+  ],
+  "local_trim_repairs": [
+    {
+      "object": "Front_V_back_round_collar",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 128,
+      "after_vertices": 128
+    },
+    {
+      "object": "Jersey_hem",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 96,
+      "after_vertices": 128
+    },
+    {
+      "object": "Front_raglan_R",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 330,
+      "after_vertices": 66
+    },
+    {
+      "object": "Front_raglan_L",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 330,
+      "after_vertices": 66
+    },
+    {
+      "object": "Back_raglan_R",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 330,
+      "after_vertices": 66
+    },
+    {
+      "object": "Back_raglan_L",
+      "kind": "local trim repair, character topology not retopologized",
+      "before_vertices": 330,
+      "after_vertices": 66
+    }
+  ],
+  "scope": "P5.3A-R only; no P5.3B/rig/animation/productionGLB",
+  "art_approval": "OWNER_PENDING"
+}

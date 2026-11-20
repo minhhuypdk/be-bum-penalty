@@ -1,0 +1,859 @@
+{
+  "source_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+  "source": "P5.3A-R",
+  "method": "41 front orthographic rays at each Z, X from-.44 to+.44, first opaque surface. Static clearance sample, not all intersections.",
+  "rows": [
+    {
+      "z": 2.442,
+      "counts": {
+        "Jersey_hem": 41
+      },
+      "rays": [
+        {
+          "x": -0.44,
+          "first_surface": "Jersey_hem",
+          "Y": -0.1443859338760376
+        },
+        {
+          "x": -0.418,
+          "first_surface": "Jersey_hem",
+          "Y": -0.16852796077728271
+        },
+        {
+          "x": -0.396,
+          "first_surface": "Jersey_hem",
+          "Y": -0.1868516206741333
+        },
+        {
+          "x": -0.374,
+          "first_surface": "Jersey_hem",
+          "Y": -0.20422399044036865
+        },
+        {
+          "x": -0.352,
+          "first_surface": "Jersey_hem",
+          "Y": -0.21835029125213623
+        },
+        {
+          "x": -0.32999999999999996,
+          "first_surface": "Jersey_hem",
+          "Y": -0.23129045963287354
+        },
+        {
+          "x": -0.308,
+          "first_surface": "Jersey_hem",
+          "Y": -0.24300944805145264
+        },
+        {
+          "x": -0.28600000000000003,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2527819871902466
+        },
+        {
+          "x": -0.264,
+          "first_surface": "Jersey_hem",
+          "Y": -0.26221001148223877
+        },
+        {
+          "x": -0.242,
+          "first_surface": "Jersey_hem",
+          "Y": -0.26986145973205566
+        },
+        {
+          "x": -0.21999999999999997,
+          "first_surface": "Jersey_hem",
+          "Y": -0.27716875076293945
+        },
+        {
+          "x": -0.198,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2835700511932373
+        },
+        {
+          "x": -0.176,
+          "first_surface": "Jersey_hem",
+          "Y": -0.28871357440948486
+        },
+        {
+          "x": -0.15400000000000003,
+          "first_surface": "Jersey_hem",
+          "Y": -0.29360830783843994
+        },
+        {
+          "x": -0.132,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2976245880126953
+        },
+        {
+          "x": -0.11000000000000004,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3009706735610962
+        },
+        {
+          "x": -0.08800000000000002,
+          "first_surface": "Jersey_hem",
+          "Y": -0.30383336544036865
+        },
+        {
+          "x": -0.066,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3059835433959961
+        },
+        {
+          "x": -0.043999999999999984,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3074319362640381
+        },
+        {
+          "x": -0.02200000000000002,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3083909749984741
+        },
+        {
+          "x": 5.551115123125783e-17,
+          "first_surface": "Jersey_hem",
+          "Y": -0.30883610248565674
+        },
+        {
+          "x": 0.02200000000000002,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3083956241607666
+        },
+        {
+          "x": 0.043999999999999984,
+          "first_surface": "Jersey_hem",
+          "Y": -0.30745065212249756
+        },
+        {
+          "x": 0.066,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3059931993484497
+        },
+        {
+          "x": 0.08800000000000002,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3038426637649536
+        },
+        {
+          "x": 0.11000000000000004,
+          "first_surface": "Jersey_hem",
+          "Y": -0.3010188341140747
+        },
+        {
+          "x": 0.13199999999999995,
+          "first_surface": "Jersey_hem",
+          "Y": -0.297656774520874
+        },
+        {
+          "x": 0.15400000000000008,
+          "first_surface": "Jersey_hem",
+          "Y": -0.29362952709198
+        },
+        {
+          "x": 0.176,
+          "first_surface": "Jersey_hem",
+          "Y": -0.28914010524749756
+        },
+        {
+          "x": 0.198,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2836359739303589
+        },
+        {
+          "x": 0.21999999999999992,
+          "first_surface": "Jersey_hem",
+          "Y": -0.27726757526397705
+        },
+        {
+          "x": 0.24200000000000005,
+          "first_surface": "Jersey_hem",
+          "Y": -0.270072340965271
+        },
+        {
+          "x": 0.26399999999999996,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2621941566467285
+        },
+        {
+          "x": 0.286,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2531229257583618
+        },
+        {
+          "x": 0.308,
+          "first_surface": "Jersey_hem",
+          "Y": -0.24314916133880615
+        },
+        {
+          "x": 0.33,
+          "first_surface": "Jersey_hem",
+          "Y": -0.23156511783599854
+        },
+        {
+          "x": 0.35200000000000004,
+          "first_surface": "Jersey_hem",
+          "Y": -0.2187049388885498
+        },
+        {
+          "x": 0.37400000000000005,
+          "first_surface": "Jersey_hem",
+          "Y": -0.20436584949493408
+        },
+        {
+          "x": 0.39599999999999996,
+          "first_surface": "Jersey_hem",
+          "Y": -0.18758344650268555
+        },
+        {
+          "x": 0.418,
+          "first_surface": "Jersey_hem",
+          "Y": -0.16863727569580078
+        },
+        {
+          "x": 0.4400000000000001,
+          "first_surface": "Jersey_hem",
+          "Y": -0.14488673210144043
+        }
+      ]
+    },
+    {
+      "z": 2.47,
+      "counts": {
+        "Jersey_body_open_neck": 41
+      },
+      "rays": [
+        {
+          "x": -0.44,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.12473499774932861
+        },
+        {
+          "x": -0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.14911198616027832
+        },
+        {
+          "x": -0.396,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.16891300678253174
+        },
+        {
+          "x": -0.374,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.18585050106048584
+        },
+        {
+          "x": -0.352,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.20051288604736328
+        },
+        {
+          "x": -0.32999999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.21333658695220947
+        },
+        {
+          "x": -0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.22466039657592773
+        },
+        {
+          "x": -0.28600000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.23476910591125488
+        },
+        {
+          "x": -0.264,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2437988519668579
+        },
+        {
+          "x": -0.242,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.25188148021698
+        },
+        {
+          "x": -0.21999999999999997,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.25885963439941406
+        },
+        {
+          "x": -0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2649662494659424
+        },
+        {
+          "x": -0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27044177055358887
+        },
+        {
+          "x": -0.15400000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2752830982208252
+        },
+        {
+          "x": -0.132,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27924108505249023
+        },
+        {
+          "x": -0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2825208902359009
+        },
+        {
+          "x": -0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2853114604949951
+        },
+        {
+          "x": -0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28748035430908203
+        },
+        {
+          "x": -0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2888526916503906
+        },
+        {
+          "x": -0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28976762294769287
+        },
+        {
+          "x": 5.551115123125783e-17,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.29019975662231445
+        },
+        {
+          "x": 0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2897752523422241
+        },
+        {
+          "x": 0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28888046741485596
+        },
+        {
+          "x": 0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28748929500579834
+        },
+        {
+          "x": 0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28533875942230225
+        },
+        {
+          "x": 0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28259408473968506
+        },
+        {
+          "x": 0.13199999999999995,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27928149700164795
+        },
+        {
+          "x": 0.15400000000000008,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2753024101257324
+        },
+        {
+          "x": 0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2705336809158325
+        },
+        {
+          "x": 0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26508569717407227
+        },
+        {
+          "x": 0.21999999999999992,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2589132785797119
+        },
+        {
+          "x": 0.24200000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2519035339355469
+        },
+        {
+          "x": 0.26399999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.24389755725860596
+        },
+        {
+          "x": 0.286,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2349480390548706
+        },
+        {
+          "x": 0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.22486567497253418
+        },
+        {
+          "x": 0.33,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.21352028846740723
+        },
+        {
+          "x": 0.35200000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2006908655166626
+        },
+        {
+          "x": 0.37400000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1860586404800415
+        },
+        {
+          "x": 0.39599999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1691761016845703
+        },
+        {
+          "x": 0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.14927005767822266
+        },
+        {
+          "x": 0.4400000000000001,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.12487232685089111
+        }
+      ]
+    },
+    {
+      "z": 2.49,
+      "counts": {
+        "Jersey_body_open_neck": 41
+      },
+      "rays": [
+        {
+          "x": -0.44,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.11543083190917969
+        },
+        {
+          "x": -0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1408904790878296
+        },
+        {
+          "x": -0.396,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.16088569164276123
+        },
+        {
+          "x": -0.374,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1779029369354248
+        },
+        {
+          "x": -0.352,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1926060914993286
+        },
+        {
+          "x": -0.32999999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.20546305179595947
+        },
+        {
+          "x": -0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.21680569648742676
+        },
+        {
+          "x": -0.28600000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2268756628036499
+        },
+        {
+          "x": -0.264,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.23585331439971924
+        },
+        {
+          "x": -0.242,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.24385690689086914
+        },
+        {
+          "x": -0.21999999999999997,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.25075697898864746
+        },
+        {
+          "x": -0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2568875551223755
+        },
+        {
+          "x": -0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26231849193573
+        },
+        {
+          "x": -0.15400000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2671058177947998
+        },
+        {
+          "x": -0.132,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2710094451904297
+        },
+        {
+          "x": -0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2742946147918701
+        },
+        {
+          "x": -0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2770456075668335
+        },
+        {
+          "x": -0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27917051315307617
+        },
+        {
+          "x": -0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2805521488189697
+        },
+        {
+          "x": -0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2814509868621826
+        },
+        {
+          "x": 5.551115123125783e-17,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2818725109100342
+        },
+        {
+          "x": 0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2814521789550781
+        },
+        {
+          "x": 0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.28055524826049805
+        },
+        {
+          "x": 0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27917563915252686
+        },
+        {
+          "x": 0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27705061435699463
+        },
+        {
+          "x": 0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27430152893066406
+        },
+        {
+          "x": 0.13199999999999995,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27101826667785645
+        },
+        {
+          "x": 0.15400000000000008,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26711392402648926
+        },
+        {
+          "x": 0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26232922077178955
+        },
+        {
+          "x": 0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2569005489349365
+        },
+        {
+          "x": 0.21999999999999992,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.25077152252197266
+        },
+        {
+          "x": 0.24200000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.24386680126190186
+        },
+        {
+          "x": 0.26399999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2358696460723877
+        },
+        {
+          "x": 0.286,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.22689366340637207
+        },
+        {
+          "x": 0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.21682512760162354
+        },
+        {
+          "x": 0.33,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.20548415184020996
+        },
+        {
+          "x": 0.35200000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.19262850284576416
+        },
+        {
+          "x": 0.37400000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.1779268980026245
+        },
+        {
+          "x": 0.39599999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.160910964012146
+        },
+        {
+          "x": 0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.14089226722717285
+        },
+        {
+          "x": 0.4400000000000001,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.11545908451080322
+        }
+      ]
+    },
+    {
+      "z": 2.51,
+      "counts": {
+        "Jersey_body_open_neck": 41
+      },
+      "rays": [
+        {
+          "x": -0.44,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.10907459259033203
+        },
+        {
+          "x": -0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.13494789600372314
+        },
+        {
+          "x": -0.396,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.15560102462768555
+        },
+        {
+          "x": -0.374,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.17267298698425293
+        },
+        {
+          "x": -0.352,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.18748319149017334
+        },
+        {
+          "x": -0.32999999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.20041155815124512
+        },
+        {
+          "x": -0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2117997407913208
+        },
+        {
+          "x": -0.28600000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.22192895412445068
+        },
+        {
+          "x": -0.264,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2309730052947998
+        },
+        {
+          "x": -0.242,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.23889315128326416
+        },
+        {
+          "x": -0.21999999999999997,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.24579930305480957
+        },
+        {
+          "x": -0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2519303560256958
+        },
+        {
+          "x": -0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2573699951171875
+        },
+        {
+          "x": -0.15400000000000003,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26220273971557617
+        },
+        {
+          "x": -0.132,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2660461664199829
+        },
+        {
+          "x": -0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2693277597427368
+        },
+        {
+          "x": -0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2720909118652344
+        },
+        {
+          "x": -0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2742021083831787
+        },
+        {
+          "x": -0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27558398246765137
+        },
+        {
+          "x": -0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2764859199523926
+        },
+        {
+          "x": 5.551115123125783e-17,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2769073247909546
+        },
+        {
+          "x": 0.02200000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2764930725097656
+        },
+        {
+          "x": 0.043999999999999984,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2756054401397705
+        },
+        {
+          "x": 0.066,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.27421557903289795
+        },
+        {
+          "x": 0.08800000000000002,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2721121311187744
+        },
+        {
+          "x": 0.11000000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2693769931793213
+        },
+        {
+          "x": 0.13199999999999995,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.26610326766967773
+        },
+        {
+          "x": 0.15400000000000008,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2622028589248657
+        },
+        {
+          "x": 0.176,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2574347257614136
+        },
+        {
+          "x": 0.198,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.25201940536499023
+        },
+        {
+          "x": 0.21999999999999992,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2459012269973755
+        },
+        {
+          "x": 0.24200000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.23892998695373535
+        },
+        {
+          "x": 0.26399999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.23100364208221436
+        },
+        {
+          "x": 0.286,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2220231294631958
+        },
+        {
+          "x": 0.308,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.2119370698928833
+        },
+        {
+          "x": 0.33,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.20055913925170898
+        },
+        {
+          "x": 0.35200000000000004,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.18764066696166992
+        },
+        {
+          "x": 0.37400000000000005,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.17284011840820312
+        },
+        {
+          "x": 0.39599999999999996,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.15567469596862793
+        },
+        {
+          "x": 0.418,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.13508939743041992
+        },
+        {
+          "x": 0.4400000000000001,
+          "first_surface": "Jersey_body_open_neck",
+          "Y": -0.10920500755310059
+        }
+      ]
+    }
+  ]
+}

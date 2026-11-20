@@ -1,0 +1,41 @@
+{
+  "files_before_after_pngs_PASS": 12,
+  "independent_after_renders": 6,
+  "resolution": [
+    1200,
+    1600
+  ],
+  "native_blend_sha256_matches": true,
+  "lineage_camera_world_lights_PASS": true,
+  "numeric_zero_face_count": 0,
+  "source_P53A_unchanged": true,
+  "pdfinfo": "Title:           BUM07 P5.3A-R Comparison\nCreator:         Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\nProducer:        GPL Ghostscript 10.05.1\nCreationDate:    Fri Nov 20 03:41:59 2026 UTC\nModDate:         Fri Nov 20 03:41:59 2026 UTC\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           12\nEncrypted:       no\nPage size:       841.92 x 594.96 pts (A4)\nPage rot:        0\nFile size:       1296461 bytes\nOptimized:       no\nPDF version:     1.6\n",
+  "visual_review": {
+    "status": "READ_BACK_NOT_ART_APPROVAL",
+    "after_pngs": [
+      "full-front-000",
+      "full-three-quarter-045",
+      "full-profile-090",
+      "full-back-180",
+      "face-front-000",
+      "face-three-quarter-045"
+    ],
+    "pdf_pages_rendered_and_viewed": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "pdf_pages_text_readback": 12,
+    "iris_edge": "No intermediate sclera-bite seen in final front/45 renders; radial clearance audit positive.",
+    "remaining_art_limits": [
+      "Large repetitive hair groups/ridges, especially nape/back",
+      "Procedural fixed gaze and eyelid/inner-corner detail",
+      "Simplified lips/ear/neck transitions",
+      "Flat cloth material, unchanged blockout hands/boots/sock stripes"
+    ],
+    "pdf_readback_warning": "Poppler ICC profile warning on embedded reference imagery; inspected pages rendered and all12pages text read successfully. PNGs unchanged."
+  },
+  "art_approval": "OWNER_PENDING",
+  "P53B": "CLOSED"
+}

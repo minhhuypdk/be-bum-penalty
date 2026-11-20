@@ -1,0 +1,127 @@
+{
+  "palette_materials_PASS": 10,
+  "materials": [
+    {
+      "material": "jersey-yellow",
+      "P52R_sRGB": "#F6C744",
+      "actual_node_linear_RGB": [
+        0.9215818643569946,
+        0.5711248517036438,
+        0.05780543014407158
+      ],
+      "actual_roughness": 0.7749999761581421,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "navy",
+      "P52R_sRGB": "#182B45",
+      "actual_node_linear_RGB": [
+        0.009134058840572834,
+        0.024157632142305374,
+        0.05951123684644699
+      ],
+      "actual_roughness": 0.7749999761581421,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "sock-ivory",
+      "P52R_sRGB": "#F2EBDD",
+      "actual_node_linear_RGB": [
+        0.8879231214523315,
+        0.8307698965072632,
+        0.7230551242828369
+      ],
+      "actual_roughness": 0.875,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "boot-navy",
+      "P52R_sRGB": "#1C2D42",
+      "actual_node_linear_RGB": [
+        0.011612244881689548,
+        0.026241222396492958,
+        0.05448027700185776
+      ],
+      "actual_roughness": 0.550000011920929,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "skin",
+      "P52R_sRGB": "#D9A078",
+      "actual_node_linear_RGB": [
+        0.6938717365264893,
+        0.35153260827064514,
+        0.18782077729701996
+      ],
+      "actual_roughness": 0.5249999761581421,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "lip",
+      "P52R_sRGB": "#B97465",
+      "actual_node_linear_RGB": [
+        0.48514994978904724,
+        0.17464740574359894,
+        0.13013647496700287
+      ],
+      "actual_roughness": 0.5899999737739563,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "hair",
+      "P52R_sRGB": "#241D1A",
+      "actual_node_linear_RGB": [
+        0.017641954123973846,
+        0.012286487966775894,
+        0.01032982300966978
+      ],
+      "actual_roughness": 0.6399999856948853,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "iris",
+      "P52R_sRGB": "#4E331D",
+      "actual_node_linear_RGB": [
+        0.07618538290262222,
+        0.03310476616024971,
+        0.012286487966775894
+      ],
+      "actual_roughness": 0.30000001192092896,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "sclera",
+      "P52R_sRGB": "#EFE7DA",
+      "actual_node_linear_RGB": [
+        0.8631572127342224,
+        0.7991027235984802,
+        0.7011018991470337
+      ],
+      "actual_roughness": 0.3499999940395355,
+      "actual_metallic": 0.0,
+      "PASS": true
+    },
+    {
+      "material": "teeth",
+      "P52R_sRGB": "#EDE3D2",
+      "actual_node_linear_RGB": [
+        0.8468732237815857,
+        0.7681511640548706,
+        0.6444796919822693
+      ],
+      "actual_roughness": 0.375,
+      "actual_metallic": 0.0,
+      "PASS": true
+    }
+  ],
+  "external_image_dependencies": [],
+  "note": "Values checked from saved native .blend. Lit pixels are transformed by lighting and AgX, not expected to match hex."
+}

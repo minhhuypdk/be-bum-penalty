@@ -1,0 +1,7696 @@
+{
+  "checks": {
+    "loaded_existing_model_object_names_identical": true,
+    "head_hair_connectivity_identical": true,
+    "07_BUM_teeth_geometry_unchanged": true,
+    "jersey_connectivity_retained_lower_hem_only_refined": true,
+    "curve_point_radius_unchanged": true,
+    "camera_lights_world_look_identical": true,
+    "no_hidden_character_geometry": true,
+    "scope": "P5.3A-R only; art approval pending"
+  },
+  "before": {
+    "file_sha256": "d72cc79128831c67b3be569bc17669a2c9404b70ce5238b677357f5f67d13071",
+    "objects": {
+      "Head_NEW_oval_integrated_nose_cheeks": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 331714,
+        "polygons": 331710,
+        "topology_sha256": "404e86ae30fa1c2f96aa4820d843185735c781829435990f4f0be2425f77c714",
+        "position_sha256": "8f77e698909e0f6a1f7502cea4f9b641a0b0968e958d3785781e64e9edf9535f",
+        "nose_ROI_min_Y_H": -0.4254987835884094
+      },
+      "Eyeball_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.1599999964237213
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.19300000369548798
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.539999961853027
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "ad64bad8fbeedeaefadd54c424b9c8cedb41ab007b62da6279383ba76f836ce8",
+        "position_sha256": "50fffbfeeca49cfa2010ffe2b8fb2251695a56d1dca743bf3023a0937b2e6a76"
+      },
+      "Iris_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "e1c2d8e2c58a47500c2a2cc434f1c843e63e51b064e9a0c8cf9960bbec421f05"
+      },
+      "Pupil_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "82c2eec06408bda8152249c66c280f5481179d01aaded6188738cdf89552d632"
+      },
+      "Upper_lid_margin_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.2634463608264923,
+            -0.29335734248161316,
+            4.534313201904297
+          ],
+          "max": [
+            -0.0565536692738533,
+            -0.22818425297737122,
+            4.595620155334473
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.0024999999441206455,
+        "curve_positions_sha256": "5a0911cd016fdae72c8ac5f7d9c4a24893404630684695804a7e5d0cacd2eb73"
+      },
+      "Neutral_brow_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 82,
+        "polygons": 40,
+        "topology_sha256": "db7c11e5e24bca0aaf8f7d7507b213532e159932c44ca7c5ae45e36b8a0d3dc0",
+        "position_sha256": "27b557f0c54aaa61b94db97e5829e6717819eb01a1db643807dd3d8d8bccb8d9"
+      },
+      "Ear_shell_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.37400001287460327
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.006000000052154064
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "f91a5cac7124f15fb72e77a07c2149366206ff26207a58fa40e06bf2ec233ab1",
+        "position_sha256": "245aad2515d0113ddc40d5e5b031260cb56184fc60cab5a748129abbbae2d32e"
+      },
+      "Ear_concha_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.42100000381469727
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.035999998450279236
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "db3596480ca4e2dcadfa6e22d44a48ad1fe3eeb1aea6dfe9c73abb0894f97961",
+        "position_sha256": "1eef1327644771973a46755d53fa5df5b048e5a64ee789fe333bf4c236daff14"
+      },
+      "Ear_helix_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.45490479469299316,
+            -0.06282699108123779,
+            4.245579719543457
+          ],
+          "max": [
+            -0.3390866219997406,
+            -0.02317153476178646,
+            4.554434299468994
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.012000000104308128,
+        "curve_positions_sha256": "17e98d35b3b1ee67d7cd68f86065e7ce17740a15f5fdfd7144ddde908f26d8bb"
+      },
+      "Ear_antihelix_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.42702898383140564,
+            -0.06784459948539734,
+            4.358224868774414
+          ],
+          "max": [
+            -0.3893281817436218,
+            -0.04537659138441086,
+            4.4738030433654785
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.00800000037997961,
+        "curve_positions_sha256": "96ece1a585ee2235955b0526bad009b44c17939ac151b74996c967ed361e8885"
+      },
+      "Nostril_recess_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.04399999976158142
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.3649376928806305
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.318999767303467
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 482,
+        "polygons": 512,
+        "topology_sha256": "24fe114e19d79a7167fd143f9c47da409e2e5d25942544e45082b32117d8c8f2",
+        "position_sha256": "861afa04fd8a2c3ef599f6d6eb1427dccd5ba7fe423741cf1e563e46d6b247f9"
+      },
+      "Eyeball_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.1599999964237213
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.19300000369548798
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.539999961853027
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "407a9188a835df4182b96ee38be3fd558af66d55aa453da3bc1aad962dacf2f9",
+        "position_sha256": "f1f61453dd15b0b3331e51baa63e5a4533385b29b88933a9a1f82a0736fce6e8"
+      },
+      "Iris_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "c9eb94cfc833ee88538f773bf69743cdf81b152a4551a60aa6141ee63e36d32b"
+      },
+      "Pupil_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "2020998f53f04731ae5bc055ceb170df879a884f4e301add587009db426ef6bc"
+      },
+      "Upper_lid_margin_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.0565187968313694,
+            -0.2932412028312683,
+            4.534277439117432
+          ],
+          "max": [
+            0.2634805142879486,
+            -0.22821956872940063,
+            4.59574031829834
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.0024999999441206455,
+        "curve_positions_sha256": "a1c96b8c9292e3d9ec386326fcc2828aec6e245f234d36da40588b10fbcb1b29"
+      },
+      "Neutral_brow_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 82,
+        "polygons": 40,
+        "topology_sha256": "db7c11e5e24bca0aaf8f7d7507b213532e159932c44ca7c5ae45e36b8a0d3dc0",
+        "position_sha256": "210414115bfb954ecce8006c3418bdab7d93e0986435c2e2f74a99e2f8481a39"
+      },
+      "Ear_shell_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.37400001287460327
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.006000000052154064
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "8f1826d058401253257f7a2641fd68b72c72ba502f917f90bcabfb7189c3a742",
+        "position_sha256": "662488fcfab3a483a58548141a5e48b3c174255909e4b9bb0c4bf2aae952c821"
+      },
+      "Ear_concha_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.42100000381469727
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.035999998450279236
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "bab70faa595f3f20bfc5090edb72ee87f012679749582b876558612f56f87d1c",
+        "position_sha256": "7fd57e3c8446c650cada804ffd1b598421b9890a8480c15f9a5f17d104ff1a17"
+      },
+      "Ear_helix_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3390866219997406,
+            -0.06282699108123779,
+            4.245579719543457
+          ],
+          "max": [
+            0.45490479469299316,
+            -0.02317153289914131,
+            4.554434299468994
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.012000000104308128,
+        "curve_positions_sha256": "5e626a3fadb96e09d5c2353e5c4d2a69450229fd1ac50b2bc4870a7938f6b962"
+      },
+      "Ear_antihelix_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3893281817436218,
+            -0.06784459948539734,
+            4.358224868774414
+          ],
+          "max": [
+            0.42702898383140564,
+            -0.04537659138441086,
+            4.4738030433654785
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.00800000037997961,
+        "curve_positions_sha256": "93c1aecf2766f7bcc45e87c6e2989b4bbf53d28f3adb1277d0d106010bff4431"
+      },
+      "Nostril_recess_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.04399999976158142
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.3649376928806305
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.318999767303467
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 482,
+        "polygons": 512,
+        "topology_sha256": "5aeb0f903cdae5ede8f7e622010b655a0a1543e6cabf772da132f49227f32436",
+        "position_sha256": "524ff2413fe572e4ad001de4f1971f118e9b60a435751dc05a5a0ea106fe6c0f"
+      },
+      "Upper_lip": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 585,
+        "polygons": 512,
+        "topology_sha256": "336eb15444b101dab79ebbeeb4d2d5f3b6b3936ce9de89231c28cd232a1b0984",
+        "position_sha256": "dda066ff7358ad0a88c2459c078045b012bb2ee2807d55bb68cf58b880ac0d47"
+      },
+      "Lower_lip": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 585,
+        "polygons": 512,
+        "topology_sha256": "336eb15444b101dab79ebbeeb4d2d5f3b6b3936ce9de89231c28cd232a1b0984",
+        "position_sha256": "9e1e174b9eb9ab911645e248778b07bab1a24c6606241090496e89132ca01931"
+      },
+      "Closed_mouth_soft_seam": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.17097108066082,
+            -0.3122844398021698,
+            4.198447227478027
+          ],
+          "max": [
+            0.17097108066082,
+            -0.2430432140827179,
+            4.223499774932861
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.0015999999595806003,
+        "curve_positions_sha256": "d78c5b3169a6051a551f39c3207f84cd51bbd550c02924744458972e260981d1"
+      },
+      "Hair_unified_low_swept_masses": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 175600,
+        "polygons": 175596,
+        "topology_sha256": "04a54efb45348e051f3049ed6fd3458cd6f8ff218e6cb0dc7f0fd1de0a1c87fa",
+        "position_sha256": "7f9ba3f87fc3322af279965b2aafb99304d86bd408736978d3da8edb82f16cd2"
+      },
+      "Neck_blockout": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 192,
+        "polygons": 146,
+        "topology_sha256": "f3ac973df9807d4bd364c4685585ed91e4c901ed1eed3fca51be3d8acacf6e3c",
+        "position_sha256": "dc7fba38b82a611ca0b402a9223e4777c3a9595415ef516b5aab61bf35452fe4"
+      },
+      "Jersey_body_open_neck": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 384,
+        "polygons": 336,
+        "topology_sha256": "d7f8d6a3d67514f318040ded9671905f72c13dd305abd65c3508cf84b45c5465",
+        "position_sha256": "ceaaf3cc8812b0c7c680bd769ebb29ba93b4746d058ddc5d7706114bdad4c57d"
+      },
+      "Front_V_back_round_collar": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 64,
+        "topology_sha256": "a99c64cf2c37e1482059a8092ab3c0ab29862d416f0796e3e82c283c59f73dba",
+        "position_sha256": "0d95be4ebd541286354164d7120c403ae87569c9c1dccffd23603e127c30bd29"
+      },
+      "Jersey_hem": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 48,
+        "topology_sha256": "e852ab1afa0407fa10fa9c20b8215080859d92d44cfe52975e3c4b810f075f15",
+        "position_sha256": "fbac324d5fe17c184c242488f88abf0e513ecaf431f843e428348d2f5d99fffe"
+      },
+      "Arm_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 224,
+        "polygons": 194,
+        "topology_sha256": "ad166d8ba82214d1cf81e68c08dfca77633e04f47ce705bbc94538c6a9d3d9a6",
+        "position_sha256": "b0f2607b26301916125da4084cc96adeeffe82f22dcfda60657d565a9b322196"
+      },
+      "Jersey_sleeve_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "f996378c8564a1b1ff848b7cc5bddd40a497e22efcfcecdc5dad04548ccfa672"
+      },
+      "Sleeve_navy_cuff_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "84b4b486c51fd6402fa1b01f8582223d9cf22cd2f8f928a09ebde258f5f46cea"
+      },
+      "Front_raglan_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 330,
+        "polygons": 320,
+        "topology_sha256": "7181bb99b9dc0ab80855b18da5223e34e1055cf006ac3529b2a9d843877d6926",
+        "position_sha256": "e976339aee769d10209a5ef38ccc7d78a906fc6429a213608c23d3aa5912815c"
+      },
+      "Back_raglan_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 330,
+        "polygons": 320,
+        "topology_sha256": "7181bb99b9dc0ab80855b18da5223e34e1055cf006ac3529b2a9d843877d6926",
+        "position_sha256": "7a17d6c64500fa2d3d4349860a3cd55f0d1864dacaf0d7ce039ab9432c87c136"
+      },
+      "Palm_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.8191520571708679,
+            0.0,
+            0.5735764503479004,
+            -1.431250810623169
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5735764503479004,
+            0.0,
+            0.8191520571708679,
+            2.555739641189575
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "77b99b718f1f51c4bd37a753e5eeaeb23243ac62dd3e1daac0080a877df62348",
+        "position_sha256": "d456c7a71f26db626bc45f30695ccb5794d2209159f65cd063a1d33448765817"
+      },
+      "Finger_R_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "00cd10f963eaf1d696342d982f8b1feda337fee6e18b180bf8370d89fbbf54b6"
+      },
+      "Finger_R_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "937d10e38e2676fe8111234d1816f14d7be4e98d3ae24f7711d4d84955639dca"
+      },
+      "Finger_R_2": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "26d9454a27ffde1e8f4f7a7516de752d4af06899fe885dd3bad6d33b1a4857d9"
+      },
+      "Finger_R_3": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "9e0e2e34f6fc8704433b9a87ce898cb5f9afec805a436dd7d6cc556027bd7588"
+      },
+      "Thumb_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 74,
+        "topology_sha256": "71bfda0be5796ba68ac03d2e3ab86be5c407bd9102f0728d424f3a0492e44276",
+        "position_sha256": "7a286482ed0762a38b9a684451988039c4d0297d207f5e86275f2f83382c3095"
+      },
+      "Shorts_leg_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 240,
+        "polygons": 194,
+        "topology_sha256": "296b17dc30e92277c4962ba4125510ea15b2b30f3a5c67cd5c30166b61d0fa77",
+        "position_sha256": "f3f1752877ac83233c12408976ebb5603dd4150d986d9cc52d3e2c34335c6c37"
+      },
+      "Shorts_hem_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 48,
+        "topology_sha256": "e852ab1afa0407fa10fa9c20b8215080859d92d44cfe52975e3c4b810f075f15",
+        "position_sha256": "50ff034ea25eedfd63226e916992adf7f6072acb0ad659f80429751015279baf"
+      },
+      "Leg_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 336,
+        "polygons": 290,
+        "topology_sha256": "f743d0f1dc28b0f4dd15c48e7371782633901a9f336c1fed1a69f7d6fed8b773",
+        "position_sha256": "bc7490c0bda93e94a2ef7663ae56847459bc24978e07ab26cc1337c8598d6dc4"
+      },
+      "Sock_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "1d214575e4db950eb5f96ec34c961463b897ce60b1677e147ee175edce2b71dd"
+      },
+      "Sock_band_R_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "2b7f6789bfff096251cfb9e03b3559af8e79c5e6536deb191f13f2b6648aa8ed"
+      },
+      "Sock_band_R_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "47895165f53543c78355227caff6efb21df4920d3f1ccf8caf9ef51cdeb62685"
+      },
+      "Football_boot_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "15682babc66f889ce59fea775d0a5fe287d424982114280090e004a36a3284b7"
+      },
+      "Boot_sole_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 50,
+        "topology_sha256": "ff7e755e602fd78df9289d49610d1e62642062c9c578a69775c60f09be672fe5",
+        "position_sha256": "9bdd682b91ea54daa559f5f1bf3b84e82bb2df48f334329db9675b78058299a9"
+      },
+      "Lace_R_0": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.3839991092681885,
+            0.2615509331226349
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.3511369526386261,
+            0.2925979197025299
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "7f8508dc48cf2478eb3b808378f94444262d88175bf14bfeee8662d1a1fdaa3f"
+      },
+      "Lace_R_1": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.3289991021156311,
+            0.271450936794281
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.2961369454860687,
+            0.302497923374176
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "282b6072dde8a09d8be1f9afb15d0b380f99af9886ec053f5ee89287e8538156"
+      },
+      "Lace_R_2": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.27399909496307373,
+            0.28135091066360474
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.24113695323467255,
+            0.31239789724349976
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "ef97839022f7deecb924a898af9ce548e47e774b5d7c9226a166a1a80ee59faa"
+      },
+      "Lace_R_3": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.21899910271167755,
+            0.29125091433525085
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.18613694608211517,
+            0.3222978711128235
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "c62468a0ef3991e05f3fe2c3475490f6478d05a28e2dd94f3cc7ad2f49751a2f"
+      },
+      "Lace_R_4": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.16399911046028137,
+            0.301150918006897
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.131136953830719,
+            0.332197904586792
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "2f2643a79ed14a193315710317b9b6550bc2096e1789750452e14066a9f3a794"
+      },
+      "Boot_stud_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "cf87ab26bb7cffd2e98e5a0a19fded5750a987d55c23bef3d5e4e8653dfe9beb"
+      },
+      "Boot_stud_R.001": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "4d8a5caeb4d130a50c5290a055e512844f4759f288b69c926d885d3a107a3e7b"
+      },
+      "Boot_stud_R.002": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "d8f450dcaad9f4f94a9533c8345ec10bf106618a2c40bb5ff7b5e5d275f4e525"
+      },
+      "Boot_stud_R.003": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "08e4cc416c953ba5d90751ac2bfcaa9b5ffb1c44784e820db75d095e4fcad734"
+      },
+      "Boot_stud_R.004": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "e408c671104ec7d3a9d633eec3b447589e21587ad8152dff44a1cf93cb18db9f"
+      },
+      "Boot_stud_R.005": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "323179da7e5e09feb6ca89a1f52ab2d63ff9ded9f584679a2a3fa30afa006f90"
+      },
+      "Arm_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 224,
+        "polygons": 194,
+        "topology_sha256": "ad166d8ba82214d1cf81e68c08dfca77633e04f47ce705bbc94538c6a9d3d9a6",
+        "position_sha256": "fe74da01741bda259336544c3d23afa09fc393db2cddbdbf0a23f9177bbd9604"
+      },
+      "Jersey_sleeve_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "0a2ad5335a910ebe2c5172a21cb99d4467badffedd1c83c8a6998e11ab1cbb59"
+      },
+      "Sleeve_navy_cuff_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "80c073b8cc469981c3bbbc72baa6823edad143e52aa48670f4fb1d58075391df"
+      },
+      "Front_raglan_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 330,
+        "polygons": 320,
+        "topology_sha256": "7181bb99b9dc0ab80855b18da5223e34e1055cf006ac3529b2a9d843877d6926",
+        "position_sha256": "d9187e13dac855f4090994d8b2dd3c1dbd9f472a4936d1006f09e1a091a0c582"
+      },
+      "Back_raglan_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 330,
+        "polygons": 320,
+        "topology_sha256": "7181bb99b9dc0ab80855b18da5223e34e1055cf006ac3529b2a9d843877d6926",
+        "position_sha256": "bca5c84af1e89acf241d0ce141c1502325b9352db8470d92e1c4ed1afe605304"
+      },
+      "Palm_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.8191520571708679,
+            0.0,
+            -0.5735764503479004,
+            1.431250810623169
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5735764503479004,
+            0.0,
+            0.8191520571708679,
+            2.555739641189575
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "f1b7c9cfd24efdd21adcd47abf95089fb0a98fb22ed40835e15500097b298067",
+        "position_sha256": "cb184ea943c28c82408cd0d76ceff90ce8164f915e603f0f9a21d8c21abf64b8"
+      },
+      "Finger_L_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "ccb8fce2927171b707e1a1a1192c0979d219840b0816d6465e9511bebc4b2e8b"
+      },
+      "Finger_L_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "dc0eb54ec85134cae5ad889c7a59ac55f5d10499e6d8ec8b9dc658b695fd77b3"
+      },
+      "Finger_L_2": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "396526b86ddf9e5160fbd23f8e600c8bb45694b0cd95b3f1946d07074ee70b24"
+      },
+      "Finger_L_3": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "5d7cec0079f0157a406a6f6d9a80b08c280fcb3bbdf7ec811f6cfc6df898f1df"
+      },
+      "Thumb_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 74,
+        "topology_sha256": "71bfda0be5796ba68ac03d2e3ab86be5c407bd9102f0728d424f3a0492e44276",
+        "position_sha256": "66b512a6be265eacda1904cf05ae8351fb7018d033a6dad63d38397f62266fcd"
+      },
+      "Shorts_leg_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 240,
+        "polygons": 194,
+        "topology_sha256": "296b17dc30e92277c4962ba4125510ea15b2b30f3a5c67cd5c30166b61d0fa77",
+        "position_sha256": "c35d6f47d2a882ace53269ef6f162311aadb7430a6f06678c7c181d9a998a776"
+      },
+      "Shorts_hem_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 48,
+        "topology_sha256": "e852ab1afa0407fa10fa9c20b8215080859d92d44cfe52975e3c4b810f075f15",
+        "position_sha256": "c0c7d2408742a70a69195757e4dda3eeee0d571c42a5b74f6d3ee9320caa8f4e"
+      },
+      "Leg_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 336,
+        "polygons": 290,
+        "topology_sha256": "f743d0f1dc28b0f4dd15c48e7371782633901a9f336c1fed1a69f7d6fed8b773",
+        "position_sha256": "a5e850e935bfaa4a36a029dc0022d32dad1f4ae664be098be7bf78b83043bbfb"
+      },
+      "Sock_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "76a1c302c296a21ade98ef9757deb86f25c39ecc20b6ea13cb0991f766d2a051"
+      },
+      "Sock_band_L_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "18b9f0624dfba561592dcb562c356df01e5f59a0a7f647dcda350d3bcf4a90df"
+      },
+      "Sock_band_L_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "c8c97e754cf1f8dfa1467ad22543bb53131c049b07d919620db921a5c34c736d"
+      },
+      "Football_boot_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "5e777506e806f3e4c38aab63998baac54118c79f804d9e19f4ab23831278b83c"
+      },
+      "Boot_sole_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 50,
+        "topology_sha256": "ff7e755e602fd78df9289d49610d1e62642062c9c578a69775c60f09be672fe5",
+        "position_sha256": "bb7e52d2ae59218fe07f172e991433395dc6367749ee242eb65c86e0fdec5ce1"
+      },
+      "Lace_L_0": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.3839991092681885,
+            0.2615509033203125
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.3511369526386261,
+            0.2925978899002075
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "e92982f283e9e39a46c57db5637042cccf292a4de8e18c0e366b22d64b8b48b7"
+      },
+      "Lace_L_1": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.3289991021156311,
+            0.271450936794281
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.2961369454860687,
+            0.302497923374176
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "4908303d889daed110de86a51c4247b60ddebe908ab9bc59d607467834511764"
+      },
+      "Lace_L_2": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.27399909496307373,
+            0.28135091066360474
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.24113695323467255,
+            0.31239789724349976
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "304b689f86dd9869a325430b7a42945bd427e452e6eeb3ac5572a0e93a949bb0"
+      },
+      "Lace_L_3": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.21899910271167755,
+            0.29125091433525085
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.18613694608211517,
+            0.3222978711128235
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "69d1c995affa03c2cbb1861c6d58a9e33baab4afbe9d589ad17b9f81ad134be1"
+      },
+      "Lace_L_4": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.16399911046028137,
+            0.301150918006897
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.131136953830719,
+            0.332197904586792
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "deed5b4a72c7b425199ec7eb7d060eb87e86d2f1ad245a365a0023b74625a4c3"
+      },
+      "Boot_stud_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "3ae7f8e043763d39b07cb05249612ec832ec41d0895eb5233e52d639ad512f02"
+      },
+      "Boot_stud_L.001": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "0c25c5b20ab0cf70e66b46d0d79551b1c8206e3b2afdaf3bc131e7672b0dc3e7"
+      },
+      "Boot_stud_L.002": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "f16c7b9c0cd2351f01786ca502be2e4f697e2602488eb63d61c73ab3bf45d28a"
+      },
+      "Boot_stud_L.003": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "967cc18098b99dfbd801862e57de08329a542bd34ec2cd4c983dde9547d67708"
+      },
+      "Boot_stud_L.004": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "ccf098589014aae052df9c60a3eb34b1d892a4ae883a08d5631d724ebcc74cf3"
+      },
+      "Boot_stud_L.005": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "76a4df1920ee00932bf900e12bf7326e587ae3073b684210fde477d1f5d2cdf3"
+      },
+      "Shorts_pelvis_bridge": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.319999933242798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "cd0e30225b5acdfc18457aa23d456d49cd4f435d2927df193d8d4a1ce16a920b",
+        "position_sha256": "c67d729a63451aace3014878a59bc18a1185f5dd92c115a579f58e61efd8a974"
+      },
+      "Front_07": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.27000001072883606
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.190000057220459
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1186,
+        "polygons": 1773,
+        "topology_sha256": "9355be7b76853f982c218cc7474fc771bfee6e64125bf592f3bd965e2e00e472",
+        "position_sha256": "be4bfceff3a59c98091f515c54e800f4f6d3a21fbe1ed034ceaca9763c2fb8ac"
+      },
+      "Front_BUM": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.23499999940395355
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.2529999911785126
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.549999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1888,
+        "polygons": 2826,
+        "topology_sha256": "1721705f2109fff2040ecddce012589dbf75264beb1d6a6feeb5a1b869655f5b",
+        "position_sha256": "ba0e02dce5b16b521b05213a1e972cc0d44ddf205bcc3ac7609d7181704a7cf4"
+      },
+      "Back_07": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.2720000147819519
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.140000104904175
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1186,
+        "polygons": 1773,
+        "topology_sha256": "9355be7b76853f982c218cc7474fc771bfee6e64125bf592f3bd965e2e00e472",
+        "position_sha256": "f355cea6a9126211a8648262313b3ae2e8360d378d507e848b09c2fd97a24028"
+      },
+      "Back_BUM": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.2669999897480011
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.5799999237060547
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1888,
+        "polygons": 2826,
+        "topology_sha256": "1721705f2109fff2040ecddce012589dbf75264beb1d6a6feeb5a1b869655f5b",
+        "position_sha256": "2180f7f62bac6be5b39b7af95d9af8005e0c62ca8c5503558a4f7ef375e26296"
+      },
+      "UpperDentalArch_SINGLE_8_teeth": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.9471931457519531,
+            -0.32066360116004944,
+            0.0,
+            -0.12555000185966492
+          ],
+          [
+            0.32066360116004944,
+            0.9471931457519531,
+            0.0,
+            -0.22389858961105347
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.208000183105469
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 768,
+        "polygons": 784,
+        "topology_sha256": "5ba8ea2f9fa404841fa1ae7eda9819ea842268c92081523679d85df62607f086",
+        "position_sha256": "38cd3f2a0a423e8d54e0e66bd72dc5213c9498946cc48aa2aa70312057de5ef8"
+      }
+    },
+    "lights": [
+      {
+        "name": "Eye_catchlight_fixed",
+        "matrix": [
+          [
+            0.9175556302070618,
+            0.11629131436347961,
+            -0.38022103905677795,
+            -1.2999999523162842
+          ],
+          [
+            -0.3976074755191803,
+            0.2683645188808441,
+            -0.8774330615997314,
+            -3.0
+          ],
+          [
+            -9.796811362150493e-09,
+            0.9562723636627197,
+            0.29247766733169556,
+            5.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 18.0,
+        "size": 0.44999998807907104
+      },
+      {
+        "name": "Fill_fixed",
+        "matrix": [
+          [
+            0.5547001957893372,
+            -0.2627527117729187,
+            0.7894737124443054,
+            3.0
+          ],
+          [
+            0.8320503234863281,
+            0.17516843974590302,
+            -0.5263158082962036,
+            -2.0
+          ],
+          [
+            1.7519047545988542e-08,
+            0.9488292932510376,
+            0.31578943133354187,
+            5.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 250.0,
+        "size": 3.0
+      },
+      {
+        "name": "Key_fixed",
+        "matrix": [
+          [
+            0.800000011920929,
+            0.37481701374053955,
+            -0.4685212969779968,
+            -3.0
+          ],
+          [
+            -0.6000000238418579,
+            0.4997560977935791,
+            -0.6246950030326843,
+            -4.0
+          ],
+          [
+            4.214170701288822e-08,
+            0.7808687686920166,
+            0.6246950626373291,
+            7.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 500.0,
+        "size": 4.0
+      },
+      {
+        "name": "Rim_fixed",
+        "matrix": [
+          [
+            -1.0,
+            -1.4825890559677646e-07,
+            7.300339888161034e-08,
+            0.0
+          ],
+          [
+            1.5099580252808664e-07,
+            -0.6401843428611755,
+            0.768221378326416,
+            3.0
+          ],
+          [
+            -6.716003042583907e-08,
+            0.768221378326416,
+            0.6401843428611755,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 450.0,
+        "size": 3.0
+      }
+    ],
+    "cameras": [
+      {
+        "name": "Face_front-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Face_profile-090",
+        "matrix": [
+          [
+            -0.0008331973222084343,
+            -4.3711374075883214e-08,
+            -0.9999996423721313,
+            -12.0
+          ],
+          [
+            -0.9999996423721313,
+            3.642021406680129e-11,
+            0.0008331973222084343,
+            -7.347880586115415e-16
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Face_three-quarter-045",
+        "matrix": [
+          [
+            0.7066896557807922,
+            -3.092684153216396e-08,
+            -0.7075237035751343,
+            -8.485280990600586
+          ],
+          [
+            -0.7075237035751343,
+            -3.089038713710579e-08,
+            -0.7066896557807922,
+            -8.485280990600586
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Full_A-pose-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_back-180",
+        "matrix": [
+          [
+            -1.0,
+            -1.5099580252808664e-07,
+            1.1399865765455465e-14,
+            -1.469576117223083e-15
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            1.0,
+            12.0
+          ],
+          [
+            -1.5099580252808664e-07,
+            1.0,
+            -7.549790126404332e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_front-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_profile-090",
+        "matrix": [
+          [
+            -4.371138828673793e-08,
+            -4.371138828673793e-08,
+            -1.0,
+            -12.0
+          ],
+          [
+            -1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            -7.347880586115415e-16
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_three-quarter-045",
+        "matrix": [
+          [
+            0.7071068286895752,
+            7.450235983696984e-08,
+            -0.7071067690849304,
+            -8.485280990600586
+          ],
+          [
+            -0.7071067690849304,
+            -1.3631958495352592e-07,
+            -0.7071068286895752,
+            -8.485280990600586
+          ],
+          [
+            -1.490736281084537e-07,
+            1.0,
+            -4.371138828673793e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      }
+    ],
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "world_background": [
+      0.7991027235984802,
+      0.7758222222328186,
+      0.7379103899002075,
+      1.0
+    ],
+    "world_strength": 0.25
+  },
+  "after": {
+    "file_sha256": "0ce88597f399fb11fb3c0664bafba8523bb7de80d4a1ec04ab22d23d5c4e85bc",
+    "objects": {
+      "Head_NEW_oval_integrated_nose_cheeks": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 331714,
+        "polygons": 331710,
+        "topology_sha256": "404e86ae30fa1c2f96aa4820d843185735c781829435990f4f0be2425f77c714",
+        "position_sha256": "1ec9939b7d7c96a61f651078feed96949984050a0aabada37d91de8ae8ba53c9",
+        "nose_ROI_min_Y_H": -0.3613146245479584
+      },
+      "Eyeball_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.1599999964237213
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.17599999904632568
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.539999961853027
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "ad64bad8fbeedeaefadd54c424b9c8cedb41ab007b62da6279383ba76f836ce8",
+        "position_sha256": "74ddeddb172f00ae406b9acee7a595b165eb8c90f81366f649032808a571bdb6"
+      },
+      "Iris_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "5bb5a15e404b59d218f21b621c605f3954a8cbe4c78df075f5f9ac7f8bbd389f"
+      },
+      "Pupil_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "4bbebf98cbd8169a86e63dd0d0d267aae4d4b5611cf718cbce2ec1604fa5214f"
+      },
+      "Upper_lid_margin_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.26339536905288696,
+            -0.2830580770969391,
+            4.534308910369873
+          ],
+          "max": [
+            -0.05693498253822327,
+            -0.21862739324569702,
+            4.5953521728515625
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.002199999988079071,
+        "curve_positions_sha256": "e9ac799e455c2e1eefe12ff9dab8a102604b09fa51981acea6fe08bd9de7540b"
+      },
+      "Neutral_brow_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 82,
+        "polygons": 40,
+        "topology_sha256": "db7c11e5e24bca0aaf8f7d7507b213532e159932c44ca7c5ae45e36b8a0d3dc0",
+        "position_sha256": "af0e9926502de488a70672a112cf6d2f196a9e091d727842a269a76a094ff22c"
+      },
+      "Ear_shell_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.37400001287460327
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.006000000052154064
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "f91a5cac7124f15fb72e77a07c2149366206ff26207a58fa40e06bf2ec233ab1",
+        "position_sha256": "bd279154beb375742c7ba1b730c4418b7735b48d5867e343a413addf8b4453b8"
+      },
+      "Ear_concha_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.42100000381469727
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.035999998450279236
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "db3596480ca4e2dcadfa6e22d44a48ad1fe3eeb1aea6dfe9c73abb0894f97961",
+        "position_sha256": "6e919de648a7d745ae17eedc16702ebf5a947c7e8e609de3503cb4e90b1c0418"
+      },
+      "Ear_helix_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.44461989402770996,
+            -0.05614456534385681,
+            4.256214618682861
+          ],
+          "max": [
+            -0.3386121094226837,
+            -0.022014060989022255,
+            4.543799877166748
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.009840000420808792,
+        "curve_positions_sha256": "3cf4c7a285275b77e9d111880a944004588edfc2efbd02f07bb18d5ba9002be5"
+      },
+      "Ear_antihelix_R": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.41900432109832764,
+            -0.06118704378604889,
+            4.360947132110596
+          ],
+          "max": [
+            -0.38536834716796875,
+            -0.04201667383313179,
+            4.468914031982422
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.006560000125318766,
+        "curve_positions_sha256": "d16420329324531ed52beefd778d1b948f879ef57eb8d74e1d020d56799fdb8c"
+      },
+      "Nostril_recess_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.04399999976158142
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.3649376928806305
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.318999767303467
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 482,
+        "polygons": 512,
+        "topology_sha256": "24fe114e19d79a7167fd143f9c47da409e2e5d25942544e45082b32117d8c8f2",
+        "position_sha256": "36579bf4a5cc68a80486f9edc71354ac21215e2139c613fc5530d215b466c3a9"
+      },
+      "Eyeball_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.1599999964237213
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.17599999904632568
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.539999961853027
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "407a9188a835df4182b96ee38be3fd558af66d55aa453da3bc1aad962dacf2f9",
+        "position_sha256": "22878982b073efce4c2ef492563b1b88915ee0e38f298357c568c5e9f081216d"
+      },
+      "Iris_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "a7cd0adaff1422161a73e57e6aa1d023b8fce1317f35ec79ce98371e7e286c07"
+      },
+      "Pupil_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 513,
+        "polygons": 512,
+        "topology_sha256": "5762ab32dbe59dbb42f29f17201245de4a14918386180a2579fbb1c19635eae5",
+        "position_sha256": "bd2eab766dc02fea1d249af9c68ed0a1d0df8d0ff39e3fe82385c3da675bef91"
+      },
+      "Upper_lid_margin_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.05692237243056297,
+            -0.2830536961555481,
+            4.534299850463867
+          ],
+          "max": [
+            0.26341021060943604,
+            -0.21864083409309387,
+            4.595376014709473
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.002199999988079071,
+        "curve_positions_sha256": "18e8c5b50807d650d227bbac7856af2896a863069f2f6d2a3997ffabe244ba0a"
+      },
+      "Neutral_brow_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 82,
+        "polygons": 40,
+        "topology_sha256": "db7c11e5e24bca0aaf8f7d7507b213532e159932c44ca7c5ae45e36b8a0d3dc0",
+        "position_sha256": "07c66a5a4dc01c4927e187b17df82a74b367912f850c1e07b6ab5900b322f2eb"
+      },
+      "Ear_shell_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.37400001287460327
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.006000000052154064
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "8f1826d058401253257f7a2641fd68b72c72ba502f917f90bcabfb7189c3a742",
+        "position_sha256": "91b2dfc0f4640704337c7e1e3613943d3ffc90a91493f2c7690809e5a3f3f2c6"
+      },
+      "Ear_concha_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.42100000381469727
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.035999998450279236
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.400000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "bab70faa595f3f20bfc5090edb72ee87f012679749582b876558612f56f87d1c",
+        "position_sha256": "b7d23b6fbf48e909b3684f1d5ddbabf77f74b246d3997ff9172467ea7b841863"
+      },
+      "Ear_helix_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3386121094226837,
+            -0.05614456534385681,
+            4.256214618682861
+          ],
+          "max": [
+            0.44461989402770996,
+            -0.022014059126377106,
+            4.543799877166748
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.009840000420808792,
+        "curve_positions_sha256": "c6cf6c38c73f494f3ec29e969aa82b20054836bd47262e030b23fad2afb4361f"
+      },
+      "Ear_antihelix_L": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.38536834716796875,
+            -0.06118704378604889,
+            4.360947132110596
+          ],
+          "max": [
+            0.41900432109832764,
+            -0.04201667383313179,
+            4.468914031982422
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.006560000125318766,
+        "curve_positions_sha256": "bcb8f43f953af0be3a18b522128fa988c7911abd2b6772987b1bead36f7c458e"
+      },
+      "Nostril_recess_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.04399999976158142
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.3649376928806305
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.318999767303467
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 482,
+        "polygons": 512,
+        "topology_sha256": "5aeb0f903cdae5ede8f7e622010b655a0a1543e6cabf772da132f49227f32436",
+        "position_sha256": "654b7e2f1ca93e5f2acd317650c9624c071455dbf4615b3d400a9ca32f2e978f"
+      },
+      "Upper_lip": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 585,
+        "polygons": 512,
+        "topology_sha256": "336eb15444b101dab79ebbeeb4d2d5f3b6b3936ce9de89231c28cd232a1b0984",
+        "position_sha256": "8745cf873463ecb995a1beeeff14b5c2e0c4f444621af06073b1e6a65737141a"
+      },
+      "Lower_lip": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 585,
+        "polygons": 512,
+        "topology_sha256": "336eb15444b101dab79ebbeeb4d2d5f3b6b3936ce9de89231c28cd232a1b0984",
+        "position_sha256": "43e799ae1f25eebc8701b18e5d1b12657f41b54ae472ec2f543329b3d0890064"
+      },
+      "Closed_mouth_soft_seam": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.17047852277755737,
+            -0.31088462471961975,
+            4.198925495147705
+          ],
+          "max": [
+            0.17047852277755737,
+            -0.24595455825328827,
+            4.223080158233643
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.0011500000255182385,
+        "curve_positions_sha256": "709aa810753613342f6219a1eb409a7386dff904b1ef1bf05573759118835612"
+      },
+      "Hair_unified_low_swept_masses": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 175600,
+        "polygons": 175596,
+        "topology_sha256": "04a54efb45348e051f3049ed6fd3458cd6f8ff218e6cb0dc7f0fd1de0a1c87fa",
+        "position_sha256": "4323f40793c1ffab324378e7cc1b1669fa60395ef90923c8e1649256ff68807e"
+      },
+      "Neck_blockout": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 192,
+        "polygons": 146,
+        "topology_sha256": "f3ac973df9807d4bd364c4685585ed91e4c901ed1eed3fca51be3d8acacf6e3c",
+        "position_sha256": "8068cfd337b2df814eaef5c75b55e21f85b14851e2022ba50d2f7b1aca93af91"
+      },
+      "Jersey_body_open_neck": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 384,
+        "polygons": 336,
+        "topology_sha256": "d7f8d6a3d67514f318040ded9671905f72c13dd305abd65c3508cf84b45c5465",
+        "position_sha256": "86bce2f08048ba213e1e8cd8419aad5bd203cf521aacc7051d77be187e36fdb5"
+      },
+      "Front_V_back_round_collar": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 64,
+        "topology_sha256": "a99c64cf2c37e1482059a8092ab3c0ab29862d416f0796e3e82c283c59f73dba",
+        "position_sha256": "8d3a1ce72a714f85b375aa5b8411e27aaf647ef241639533a0561c695389513d"
+      },
+      "Jersey_hem": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 64,
+        "topology_sha256": "a99c64cf2c37e1482059a8092ab3c0ab29862d416f0796e3e82c283c59f73dba",
+        "position_sha256": "57f8b5eb735dca6643c6a45e630e2c595c78dfc1f36b927889d1932ba554130d"
+      },
+      "Arm_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 224,
+        "polygons": 194,
+        "topology_sha256": "ad166d8ba82214d1cf81e68c08dfca77633e04f47ce705bbc94538c6a9d3d9a6",
+        "position_sha256": "b0f2607b26301916125da4084cc96adeeffe82f22dcfda60657d565a9b322196"
+      },
+      "Jersey_sleeve_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "f996378c8564a1b1ff848b7cc5bddd40a497e22efcfcecdc5dad04548ccfa672"
+      },
+      "Sleeve_navy_cuff_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "84b4b486c51fd6402fa1b01f8582223d9cf22cd2f8f928a09ebde258f5f46cea"
+      },
+      "Front_raglan_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 66,
+        "polygons": 32,
+        "topology_sha256": "47b07bf7b4985cf3e065cf188271d53748ce16e6ff3ee9cd3495ad92867bad02",
+        "position_sha256": "697d7f32dca537ec51843fa6f2305947c7af1b10a0ea8fdf5617eff0cb482ca1"
+      },
+      "Back_raglan_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 66,
+        "polygons": 32,
+        "topology_sha256": "47b07bf7b4985cf3e065cf188271d53748ce16e6ff3ee9cd3495ad92867bad02",
+        "position_sha256": "e42ff03f92605f94c7fcf90ea91308e89989d6220a9d1ea83db5014c10a183be"
+      },
+      "Palm_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.8191520571708679,
+            0.0,
+            0.5735764503479004,
+            -1.431250810623169
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.5735764503479004,
+            0.0,
+            0.8191520571708679,
+            2.555739641189575
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "77b99b718f1f51c4bd37a753e5eeaeb23243ac62dd3e1daac0080a877df62348",
+        "position_sha256": "d456c7a71f26db626bc45f30695ccb5794d2209159f65cd063a1d33448765817"
+      },
+      "Finger_R_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "00cd10f963eaf1d696342d982f8b1feda337fee6e18b180bf8370d89fbbf54b6"
+      },
+      "Finger_R_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "937d10e38e2676fe8111234d1816f14d7be4e98d3ae24f7711d4d84955639dca"
+      },
+      "Finger_R_2": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "26d9454a27ffde1e8f4f7a7516de752d4af06899fe885dd3bad6d33b1a4857d9"
+      },
+      "Finger_R_3": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "9e0e2e34f6fc8704433b9a87ce898cb5f9afec805a436dd7d6cc556027bd7588"
+      },
+      "Thumb_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 74,
+        "topology_sha256": "71bfda0be5796ba68ac03d2e3ab86be5c407bd9102f0728d424f3a0492e44276",
+        "position_sha256": "7a286482ed0762a38b9a684451988039c4d0297d207f5e86275f2f83382c3095"
+      },
+      "Shorts_leg_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 240,
+        "polygons": 194,
+        "topology_sha256": "296b17dc30e92277c4962ba4125510ea15b2b30f3a5c67cd5c30166b61d0fa77",
+        "position_sha256": "f3f1752877ac83233c12408976ebb5603dd4150d986d9cc52d3e2c34335c6c37"
+      },
+      "Shorts_hem_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 48,
+        "topology_sha256": "e852ab1afa0407fa10fa9c20b8215080859d92d44cfe52975e3c4b810f075f15",
+        "position_sha256": "50ff034ea25eedfd63226e916992adf7f6072acb0ad659f80429751015279baf"
+      },
+      "Leg_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 336,
+        "polygons": 290,
+        "topology_sha256": "f743d0f1dc28b0f4dd15c48e7371782633901a9f336c1fed1a69f7d6fed8b773",
+        "position_sha256": "bc7490c0bda93e94a2ef7663ae56847459bc24978e07ab26cc1337c8598d6dc4"
+      },
+      "Sock_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "1d214575e4db950eb5f96ec34c961463b897ce60b1677e147ee175edce2b71dd"
+      },
+      "Sock_band_R_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "2b7f6789bfff096251cfb9e03b3559af8e79c5e6536deb191f13f2b6648aa8ed"
+      },
+      "Sock_band_R_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "47895165f53543c78355227caff6efb21df4920d3f1ccf8caf9ef51cdeb62685"
+      },
+      "Football_boot_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "15682babc66f889ce59fea775d0a5fe287d424982114280090e004a36a3284b7"
+      },
+      "Boot_sole_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 50,
+        "topology_sha256": "ff7e755e602fd78df9289d49610d1e62642062c9c578a69775c60f09be672fe5",
+        "position_sha256": "9bdd682b91ea54daa559f5f1bf3b84e82bb2df48f334329db9675b78058299a9"
+      },
+      "Lace_R_0": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.3839991092681885,
+            0.2615509331226349
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.3511369526386261,
+            0.2925979197025299
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "7f8508dc48cf2478eb3b808378f94444262d88175bf14bfeee8662d1a1fdaa3f"
+      },
+      "Lace_R_1": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.3289991021156311,
+            0.271450936794281
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.2961369454860687,
+            0.302497923374176
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "282b6072dde8a09d8be1f9afb15d0b380f99af9886ec053f5ee89287e8538156"
+      },
+      "Lace_R_2": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.27399909496307373,
+            0.28135091066360474
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.24113695323467255,
+            0.31239789724349976
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "ef97839022f7deecb924a898af9ce548e47e774b5d7c9226a166a1a80ee59faa"
+      },
+      "Lace_R_3": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.21899910271167755,
+            0.29125091433525085
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.18613694608211517,
+            0.3222978711128235
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "c62468a0ef3991e05f3fe2c3475490f6478d05a28e2dd94f3cc7ad2f49751a2f"
+      },
+      "Lace_R_4": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            -0.48709946870803833,
+            -0.16399911046028137,
+            0.301150918006897
+          ],
+          "max": [
+            -0.3129005432128906,
+            -0.131136953830719,
+            0.332197904586792
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "2f2643a79ed14a193315710317b9b6550bc2096e1789750452e14066a9f3a794"
+      },
+      "Boot_stud_R": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "cf87ab26bb7cffd2e98e5a0a19fded5750a987d55c23bef3d5e4e8653dfe9beb"
+      },
+      "Boot_stud_R.001": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "4d8a5caeb4d130a50c5290a055e512844f4759f288b69c926d885d3a107a3e7b"
+      },
+      "Boot_stud_R.002": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "d8f450dcaad9f4f94a9533c8345ec10bf106618a2c40bb5ff7b5e5d275f4e525"
+      },
+      "Boot_stud_R.003": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "08e4cc416c953ba5d90751ac2bfcaa9b5ffb1c44784e820db75d095e4fcad734"
+      },
+      "Boot_stud_R.004": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "e408c671104ec7d3a9d633eec3b447589e21587ad8152dff44a1cf93cb18db9f"
+      },
+      "Boot_stud_R.005": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "323179da7e5e09feb6ca89a1f52ab2d63ff9ded9f584679a2a3fa30afa006f90"
+      },
+      "Arm_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 224,
+        "polygons": 194,
+        "topology_sha256": "ad166d8ba82214d1cf81e68c08dfca77633e04f47ce705bbc94538c6a9d3d9a6",
+        "position_sha256": "fe74da01741bda259336544c3d23afa09fc393db2cddbdbf0a23f9177bbd9604"
+      },
+      "Jersey_sleeve_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "0a2ad5335a910ebe2c5172a21cb99d4467badffedd1c83c8a6998e11ab1cbb59"
+      },
+      "Sleeve_navy_cuff_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 128,
+        "polygons": 98,
+        "topology_sha256": "0fc7aad06371fde23ac38ff610de820028f113f396a91f4739189eb743aec5a3",
+        "position_sha256": "80c073b8cc469981c3bbbc72baa6823edad143e52aa48670f4fb1d58075391df"
+      },
+      "Front_raglan_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 66,
+        "polygons": 32,
+        "topology_sha256": "47b07bf7b4985cf3e065cf188271d53748ce16e6ff3ee9cd3495ad92867bad02",
+        "position_sha256": "5e2e8091a1b226153617e2328abe6d999d142ae35e7bcde4b85b5850b9b0a409"
+      },
+      "Back_raglan_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 66,
+        "polygons": 32,
+        "topology_sha256": "47b07bf7b4985cf3e065cf188271d53748ce16e6ff3ee9cd3495ad92867bad02",
+        "position_sha256": "26e669a26890eb4f8627efba1a81787f004e58ff352f0aee18ab9da1df45e3ba"
+      },
+      "Palm_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.8191520571708679,
+            0.0,
+            -0.5735764503479004,
+            1.431250810623169
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5735764503479004,
+            0.0,
+            0.8191520571708679,
+            2.555739641189575
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "f1b7c9cfd24efdd21adcd47abf95089fb0a98fb22ed40835e15500097b298067",
+        "position_sha256": "cb184ea943c28c82408cd0d76ceff90ce8164f915e603f0f9a21d8c21abf64b8"
+      },
+      "Finger_L_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "ccb8fce2927171b707e1a1a1192c0979d219840b0816d6465e9511bebc4b2e8b"
+      },
+      "Finger_L_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "dc0eb54ec85134cae5ad889c7a59ac55f5d10499e6d8ec8b9dc658b695fd77b3"
+      },
+      "Finger_L_2": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "396526b86ddf9e5160fbd23f8e600c8bb45694b0cd95b3f1946d07074ee70b24"
+      },
+      "Finger_L_3": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 100,
+        "polygons": 82,
+        "topology_sha256": "04d94d3908574bd03489c41026ee4321d2d9b48a8e5623713a4e975ec2d99313",
+        "position_sha256": "5d7cec0079f0157a406a6f6d9a80b08c280fcb3bbdf7ec811f6cfc6df898f1df"
+      },
+      "Thumb_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 74,
+        "topology_sha256": "71bfda0be5796ba68ac03d2e3ab86be5c407bd9102f0728d424f3a0492e44276",
+        "position_sha256": "66b512a6be265eacda1904cf05ae8351fb7018d033a6dad63d38397f62266fcd"
+      },
+      "Shorts_leg_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 240,
+        "polygons": 194,
+        "topology_sha256": "296b17dc30e92277c4962ba4125510ea15b2b30f3a5c67cd5c30166b61d0fa77",
+        "position_sha256": "c35d6f47d2a882ace53269ef6f162311aadb7430a6f06678c7c181d9a998a776"
+      },
+      "Shorts_hem_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 48,
+        "topology_sha256": "e852ab1afa0407fa10fa9c20b8215080859d92d44cfe52975e3c4b810f075f15",
+        "position_sha256": "c0c7d2408742a70a69195757e4dda3eeee0d571c42a5b74f6d3ee9320caa8f4e"
+      },
+      "Leg_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 336,
+        "polygons": 290,
+        "topology_sha256": "f743d0f1dc28b0f4dd15c48e7371782633901a9f336c1fed1a69f7d6fed8b773",
+        "position_sha256": "a5e850e935bfaa4a36a029dc0022d32dad1f4ae664be098be7bf78b83043bbfb"
+      },
+      "Sock_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "76a1c302c296a21ade98ef9757deb86f25c39ecc20b6ea13cb0991f766d2a051"
+      },
+      "Sock_band_L_0": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "18b9f0624dfba561592dcb562c356df01e5f59a0a7f647dcda350d3bcf4a90df"
+      },
+      "Sock_band_L_1": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 192,
+        "topology_sha256": "acae349e27224c04346a93f9b5df73c4b7af9f731e19e847962e2f47cf5041a3",
+        "position_sha256": "c8c97e754cf1f8dfa1467ad22543bb53131c049b07d919620db921a5c34c736d"
+      },
+      "Football_boot_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 288,
+        "polygons": 242,
+        "topology_sha256": "4011fa022cc17cdf1612073f177c77bcf772556a8f0708956b618933f39ee962",
+        "position_sha256": "5e777506e806f3e4c38aab63998baac54118c79f804d9e19f4ab23831278b83c"
+      },
+      "Boot_sole_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 96,
+        "polygons": 50,
+        "topology_sha256": "ff7e755e602fd78df9289d49610d1e62642062c9c578a69775c60f09be672fe5",
+        "position_sha256": "bb7e52d2ae59218fe07f172e991433395dc6367749ee242eb65c86e0fdec5ce1"
+      },
+      "Lace_L_0": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.3839991092681885,
+            0.2615509033203125
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.3511369526386261,
+            0.2925978899002075
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "e92982f283e9e39a46c57db5637042cccf292a4de8e18c0e366b22d64b8b48b7"
+      },
+      "Lace_L_1": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.3289991021156311,
+            0.271450936794281
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.2961369454860687,
+            0.302497923374176
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "4908303d889daed110de86a51c4247b60ddebe908ab9bc59d607467834511764"
+      },
+      "Lace_L_2": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.27399909496307373,
+            0.28135091066360474
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.24113695323467255,
+            0.31239789724349976
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "304b689f86dd9869a325430b7a42945bd427e452e6eeb3ac5572a0e93a949bb0"
+      },
+      "Lace_L_3": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.21899910271167755,
+            0.29125091433525085
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.18613694608211517,
+            0.3222978711128235
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "69d1c995affa03c2cbb1861c6d58a9e33baab4afbe9d589ad17b9f81ad134be1"
+      },
+      "Lace_L_4": {
+        "type": "CURVE",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "actual_vertex_bounds": {
+          "min": [
+            0.3129005432128906,
+            -0.16399911046028137,
+            0.301150918006897
+          ],
+          "max": [
+            0.48709946870803833,
+            -0.131136953830719,
+            0.332197904586792
+          ]
+        },
+        "point_radii": [
+          1.0
+        ],
+        "bevel_depth": 0.008999999612569809,
+        "curve_positions_sha256": "deed5b4a72c7b425199ec7eb7d060eb87e86d2f1ad245a365a0023b74625a4c3"
+      },
+      "Boot_stud_L": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "3ae7f8e043763d39b07cb05249612ec832ec41d0895eb5233e52d639ad512f02"
+      },
+      "Boot_stud_L.001": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "0c25c5b20ab0cf70e66b46d0d79551b1c8206e3b2afdaf3bc131e7672b0dc3e7"
+      },
+      "Boot_stud_L.002": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.29499998688697815
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "f16c7b9c0cd2351f01786ca502be2e4f697e2602488eb63d61c73ab3bf45d28a"
+      },
+      "Boot_stud_L.003": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.4300000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "967cc18098b99dfbd801862e57de08329a542bd34ec2cd4c983dde9547d67708"
+      },
+      "Boot_stud_L.004": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20999999344348907
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "ccf098589014aae052df9c60a3eb34b1d892a4ae883a08d5631d724ebcc74cf3"
+      },
+      "Boot_stud_L.005": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5049999952316284
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 32,
+        "polygons": 18,
+        "topology_sha256": "0c90baa75118591a5fda65e95c368311217ebbe492678e59677ec01997698c0e",
+        "position_sha256": "76a4df1920ee00932bf900e12bf7326e587ae3073b684210fde477d1f5d2cdf3"
+      },
+      "Shorts_pelvis_bridge": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.319999933242798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1490,
+        "polygons": 1536,
+        "topology_sha256": "cd0e30225b5acdfc18457aa23d456d49cd4f435d2927df193d8d4a1ce16a920b",
+        "position_sha256": "c67d729a63451aace3014878a59bc18a1185f5dd92c115a579f58e61efd8a974"
+      },
+      "Front_07": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.27000001072883606
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.190000057220459
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1186,
+        "polygons": 1773,
+        "topology_sha256": "9355be7b76853f982c218cc7474fc771bfee6e64125bf592f3bd965e2e00e472",
+        "position_sha256": "be4bfceff3a59c98091f515c54e800f4f6d3a21fbe1ed034ceaca9763c2fb8ac"
+      },
+      "Front_BUM": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.23499999940395355
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.2529999911785126
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.549999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1888,
+        "polygons": 2826,
+        "topology_sha256": "1721705f2109fff2040ecddce012589dbf75264beb1d6a6feeb5a1b869655f5b",
+        "position_sha256": "ba0e02dce5b16b521b05213a1e972cc0d44ddf205bcc3ac7609d7181704a7cf4"
+      },
+      "Back_07": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.2720000147819519
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.140000104904175
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1186,
+        "polygons": 1773,
+        "topology_sha256": "9355be7b76853f982c218cc7474fc771bfee6e64125bf592f3bd965e2e00e472",
+        "position_sha256": "f355cea6a9126211a8648262313b3ae2e8360d378d507e848b09c2fd97a24028"
+      },
+      "Back_BUM": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.2669999897480011
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.5799999237060547
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 1888,
+        "polygons": 2826,
+        "topology_sha256": "1721705f2109fff2040ecddce012589dbf75264beb1d6a6feeb5a1b869655f5b",
+        "position_sha256": "2180f7f62bac6be5b39b7af95d9af8005e0c62ca8c5503558a4f7ef375e26296"
+      },
+      "UpperDentalArch_SINGLE_8_teeth": {
+        "type": "MESH",
+        "matrix_world": [
+          [
+            0.9471931457519531,
+            -0.32066360116004944,
+            0.0,
+            -0.12555000185966492
+          ],
+          [
+            0.32066360116004944,
+            0.9471931457519531,
+            0.0,
+            -0.22389858961105347
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            4.208000183105469
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "vertices": 768,
+        "polygons": 784,
+        "topology_sha256": "5ba8ea2f9fa404841fa1ae7eda9819ea842268c92081523679d85df62607f086",
+        "position_sha256": "38cd3f2a0a423e8d54e0e66bd72dc5213c9498946cc48aa2aa70312057de5ef8"
+      }
+    },
+    "lights": [
+      {
+        "name": "Eye_catchlight_fixed",
+        "matrix": [
+          [
+            0.9175556302070618,
+            0.11629131436347961,
+            -0.38022103905677795,
+            -1.2999999523162842
+          ],
+          [
+            -0.3976074755191803,
+            0.2683645188808441,
+            -0.8774330615997314,
+            -3.0
+          ],
+          [
+            -9.796811362150493e-09,
+            0.9562723636627197,
+            0.29247766733169556,
+            5.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 18.0,
+        "size": 0.44999998807907104
+      },
+      {
+        "name": "Fill_fixed",
+        "matrix": [
+          [
+            0.5547001957893372,
+            -0.2627527117729187,
+            0.7894737124443054,
+            3.0
+          ],
+          [
+            0.8320503234863281,
+            0.17516843974590302,
+            -0.5263158082962036,
+            -2.0
+          ],
+          [
+            1.7519047545988542e-08,
+            0.9488292932510376,
+            0.31578943133354187,
+            5.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 250.0,
+        "size": 3.0
+      },
+      {
+        "name": "Key_fixed",
+        "matrix": [
+          [
+            0.800000011920929,
+            0.37481701374053955,
+            -0.4685212969779968,
+            -3.0
+          ],
+          [
+            -0.6000000238418579,
+            0.4997560977935791,
+            -0.6246950030326843,
+            -4.0
+          ],
+          [
+            4.214170701288822e-08,
+            0.7808687686920166,
+            0.6246950626373291,
+            7.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 500.0,
+        "size": 4.0
+      },
+      {
+        "name": "Rim_fixed",
+        "matrix": [
+          [
+            -1.0,
+            -1.4825890559677646e-07,
+            7.300339888161034e-08,
+            0.0
+          ],
+          [
+            1.5099580252808664e-07,
+            -0.6401843428611755,
+            0.768221378326416,
+            3.0
+          ],
+          [
+            -6.716003042583907e-08,
+            0.768221378326416,
+            0.6401843428611755,
+            6.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 450.0,
+        "size": 3.0
+      }
+    ],
+    "cameras": [
+      {
+        "name": "Face_front-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Face_profile-090",
+        "matrix": [
+          [
+            -0.0008331973222084343,
+            -4.3711374075883214e-08,
+            -0.9999996423721313,
+            -12.0
+          ],
+          [
+            -0.9999996423721313,
+            3.642021406680129e-11,
+            0.0008331973222084343,
+            -7.347880586115415e-16
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Face_three-quarter-045",
+        "matrix": [
+          [
+            0.7066896557807922,
+            -3.092684153216396e-08,
+            -0.7075237035751343,
+            -8.485280990600586
+          ],
+          [
+            -0.7075237035751343,
+            -3.089038713710579e-08,
+            -0.7066896557807922,
+            -8.485280990600586
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            4.53000020980835
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.5
+      },
+      {
+        "name": "Full_A-pose-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_back-180",
+        "matrix": [
+          [
+            -1.0,
+            -1.5099580252808664e-07,
+            1.1399865765455465e-14,
+            -1.469576117223083e-15
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            1.0,
+            12.0
+          ],
+          [
+            -1.5099580252808664e-07,
+            1.0,
+            -7.549790126404332e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_front-000",
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.6292068494294654e-07,
+            -1.0,
+            -12.0
+          ],
+          [
+            0.0,
+            1.0,
+            -1.6292068494294654e-07,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_profile-090",
+        "matrix": [
+          [
+            -4.371138828673793e-08,
+            -4.371138828673793e-08,
+            -1.0,
+            -12.0
+          ],
+          [
+            -1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            -7.347880586115415e-16
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      {
+        "name": "Full_three-quarter-045",
+        "matrix": [
+          [
+            0.7071068286895752,
+            7.450235983696984e-08,
+            -0.7071067690849304,
+            -8.485280990600586
+          ],
+          [
+            -0.7071067690849304,
+            -1.3631958495352592e-07,
+            -0.7071068286895752,
+            -8.485280990600586
+          ],
+          [
+            -1.490736281084537e-07,
+            1.0,
+            -4.371138828673793e-08,
+            2.5999999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      }
+    ],
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "world_background": [
+      0.7991027235984802,
+      0.7758222222328186,
+      0.7379103899002075,
+      1.0
+    ],
+    "world_strength": 0.25
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "method": "Projected convex hull of iris vertices on same orthographic camera. Read source beauty PNG, minRGB>.70 and RGB range<.20. Same fixed thresholds for both versions, not tuned per-eye/version.",
+  "limitations": [
+    "Proxy includes hull occlusion by lids; not a semantic specular pass.",
+    "Does not prove natural gaze, attractiveness, or performance. Owner review required.",
+    "No pixels edited; original Blender PNGs preserved."
+  ],
+  "rows": [
+    {
+      "version": "before",
+      "camera": "Face_front-000",
+      "eye": "R",
+      "roi_pixels": 8221,
+      "bright_neutral_pixels": 1688,
+      "bright_neutral_fraction": 0.20532781900012165,
+      "mean_RGB_sRGB": [
+        0.5198050737380981,
+        0.423553466796875,
+        0.3565099537372589
+      ]
+    },
+    {
+      "version": "before",
+      "camera": "Face_front-000",
+      "eye": "L",
+      "roi_pixels": 8221,
+      "bright_neutral_pixels": 2176,
+      "bright_neutral_fraction": 0.26468799416129424,
+      "mean_RGB_sRGB": [
+        0.5294865369796753,
+        0.43310806155204773,
+        0.36629733443260193
+      ]
+    },
+    {
+      "version": "before",
+      "camera": "Face_three-quarter-045",
+      "eye": "R",
+      "roi_pixels": 5812,
+      "bright_neutral_pixels": 1522,
+      "bright_neutral_fraction": 0.26187198898830005,
+      "mean_RGB_sRGB": [
+        0.596927285194397,
+        0.4956280589103699,
+        0.4252242147922516
+      ]
+    },
+    {
+      "version": "before",
+      "camera": "Face_three-quarter-045",
+      "eye": "L",
+      "roi_pixels": 5810,
+      "bright_neutral_pixels": 2297,
+      "bright_neutral_fraction": 0.39535283993115317,
+      "mean_RGB_sRGB": [
+        0.6226791739463806,
+        0.5348560810089111,
+        0.47451910376548767
+      ]
+    },
+    {
+      "version": "after",
+      "camera": "Face_front-000",
+      "eye": "R",
+      "roi_pixels": 8217,
+      "bright_neutral_pixels": 909,
+      "bright_neutral_fraction": 0.11062431544359255,
+      "mean_RGB_sRGB": [
+        0.460156112909317,
+        0.3458869755268097,
+        0.2630632519721985
+      ]
+    },
+    {
+      "version": "after",
+      "camera": "Face_front-000",
+      "eye": "L",
+      "roi_pixels": 8217,
+      "bright_neutral_pixels": 1057,
+      "bright_neutral_fraction": 0.12863575514177925,
+      "mean_RGB_sRGB": [
+        0.47416922450065613,
+        0.35465681552886963,
+        0.2678646445274353
+      ]
+    },
+    {
+      "version": "after",
+      "camera": "Face_three-quarter-045",
+      "eye": "R",
+      "roi_pixels": 5673,
+      "bright_neutral_pixels": 614,
+      "bright_neutral_fraction": 0.10823197602679359,
+      "mean_RGB_sRGB": [
+        0.47643551230430603,
+        0.34776851534843445,
+        0.2497578114271164
+      ]
+    },
+    {
+      "version": "after",
+      "camera": "Face_three-quarter-045",
+      "eye": "L",
+      "roi_pixels": 5951,
+      "bright_neutral_pixels": 740,
+      "bright_neutral_fraction": 0.12434884893295245,
+      "mean_RGB_sRGB": [
+        0.48280298709869385,
+        0.3629242777824402,
+        0.27517974376678467
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "camera": "Face_front-000",
+      "eye": "R",
+      "before_fraction": 0.20532781900012165,
+      "after_fraction": 0.11062431544359255,
+      "fraction_reduced": true
+    },
+    {
+      "camera": "Face_front-000",
+      "eye": "L",
+      "before_fraction": 0.26468799416129424,
+      "after_fraction": 0.12863575514177925,
+      "fraction_reduced": true
+    },
+    {
+      "camera": "Face_three-quarter-045",
+      "eye": "R",
+      "before_fraction": 0.26187198898830005,
+      "after_fraction": 0.10823197602679359,
+      "fraction_reduced": true
+    },
+    {
+      "camera": "Face_three-quarter-045",
+      "eye": "L",
+      "before_fraction": 0.39535283993115317,
+      "after_fraction": 0.12434884893295245,
+      "fraction_reduced": true
+    }
+  ]
+}
